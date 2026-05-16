@@ -5,6 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 <title>Food Handler Certification | 식품 취급자 교육</title>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 <style>
   :root {
     --green: #1a7a4a;
@@ -1815,7 +1817,7 @@ function showCertCard(name, pct, score, total) {
     + '</div></div>'
     + '<div class="cert-actions">'
     + '<div class="screenshot-tip" style="margin-bottom:0;border-radius:10px">📸 <strong>Take a screenshot</strong> of the card above · 위 인증서를 <strong>스크린샷</strong> 찍으세요</div>'
-    + '<button class="cert-action-btn" style="background:#2d2d2d;color:white" onclick="downloadCertPDF()">📄 Download PDF · PDF 저장 (PC only)</button>'
+    + '<button class="cert-action-btn" style="background:#2d2d2d;color:white" id="pdfBtn" onclick="downloadCertPDF()">📄 Save as PDF · PDF 저장</button>'
     + '<button class="cert-action-btn btn-email" onclick="sendByEmail()">✉️ Send via Email · 이메일로 보내기</button>'
     + '<button class="cert-action-btn btn-sms" onclick="sendBySMS()">💬 Send via SMS · 문자로 보내기</button>'
     + '<button class="cert-action-btn btn-close" onclick="confirmCloseCert()">✕ Close · 닫기</button>'
@@ -1825,7 +1827,63 @@ function showCertCard(name, pct, score, total) {
 }
 
 function downloadCertPDF() {
-  window.print();
+  var card = document.getElementById('certCard');
+  var btn  = document.getElementById('pdfBtn');
+  if (!card) return;
+
+  // Show loading state
+  var origText = btn ? btn.innerHTML : '';
+  if (btn) btn.innerHTML = '⏳ Generating... · 생성 중...';
+
+  // Temporarily hide shield watermark for clean capture
+  var shield = card.querySelector('*');
+
+  html2canvas(card, {
+    scale: 3,
+    useCORS: true,
+    backgroundColor: null,
+    logging: false,
+    onclone: function(doc) {
+      var el = doc.getElementById('certCard');
+      if (el) {
+        el.style.borderRadius = '0';
+        el.style.boxShadow = 'none';
+      }
+    }
+  }).then(function(canvas) {
+    var imgData = canvas.toDataURL('image/png');
+    var pdf = new window.jspdf.jsPDF({
+      orientation: 'landscape',
+      unit: 'mm',
+      format: 'a4'
+    });
+
+    // A4 landscape: 297 x 210mm — center the card
+    var pageW = 297, pageH = 210;
+    var margin = 15;
+    var maxW = pageW - margin * 2;
+    var maxH = pageH - margin * 2;
+
+    var imgW = canvas.width;
+    var imgH = canvas.height;
+    var ratio = Math.min(maxW / imgW, maxH / imgH);
+    var drawW = imgW * ratio;
+    var drawH = imgH * ratio;
+    var x = (pageW - drawW) / 2;
+    var y = (pageH - drawH) / 2;
+
+    pdf.addImage(imgData, 'PNG', x, y, drawW, drawH);
+
+    // Get name for filename
+    var name = (window._certData && window._certData.name) ? window._certData.name.replace(/\s+/g, '_') : 'FoodHandler';
+    pdf.save('FoodHandler_Cert_' + name + '.pdf');
+
+    if (btn) btn.innerHTML = origText;
+  }).catch(function(err) {
+    console.error(err);
+    if (btn) btn.innerHTML = origText;
+    alert('PDF generation failed. Please take a screenshot instead.\nPDF 생성 실패. 스크린샷을 사용해 주세요.');
+  });
 }
 
 function sendByEmail() {
