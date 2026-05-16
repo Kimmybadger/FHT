@@ -1,0 +1,2246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<title>Food Handler Certification | 식품 취급자 교육</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --green: #1a7a4a;
+    --green-light: #25a865;
+    --green-dark: #0f4f2e;
+    --cream: #f5f0e8;
+    --amber: #e8a020;
+    --red: #c0392b;
+    --blue: #1a6b9a;
+    --gray: #6b7280;
+    --dark: #1a1f1a;
+    --white: #ffffff;
+    --card-bg: #ffffff;
+    --border: #d4e8d8;
+    --shadow: 0 4px 20px rgba(26,122,74,0.10);
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--cream);
+    color: var(--dark);
+    min-height: 100vh;
+  }
+
+  /* ── PC SHELL ── */
+  .pc-shell { display: flex; min-height: 100vh; }
+
+  /* ── SIDEBAR (PC only) ── */
+  .sidebar { display: none; }
+
+  /* ── MOBILE WRAPPER ── */
+  .mobile-wrapper {
+    width: 100%;
+    max-width: 480px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  /* PC top bar (hidden on mobile) */
+  .pc-topbar {
+    display: none;
+    background: white;
+    border-bottom: 2px solid var(--border);
+    padding: 14px 40px;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  }
+  .pc-topbar-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    color: var(--green-dark);
+  }
+  .pc-topbar-progress {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 0.8rem;
+    color: var(--gray);
+  }
+  .pc-topbar-bar { width: 160px; height: 6px; background: #ddd; border-radius: 99px; overflow: hidden; }
+  .pc-topbar-fill { height: 100%; background: var(--green); border-radius: 99px; transition: width 0.5s; }
+
+  /* ── PC BREAKPOINT ── */
+  @media (min-width: 900px) {
+    body { background: #dde8df; }
+    .pc-shell { flex-direction: row; }
+
+    .sidebar {
+      display: flex;
+      flex-direction: column;
+      width: 256px;
+      min-width: 256px;
+      background: linear-gradient(180deg, var(--green-dark) 0%, #1a4a30 100%);
+      min-height: 100vh;
+      position: sticky;
+      top: 0;
+      height: 100vh;
+      overflow-y: auto;
+      padding: 24px 18px;
+      color: white;
+    }
+    .sidebar-logo {
+      display: flex; align-items: center; gap: 10px;
+      margin-bottom: 24px; padding-bottom: 18px;
+      border-bottom: 1px solid rgba(255,255,255,0.15);
+    }
+    .sidebar-logo-icon { font-size: 1.8rem; }
+    .sidebar-logo-text { font-family: 'Bebas Neue', sans-serif; font-size: 1rem; letter-spacing: 1px; line-height: 1.2; }
+    .sidebar-logo-sub { font-size: 0.62rem; opacity: 0.6; letter-spacing: 0.5px; margin-top: 2px; }
+
+    .sidebar-nav { display: flex; flex-direction: column; gap: 3px; margin-bottom: 20px; }
+    .sidebar-nav-btn {
+      display: flex; align-items: center; gap: 11px;
+      padding: 10px 12px; border-radius: 10px;
+      border: none; background: transparent;
+      color: rgba(255,255,255,0.6); font-size: 0.85rem; font-weight: 600;
+      cursor: pointer; text-align: left; transition: all 0.2s; letter-spacing: 0.3px;
+    }
+    .sidebar-nav-btn:hover { background: rgba(255,255,255,0.1); color: white; }
+    .sidebar-nav-btn.active { background: rgba(255,255,255,0.18); color: white; }
+    .sidebar-nav-btn .snb-icon { font-size: 1rem; min-width: 20px; text-align: center; }
+
+    .sidebar-section-label {
+      font-size: 0.62rem; letter-spacing: 2px; text-transform: uppercase;
+      opacity: 0.45; margin: 16px 4px 6px; font-weight: 700;
+    }
+    .sidebar-modules { display: flex; flex-direction: column; gap: 2px; margin-bottom: 20px; }
+    .sidebar-module-item {
+      display: flex; align-items: center; gap: 8px;
+      padding: 7px 12px; border-radius: 8px;
+      font-size: 0.75rem; color: rgba(255,255,255,0.55);
+      cursor: pointer; transition: all 0.15s;
+    }
+    .sidebar-module-item:hover { background: rgba(255,255,255,0.08); color: white; }
+    .sidebar-module-item.active { color: white; background: rgba(255,255,255,0.1); }
+    .sidebar-module-item.done { color: #ffd97a; }
+    .sidebar-module-item .sm-icon { font-size: 0.85rem; min-width: 18px; }
+    .sidebar-module-item .sm-check { margin-left: auto; font-size: 0.7rem; }
+
+    .sidebar-progress-section {
+      margin-top: auto; padding-top: 18px;
+      border-top: 1px solid rgba(255,255,255,0.15);
+    }
+    .sidebar-progress-label { font-size: 0.62rem; opacity: 0.55; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 7px; }
+    .sidebar-progress-bar { background: rgba(255,255,255,0.18); border-radius: 99px; height: 6px; margin-bottom: 5px; overflow: hidden; }
+    .sidebar-progress-fill { height: 100%; background: var(--amber); border-radius: 99px; transition: width 0.5s ease; }
+    .sidebar-progress-pct { font-family: 'Bebas Neue', sans-serif; font-size: 1rem; color: var(--amber); }
+
+    /* Main area */
+    .mobile-wrapper { flex: 1; max-width: none; margin: 0; background: var(--cream); min-height: 100vh; }
+
+    /* Hide mobile header/tabs, show PC topbar */
+    .header { display: none; }
+    .nav-tabs { display: none; }
+    .pc-topbar { display: flex !important; }
+
+    /* ── PC BASE FONT ── */
+    html { font-size: 17px; }
+
+    /* Pages default */
+    .page { padding: 28px 44px; }
+
+    /* ── LEARN PAGE: full-viewport slide ── */
+    #page-learn {
+      display: none;
+      padding: 0;
+      background: #e4ece5;
+      height: calc(100vh - 57px);
+      flex-direction: column;
+      overflow: hidden;
+    }
+    #page-learn.active { display: flex; }
+
+    /* Module title header bar */
+    #page-learn .lesson-header {
+      width: 100%;
+      max-width: 100%;
+      background: white;
+      border-radius: 0;
+      border-bottom: 2px solid var(--border);
+      box-shadow: none;
+      padding: 14px 48px;
+      margin-bottom: 0;
+      flex-shrink: 0;
+    }
+    #page-learn .lesson-header-icon { font-size: 2rem; }
+    #page-learn .lesson-title { font-size: 1.3rem; }
+    #page-learn .lesson-subtitle { font-size: 0.95rem; color: var(--gray); }
+
+    /* Section tab bar */
+    #page-learn .lesson-nav {
+      width: 100%;
+      background: white;
+      border-bottom: 2px solid var(--border);
+      padding: 0 48px;
+      margin-bottom: 0;
+      display: flex;
+      gap: 0;
+      flex-wrap: nowrap;
+      flex-shrink: 0;
+    }
+    #page-learn .lesson-nav-btn {
+      border-radius: 0;
+      border: none;
+      border-bottom: 3px solid transparent;
+      background: transparent;
+      color: var(--gray);
+      padding: 13px 22px;
+      font-size: 0.95rem;
+      font-weight: 600;
+      white-space: nowrap;
+      transition: all 0.15s;
+    }
+    #page-learn .lesson-nav-btn:hover { color: var(--green-dark); background: #f5faf7; }
+    #page-learn .lesson-nav-btn.active {
+      color: var(--green-dark);
+      border-bottom-color: var(--green);
+      background: transparent;
+    }
+    #page-learn .lesson-nav-btn.done { color: var(--amber); }
+
+    /* Scrollable slide content */
+    #lessonContent {
+      flex: 1;
+      overflow-y: auto;
+      padding: 28px 48px 0;
+      display: flex;
+      flex-direction: column;
+    }
+    #page-learn .content-card {
+      max-width: 900px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 32px 40px;
+      font-size: 1.05rem;
+      line-height: 1.8;
+      box-shadow: 0 8px 40px rgba(26,122,74,0.10);
+      border-radius: 18px;
+    }
+    #page-learn .en-text  { font-size: 1.08rem; line-height: 1.8; }
+    #page-learn .ko-text  { font-size: 0.97rem; line-height: 1.75; padding: 14px 18px; }
+    #page-learn .key-point { padding: 16px 20px; font-size: 1rem; }
+    #page-learn .key-point-title { font-size: 0.85rem; }
+    #page-learn .warning-box { padding: 14px 18px; font-size: 1rem; }
+    #page-learn .temp-table { font-size: 0.97rem; }
+    #page-learn .temp-table th,
+    #page-learn .temp-table td { padding: 11px 16px; }
+    #page-learn .steps-list li { font-size: 1rem; padding: 12px 0; gap: 14px; }
+    #page-learn .step-num { min-width: 30px; height: 30px; font-size: 0.82rem; }
+    #page-learn .checklist li { font-size: 1rem; padding: 8px 0; }
+    #page-learn .tag { font-size: 0.82rem; }
+    #page-learn .bilingual { gap: 12px; }
+
+    /* Prev/Next fixed at bottom */
+    #page-learn .nav-btn-row {
+      width: 100%;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 14px 48px 20px;
+      flex-shrink: 0;
+    }
+    #page-learn .btn { padding: 14px 24px; font-size: 1rem; }
+    #page-learn .spacer { display: none; }
+
+    /* ── HOME PAGE ── */
+    #page-home { padding: 28px 44px; overflow-y: auto; height: calc(100vh - 57px); }
+    .home-banner { padding: 26px 32px; margin-bottom: 20px; }
+    .home-banner h2 { font-size: 1.9rem; }
+    .home-banner p { font-size: 0.97rem; }
+    .home-banner::before { font-size: 5rem; }
+    .section-title { font-size: 1.15rem; margin: 22px 0 12px; }
+    .module-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    .module-card { padding: 20px 20px; gap: 12px; }
+    .module-icon { font-size: 2.2rem; }
+    .module-title { font-size: 1rem; }
+    .module-subtitle { font-size: 0.82rem; }
+    .module-badge { font-size: 0.75rem; padding: 4px 12px; }
+    .cert-info { font-size: 0.92rem; line-height: 1.7; }
+
+    /* ── QUIZ PAGE ── */
+    #page-quiz { padding: 28px 44px; overflow-y: auto; height: calc(100vh - 57px); }
+    .quiz-progress { max-width: 820px; margin: 0 auto 16px; }
+    .quiz-count { font-size: 1.8rem; }
+    .quiz-card { padding: 32px 36px; max-width: 820px; margin: 0 auto; }
+    .quiz-module-tag { font-size: 0.8rem; }
+    .quiz-question { font-size: 1.15rem; line-height: 1.6; }
+    .quiz-question-ko { font-size: 0.95rem; }
+    .quiz-option { font-size: 1rem; padding: 14px 18px; }
+    .quiz-feedback { font-size: 0.95rem; }
+    .result-score { font-size: 3.5rem; }
+    .result-msg { font-size: 0.95rem; }
+
+    /* ── REFERENCE PAGE ── */
+    #page-ref { padding: 28px 44px; overflow-y: auto; height: calc(100vh - 57px); }
+    .ref-section-title { font-size: 1rem; }
+    .ref-card { max-width: 820px; font-size: 0.95rem; }
+    .temp-table { font-size: 0.95rem; }
+    .temp-table th, .temp-table td { padding: 10px 14px; }
+    .steps-list li { font-size: 0.95rem; }
+    .checklist li { font-size: 0.95rem; }
+    .tag { font-size: 0.82rem; }
+
+    /* ── PC TOPBAR ── */
+    .pc-topbar { padding: 16px 44px; }
+    .pc-topbar-title { font-size: 1.25rem; }
+    .pc-topbar-progress { font-size: 0.88rem; }
+
+    /* ── SIDEBAR ── */
+    .sidebar { width: 240px; min-width: 240px; padding: 22px 16px; }
+    .sidebar-logo-text { font-size: 0.95rem; }
+    .sidebar-nav-btn { font-size: 0.9rem; padding: 11px 14px; }
+    .sidebar-module-item { font-size: 0.82rem; padding: 8px 12px; }
+    .sidebar-progress-pct { font-size: 1.05rem; }
+
+    .spacer { height: 20px; }
+  }
+
+  /* ── HEADER ── */
+  .header {
+    background: linear-gradient(135deg, var(--green-dark) 0%, var(--green) 100%);
+    color: white;
+    padding: 28px 20px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+  }
+  .header-top {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 6px;
+  }
+  .header-icon { font-size: 2rem; }
+  .header-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.7rem;
+    letter-spacing: 1px;
+    line-height: 1;
+  }
+  .header-sub {
+    font-size: 0.78rem;
+    opacity: 0.8;
+    letter-spacing: 0.5px;
+  }
+  .progress-bar-wrap {
+    background: rgba(255,255,255,0.2);
+    border-radius: 99px;
+    height: 5px;
+    margin-top: 12px;
+    overflow: hidden;
+  }
+  .progress-bar-fill {
+    height: 100%;
+    background: var(--amber);
+    border-radius: 99px;
+    transition: width 0.5s ease;
+  }
+  .progress-label {
+    font-size: 0.7rem;
+    opacity: 0.7;
+    margin-top: 4px;
+    text-align: right;
+  }
+
+  /* ── NAV TABS ── */
+  .nav-tabs {
+    display: flex;
+    background: var(--green-dark);
+    border-bottom: 3px solid var(--green-light);
+  }
+  .nav-tab {
+    flex: 1;
+    padding: 10px 4px;
+    text-align: center;
+    font-size: 0.72rem;
+    font-weight: 600;
+    color: rgba(255,255,255,0.6);
+    cursor: pointer;
+    border: none;
+    background: none;
+    transition: all 0.2s;
+    letter-spacing: 0.3px;
+  }
+  .nav-tab.active {
+    color: white;
+    border-bottom: 3px solid var(--amber);
+    margin-bottom: -3px;
+  }
+  .nav-tab-icon { display: block; font-size: 1.1rem; margin-bottom: 2px; }
+
+  /* ── MAIN CONTENT ── */
+  .page { display: none; padding: 16px; }
+  .page.active { display: block; }
+
+  /* ── HOME PAGE ── */
+  .home-banner {
+    background: linear-gradient(135deg, var(--green) 0%, var(--green-dark) 100%);
+    border-radius: 16px;
+    padding: 20px;
+    color: white;
+    margin-bottom: 16px;
+    position: relative;
+    overflow: hidden;
+  }
+  .home-banner::before {
+    content: '🛡️';
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 3.5rem;
+    opacity: 0.2;
+  }
+  .home-banner h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+    margin-bottom: 4px;
+  }
+  .home-banner p { font-size: 0.82rem; opacity: 0.88; line-height: 1.5; }
+
+  .section-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    color: var(--green-dark);
+    margin: 20px 0 10px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .module-grid { display: flex; flex-direction: column; gap: 10px; }
+  .module-card {
+    background: white;
+    border-radius: 14px;
+    padding: 14px 16px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    box-shadow: var(--shadow);
+    border-left: 4px solid var(--green-light);
+    cursor: pointer;
+    transition: transform 0.15s, box-shadow 0.15s;
+    text-decoration: none;
+    color: inherit;
+  }
+  .module-card:active { transform: scale(0.98); }
+  .module-card.locked { border-left-color: #ccc; opacity: 0.6; }
+  .module-card.done { border-left-color: var(--amber); }
+  .module-icon { font-size: 1.8rem; min-width: 40px; text-align: center; }
+  .module-info { flex: 1; }
+  .module-title { font-weight: 600; font-size: 0.9rem; margin-bottom: 2px; }
+  .module-subtitle { font-size: 0.72rem; color: var(--gray); }
+  .module-badge {
+    font-size: 0.65rem;
+    font-weight: 700;
+    padding: 3px 8px;
+    border-radius: 99px;
+    background: var(--green-light);
+    color: white;
+    white-space: nowrap;
+  }
+  .module-badge.done { background: var(--amber); }
+  .module-badge.locked { background: #ccc; color: #666; }
+
+  .cert-info {
+    background: linear-gradient(135deg, #fff8e8 0%, #fff3d0 100%);
+    border: 1.5px solid var(--amber);
+    border-radius: 14px;
+    padding: 14px 16px;
+    font-size: 0.82rem;
+    color: #7a5800;
+    line-height: 1.6;
+  }
+  .cert-info strong { color: var(--amber); }
+
+  /* ── LESSON PAGE ── */
+  .lesson-header {
+    background: white;
+    border-radius: 14px;
+    padding: 14px 16px;
+    margin-bottom: 14px;
+    box-shadow: var(--shadow);
+    display: flex;
+    gap: 12px;
+    align-items: center;
+  }
+  .lesson-header-icon { font-size: 2rem; }
+  .lesson-title { font-weight: 700; font-size: 1rem; }
+  .lesson-subtitle { font-size: 0.75rem; color: var(--gray); margin-top: 2px; }
+
+  .lesson-nav {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 14px;
+    flex-wrap: wrap;
+  }
+  .lesson-nav-btn {
+    flex: 1;
+    min-width: 80px;
+    padding: 8px 10px;
+    border-radius: 99px;
+    border: 2px solid var(--border);
+    background: white;
+    font-size: 0.72rem;
+    font-weight: 600;
+    color: var(--gray);
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.2s;
+  }
+  .lesson-nav-btn.active {
+    background: var(--green);
+    border-color: var(--green);
+    color: white;
+  }
+  .lesson-nav-btn.done {
+    border-color: var(--amber);
+    color: var(--amber);
+  }
+
+  .content-card {
+    background: white;
+    border-radius: 16px;
+    padding: 18px 16px;
+    margin-bottom: 12px;
+    box-shadow: var(--shadow);
+    animation: slideIn 0.3s ease;
+  }
+  @keyframes slideIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .bilingual {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 14px;
+  }
+  .en-text {
+    font-size: 0.9rem;
+    line-height: 1.65;
+    color: #222;
+  }
+  .ko-text {
+    font-size: 0.82rem;
+    line-height: 1.65;
+    color: #555;
+    border-left: 3px solid var(--green-light);
+    padding-left: 10px;
+    background: #f0faf4;
+    border-radius: 0 8px 8px 0;
+    padding: 8px 10px;
+  }
+
+  .key-point {
+    background: linear-gradient(135deg, #e8f5ed 0%, #d4eedd 100%);
+    border-radius: 10px;
+    padding: 12px 14px;
+    margin: 10px 0;
+    font-size: 0.82rem;
+    border-left: 4px solid var(--green);
+  }
+  .key-point-title {
+    font-weight: 700;
+    color: var(--green-dark);
+    margin-bottom: 4px;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .warning-box {
+    background: #fff5f5;
+    border-left: 4px solid var(--red);
+    border-radius: 0 10px 10px 0;
+    padding: 12px 14px;
+    margin: 10px 0;
+    font-size: 0.82rem;
+    color: #7a1f1f;
+  }
+
+  .temp-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.8rem;
+    margin: 10px 0;
+  }
+  .temp-table th {
+    background: var(--green);
+    color: white;
+    padding: 8px 10px;
+    text-align: left;
+    font-weight: 600;
+  }
+  .temp-table td {
+    padding: 8px 10px;
+    border-bottom: 1px solid #e8f5ed;
+  }
+  .temp-table tr:nth-child(even) td { background: #f5faf7; }
+  .temp-table .danger { color: var(--red); font-weight: 700; }
+  .temp-table .safe { color: var(--green); font-weight: 700; }
+
+  .steps-list { list-style: none; padding: 0; }
+  .steps-list li {
+    display: flex;
+    gap: 12px;
+    padding: 10px 0;
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 0.85rem;
+    line-height: 1.5;
+  }
+  .steps-list li:last-child { border-bottom: none; }
+  .step-num {
+    min-width: 26px;
+    height: 26px;
+    background: var(--green);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75rem;
+    font-weight: 700;
+    margin-top: 1px;
+  }
+
+  .tag-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin: 10px 0;
+  }
+  .tag {
+    padding: 4px 10px;
+    border-radius: 99px;
+    font-size: 0.72rem;
+    font-weight: 600;
+    background: #e8f5ed;
+    color: var(--green-dark);
+  }
+  .tag.red { background: #ffe8e8; color: var(--red); }
+  .tag.amber { background: #fff3d0; color: #7a5800; }
+  .tag.blue { background: #e0f0fa; color: var(--blue); }
+
+  .nav-btn-row {
+    display: flex;
+    gap: 10px;
+    margin-top: 14px;
+  }
+  .btn {
+    flex: 1;
+    padding: 13px;
+    border-radius: 12px;
+    border: none;
+    font-size: 0.88rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.15s;
+    letter-spacing: 0.3px;
+  }
+  .btn-primary {
+    background: var(--green);
+    color: white;
+  }
+  .btn-secondary {
+    background: white;
+    color: var(--green);
+    border: 2px solid var(--green);
+  }
+  .btn:active { transform: scale(0.97); }
+
+  /* ── QUIZ PAGE ── */
+  .quiz-progress {
+    background: white;
+    border-radius: 12px;
+    padding: 12px 16px;
+    margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    box-shadow: var(--shadow);
+  }
+  .quiz-count { font-family: 'Bebas Neue', sans-serif; font-size: 1.5rem; color: var(--green); }
+  .quiz-track { flex: 1; }
+  .quiz-track-bar { background: #e0e0e0; border-radius: 99px; height: 6px; }
+  .quiz-track-fill { background: var(--green); height: 100%; border-radius: 99px; transition: width 0.3s; }
+  .quiz-score-display { font-size: 0.8rem; color: var(--gray); text-align: right; }
+
+  .quiz-card {
+    background: white;
+    border-radius: 16px;
+    padding: 20px 16px;
+    box-shadow: var(--shadow);
+    animation: slideIn 0.3s ease;
+  }
+  .quiz-module-tag {
+    font-size: 0.68rem;
+    font-weight: 700;
+    color: var(--green);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+  }
+  .quiz-question {
+    font-weight: 700;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 6px;
+  }
+  .quiz-question-ko {
+    font-size: 0.8rem;
+    color: var(--gray);
+    margin-bottom: 16px;
+    line-height: 1.5;
+  }
+  .quiz-options { display: flex; flex-direction: column; gap: 8px; }
+  .quiz-option {
+    padding: 12px 16px;
+    border-radius: 12px;
+    border: 2px solid var(--border);
+    background: #fafafa;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    text-align: left;
+    line-height: 1.4;
+  }
+  .quiz-option:active { transform: scale(0.98); }
+  .quiz-option.selected { border-color: var(--blue); background: #e8f4fd; }
+  .quiz-option.correct { border-color: var(--green); background: #e8f5ed; color: var(--green-dark); font-weight: 600; }
+  .quiz-option.wrong { border-color: var(--red); background: #ffe8e8; color: var(--red); }
+  .quiz-option.show-correct { border-color: var(--green); background: #e8f5ed; }
+  .quiz-option:disabled { cursor: not-allowed; }
+
+  .quiz-feedback {
+    margin-top: 14px;
+    padding: 12px 14px;
+    border-radius: 12px;
+    font-size: 0.82rem;
+    line-height: 1.55;
+    display: none;
+  }
+  .quiz-feedback.correct-fb {
+    background: #e8f5ed;
+    border-left: 4px solid var(--green);
+    color: var(--green-dark);
+    display: block;
+  }
+  .quiz-feedback.wrong-fb {
+    background: #ffe8e8;
+    border-left: 4px solid var(--red);
+    color: #7a1f1f;
+    display: block;
+  }
+
+  .quiz-result {
+    background: white;
+    border-radius: 16px;
+    padding: 28px 20px;
+    text-align: center;
+    box-shadow: var(--shadow);
+  }
+  .result-emoji { font-size: 3.5rem; margin-bottom: 12px; }
+  .result-score {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 3rem;
+    color: var(--green);
+    line-height: 1;
+    margin-bottom: 4px;
+  }
+  .result-label { font-size: 0.85rem; color: var(--gray); margin-bottom: 16px; }
+  .result-msg {
+    background: #e8f5ed;
+    border-radius: 12px;
+    padding: 14px;
+    font-size: 0.85rem;
+    line-height: 1.6;
+    color: var(--green-dark);
+    margin-bottom: 16px;
+  }
+  .result-msg.fail {
+    background: #fff5f5;
+    color: #7a1f1f;
+  }
+  .result-breakdown {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 20px;
+  }
+  .rb-item { text-align: center; }
+  .rb-num { font-family: 'Bebas Neue', sans-serif; font-size: 1.8rem; }
+  .rb-num.green { color: var(--green); }
+  .rb-num.red { color: var(--red); }
+  .rb-label { font-size: 0.7rem; color: var(--gray); }
+
+  /* ── REFERENCE PAGE ── */
+  .ref-section { margin-bottom: 16px; }
+  .ref-section-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    color: var(--green-dark);
+    margin-bottom: 8px;
+    padding: 6px 12px;
+    background: var(--border);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .ref-card {
+    background: white;
+    border-radius: 12px;
+    padding: 14px 16px;
+    margin-bottom: 8px;
+    box-shadow: var(--shadow);
+    font-size: 0.82rem;
+    line-height: 1.6;
+  }
+  .ref-card h4 {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--green-dark);
+    margin-bottom: 6px;
+  }
+  .checklist { list-style: none; }
+  .checklist li {
+    padding: 5px 0;
+    display: flex;
+    gap: 8px;
+    border-bottom: 1px dashed #eee;
+    font-size: 0.82rem;
+  }
+  .checklist li:last-child { border-bottom: none; }
+  .check-icon { color: var(--green); font-size: 0.9rem; min-width: 16px; }
+
+  .danger-zone {
+    background: #fff5f5;
+    border: 1.5px solid #f5c6c6;
+    border-radius: 12px;
+    padding: 14px;
+    margin-bottom: 8px;
+    font-size: 0.82rem;
+  }
+  .danger-zone h4 { color: var(--red); font-size: 0.85rem; margin-bottom: 6px; }
+
+  /* ── Misc ── */
+  .spacer { height: 80px; }
+  .center { text-align: center; }
+
+  /* ── CERTIFICATE ── */
+  .cert-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.75);
+    z-index: 500;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 16px;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .cert-wrap {
+    width: 100%;
+    max-width: 440px;
+    animation: popIn 0.35s cubic-bezier(.175,.885,.32,1.275);
+    margin: auto 0;
+    padding: 8px 0 32px;
+  }
+  @keyframes popIn {
+    from { opacity:0; transform:scale(0.85); }
+    to   { opacity:1; transform:scale(1); }
+  }
+
+  /* The actual certificate card (screenshot target) */
+  #certCard {
+    background: linear-gradient(160deg, #0f4f2e 0%, #1a7a4a 40%, #0f4f2e 100%);
+    border-radius: 20px;
+    padding: 28px 24px 24px;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+  }
+  #certCard::before {
+    content: '';
+    position: absolute;
+    inset: 8px;
+    border: 1.5px solid rgba(255,255,255,0.2);
+    border-radius: 14px;
+    pointer-events: none;
+  }
+  #certCard::after {
+    content: '🛡️';
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    transform: translate(50%, -50%);
+    font-size: 7rem;
+    opacity: 0.05;
+    pointer-events: none;
+  }
+  .cert-top-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 18px;
+  }
+  .cert-logo { font-size: 2rem; }
+  .cert-org-name {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 0.85rem;
+    letter-spacing: 1.5px;
+    opacity: 0.85;
+    line-height: 1.3;
+  }
+  .cert-headline {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 0.72rem;
+    letter-spacing: 3px;
+    opacity: 0.7;
+    margin-bottom: 4px;
+  }
+  .cert-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.9rem;
+    letter-spacing: 2px;
+    line-height: 1;
+    margin-bottom: 2px;
+  }
+  .cert-title-ko {
+    font-size: 0.78rem;
+    opacity: 0.7;
+    margin-bottom: 20px;
+  }
+  .cert-divider {
+    height: 1px;
+    background: rgba(255,255,255,0.2);
+    margin: 14px 0;
+  }
+  .cert-field-label {
+    font-size: 0.62rem;
+    letter-spacing: 2px;
+    opacity: 0.6;
+    text-transform: uppercase;
+    margin-bottom: 3px;
+  }
+  .cert-field-value {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    line-height: 1.1;
+    margin-bottom: 14px;
+  }
+  .cert-field-value.small {
+    font-size: 1rem;
+  }
+  .cert-row {
+    display: flex;
+    gap: 20px;
+  }
+  .cert-row > div { flex: 1; }
+  .cert-score-badge {
+    display: inline-block;
+    background: var(--amber);
+    color: #3a2000;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.1rem;
+    padding: 4px 14px;
+    border-radius: 99px;
+    letter-spacing: 1px;
+    margin-top: 4px;
+  }
+  .cert-valid-strip {
+    background: rgba(255,255,255,0.1);
+    border-radius: 10px;
+    padding: 10px 14px;
+    margin-top: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.75rem;
+  }
+  .cert-valid-label { opacity: 0.6; font-size: 0.62rem; letter-spacing: 1px; text-transform: uppercase; }
+  .cert-valid-date { font-family: 'Bebas Neue', sans-serif; font-size: 1rem; letter-spacing: 1px; }
+
+  /* Below the cert card */
+  .cert-actions {
+    margin-top: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .cert-action-btn {
+    width: 100%;
+    padding: 14px;
+    border-radius: 12px;
+    border: none;
+    font-size: 0.88rem;
+    font-weight: 700;
+    cursor: pointer;
+    letter-spacing: 0.3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+  .btn-email  { background: #1a6b9a; color: white; }
+  .btn-sms    { background: #25a865; color: white; }
+  .btn-close  { background: rgba(255,255,255,0.15); color: white; font-size: 0.8rem; }
+
+  /* Name entry card */
+  .name-entry-card {
+    background: white;
+    border-radius: 16px;
+    padding: 24px 20px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+    width: 100%;
+    max-width: 440px;
+    animation: popIn 0.3s ease;
+  }
+  .name-entry-card h3 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.4rem;
+    color: var(--green-dark);
+    margin-bottom: 4px;
+    letter-spacing: 1px;
+  }
+  .name-entry-card p {
+    font-size: 0.78rem;
+    color: var(--gray);
+    margin-bottom: 18px;
+    line-height: 1.5;
+  }
+  .field-group { margin-bottom: 12px; }
+  .field-label {
+    font-size: 0.72rem;
+    font-weight: 700;
+    color: var(--green-dark);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 5px;
+    display: block;
+  }
+  .field-input {
+    width: 100%;
+    padding: 12px 14px;
+    border-radius: 10px;
+    border: 2px solid var(--border);
+    font-size: 0.95rem;
+    font-family: 'DM Sans', sans-serif;
+    color: var(--dark);
+    outline: none;
+    transition: border-color 0.2s;
+  }
+  .field-input:focus { border-color: var(--green); }
+  .screenshot-tip {
+    background: #fff8e0;
+    border: 1.5px solid var(--amber);
+    border-radius: 10px;
+    padding: 10px 12px;
+    font-size: 0.75rem;
+    color: #7a5800;
+    margin-bottom: 14px;
+    line-height: 1.5;
+  }
+  /* ── PRINT / PDF ── */
+  @media print {
+    @page { size: A4 landscape; margin: 15mm; }
+    * { visibility: hidden; }
+    #certCard, #certCard * { visibility: visible; }
+    #certCard::after { display: none !important; }
+    #certCard {
+      position: fixed;
+      top: 0; left: 0;
+      width: 240mm;
+      box-shadow: none !important;
+      -webkit-print-color-adjust: exact !important;
+      print-color-adjust: exact !important;
+    }
+  }
+</style>
+</head>
+<body>
+<div class="pc-shell">
+
+<!-- ════ SIDEBAR (PC only) ════ -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-logo">
+    <div class="sidebar-logo-icon">⚕️</div>
+    <div>
+      <div class="sidebar-logo-text">Food Handler<br>Certification</div>
+      <div class="sidebar-logo-sub">DHK · 65th Med Bde</div>
+    </div>
+  </div>
+
+  <div class="sidebar-nav">
+    <button class="sidebar-nav-btn active" id="snb-home" onclick="showPage('home')">
+      <span class="snb-icon">🏠</span> Home
+    </button>
+    <button class="sidebar-nav-btn" id="snb-learn" onclick="showPage('learn')">
+      <span class="snb-icon">📖</span> Learn
+    </button>
+    <button class="sidebar-nav-btn" id="snb-quiz" onclick="showPage('quiz')">
+      <span class="snb-icon">✏️</span> Quiz
+    </button>
+    <button class="sidebar-nav-btn" id="snb-ref" onclick="showPage('ref')">
+      <span class="snb-icon">📋</span> Reference
+    </button>
+  </div>
+
+  <div class="sidebar-section-label">Modules · 모듈</div>
+  <div class="sidebar-modules" id="sidebarModules">
+    <!-- Rendered by JS -->
+  </div>
+
+  <div class="sidebar-progress-section">
+    <div class="sidebar-progress-label">Overall Progress · 전체 진도</div>
+    <div class="sidebar-progress-bar">
+      <div class="sidebar-progress-fill" id="sidebarProgressFill" style="width:0%"></div>
+    </div>
+    <div class="sidebar-progress-pct" id="sidebarProgressPct">0%</div>
+  </div>
+</div>
+
+<!-- ════ MAIN WRAPPER ════ -->
+<div class="mobile-wrapper">
+
+<!-- PC TOP BAR -->
+<div class="pc-topbar" id="pcTopbar">
+  <div class="pc-topbar-title" id="pcTopbarTitle">🏠 Home</div>
+  <div class="pc-topbar-progress">
+    <span id="pcProgressLabel">0% complete</span>
+    <div class="pc-topbar-bar"><div class="pc-topbar-fill" id="pcProgressFill" style="width:0%"></div></div>
+  </div>
+</div>
+
+<!-- HEADER (mobile) -->
+<div class="header">
+  <div class="header-top">
+    <div class="header-icon">🍽️</div>
+    <div>
+      <div class="header-title">Food Handler Certification</div>
+      <div class="header-sub">식품 취급자 인증 교육 · DHK / 65th Med Bde</div>
+    </div>
+  </div>
+  <div class="progress-bar-wrap">
+    <div class="progress-bar-fill" id="overallProgress" style="width:0%"></div>
+  </div>
+  <div class="progress-label" id="progressLabel">0% complete · 0% 완료</div>
+</div>
+
+<!-- NAV TABS -->
+<div class="nav-tabs">
+  <button class="nav-tab active" onclick="showPage('home')" id="tab-home">
+    <span class="nav-tab-icon">🏠</span>HOME
+  </button>
+  <button class="nav-tab" onclick="showPage('learn')" id="tab-learn">
+    <span class="nav-tab-icon">📖</span>LEARN
+  </button>
+  <button class="nav-tab" onclick="showPage('quiz')" id="tab-quiz">
+    <span class="nav-tab-icon">✏️</span>QUIZ
+  </button>
+  <button class="nav-tab" onclick="showPage('ref')" id="tab-ref">
+    <span class="nav-tab-icon">📋</span>REF
+  </button>
+</div>
+
+<!-- ════ HOME PAGE ════ -->
+<div class="page active" id="page-home">
+
+  <div class="home-banner">
+    <h2>Food Operation Safety<br>식품 안전 운영 교육</h2>
+    <p>TB MED 530 · FDA Food Code · Annual Recertification<br>
+    Score 80%+ on quiz to receive certification · 퀴즈 80% 이상 합격 시 인증</p>
+  </div>
+
+  <div class="cert-info">
+    ⏰ <strong>Certification valid 1 year</strong> from date of issue &nbsp;·&nbsp; 인증 유효 기간: <strong>1년</strong><br><br>
+    <strong>How to get certified · 인증 받는 방법</strong><br>
+    📖 Study all modules → ✏️ Pass quiz (80%+) → 📋 Enter name → 📸 Screenshot → 📨 Send to us<br>
+    <span style="font-size:0.75rem">학습 → 퀴즈 합격 → 이름 입력 → 스크린샷 → 제출</span>
+  </div>
+
+  <div class="section-title">📚 Course Modules · 교육 모듈</div>
+
+  <div class="module-grid">
+    <div class="module-card" onclick="openLesson(0)">
+      <div class="module-icon">🦠</div>
+      <div class="module-info">
+        <div class="module-title">1. Foodborne Illness · 식품 매개 질병</div>
+        <div class="module-subtitle">Pathogens, Big 6, Risk Factors</div>
+      </div>
+      <span class="module-badge" id="badge-0">START</span>
+    </div>
+    <div class="module-card" onclick="openLesson(1)">
+      <div class="module-icon">🙌</div>
+      <div class="module-info">
+        <div class="module-title">2. Personal Hygiene · 개인 위생</div>
+        <div class="module-subtitle">Handwashing, Health, Illness Reporting</div>
+      </div>
+      <span class="module-badge" id="badge-1">START</span>
+    </div>
+    <div class="module-card" onclick="openLesson(2)">
+      <div class="module-icon">🌡️</div>
+      <div class="module-info">
+        <div class="module-title">3. Time & Temperature · 시간과 온도</div>
+        <div class="module-subtitle">TCS Foods, Danger Zone, Cooking Temps</div>
+      </div>
+      <span class="module-badge" id="badge-2">START</span>
+    </div>
+    <div class="module-card" onclick="openLesson(3)">
+      <div class="module-icon">⚠️</div>
+      <div class="module-info">
+        <div class="module-title">4. Cross-Contamination · 교차 오염</div>
+        <div class="module-subtitle">Prevention, Storage Order, Allergens</div>
+      </div>
+      <span class="module-badge" id="badge-3">START</span>
+    </div>
+    <div class="module-card" onclick="openLesson(4)">
+      <div class="module-icon">🧼</div>
+      <div class="module-info">
+        <div class="module-title">5. Cleaning & Sanitizing · 청소와 소독</div>
+        <div class="module-subtitle">Wash-Rinse-Sanitize, Chemicals, Pests</div>
+      </div>
+      <span class="module-badge" id="badge-4">START</span>
+    </div>
+  </div>
+
+  <div class="section-title">⚡ Quick Start · 빠른 시작</div>
+
+  <div style="display:flex;gap:10px;margin-bottom:16px;">
+    <button class="btn btn-primary" style="font-size:0.82rem;" onclick="openLesson(0)">📖 Start Learning · 학습 시작</button>
+    <button class="btn btn-secondary" style="font-size:0.82rem;" onclick="startQuiz()">✏️ Take Quiz · 퀴즈 시작</button>
+  </div>
+
+  <div class="spacer"></div>
+</div>
+
+<!-- ════ LEARN PAGE ════ -->
+<div class="page" id="page-learn">
+  <div class="lesson-header" id="lessonHeader">
+    <div class="lesson-header-icon" id="lessonIcon">🦠</div>
+    <div>
+      <div class="lesson-title" id="lessonTitle">Foodborne Illness</div>
+      <div class="lesson-subtitle" id="lessonSubtitle">식품 매개 질병</div>
+    </div>
+  </div>
+
+  <div class="lesson-nav" id="lessonNav"></div>
+
+  <div id="lessonContent"></div>
+
+  <div class="nav-btn-row">
+    <button class="btn btn-secondary" id="prevBtn" onclick="changeLesson(-1)">← Prev</button>
+    <button class="btn btn-primary" id="nextBtn" onclick="changeLesson(1)">Next →</button>
+  </div>
+  <div class="spacer"></div>
+</div>
+
+<!-- ════ QUIZ PAGE ════ -->
+<div class="page" id="page-quiz">
+  <div id="quizContainer">
+    <!-- Rendered by JS -->
+  </div>
+  <div class="spacer"></div>
+</div>
+
+<!-- ════ REFERENCE PAGE ════ -->
+<div class="page" id="page-ref">
+
+  <div class="ref-section">
+    <div class="ref-section-title">🌡️ Temperature Reference · 온도 참조표</div>
+    <div class="ref-card">
+      <table class="temp-table">
+        <tr><th>Application</th><th>Temp (°F)</th><th>Temp (°C)</th></tr>
+        <tr><td>Cold holding (냉장 보관)</td><td class="safe">41°F or below</td><td class="safe">5°C 이하</td></tr>
+        <tr><td>Danger zone (위험 온도)</td><td class="danger">41–135°F</td><td class="danger">5–57°C</td></tr>
+        <tr><td>Hot holding (온장 보관)</td><td class="safe">135°F or above</td><td class="safe">57°C 이상</td></tr>
+        <tr><td>Poultry (가금류)</td><td class="safe">165°F</td><td class="safe">74°C</td></tr>
+        <tr><td>Ground beef (다진 쇠고기)</td><td class="safe">155°F</td><td class="safe">68°C</td></tr>
+        <tr><td>Pork, whole beef (돼지/쇠고기)</td><td class="safe">145°F</td><td class="safe">63°C</td></tr>
+        <tr><td>Fish (생선)</td><td class="safe">145°F</td><td class="safe">63°C</td></tr>
+        <tr><td>Reheating (재가열)</td><td class="safe">165°F / 15 sec</td><td class="safe">74°C</td></tr>
+        <tr><td>Cooling step 1 (냉각 1단계)</td><td>135→70°F in 2hr</td><td>57→21°C / 2시간</td></tr>
+        <tr><td>Cooling step 2 (냉각 2단계)</td><td>70→41°F in 4hr</td><td>21→5°C / 4시간</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="ref-section">
+    <div class="ref-section-title">🙌 Handwashing Steps · 손 씻기 순서</div>
+    <div class="ref-card">
+      <ul class="steps-list">
+        <li><div class="step-num">1</div><div><strong>Wet hands</strong> with warm running water<br><span style="color:#888;font-size:0.78rem">따뜻한 흐르는 물로 손을 적신다</span></div></li>
+        <li><div class="step-num">2</div><div><strong>Apply soap</strong> and lather<br><span style="color:#888;font-size:0.78rem">비누를 묻혀 거품을 낸다</span></div></li>
+        <li><div class="step-num">3</div><div><strong>Scrub ≥ 20 seconds</strong> — fingers, thumbs, between fingers, backs<br><span style="color:#888;font-size:0.78rem">20초 이상 문지르기 — 손가락, 엄지, 손가락 사이, 손등</span></div></li>
+        <li><div class="step-num">4</div><div><strong>Rinse</strong> thoroughly under running water<br><span style="color:#888;font-size:0.78rem">흐르는 물에 깨끗이 헹군다</span></div></li>
+        <li><div class="step-num">5</div><div><strong>Dry</strong> with single-use paper towel<br><span style="color:#888;font-size:0.78rem">1회용 종이 타월로 건조</span></div></li>
+        <li><div class="step-num">6</div><div><strong>Use towel</strong> to turn off faucet<br><span style="color:#888;font-size:0.78rem">타월로 수도꼭지를 잠근다</span></div></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="ref-section">
+    <div class="ref-section-title">🚫 Big 6 Pathogens · Big 6 병원균</div>
+    <div class="ref-card">
+      <p style="font-size:0.78rem;color:#666;margin-bottom:10px;">Excludes food employee from work · 취업 배제 대상</p>
+      <ul class="checklist">
+        <li><span class="check-icon">⛔</span><div><strong>Norovirus</strong> — nausea, vomiting / 구토, 메스꺼움</div></li>
+        <li><span class="check-icon">⛔</span><div><strong>Salmonella typhi</strong> — typhoid fever / 장티푸스</div></li>
+        <li><span class="check-icon">⛔</span><div><strong>E. coli (EHEC/STEC)</strong> — bloody diarrhea / 혈변</div></li>
+        <li><span class="check-icon">⛔</span><div><strong>Shigella spp.</strong> — dysentery / 이질</div></li>
+        <li><span class="check-icon">⛔</span><div><strong>Hepatitis A</strong> — jaundice / 황달</div></li>
+        <li><span class="check-icon">⛔</span><div><strong>Nontyphoidal Salmonella</strong> — diarrhea / 설사</div></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="ref-section">
+    <div class="ref-section-title">📦 Refrigerator Storage Order · 냉장 저장 순서</div>
+    <div class="ref-card">
+      <p style="font-size:0.78rem;color:#666;margin-bottom:8px;">Top → Bottom (higher cook temp at bottom)</p>
+      <ul class="checklist">
+        <li><span class="check-icon">🔝</span><div><strong>RTE foods</strong> (ready-to-eat) / 즉식 식품 — <em>top shelf</em></div></li>
+        <li><span class="check-icon">🐟</span><div><strong>Fish</strong> · 생선 — 145°F</div></li>
+        <li><span class="check-icon">🥩</span><div><strong>Whole beef/pork</strong> · 쇠고기/돼지고기 — 145°F</div></li>
+        <li><span class="check-icon">🥩</span><div><strong>Ground beef</strong> · 다진 고기 — 155°F</div></li>
+        <li><span class="check-icon">🍗</span><div><strong>Poultry</strong> · 가금류 — 165°F — <em>bottom shelf</em></div></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="ref-section">
+    <div class="ref-section-title">🧽 Wash-Rinse-Sanitize · 세척-헹굼-소독</div>
+    <div class="ref-card">
+      <ul class="steps-list">
+        <li><div class="step-num">1</div><div><strong>Wash</strong> with hot soapy water (110°F / 43°C)<br><span style="font-size:0.78rem;color:#888">뜨거운 비눗물로 세척</span></div></li>
+        <li><div class="step-num">2</div><div><strong>Rinse</strong> with clean warm water<br><span style="font-size:0.78rem;color:#888">깨끗한 따뜻한 물로 헹굼</span></div></li>
+        <li><div class="step-num">3</div><div><strong>Sanitize</strong> — chlorine 50-100 ppm OR iodine 12.5-25 ppm<br><span style="font-size:0.78rem;color:#888">염소 소독액 50-100 ppm 또는 아이오딘 12.5-25 ppm</span></div></li>
+        <li><div class="step-num">4</div><div><strong>Air dry</strong> — never towel dry<br><span style="font-size:0.78rem;color:#888">자연 건조 — 타월 건조 금지</span></div></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="ref-section">
+    <div class="ref-section-title">🥜 Major Food Allergens · 주요 식품 알레르겐</div>
+    <div class="ref-card">
+      <div class="tag-row">
+        <span class="tag red">🥛 Milk · 우유</span>
+        <span class="tag red">🥚 Eggs · 달걀</span>
+        <span class="tag red">🐟 Fish · 생선</span>
+        <span class="tag red">🦐 Shellfish · 갑각류</span>
+        <span class="tag red">🌰 Tree nuts · 견과류</span>
+        <span class="tag red">🥜 Peanuts · 땅콩</span>
+        <span class="tag red">🌾 Wheat · 밀</span>
+        <span class="tag red">🫘 Soybeans · 대두</span>
+        <span class="tag red">🌿 Sesame · 참깨</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="spacer"></div>
+</div>
+
+<script>
+// ══════════════════════════════════════════
+// DATA: LESSONS
+// ══════════════════════════════════════════
+const lessons = [
+  {
+    icon: '🦠', title: 'Foodborne Illness', titleKo: '식품 매개 질병',
+    sections: [
+      {
+        label: 'Overview', labelKo: '개요',
+        html: `
+          <div class="bilingual">
+            <div class="en-text">A <strong>foodborne illness</strong> is a disease transmitted to people through food. Most foodborne illnesses occur in persons not part of recognized outbreaks — the majority go undetected. This is known as the <strong>"Iceberg Theory"</strong>: symptoms (fever, diarrhea, vomiting) only reflect 10% of the problem.</div>
+            <div class="ko-text">식품 매개 질병이란 식품을 통해 사람에게 전파되는 질병입니다. 대부분의 발병 사례는 집단 발병으로 인식되지 않고 보고되지 않습니다. 이를 <strong>"빙산 이론"</strong>이라 합니다: 증상(발열, 설사, 구토)은 실제 문제의 10%에 불과합니다.</div>
+          </div>
+          <div class="key-point">
+            <div class="key-point-title">⚡ Key Fact · 핵심 사실</div>
+            Foodborne illness can drastically hinder mission accomplishment — one outbreak affects the entire unit.<br>
+            <span style="font-size:0.78rem;color:#555">식품 매개 질병 한 건이 전체 부대 임무 수행에 심각한 영향을 줍니다.</span>
+          </div>
+          <div class="key-point">
+            <div class="key-point-title">📊 3 Types of Hazards · 3가지 위해 요소</div>
+            <div class="tag-row">
+              <span class="tag red">🦠 Biological (생물학적)</span>
+              <span class="tag amber">⚗️ Chemical (화학적)</span>
+              <span class="tag blue">🔩 Physical (물리적)</span>
+            </div>
+            <div style="font-size:0.78rem;margin-top:8px;color:#555">Biological hazards account for ~2/3 of all outbreaks · 생물학적 위해요소가 전체 발병의 약 2/3 차지</div>
+          </div>
+        `
+      },
+      {
+        label: 'Big 6', labelKo: 'Big 6 병원균',
+        html: `
+          <div class="bilingual">
+            <div class="en-text">The <strong>Big 6 pathogens</strong> are so dangerous that food employees diagnosed with these must be <strong>EXCLUDED</strong> from work entirely (not just restricted).</div>
+            <div class="ko-text"><strong>Big 6 병원균</strong>에 감염된 식품 취급자는 업무에서 <strong>완전 배제</strong>되어야 합니다 (제한이 아닌 완전 배제).</div>
+          </div>
+          <table class="temp-table">
+            <tr><th>Pathogen · 병원균</th><th>Symptoms · 증상</th></tr>
+            <tr><td><strong>Norovirus</strong></td><td>Vomiting, nausea · 구토</td></tr>
+            <tr><td><strong>Salmonella typhi</strong></td><td>Typhoid · 장티푸스</td></tr>
+            <tr><td><strong>E. coli (EHEC)</strong></td><td>Bloody diarrhea · 혈변</td></tr>
+            <tr><td><strong>Shigella</strong></td><td>Dysentery · 이질</td></tr>
+            <tr><td><strong>Hepatitis A</strong></td><td>Jaundice · 황달</td></tr>
+            <tr><td><strong>Nontyphoidal Salmonella</strong></td><td>Diarrhea · 설사</td></tr>
+          </table>
+          <div class="warning-box">⛔ <strong>If you have diarrhea, vomiting, jaundice, or sore throat with fever — DO NOT COME TO WORK. Report to your supervisor immediately.</strong><br><span style="font-size:0.78rem">설사, 구토, 황달, 발열을 동반한 인후통이 있으면 출근하지 말고 즉시 감독자에게 보고하세요.</span></div>
+        `
+      },
+      {
+        label: 'Risk Factors', labelKo: '위험 요인',
+        html: `
+          <div class="bilingual">
+            <div class="en-text">The <strong>5 Major Risk Factors</strong> for foodborne illness (CDC/FDA):</div>
+            <div class="ko-text"><strong>식품 매개 질병의 5가지 주요 위험 요인</strong> (CDC/FDA):</div>
+          </div>
+          <ul class="steps-list">
+            <li><div class="step-num">1</div><div><strong>Improper hot/cold holding temperatures</strong><br><span style="font-size:0.78rem;color:#888">부적절한 온장/냉장 온도 유지</span></div></li>
+            <li><div class="step-num">2</div><div><strong>Inadequate cooking temperatures</strong><br><span style="font-size:0.78rem;color:#888">불충분한 조리 온도</span></div></li>
+            <li><div class="step-num">3</div><div><strong>Contaminated equipment or surfaces</strong><br><span style="font-size:0.78rem;color:#888">오염된 장비 또는 표면</span></div></li>
+            <li><div class="step-num">4</div><div><strong>Food from unsafe sources</strong><br><span style="font-size:0.78rem;color:#888">안전하지 않은 출처의 식품</span></div></li>
+            <li><div class="step-num">5</div><div><strong>Poor personal hygiene</strong><br><span style="font-size:0.78rem;color:#888">불량한 개인 위생</span></div></li>
+          </ul>
+        `
+      }
+    ]
+  },
+  {
+    icon: '🙌', title: 'Personal Hygiene', titleKo: '개인 위생',
+    sections: [
+      {
+        label: 'Handwashing', labelKo: '손 씻기',
+        html: `
+          <div class="bilingual">
+            <div class="en-text">Handwashing is the <strong>single most effective</strong> way to prevent the spread of foodborne illness. Gloves do NOT replace handwashing — wash hands before putting gloves on and when changing pairs.</div>
+            <div class="ko-text">손 씻기는 식품 매개 질병 전파를 막는 <strong>가장 효과적인</strong> 방법입니다. 장갑이 손 씻기를 대체하지 않습니다 — 장갑 착용 전과 교체 시 반드시 손을 씻어야 합니다.</div>
+          </div>
+          <ul class="steps-list">
+            <li><div class="step-num">1</div><div>Wet with warm running water · 따뜻한 물로 적시기</div></li>
+            <li><div class="step-num">2</div><div>Apply soap · 비누 묻히기</div></li>
+            <li><div class="step-num">3</div><div>Scrub <strong>20+ seconds</strong> all surfaces · 20초 이상 모든 부위 문지르기</div></li>
+            <li><div class="step-num">4</div><div>Rinse thoroughly · 깨끗이 헹구기</div></li>
+            <li><div class="step-num">5</div><div>Dry with single-use paper towel · 일회용 타월로 건조</div></li>
+            <li><div class="step-num">6</div><div>Use towel to turn off faucet · 타월로 수도꼭지 잠금</div></li>
+          </ul>
+          <div class="key-point">
+            <div class="key-point-title">🤲 When to wash hands · 손 씻어야 할 때</div>
+            Before handling food · After using restroom · After coughing/sneezing · After touching raw meat · After handling garbage · After eating/drinking<br>
+            <span style="font-size:0.78rem;color:#555">식품 취급 전 · 화장실 후 · 기침/재채기 후 · 생고기 취급 후 · 쓰레기 처리 후 · 식사/음료 후</span>
+          </div>
+        `
+      },
+      {
+        label: 'Health Rules', labelKo: '건강 규정',
+        html: `
+          <div class="bilingual">
+            <div class="en-text"><strong>Illness reporting</strong> is mandatory. You must notify your supervisor if you experience any of the following symptoms.</div>
+            <div class="ko-text"><strong>질병 보고</strong>는 의무입니다. 다음 증상 발생 시 반드시 감독자에게 보고해야 합니다.</div>
+          </div>
+          <div class="warning-box">
+            🚫 <strong>Report to supervisor & do NOT work if you have:</strong><br>
+            감독자 보고 및 업무 금지 증상:<br><br>
+            • Diarrhea · 설사<br>
+            • Vomiting · 구토<br>
+            • Jaundice (yellowing of skin/eyes) · 황달<br>
+            • Sore throat with fever · 발열을 동반한 인후통<br>
+            • Infected lesions/wounds on hands · 손의 감염된 병변/상처
+          </div>
+          <div class="key-point">
+            <div class="key-point-title">👔 Personal Appearance · 개인 외모</div>
+            • Hair restrained (cap, net) · 머리 단정히 묶기 (모자, 머리망)<br>
+            • No jewelry during food prep · 식품 조리 중 장신구 착용 금지<br>
+            • Clean uniform · 청결한 유니폼<br>
+            • No eating/drinking/chewing gum in food areas · 식품 취급 구역에서 음식 섭취/껌 금지
+          </div>
+        `
+      }
+    ]
+  },
+  {
+    icon: '🌡️', title: 'Time & Temperature', titleKo: '시간과 온도',
+    sections: [
+      {
+        label: 'Danger Zone', labelKo: '위험 온도 구간',
+        html: `
+          <div class="bilingual">
+            <div class="en-text">The <strong>Temperature Danger Zone</strong> is 41°F–135°F (5°C–57°C). Bacteria multiply rapidly in this range. <strong>TCS (Time/Temperature Control for Safety)</strong> foods must never spend more than <strong>4 hours total</strong> in the danger zone.</div>
+            <div class="ko-text"><strong>온도 위험 구간</strong>은 41°F–135°F (5°C–57°C)입니다. 이 범위에서 세균이 빠르게 증식합니다. TCS 식품은 위험 구간에서 총 <strong>4시간 이상</strong> 머물면 안 됩니다.</div>
+          </div>
+          <table class="temp-table">
+            <tr><th>Zone · 구간</th><th>°F</th><th>°C</th></tr>
+            <tr><td>Cold holding ✅</td><td class="safe">≤ 41°F</td><td class="safe">≤ 5°C</td></tr>
+            <tr><td>⚠️ DANGER ZONE</td><td class="danger">41–135°F</td><td class="danger">5–57°C</td></tr>
+            <tr><td>Hot holding ✅</td><td class="safe">≥ 135°F</td><td class="safe">≥ 57°C</td></tr>
+          </table>
+          <div class="key-point">
+            <div class="key-point-title">🌡️ TCS Foods · 온도 관리 필수 식품</div>
+            Meat, poultry, fish, dairy, eggs, cooked rice/pasta, cut melons, garlic in oil, leafy greens<br>
+            <span style="font-size:0.78rem;color:#555">육류, 가금류, 생선, 유제품, 달걀, 조리된 쌀/파스타, 절단 멜론, 기름의 마늘, 잎채소</span>
+          </div>
+        `
+      },
+      {
+        label: 'Cooking Temps', labelKo: '조리 온도',
+        html: `
+          <table class="temp-table">
+            <tr><th>Food · 식품</th><th>Min Temp</th><th>Time</th></tr>
+            <tr><td>Poultry · 가금류</td><td class="safe">165°F / 74°C</td><td>Instant</td></tr>
+            <tr><td>Ground beef · 다진 쇠고기</td><td class="safe">155°F / 68°C</td><td>15 sec</td></tr>
+            <tr><td>Whole beef/pork · 통고기</td><td class="safe">145°F / 63°C</td><td>15 sec</td></tr>
+            <tr><td>Fish/seafood · 생선/해산물</td><td class="safe">145°F / 63°C</td><td>15 sec</td></tr>
+            <tr><td>Eggs (hot hold) · 달걀</td><td class="safe">145°F / 63°C</td><td>15 sec</td></tr>
+            <tr><td>Reheating · 재가열</td><td class="safe">165°F / 74°C</td><td>15 sec</td></tr>
+          </table>
+          <div class="key-point">
+            <div class="key-point-title">❄️ Cooling Requirements · 냉각 요구사항</div>
+            <strong>Step 1:</strong> 135°F → 70°F within <strong>2 hours</strong><br>
+            <strong>Step 2:</strong> 70°F → 41°F within <strong>4 hours</strong><br>
+            <span style="font-size:0.78rem;color:#555">1단계: 57°C→21°C, 2시간 이내 / 2단계: 21°C→5°C, 4시간 이내</span>
+          </div>
+          <div class="warning-box">
+            🌡️ Calibrate thermometers using <strong>ice water method</strong>: place in 50/50 ice-water mix — should read 32°F (0°C)<br>
+            <span style="font-size:0.78rem">온도계 보정: 얼음물(50:50)에서 32°F(0°C)를 나타내야 함</span>
+          </div>
+        `
+      }
+    ]
+  },
+  {
+    icon: '⚠️', title: 'Cross-Contamination', titleKo: '교차 오염',
+    sections: [
+      {
+        label: 'Prevention', labelKo: '예방',
+        html: `
+          <div class="bilingual">
+            <div class="en-text"><strong>Cross-contamination</strong> is one of the leading causes of foodborne illness. It occurs when harmful microorganisms are transferred from one food or surface to another.</div>
+            <div class="ko-text"><strong>교차 오염</strong>은 식품 매개 질병의 주요 원인 중 하나입니다. 유해 미생물이 한 식품이나 표면에서 다른 것으로 전이될 때 발생합니다.</div>
+          </div>
+          <div class="key-point">
+            <div class="key-point-title">✅ Prevention Rules · 예방 규칙</div>
+            <ul class="checklist" style="margin-top:6px">
+              <li><span class="check-icon">✅</span>Use <strong>separate cutting boards</strong> for raw meat and produce · 생고기와 채소에 별도 도마 사용</li>
+              <li><span class="check-icon">✅</span>Store raw meat <strong>below</strong> ready-to-eat foods · 생고기는 즉식 식품 아래 보관</li>
+              <li><span class="check-icon">✅</span>Wash/rinse/sanitize equipment between uses · 사용 간 세척·헹굼·소독</li>
+              <li><span class="check-icon">✅</span>No bare hand contact with RTE foods · 즉식 식품에 맨손 접촉 금지</li>
+              <li><span class="check-icon">✅</span>Don't cook different types of food in same fryer oil · 동일 튀김 기름에 다른 식품 조리 금지</li>
+            </ul>
+          </div>
+        `
+      },
+      {
+        label: 'Storage & Allergens', labelKo: '보관 및 알레르겐',
+        html: `
+          <div class="bilingual">
+            <div class="en-text"><strong>Refrigerator storage order</strong> (top to bottom, by required cooking temperature):</div>
+            <div class="ko-text"><strong>냉장고 저장 순서</strong> (위에서 아래로, 필요 조리 온도 기준):</div>
+          </div>
+          <ul class="checklist" style="margin-bottom:12px">
+            <li><span class="check-icon">🔝</span><strong>RTE foods</strong> (salads, deli meats) · 즉식 식품</li>
+            <li><span class="check-icon">🐟</span>Fish · 생선 (145°F)</li>
+            <li><span class="check-icon">🥩</span>Whole beef/pork · 통 쇠고기/돼지 (145°F)</li>
+            <li><span class="check-icon">🥩</span>Ground beef · 다진 고기 (155°F)</li>
+            <li><span class="check-icon">🍗</span><strong>Poultry</strong> (bottom shelf) · 가금류 (맨 아래)</li>
+          </ul>
+          <div class="warning-box">
+            🥜 <strong>9 Major Allergens (FDA):</strong> Milk, Eggs, Fish, Shellfish, Tree nuts, Peanuts, Wheat, Soybeans, Sesame<br>
+            <span style="font-size:0.78rem">우유, 달걀, 생선, 갑각류, 견과류, 땅콩, 밀, 대두, 참깨</span><br><br>
+            Never put food on surfaces that touched allergens · 알레르겐이 닿은 표면에 식품 놓지 말 것
+          </div>
+        `
+      }
+    ]
+  },
+  {
+    icon: '🧼', title: 'Cleaning & Sanitizing', titleKo: '청소와 소독',
+    sections: [
+      {
+        label: 'Wash-Rinse-Sanitize', labelKo: '세척-헹굼-소독',
+        html: `
+          <div class="bilingual">
+            <div class="en-text"><strong>Cleaning</strong> removes dirt and food. <strong>Sanitizing</strong> kills pathogens. Both are required — cleaning alone is not enough.</div>
+            <div class="ko-text"><strong>세척</strong>은 오물과 식품 잔여물을 제거합니다. <strong>소독</strong>은 병원균을 제거합니다. 두 과정 모두 필요하며 세척만으로는 부족합니다.</div>
+          </div>
+          <ul class="steps-list">
+            <li><div class="step-num">1</div><div><strong>Wash</strong> — hot soapy water 110°F (43°C) · 뜨거운 비눗물 세척</div></li>
+            <li><div class="step-num">2</div><div><strong>Rinse</strong> — clean warm water · 깨끗한 따뜻한 물로 헹굼</div></li>
+            <li><div class="step-num">3</div><div><strong>Sanitize</strong> — chemical solution or hot water 171°F (77°C) · 소독액 또는 171°F 뜨거운 물</div></li>
+            <li><div class="step-num">4</div><div><strong>Air dry</strong> — never towel dry · 자연 건조 (타월 건조 금지)</div></li>
+          </ul>
+          <div class="key-point">
+            <div class="key-point-title">⚗️ Sanitizer Concentrations · 소독액 농도</div>
+            <strong>Chlorine bleach:</strong> 50–100 ppm · 염소: 50–100 ppm<br>
+            <strong>Iodine:</strong> 12.5–25 ppm · 아이오딘: 12.5–25 ppm<br>
+            <strong>Quat ammonium:</strong> per manufacturer label · 제조사 지시 따름
+          </div>
+        `
+      },
+      {
+        label: 'Pests & Chemicals', labelKo: '해충 및 화학물질',
+        html: `
+          <div class="bilingual">
+            <div class="en-text">Pest prevention and proper chemical storage are critical to maintaining a safe food environment.</div>
+            <div class="ko-text">해충 예방과 화학물질의 적절한 보관은 안전한 식품 환경 유지에 필수적입니다.</div>
+          </div>
+          <div class="key-point">
+            <div class="key-point-title">🐀 Pest Prevention · 해충 예방</div>
+            <ul class="checklist" style="margin-top:6px">
+              <li><span class="check-icon">✅</span>Seal all cracks and openings · 모든 틈새 봉인</li>
+              <li><span class="check-icon">✅</span>Store food off the floor (6 inches min) · 바닥에서 최소 15cm 이상 식품 보관</li>
+              <li><span class="check-icon">✅</span>Keep garbage containers covered · 쓰레기 용기 뚜껑 닫기</li>
+              <li><span class="check-icon">✅</span>Report signs of pests immediately · 해충 흔적 즉시 보고</li>
+            </ul>
+          </div>
+          <div class="warning-box">
+            ⚗️ <strong>Chemical Storage:</strong> Store all chemicals <strong>BELOW and AWAY</strong> from food and food contact surfaces. Never store chemicals in food containers. Always label chemical spray bottles.<br>
+            <span style="font-size:0.78rem">화학물질은 식품 및 식품 접촉 표면의 아래쪽과 분리된 곳에 보관. 식품 용기에 화학물질 저장 금지. 스프레이 병에 반드시 라벨 부착.</span>
+          </div>
+        `
+      }
+    ]
+  }
+];
+
+// ══════════════════════════════════════════
+// DATA: QUIZ QUESTIONS
+// ══════════════════════════════════════════
+const quizQuestions = [
+  {
+    module: 'Foodborne Illness', moduleKo: '식품 매개 질병',
+    q: 'What percentage of foodborne illness cases are estimated to go unreported (Iceberg Theory)?',
+    qKo: '빙산 이론에 따르면 식품 매개 질병 사례의 몇 %가 보고되지 않는 것으로 추산됩니까?',
+    options: ['10%', '50%', '90%', '75%'],
+    answer: 2,
+    explain: 'The "Iceberg Theory": visible symptoms represent only 10% of the problem. 90% goes unseen and unreported.',
+    explainKo: '"빙산 이론": 눈에 보이는 증상은 문제의 10%에 불과하며, 90%는 감지되지 않고 보고되지 않습니다.'
+  },
+  {
+    module: 'Foodborne Illness', moduleKo: '식품 매개 질병',
+    q: 'Which of the following is NOT one of the Big 6 pathogens that require employee exclusion from work?',
+    qKo: 'Big 6 병원균에 해당하지 않는 것은?',
+    options: ['Norovirus', 'Hepatitis A', 'Listeria monocytogenes', 'Shigella spp.'],
+    answer: 2,
+    explain: 'Listeria is not in the Big 6. The Big 6 are: Norovirus, Salmonella typhi, E. coli (EHEC), Shigella, Hepatitis A, Nontyphoidal Salmonella.',
+    explainKo: '리스테리아는 Big 6에 포함되지 않습니다. Big 6: 노로바이러스, 살모넬라 타이피, 대장균(EHEC), 시겔라, A형 간염, 비장티푸스성 살모넬라.'
+  },
+  {
+    module: 'Foodborne Illness', moduleKo: '식품 매개 질병',
+    q: 'Biological hazards contribute to approximately what fraction of all foodborne illness outbreaks?',
+    qKo: '생물학적 위해요소는 전체 식품 매개 질병 발병의 약 몇 분의 몇을 차지합니까?',
+    options: ['One third · 1/3', 'Two thirds · 2/3', 'One half · 1/2', 'Three quarters · 3/4'],
+    answer: 1,
+    explain: 'Biological hazards (bacteria, viruses, parasites) account for approximately 2/3 of all foodborne illness outbreaks.',
+    explainKo: '생물학적 위해요소(세균, 바이러스, 기생충)가 전체 식품 매개 질병 발병의 약 2/3를 차지합니다.'
+  },
+  {
+    module: 'Personal Hygiene', moduleKo: '개인 위생',
+    q: 'How long must you scrub your hands during proper handwashing?',
+    qKo: '올바른 손 씻기 시 몇 초 이상 문질러야 합니까?',
+    options: ['5 seconds', '10 seconds', '20 seconds', '60 seconds'],
+    answer: 2,
+    explain: 'Scrub all surfaces of your hands for a minimum of 20 seconds — this includes fingers, thumbs, between fingers, and backs of hands.',
+    explainKo: '손의 모든 부위(손가락, 엄지, 손가락 사이, 손등)를 최소 20초 이상 문질러야 합니다.'
+  },
+  {
+    module: 'Personal Hygiene', moduleKo: '개인 위생',
+    q: 'Which of the following is TRUE about glove use?',
+    qKo: '장갑 사용에 관한 올바른 설명은?',
+    options: [
+      'Gloves replace the need for handwashing · 장갑이 손 씻기를 대체함',
+      'Wash hands before putting gloves on · 장갑 착용 전 손을 씻어야 함',
+      'Gloves must be changed every 4 hours · 4시간마다 교체',
+      'Latex gloves are required for all food prep · 모든 조리에 라텍스 장갑 필수'
+    ],
+    answer: 1,
+    explain: 'Gloves do NOT replace handwashing. Always wash your hands before putting gloves on and whenever you change to a new pair.',
+    explainKo: '장갑은 손 씻기를 대체하지 않습니다. 장갑 착용 전과 새 장갑 교체 시 항상 손을 씻어야 합니다.'
+  },
+  {
+    module: 'Personal Hygiene', moduleKo: '개인 위생',
+    q: 'A food handler reports having diarrhea. What should happen?',
+    qKo: '식품 취급자가 설사 증상을 보고했습니다. 어떻게 해야 합니까?',
+    options: [
+      'They can work if they wear gloves · 장갑 착용 시 근무 가능',
+      'They should be restricted to non-food areas · 식품 이외 구역으로 제한',
+      'They must be excluded from work entirely · 업무에서 완전 배제',
+      'They should take medicine and continue working · 약 복용 후 계속 근무'
+    ],
+    answer: 2,
+    explain: 'Diarrhea is a Big 6 symptom indicator. The employee must be EXCLUDED (not just restricted) from work until cleared by a medical professional.',
+    explainKo: '설사는 Big 6 증상입니다. 직원은 의료 전문가의 허가가 있을 때까지 완전 배제(제한이 아닌)되어야 합니다.'
+  },
+  {
+    module: 'Time & Temperature', moduleKo: '시간과 온도',
+    q: 'What is the Temperature Danger Zone for TCS foods?',
+    qKo: 'TCS 식품의 온도 위험 구간은?',
+    options: ['32°F – 100°F', '41°F – 135°F', '45°F – 165°F', '50°F – 140°F'],
+    answer: 1,
+    explain: 'The Temperature Danger Zone is 41°F–135°F (5°C–57°C). Bacteria multiply rapidly in this range. TCS foods must not spend more than 4 total hours in this zone.',
+    explainKo: '온도 위험 구간은 41°F–135°F (5°C–57°C)입니다. 이 범위에서 세균이 빠르게 증식합니다. TCS 식품은 총 4시간 이상 이 구간에 있으면 안 됩니다.'
+  },
+  {
+    module: 'Time & Temperature', moduleKo: '시간과 온도',
+    q: 'To what minimum temperature must poultry be cooked?',
+    qKo: '가금류의 최소 조리 온도는?',
+    options: ['145°F (63°C)', '155°F (68°C)', '165°F (74°C)', '135°F (57°C)'],
+    answer: 2,
+    explain: 'Poultry (chicken, turkey, duck) must be cooked to a minimum internal temperature of 165°F (74°C) for food safety.',
+    explainKo: '가금류(닭, 칠면조, 오리)는 안전을 위해 최소 165°F (74°C)의 내부 온도로 조리해야 합니다.'
+  },
+  {
+    module: 'Time & Temperature', moduleKo: '시간과 온도',
+    q: 'How do you calibrate a thermometer using the ice water method?',
+    qKo: '얼음물법으로 온도계를 보정하는 방법은?',
+    options: [
+      'Place in boiling water — should read 100°C · 끓는 물에 넣어 100°C 확인',
+      'Place in 50/50 ice water — should read 32°F (0°C) · 얼음물 50:50에서 32°F(0°C) 확인',
+      'Place in warm water — should read 98.6°F · 따뜻한 물에서 98.6°F 확인',
+      'Place in refrigerator — should read 41°F · 냉장고에서 41°F 확인'
+    ],
+    answer: 1,
+    explain: 'Ice water calibration: fill a cup with 50% ice and 50% water, insert thermometer, and allow to stabilize. It should read 32°F (0°C).',
+    explainKo: '얼음물 보정: 컵에 얼음 50%와 물 50%를 채우고 온도계를 넣어 안정화. 32°F (0°C)를 나타내야 합니다.'
+  },
+  {
+    module: 'Cross-Contamination', moduleKo: '교차 오염',
+    q: 'In a refrigerator, where should raw poultry be stored relative to other foods?',
+    qKo: '냉장고에서 생 가금류는 어디에 보관해야 합니까?',
+    options: [
+      'On the top shelf · 맨 위 선반',
+      'Next to raw fish on the middle shelf · 중간 선반 생선 옆',
+      'On the bottom shelf · 맨 아래 선반',
+      'In a separate refrigerator only · 별도 냉장고에만'
+    ],
+    answer: 2,
+    explain: 'Raw poultry requires the highest cooking temperature (165°F) and must be stored on the BOTTOM shelf to prevent drips from contaminating other foods stored below.',
+    explainKo: '생 가금류는 가장 높은 조리 온도(165°F)가 필요하며 다른 식품 위로 흘러내리지 않도록 맨 아래 선반에 보관해야 합니다.'
+  },
+  {
+    module: 'Cross-Contamination', moduleKo: '교차 오염',
+    q: 'Which action BEST prevents cross-contamination?',
+    qKo: '교차 오염을 가장 잘 예방하는 행동은?',
+    options: [
+      'Using the same cutting board for everything if cleaned · 세척하면 하나의 도마 사용 가능',
+      'Using separate cutting boards for raw meat and produce · 생고기와 채소에 별도 도마 사용',
+      'Rinsing cutting boards with water between uses · 사용 중간에 물로 헹구기',
+      'Storing all food in sealed containers · 모든 식품을 밀봉 용기에 보관'
+    ],
+    answer: 1,
+    explain: 'Using separate, color-coded cutting boards for raw meat and ready-to-eat produce is a key method to prevent cross-contamination.',
+    explainKo: '생고기와 즉식 채소용 도마를 별도로(색상 구분하여) 사용하는 것이 교차 오염 예방의 핵심입니다.'
+  },
+  {
+    module: 'Cross-Contamination', moduleKo: '교차 오염',
+    q: 'How many major food allergens are recognized by the FDA?',
+    qKo: 'FDA가 인정하는 주요 식품 알레르겐은 몇 가지입니까?',
+    options: ['6', '7', '8', '9'],
+    answer: 3,
+    explain: 'The FDA recognizes 9 major food allergens: Milk, Eggs, Fish, Shellfish, Tree nuts, Peanuts, Wheat, Soybeans, and Sesame (added in 2023).',
+    explainKo: 'FDA는 9가지 주요 식품 알레르겐을 인정합니다: 우유, 달걀, 생선, 갑각류, 견과류, 땅콩, 밀, 대두, 참깨 (2023년 추가).'
+  },
+  {
+    module: 'Cleaning & Sanitizing', moduleKo: '청소와 소독',
+    q: 'What is the correct order for manual dishwashing?',
+    qKo: '수동 식기 세척의 올바른 순서는?',
+    options: [
+      'Rinse → Wash → Sanitize → Air dry',
+      'Sanitize → Wash → Rinse → Air dry',
+      'Wash → Rinse → Sanitize → Air dry',
+      'Wash → Sanitize → Rinse → Air dry'
+    ],
+    answer: 2,
+    explain: 'The correct order is: (1) Wash with hot soapy water, (2) Rinse with clean water, (3) Sanitize with approved solution, (4) Air dry — never towel dry.',
+    explainKo: '올바른 순서: (1) 뜨거운 비눗물로 세척, (2) 깨끗한 물로 헹굼, (3) 승인된 소독액으로 소독, (4) 자연 건조 — 타월 건조 금지.'
+  },
+  {
+    module: 'Cleaning & Sanitizing', moduleKo: '청소와 소독',
+    q: 'What is the approved concentration range for chlorine bleach sanitizer?',
+    qKo: '염소 소독액의 승인된 농도 범위는?',
+    options: ['10–25 ppm', '25–50 ppm', '50–100 ppm', '100–200 ppm'],
+    answer: 2,
+    explain: 'Chlorine bleach sanitizer must be at 50–100 ppm to be effective. Too low = ineffective; too high = chemical hazard.',
+    explainKo: '염소 소독액은 효과를 위해 50–100 ppm이어야 합니다. 너무 낮으면 효과 없고, 너무 높으면 화학적 위험이 됩니다.'
+  },
+  {
+    module: 'Cleaning & Sanitizing', moduleKo: '청소와 소독',
+    q: 'Where must chemicals be stored relative to food?',
+    qKo: '화학물질은 식품 대비 어디에 보관해야 합니까?',
+    options: [
+      'Above food for easy access · 편의를 위해 식품 위에',
+      'Next to food in sealed containers · 밀봉 용기에 식품 옆에',
+      'Below and away from food and food contact surfaces · 식품 및 접촉 표면 아래와 분리',
+      'In the same refrigerator, lower shelf · 같은 냉장고 아래 선반'
+    ],
+    answer: 2,
+    explain: 'Chemicals must ALWAYS be stored BELOW and AWAY from food and food contact surfaces to prevent chemical contamination. Never store chemicals in food containers.',
+    explainKo: '화학물질은 화학적 오염을 방지하기 위해 항상 식품 및 식품 접촉 표면의 아래와 분리된 곳에 보관해야 합니다.'
+  }
+];
+
+// ══════════════════════════════════════════
+// STATE
+// ══════════════════════════════════════════
+let currentLesson = 0;
+let currentSection = 0;
+let lessonProgress = [false, false, false, false, false]; // modules done
+
+let quizActive = false;
+let quizQuestionIndex = 0;
+let quizScore = 0;
+let quizAnswered = false;
+let quizShuffled = [];
+
+// ══════════════════════════════════════════
+// NAVIGATION
+// ══════════════════════════════════════════
+function showPage(name) {
+  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.nav-tab').forEach(t => t.classList.remove('active'));
+  document.getElementById('page-' + name).classList.add('active');
+  document.getElementById('tab-' + name).classList.add('active');
+  // Sidebar active state
+  ['home','learn','quiz','ref'].forEach(n => {
+    const btn = document.getElementById('snb-' + n);
+    if (btn) btn.classList.toggle('active', n === name);
+  });
+  // PC topbar title
+  const titles = {home:'🏠 Home', learn:'📖 Learn', quiz:'✏️ Quiz', ref:'📋 Reference'};
+  const tb = document.getElementById('pcTopbarTitle');
+  if (tb) tb.textContent = titles[name] || '';
+  if (name === 'quiz' && !quizActive) renderQuizStart();
+}
+
+function renderSidebarModules() {
+  const el = document.getElementById('sidebarModules');
+  if (!el) return;
+  el.innerHTML = lessons.map((l, i) => `
+    <div class="sidebar-module-item ${i === currentLesson ? 'active' : ''} ${lessonProgress[i] ? 'done' : ''}"
+         onclick="openLesson(${i})">
+      <span class="sm-icon">${l.icon}</span>
+      <span style="flex:1;line-height:1.3">${l.title}</span>
+      ${lessonProgress[i] ? '<span class="sm-check">✅</span>' : ''}
+    </div>
+  `).join('');
+}
+
+function openLesson(idx) {
+  currentLesson = idx;
+  currentSection = 0;
+  showPage('learn');
+  renderLesson();
+  renderSidebarModules();
+}
+
+// ══════════════════════════════════════════
+// LESSON RENDERING
+// ══════════════════════════════════════════
+function renderLesson() {
+  const lesson = lessons[currentLesson];
+  document.getElementById('lessonIcon').textContent = lesson.icon;
+  document.getElementById('lessonTitle').textContent = lesson.title;
+  document.getElementById('lessonSubtitle').textContent = lesson.titleKo;
+  renderSection();
+}
+
+function renderSection() {
+  const lesson = lessons[currentLesson];
+  const section = lesson.sections[currentSection];
+  const isPC = window.innerWidth >= 900;
+
+  const nav = document.getElementById('lessonNav');
+
+  if (isPC) {
+    // PC: clean tab strip — just section tabs
+    nav.innerHTML = lesson.sections.map((s, i) =>
+      `<button class="lesson-nav-btn ${i === currentSection ? 'active' : ''}"
+       onclick="goSection(${i})">${s.label} · ${s.labelKo}</button>`
+    ).join('');
+  } else {
+    // Mobile: module pills + section tabs
+    const sectionTabs = lesson.sections.map((s, i) =>
+      `<button class="lesson-nav-btn ${i === currentSection ? 'active' : ''}"
+       onclick="goSection(${i})">${s.label}</button>`
+    ).join('');
+    nav.innerHTML = `
+      <div style="width:100%;display:flex;gap:6px;flex-wrap:wrap;">
+        ${lessons.map((l, i) =>
+          `<button class="lesson-nav-btn ${i === currentLesson ? 'active' : ''} ${lessonProgress[i] ? 'done' : ''}"
+           style="min-width:36px;flex:0;" onclick="openLesson(${i})">${l.icon}</button>`
+        ).join('')}
+      </div>
+      <div style="width:100%;display:flex;gap:6px;flex-wrap:wrap;margin-top:4px;">
+        ${sectionTabs}
+      </div>
+    `;
+  }
+
+  document.getElementById('lessonContent').innerHTML =
+    `<div class="content-card">${section.html}</div>`;
+
+  document.getElementById('prevBtn').style.opacity =
+    currentLesson === 0 && currentSection === 0 ? '0.3' : '1';
+  document.getElementById('nextBtn').textContent = isLastSection() ? '✅ Done' : 'Next →';
+}
+
+function goSection(i) {
+  currentSection = i;
+  renderSection();
+}
+
+function isLastSection() {
+  return currentLesson === lessons.length - 1 &&
+         currentSection === lessons[currentLesson].sections.length - 1;
+}
+
+function changeLesson(dir) {
+  const lesson = lessons[currentLesson];
+  const newSection = currentSection + dir;
+
+  if (newSection >= 0 && newSection < lesson.sections.length) {
+    currentSection = newSection;
+    renderSection();
+    return;
+  }
+
+  if (dir > 0) {
+    lessonProgress[currentLesson] = true;
+    updateBadges();
+    updateProgress();
+
+    if (currentLesson < lessons.length - 1) {
+      currentLesson++;
+      currentSection = 0;
+      renderLesson();
+    } else {
+      // all done
+      showPage('quiz');
+      startQuiz();
+    }
+  } else {
+    if (currentLesson > 0) {
+      currentLesson--;
+      currentSection = lessons[currentLesson].sections.length - 1;
+      renderLesson();
+    }
+  }
+}
+
+function updateBadges() {
+  lessonProgress.forEach((done, i) => {
+    const badge = document.getElementById('badge-' + i);
+    if (badge) {
+      badge.textContent = done ? '✅ Done' : 'START';
+      badge.className = 'module-badge' + (done ? ' done' : '');
+    }
+  });
+  renderSidebarModules();
+}
+
+function updateProgress() {
+  const done = lessonProgress.filter(Boolean).length;
+  const pct = Math.round(done / lessons.length * 100);
+  // Mobile header
+  document.getElementById('overallProgress').style.width = pct + '%';
+  document.getElementById('progressLabel').textContent = `${pct}% complete · ${pct}% 완료`;
+  // Sidebar
+  const sf = document.getElementById('sidebarProgressFill');
+  const sp = document.getElementById('sidebarProgressPct');
+  if (sf) sf.style.width = pct + '%';
+  if (sp) sp.textContent = pct + '%';
+  // PC topbar
+  const pf = document.getElementById('pcProgressFill');
+  const pl = document.getElementById('pcProgressLabel');
+  if (pf) pf.style.width = pct + '%';
+  if (pl) pl.textContent = `${pct}% complete`;
+}
+
+// ══════════════════════════════════════════
+// QUIZ
+// ══════════════════════════════════════════
+function renderQuizStart() {
+  document.getElementById('quizContainer').innerHTML = `
+    <div class="quiz-result" style="margin-top:8px">
+      <div style="font-size:3rem;margin-bottom:12px">✏️</div>
+      <div style="font-family:'Bebas Neue',sans-serif;font-size:1.8rem;color:var(--green)">CERTIFICATION QUIZ</div>
+      <div style="font-size:0.82rem;color:var(--gray);margin-bottom:16px">식품 취급자 인증 퀴즈</div>
+      <div class="result-msg">
+        📋 <strong>${quizQuestions.length} questions · ${quizQuestions.length}문항</strong><br>
+        ✅ Passing score: <strong>80%</strong> (${Math.ceil(quizQuestions.length * 0.8)}/${quizQuestions.length} correct)<br>
+        합격 점수: 80% (${Math.ceil(quizQuestions.length * 0.8)}/${quizQuestions.length}개 정답)<br><br>
+        Covers all 5 modules · 5개 모듈 전체 포함
+      </div>
+      <button class="btn btn-primary" style="max-width:280px;margin:0 auto;display:block"
+              onclick="startQuiz()">▶ Start Quiz · 퀴즈 시작</button>
+    </div>
+  `;
+}
+
+function startQuiz() {
+  quizActive = true;
+  quizQuestionIndex = 0;
+  quizScore = 0;
+  quizAnswered = false;
+  quizShuffled = [...quizQuestions].sort(() => Math.random() - 0.5);
+  showPage('quiz');
+  renderQuestion();
+}
+
+function renderQuestion() {
+  const q = quizShuffled[quizQuestionIndex];
+  const pct = Math.round((quizQuestionIndex / quizShuffled.length) * 100);
+
+  document.getElementById('quizContainer').innerHTML = `
+    <div class="quiz-progress">
+      <div class="quiz-count">${quizQuestionIndex + 1}<span style="font-size:1rem;color:#aaa">/${quizShuffled.length}</span></div>
+      <div class="quiz-track">
+        <div class="quiz-track-bar"><div class="quiz-track-fill" style="width:${pct}%"></div></div>
+        <div style="font-size:0.7rem;color:var(--gray);margin-top:3px">${q.module} · ${q.moduleKo}</div>
+      </div>
+      <div class="quiz-score-display">✅ ${quizScore} correct<br>${quizScore} 정답</div>
+    </div>
+    <div class="quiz-card">
+      <div class="quiz-module-tag">${q.module} · ${q.moduleKo}</div>
+      <div class="quiz-question">${q.q}</div>
+      <div class="quiz-question-ko">${q.qKo}</div>
+      <div class="quiz-options" id="quizOptions">
+        ${q.options.map((opt, i) =>
+          `<button class="quiz-option" id="opt-${i}" onclick="selectAnswer(${i})">${String.fromCharCode(65+i)}. ${opt}</button>`
+        ).join('')}
+      </div>
+      <div class="quiz-feedback" id="quizFeedback"></div>
+      <div id="quizNextBtn" style="display:none;margin-top:14px">
+        <button class="btn btn-primary" onclick="nextQuestion()">
+          ${quizQuestionIndex < quizShuffled.length - 1 ? 'Next Question → · 다음 문제' : 'See Results · 결과 보기'}
+        </button>
+      </div>
+    </div>
+  `;
+}
+
+function selectAnswer(selected) {
+  if (quizAnswered) return;
+  quizAnswered = true;
+
+  const q = quizShuffled[quizQuestionIndex];
+  const correct = selected === q.answer;
+  if (correct) quizScore++;
+
+  q.options.forEach((_, i) => {
+    const btn = document.getElementById('opt-' + i);
+    btn.disabled = true;
+    if (i === q.answer) btn.className = 'quiz-option correct';
+    else if (i === selected && !correct) btn.className = 'quiz-option wrong';
+  });
+
+  const fb = document.getElementById('quizFeedback');
+  fb.className = 'quiz-feedback ' + (correct ? 'correct-fb' : 'wrong-fb');
+  fb.innerHTML = (correct ? '✅ <strong>Correct! · 정답!</strong>' : '❌ <strong>Incorrect · 오답</strong>') +
+    `<br>${q.explain}<br><span style="font-size:0.78rem;opacity:0.8">${q.explainKo}</span>`;
+
+  document.getElementById('quizNextBtn').style.display = 'block';
+}
+
+function nextQuestion() {
+  quizQuestionIndex++;
+  quizAnswered = false;
+  if (quizQuestionIndex < quizShuffled.length) {
+    renderQuestion();
+  } else {
+    renderResult();
+  }
+}
+
+function renderResult() {
+  quizActive = false;
+  const total = quizShuffled.length;
+  const pct = Math.round((quizScore / total) * 100);
+  const passed = pct >= 80;
+  const wrong = total - quizScore;
+
+  document.getElementById('quizContainer').innerHTML = `
+    <div class="quiz-result">
+      <div class="result-emoji">${passed ? '🏆' : '📚'}</div>
+      <div class="result-score">${pct}%</div>
+      <div class="result-label">${quizScore}/${total} correct · ${quizScore}/${total} 정답</div>
+      <div class="result-breakdown">
+        <div class="rb-item"><div class="rb-num green">${quizScore}</div><div class="rb-label">Correct · 정답</div></div>
+        <div class="rb-item"><div class="rb-num" style="color:var(--amber)">${pct}%</div><div class="rb-label">Score · 점수</div></div>
+        <div class="rb-item"><div class="rb-num red">${wrong}</div><div class="rb-label">Wrong · 오답</div></div>
+      </div>
+      <div class="result-msg ${passed ? '' : 'fail'}">
+        ${passed
+          ? `🎉 <strong>PASSED! · 합격!</strong><br>Score: ${pct}% — above 80% threshold<br><br>📋 Enter your name to generate your Certification Card<br>이름을 입력하여 인증서를 생성하세요`
+          : `❌ <strong>Not passed · 불합격</strong><br>You need 80% or higher. Review the modules and try again.<br>80% 이상이 필요합니다. 모듈 복습 후 재시도하세요.`
+        }
+      </div>
+      ${passed
+        ? `<button class="btn btn-primary" style="margin-bottom:10px" onclick="showNameEntry(${pct}, ${quizScore}, ${total})">
+             📋 Generate Certificate · 인증서 만들기
+           </button>`
+        : ''
+      }
+      <div style="display:flex;gap:10px;">
+        <button class="btn btn-secondary" onclick="startQuiz()">🔄 Retry · 재시도</button>
+        <button class="btn ${passed?'btn-secondary':'btn-primary'}" onclick="openLesson(0)">📖 Review · 복습</button>
+      </div>
+    </div>
+  `;
+}
+
+// ══════════════════════════════════════════
+// CERTIFICATE FLOW
+// ══════════════════════════════════════════
+
+// ▶ Change this to your actual submission email address
+const SUBMIT_EMAIL = 'your-email@korea.army.mil';
+
+function showNameEntry(pct, score, total) {
+  var old = document.getElementById('certOverlay');
+  if (old) old.parentNode.removeChild(old);
+  var overlay = document.createElement('div');
+  overlay.className = 'cert-overlay';
+  overlay.id = 'certOverlay';
+  overlay.innerHTML = '<div class="name-entry-card">'
+    + '<h3>🎉 Congratulations! · 축하합니다!</h3>'
+    + '<p>Enter your name · 이름을 입력해 주세요</p>'
+    + '<div class="field-group"><label class="field-label">Full Name · 성명 *</label>'
+    + '<input class="field-input" id="inputName" type="text" placeholder="e.g. KIM YOUNG-WAN"></div>'
+    + '<div class="screenshot-tip">📸 Generate → screenshot → send via buttons below<br>인증서 생성 → 스크린샷 → 아래 버튼으로 전송</div>'
+    + '<div style="display:flex;gap:10px;margin-top:14px">'
+    + '<button class="btn btn-secondary" onclick="closeCertOverlay()">Cancel</button>'
+    + '<button class="btn btn-primary" onclick="window._pct='+pct+';window._sc='+score+';window._tot='+total+';_doCert()">Generate →</button>'
+    + '</div></div>';
+  document.body.appendChild(overlay);
+}
+
+window._doCert = function() {
+  var inp = document.getElementById('inputName');
+  var name = inp ? inp.value.trim().toUpperCase() : '';
+  if (!name) { if(inp){inp.style.borderColor='red';} return; }
+  showCertCard(name, window._pct, window._sc, window._tot);
+};
+
+function closeCertOverlay() {
+  var el = document.getElementById('certOverlay');
+  if (el) el.parentNode.removeChild(el);
+  window.onbeforeunload = null;
+}
+
+function confirmCloseCert() {
+  if (confirm('⚠️ Certificate not saved!\n인증서가 저장되지 않습니다.\n\nClose anyway? · 닫으시겠습니까?')) {
+    closeCertOverlay();
+  }
+}
+
+function showCertCard(name, pct, score, total) {
+  var old = document.getElementById('certOverlay');
+  if (old) old.parentNode.removeChild(old);
+  var today = new Date();
+  var expire = new Date(today); expire.setFullYear(expire.getFullYear()+1);
+  var opt = {year:'numeric',month:'short',day:'numeric'};
+  var iss = today.toLocaleDateString('en-US', opt);
+  var exp = expire.toLocaleDateString('en-US', opt);
+  window._certData = {name:name, issueDate:iss, expireDate:exp};
+  var overlay = document.createElement('div');
+  overlay.className = 'cert-overlay';
+  overlay.id = 'certOverlay';
+  overlay.innerHTML = '<div class="cert-wrap">'
+    + '<div id="certCard">'
+    + '<div class="cert-top-row"><div class="cert-logo">⚕️</div><div><div class="cert-org-name">65th Medical Brigade<br>USAG Humphreys, Republic of Korea</div></div></div>'
+    + '<div class="cert-headline">This is to certify that</div>'
+    + '<div style="font-size:0.62rem;letter-spacing:2px;opacity:0.6;margin-bottom:6px">다음을 증명합니다</div>'
+    + '<div style="font-family:Bebas Neue,sans-serif;font-size:2rem;letter-spacing:2px;line-height:1;color:#ffe08a;margin-bottom:14px">'+name+'</div>'
+    + '<div class="cert-divider"></div>'
+    + '<div class="cert-headline">has successfully completed</div>'
+    + '<div class="cert-title">Food Handler</div>'
+    + '<div class="cert-title">Certification Course</div>'
+    + '<div class="cert-title-ko">식품 취급자 인증 교육 과정 수료</div>'
+    + '<div style="font-size:0.72rem;opacity:0.65;margin-bottom:10px">TB MED 530 / FDA Food Code · DHK Public Health</div>'
+    + '<div class="cert-divider"></div>'
+    + '<div class="cert-valid-strip">'
+    + '<div><div class="cert-valid-label">Issue Date · 발급일</div><div class="cert-valid-date">'+iss+'</div></div>'
+    + '<div style="text-align:right"><div class="cert-valid-label">Expires · 만료일</div><div class="cert-valid-date" style="color:#ffcc60">'+exp+'</div></div>'
+    + '</div></div>'
+    + '<div class="cert-actions">'
+    + '<div class="screenshot-tip" style="margin-bottom:0;border-radius:10px">📸 <strong>Take a screenshot</strong> of the card above · 위 인증서를 <strong>스크린샷</strong> 찍으세요</div>'
+    + '<button class="cert-action-btn" style="background:#2d2d2d;color:white" onclick="downloadCertPDF()">📄 Download PDF · PDF 저장 (PC only)</button>'
+    + '<button class="cert-action-btn btn-email" onclick="sendByEmail()">✉️ Send via Email · 이메일로 보내기</button>'
+    + '<button class="cert-action-btn btn-sms" onclick="sendBySMS()">💬 Send via SMS · 문자로 보내기</button>'
+    + '<button class="cert-action-btn btn-close" onclick="confirmCloseCert()">✕ Close · 닫기</button>'
+    + '</div></div>';
+  document.body.appendChild(overlay);
+  window.onbeforeunload = function(e){e.preventDefault();e.returnValue='';};
+}
+
+function downloadCertPDF() {
+  window.print();
+}
+
+function sendByEmail() {
+  const { name, issueDate, expireDate } = window._certData;
+  const subject = encodeURIComponent(`Food Handler Certification - ${name}`);
+  const body = encodeURIComponent(
+`Food Handler Certification Submission
+식품 취급자 인증 제출
+
+Name (성명): ${name}
+Issue Date (발급일): ${issueDate}
+Expiration Date (만료일): ${expireDate}
+
+Course: Food Operation Safety Course
+Reference: TB MED 530 / FDA Food Code
+Organization: DHK Public Health / 65th Med Bde
+
+[Please attach your screenshot of the certification card]
+[인증서 스크린샷을 첨부해 주세요]`
+  );
+  window.location.href = `mailto:${SUBMIT_EMAIL}?subject=${subject}&body=${body}`;
+}
+
+function sendBySMS() {
+  const { name, issueDate, expireDate } = window._certData;
+  const msg = encodeURIComponent(
+`[Food Handler Cert] ${name} | Issued: ${issueDate} | Expires: ${expireDate} | TB MED 530 ✅`
+  );
+  window.location.href = `sms:?body=${msg}`;
+}
+
+// ══════════════════════════════════════════
+// INIT
+// ══════════════════════════════════════════
+renderLesson();
+renderSidebarModules();
+</script>
+
+</div><!-- /mobile-wrapper -->
+</div><!-- /pc-shell -->
+</body>
+</html>
