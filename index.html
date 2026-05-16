@@ -1905,7 +1905,7 @@ function renderResult() {
         }
       </div>
       ${passed
-        ? `<button class="btn btn-primary" style="margin-bottom:10px" onclick="showNameEntry(${pct}, ${quizScore}, ${total})">
+        ? `<button class="btn btn-primary" id="genCertBtn" style="margin-bottom:10px" onclick="showNameEntry(${pct}, ${quizScore}, ${total})">
              📋 Generate Certificate · 인증서 만들기
            </button>`
         : ''
@@ -1962,7 +1962,7 @@ function closeCertOverlay() {
   // If cert was issued, show locked message on quiz result screen
   if (certIssued && !devMode) {
     // Disable the Generate Certificate button
-    var genBtn = document.querySelector('.btn-primary[onclick*="showNameEntry"]');
+    var genBtn = document.getElementById('genCertBtn');
     if (genBtn) {
       genBtn.disabled = true;
       genBtn.style.opacity = '0.35';
