@@ -1798,6 +1798,10 @@ function showAllDoneDialog() {
 }
 
 function startQuiz() {
+  if (certIssued && !devMode) {
+    alert('✅ Certificate already issued for this session.\n인증서가 이미 발급되었습니다.\n\nTo start over, please refresh the page.\n처음부터 시작하려면 페이지를 새로고침하세요.');
+    return;
+  }
   if (!isQuizUnlocked()) {
     alert('📖 Please complete all learning modules first!\n모든 학습 모듈을 먼저 완료해 주세요.\n\n(진도: ' + lessonProgress.filter(Boolean).length + '/' + lessonProgress.length + ' 완료)');
     return;
@@ -1921,6 +1925,9 @@ function renderResult() {
 // ▶ Change this to your actual submission email address
 const SUBMIT_EMAIL = 'your-email@korea.army.mil';
 
+// Once cert is issued, lock the session
+let certIssued = false;
+
 function showNameEntry(pct, score, total) {
   var old = document.getElementById('certOverlay');
   if (old) old.parentNode.removeChild(old);
@@ -1951,15 +1958,49 @@ function closeCertOverlay() {
   var el = document.getElementById('certOverlay');
   if (el) el.parentNode.removeChild(el);
   window.onbeforeunload = null;
+
+  // If cert was issued, show locked message on quiz result screen
+  if (certIssued && !devMode) {
+    var container = document.getElementById('quizContainer');
+    if (container && !document.getElementById('certIssuedMsg')) {
+      var msg = document.createElement('div');
+      msg.id = 'certIssuedMsg';
+      msg.style.cssText = 'background:#e8f5ed;border:2px solid #1a7a4a;border-radius:12px;padding:14px 16px;margin-top:12px;text-align:center;font-size:0.85rem;color:#0f4f2e;line-height:1.6';
+      msg.innerHTML = '✅ <strong>Certificate issued · 인증서 발급 완료</strong><br>'
+        + 'To issue another certificate, please refresh the page.<br>'
+        + '<span style="color:#555">다른 인증서를 발급하려면 페이지를 새로고침하세요.</span><br><br>'
+        + '<button onclick="location.reload()" style="margin-top:6px;padding:10px 20px;border-radius:10px;border:none;background:#1a7a4a;color:white;font-weight:700;cursor:pointer;font-size:0.85rem">🔄 Refresh · 새로고침</button>';
+      container.appendChild(msg);
+    }
+  }
 }
 
 function confirmCloseCert() {
-  if (confirm('⚠️ Certificate not saved!\n인증서가 저장되지 않습니다.\n\nClose anyway? · 닫으시겠습니까?')) {
+  if (confirm(
+    '⚠️ BEFORE YOU CLOSE · 닫기 전 확인\n\n'
+    + '1. Have you saved your certificate?\n'
+    + '   📄 Save as PDF  or  📸 Take a screenshot\n'
+    + '   인증서를 PDF로 저장하거나 스크린샷을 찍으셨나요?\n\n'
+    + '2. Once closed, the certificate CANNOT be re-issued.\n'
+    + '   닫으면 인증서를 다시 발급받을 수 없습니다.\n'
+    + '   (페이지를 새로고침해야 처음부터 다시 시작)\n\n'
+    + 'Close anyway? · 그래도 닫으시겠습니까?'
+  )) {
     closeCertOverlay();
   }
 }
 
 function showCertCard(name, pct, score, total) {
+  // Mark cert as issued — no more quiz retries this session
+  certIssued = true;
+
+  // Update result screen to remove retry button
+  var retryBtn = document.querySelector('.quiz-result .btn-secondary');
+  if (retryBtn && retryBtn.textContent.includes('Retry')) {
+    retryBtn.disabled = true;
+    retryBtn.style.opacity = '0.35';
+    retryBtn.title = 'Certificate issued — refresh to restart · 인증서 발급 완료 — 재시작하려면 새로고침';
+  }
   var old = document.getElementById('certOverlay');
   if (old) old.parentNode.removeChild(old);
   var today = new Date();
