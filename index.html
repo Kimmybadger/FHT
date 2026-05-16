@@ -1577,9 +1577,9 @@ function renderQuizStart() {
       <div style="font-family:'Bebas Neue',sans-serif;font-size:1.8rem;color:var(--green)">CERTIFICATION QUIZ</div>
       <div style="font-size:0.82rem;color:var(--gray);margin-bottom:16px">식품 취급자 인증 퀴즈</div>
       <div class="result-msg">
-        📋 <strong>${quizQuestions.length} questions · ${quizQuestions.length}문항</strong><br>
-        ✅ Passing score: <strong>80%</strong> (${Math.ceil(quizQuestions.length * 0.8)}/${quizQuestions.length} correct)<br>
-        합격 점수: 80% (${Math.ceil(quizQuestions.length * 0.8)}/${quizQuestions.length}개 정답)<br><br>
+        📋 <strong>15 questions (random) · 15문항 (랜덤)</strong><br>
+        ✅ Passing score: <strong>80%</strong> (12/15 correct)<br>
+        합격 점수: 80% (15문항 중 12개 정답)<br><br>
         Covers all 5 modules · 5개 모듈 전체 포함
       </div>
       <button class="btn btn-primary" style="max-width:280px;margin:0 auto;display:block"
@@ -1593,7 +1593,8 @@ function startQuiz() {
   quizQuestionIndex = 0;
   quizScore = 0;
   quizAnswered = false;
-  quizShuffled = [...quizQuestions].sort(() => Math.random() - 0.5);
+  // Pick 15 random questions from the full bank
+  quizShuffled = [...quizQuestions].sort(() => Math.random() - 0.5).slice(0, 15);
   showPage('quiz');
   renderQuestion();
 }

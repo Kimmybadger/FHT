@@ -1,288 +1,306 @@
 [
   {
-    "module": "Foodborne Illness",
-    "moduleKo": "식품 매개 질병",
-    "q": "What percentage of foodborne illness cases are estimated to go unreported (Iceberg Theory)?",
-    "qKo": "빙산 이론에 따르면 식품 매개 질병 사례의 몇 %가 보고되지 않는 것으로 추산됩니까?",
-    "options": ["10%", "50%", "90%", "75%"],
+    "module": "Foodborne Illness", "moduleKo": "식품 매개 질병",
+    "q": "What percentage of foodborne illness cases go unreported (Iceberg Theory)?",
+    "qKo": "빙산 이론에 따르면 식품 매개 질병의 몇 %가 보고되지 않습니까?",
+    "options": ["10% · 10%", "50% · 50%", "90% · 90%", "75% · 75%"],
     "answer": 2,
     "explain": "The Iceberg Theory: visible symptoms represent only 10% of the problem. 90% goes unseen and unreported.",
     "explainKo": "빙산 이론: 눈에 보이는 증상은 문제의 10%에 불과하며, 90%는 감지되지 않고 보고되지 않습니다."
   },
   {
-    "module": "Foodborne Illness",
-    "moduleKo": "식품 매개 질병",
-    "q": "Which of the following is NOT one of the Big 6 pathogens?",
+    "module": "Foodborne Illness", "moduleKo": "식품 매개 질병",
+    "q": "Which is NOT one of the Big 6 pathogens?",
     "qKo": "Big 6 병원균에 해당하지 않는 것은?",
-    "options": ["Norovirus", "Hepatitis A", "Listeria monocytogenes", "Shigella spp."],
+    "options": ["Norovirus · 노로바이러스", "Hepatitis A · A형 간염", "Listeria monocytogenes · 리스테리아", "Shigella spp. · 시겔라"],
     "answer": 2,
-    "explain": "Listeria is not in the Big 6. The Big 6 are: Norovirus, Salmonella typhi, E. coli (EHEC), Shigella, Hepatitis A, Nontyphoidal Salmonella.",
+    "explain": "Listeria is not in the Big 6. The Big 6: Norovirus, Salmonella typhi, E. coli (EHEC), Shigella, Hepatitis A, Nontyphoidal Salmonella.",
     "explainKo": "리스테리아는 Big 6에 포함되지 않습니다. Big 6: 노로바이러스, 살모넬라 타이피, 대장균(EHEC), 시겔라, A형 간염, 비장티푸스성 살모넬라."
   },
   {
-    "module": "Foodborne Illness",
-    "moduleKo": "식품 매개 질병",
+    "module": "Foodborne Illness", "moduleKo": "식품 매개 질병",
     "q": "Biological hazards contribute to approximately what fraction of all foodborne illness outbreaks?",
     "qKo": "생물학적 위해요소는 전체 식품 매개 질병 발병의 약 몇 분의 몇을 차지합니까?",
-    "options": ["One third (1/3)", "Two thirds (2/3)", "One half (1/2)", "Three quarters (3/4)"],
+    "options": ["1/3 · 3분의 1", "2/3 · 3분의 2", "1/2 · 2분의 1", "3/4 · 4분의 3"],
     "answer": 1,
     "explain": "Biological hazards (bacteria, viruses, parasites) account for approximately 2/3 of all foodborne illness outbreaks.",
     "explainKo": "생물학적 위해요소(세균, 바이러스, 기생충)가 전체 식품 매개 질병 발병의 약 2/3를 차지합니다."
   },
   {
-    "module": "Foodborne Illness",
-    "moduleKo": "식품 매개 질병",
+    "module": "Foodborne Illness", "moduleKo": "식품 매개 질병",
     "q": "Which pathogen is associated with typhoid fever?",
     "qKo": "장티푸스와 관련된 병원균은?",
-    "options": ["Norovirus", "E. coli (EHEC)", "Salmonella typhi", "Shigella"],
+    "options": ["Norovirus · 노로바이러스", "E. coli EHEC · 대장균 EHEC", "Salmonella typhi · 살모넬라 타이피", "Shigella · 시겔라"],
     "answer": 2,
     "explain": "Salmonella typhi causes typhoid fever and is one of the Big 6 pathogens requiring employee exclusion from work.",
-    "explainKo": "살모넬라 타이피는 장티푸스를 유발하며 Big 6 병원균 중 하나로 업무 배제가 필요합니다."
+    "explainKo": "살모넬라 타이피는 장티푸스를 유발하며 업무 배제가 필요한 Big 6 병원균 중 하나입니다."
   },
   {
-    "module": "Foodborne Illness",
-    "moduleKo": "식품 매개 질병",
+    "module": "Foodborne Illness", "moduleKo": "식품 매개 질병",
     "q": "What are the 3 types of food safety hazards?",
     "qKo": "식품 안전 위해요소 3가지는?",
     "options": [
-      "Physical, Chemical, Thermal",
-      "Biological, Chemical, Physical",
-      "Microbial, Allergenic, Toxic",
-      "Viral, Bacterial, Fungal"
+      "Physical, Chemical, Thermal · 물리적, 화학적, 열적",
+      "Biological, Chemical, Physical · 생물학적, 화학적, 물리적",
+      "Microbial, Allergenic, Toxic · 미생물, 알레르겐, 독성",
+      "Viral, Bacterial, Fungal · 바이러스, 세균, 곰팡이"
     ],
     "answer": 1,
-    "explain": "The 3 types of food safety hazards are Biological (bacteria, viruses), Chemical (cleaners, pesticides), and Physical (glass, metal, bones).",
-    "explainKo": "3가지 식품 안전 위해요소: 생물학적(세균, 바이러스), 화학적(세정제, 농약), 물리적(유리, 금속, 뼈)."
+    "explain": "The 3 types: Biological (bacteria, viruses), Chemical (cleaners, pesticides), and Physical (glass, metal, bones).",
+    "explainKo": "3가지 위해요소: 생물학적(세균, 바이러스), 화학적(세정제, 농약), 물리적(유리, 금속, 뼈)."
   },
   {
-    "module": "Foodborne Illness",
-    "moduleKo": "식품 매개 질병",
+    "module": "Foodborne Illness", "moduleKo": "식품 매개 질병",
     "q": "Which Big 6 pathogen is associated with jaundice?",
     "qKo": "황달과 관련된 Big 6 병원균은?",
-    "options": ["Norovirus", "Shigella", "Hepatitis A", "E. coli"],
+    "options": ["Norovirus · 노로바이러스", "Shigella · 시겔라", "Hepatitis A · A형 간염", "E. coli · 대장균"],
     "answer": 2,
     "explain": "Hepatitis A causes jaundice (yellowing of skin and eyes) and is one of the Big 6 pathogens.",
     "explainKo": "A형 간염은 황달(피부와 눈의 황변)을 유발하며 Big 6 병원균 중 하나입니다."
   },
   {
-    "module": "Personal Hygiene",
-    "moduleKo": "개인 위생",
+    "module": "Foodborne Illness", "moduleKo": "식품 매개 질병",
+    "q": "How often can bacteria double in the Temperature Danger Zone?",
+    "qKo": "온도 위험 구간에서 세균은 얼마나 자주 2배로 증식합니까?",
+    "options": ["Every 5 minutes · 5분마다", "Every 20 minutes · 20분마다", "Every 1 hour · 1시간마다", "Every 4 hours · 4시간마다"],
+    "answer": 1,
+    "explain": "In the Temperature Danger Zone (41–135°F), bacteria can double every 20 minutes under ideal conditions.",
+    "explainKo": "온도 위험 구간(41–135°F)에서 세균은 이상적인 조건 하에 20분마다 2배로 증식할 수 있습니다."
+  },
+  {
+    "module": "Personal Hygiene", "moduleKo": "개인 위생",
     "q": "How long must you scrub your hands during proper handwashing?",
     "qKo": "올바른 손 씻기 시 몇 초 이상 문질러야 합니까?",
-    "options": ["5 seconds", "10 seconds", "20 seconds", "60 seconds"],
+    "options": ["5 seconds · 5초", "10 seconds · 10초", "20 seconds · 20초", "60 seconds · 60초"],
     "answer": 2,
     "explain": "Scrub all surfaces for a minimum of 20 seconds — fingers, thumbs, between fingers, and backs of hands.",
-    "explainKo": "손의 모든 부위를 최소 20초 이상 문질러야 합니다."
+    "explainKo": "손의 모든 부위(손가락, 엄지, 손가락 사이, 손등)를 최소 20초 이상 문질러야 합니다."
   },
   {
-    "module": "Personal Hygiene",
-    "moduleKo": "개인 위생",
-    "q": "Which of the following is TRUE about glove use?",
+    "module": "Personal Hygiene", "moduleKo": "개인 위생",
+    "q": "Which statement about glove use is TRUE?",
     "qKo": "장갑 사용에 관한 올바른 설명은?",
     "options": [
-      "Gloves replace the need for handwashing",
-      "Wash hands before putting gloves on",
-      "Gloves must be changed every 4 hours",
-      "Latex gloves are required for all food prep"
+      "Gloves replace handwashing · 장갑이 손 씻기를 대체함",
+      "Wash hands before putting gloves on · 장갑 착용 전 손을 씻어야 함",
+      "Change gloves every 4 hours only · 4시간마다만 교체",
+      "Latex gloves required for all prep · 모든 조리에 라텍스 장갑 필수"
     ],
     "answer": 1,
-    "explain": "Gloves do NOT replace handwashing. Always wash your hands before putting gloves on.",
-    "explainKo": "장갑은 손 씻기를 대체하지 않습니다. 장갑 착용 전 항상 손을 씻어야 합니다."
+    "explain": "Gloves do NOT replace handwashing. Always wash your hands before putting gloves on and whenever you change to a new pair.",
+    "explainKo": "장갑은 손 씻기를 대체하지 않습니다. 장갑 착용 전과 새 장갑 교체 시 항상 손을 씻어야 합니다."
   },
   {
-    "module": "Personal Hygiene",
-    "moduleKo": "개인 위생",
-    "q": "A food handler reports having diarrhea. What should happen?",
-    "qKo": "식품 취급자가 설사 증상을 보고했습니다. 어떻게 해야 합니까?",
+    "module": "Personal Hygiene", "moduleKo": "개인 위생",
+    "q": "A food handler has diarrhea. What should happen?",
+    "qKo": "식품 취급자가 설사 증상이 있습니다. 어떻게 해야 합니까?",
     "options": [
-      "They can work if they wear gloves",
-      "They should be restricted to non-food areas",
-      "They must be excluded from work entirely",
-      "They should take medicine and continue working"
+      "Work with gloves · 장갑 착용 후 근무",
+      "Restrict to non-food areas · 식품 외 구역으로 제한",
+      "Exclude from work entirely · 업무에서 완전 배제",
+      "Take medicine and continue · 약 복용 후 계속 근무"
     ],
     "answer": 2,
     "explain": "Diarrhea is a Big 6 symptom. The employee must be EXCLUDED from work until cleared by a medical professional.",
     "explainKo": "설사는 Big 6 증상입니다. 의료 전문가의 허가가 있을 때까지 완전 배제되어야 합니다."
   },
   {
-    "module": "Personal Hygiene",
-    "moduleKo": "개인 위생",
+    "module": "Personal Hygiene", "moduleKo": "개인 위생",
     "q": "When must a food handler wash their hands?",
     "qKo": "식품 취급자가 손을 씻어야 하는 때는?",
     "options": [
-      "Only before starting work",
-      "After using the restroom only",
-      "Before handling food, after restroom, after touching raw meat, after coughing",
-      "Once every hour"
+      "Only before starting work · 출근 시에만",
+      "After restroom only · 화장실 후에만",
+      "Before food handling, after restroom, after raw meat, after coughing · 식품 취급 전, 화장실 후, 생고기 후, 기침 후",
+      "Once every hour · 1시간마다"
     ],
     "answer": 2,
     "explain": "Hands must be washed before handling food, after using the restroom, after touching raw meat, after coughing/sneezing, after handling garbage, and after eating/drinking.",
     "explainKo": "식품 취급 전, 화장실 후, 생고기 취급 후, 기침/재채기 후, 쓰레기 처리 후, 식사/음료 후 손을 씻어야 합니다."
   },
   {
-    "module": "Personal Hygiene",
-    "moduleKo": "개인 위생",
+    "module": "Personal Hygiene", "moduleKo": "개인 위생",
     "q": "Which personal appearance rule applies to food handlers?",
     "qKo": "식품 취급자에게 적용되는 개인 외모 규정은?",
     "options": [
-      "Jewelry is allowed if it is clean",
-      "Hair does not need to be restrained indoors",
-      "Hair must be restrained with a cap or net",
-      "Uniforms only need to be clean once per week"
+      "Jewelry allowed if clean · 깨끗하면 장신구 착용 가능",
+      "Hair restraint not needed indoors · 실내에서는 머리 묶기 불필요",
+      "Hair must be restrained with cap or net · 모자나 머리망으로 머리를 묶어야 함",
+      "Uniform clean once per week · 일주일에 한 번 청결 유지"
     ],
     "answer": 2,
     "explain": "Hair must always be restrained with a cap or hairnet during food preparation to prevent contamination.",
     "explainKo": "식품 조리 중 모자나 머리망으로 머리를 반드시 묶어야 오염을 방지할 수 있습니다."
   },
   {
-    "module": "Time & Temperature",
-    "moduleKo": "시간과 온도",
+    "module": "Personal Hygiene", "moduleKo": "개인 위생",
+    "q": "What is the last step of proper handwashing?",
+    "qKo": "올바른 손 씻기의 마지막 단계는?",
+    "options": [
+      "Rinse with cold water · 찬물로 헹구기",
+      "Dry with shared towel · 공용 타월로 건조",
+      "Use paper towel to turn off faucet · 종이 타월로 수도꼭지 잠금",
+      "Apply hand sanitizer · 손 소독제 사용"
+    ],
+    "answer": 2,
+    "explain": "The final step is to use a single-use paper towel to turn off the faucet, preventing recontamination of clean hands.",
+    "explainKo": "마지막 단계는 일회용 종이 타월로 수도꼭지를 잠가 깨끗한 손의 재오염을 방지하는 것입니다."
+  },
+  {
+    "module": "Time & Temperature", "moduleKo": "시간과 온도",
     "q": "What is the Temperature Danger Zone for TCS foods?",
     "qKo": "TCS 식품의 온도 위험 구간은?",
-    "options": ["32°F – 100°F", "41°F – 135°F", "45°F – 165°F", "50°F – 140°F"],
+    "options": ["32°F–100°F · 0°C–38°C", "41°F–135°F · 5°C–57°C", "45°F–165°F · 7°C–74°C", "50°F–140°F · 10°C–60°C"],
     "answer": 1,
     "explain": "The Temperature Danger Zone is 41°F–135°F (5°C–57°C). TCS foods must not spend more than 4 total hours in this zone.",
     "explainKo": "온도 위험 구간은 41°F–135°F (5°C–57°C)입니다. TCS 식품은 총 4시간 이상 이 구간에 있으면 안 됩니다."
   },
   {
-    "module": "Time & Temperature",
-    "moduleKo": "시간과 온도",
-    "q": "To what minimum temperature must poultry be cooked?",
-    "qKo": "가금류의 최소 조리 온도는?",
-    "options": ["145°F (63°C)", "155°F (68°C)", "165°F (74°C)", "135°F (57°C)"],
+    "module": "Time & Temperature", "moduleKo": "시간과 온도",
+    "q": "What minimum internal temperature must poultry reach?",
+    "qKo": "가금류의 최소 내부 조리 온도는?",
+    "options": ["145°F / 63°C", "155°F / 68°C", "165°F / 74°C", "135°F / 57°C"],
     "answer": 2,
-    "explain": "Poultry must be cooked to a minimum internal temperature of 165°F (74°C).",
-    "explainKo": "가금류는 최소 165°F (74°C)의 내부 온도로 조리해야 합니다."
+    "explain": "Poultry (chicken, turkey, duck) must reach a minimum internal temperature of 165°F (74°C).",
+    "explainKo": "가금류(닭, 칠면조, 오리)는 최소 165°F (74°C)의 내부 온도에 도달해야 합니다."
   },
   {
-    "module": "Time & Temperature",
-    "moduleKo": "시간과 온도",
+    "module": "Time & Temperature", "moduleKo": "시간과 온도",
     "q": "How do you calibrate a thermometer using the ice water method?",
     "qKo": "얼음물법으로 온도계를 보정하는 방법은?",
     "options": [
-      "Place in boiling water — should read 100°C",
-      "Place in 50/50 ice water — should read 32°F (0°C)",
-      "Place in warm water — should read 98.6°F",
-      "Place in refrigerator — should read 41°F"
+      "Boiling water → 100°C · 끓는 물 → 100°C",
+      "50/50 ice water → 32°F (0°C) · 얼음물 50:50 → 32°F (0°C)",
+      "Warm water → 98.6°F · 따뜻한 물 → 98.6°F",
+      "Refrigerator → 41°F · 냉장고 → 41°F"
     ],
     "answer": 1,
-    "explain": "Ice water calibration: fill a cup with 50% ice and 50% water. The thermometer should read 32°F (0°C).",
-    "explainKo": "얼음물 보정: 컵에 얼음 50%와 물 50%를 채우고 온도계를 넣어 안정화. 32°F (0°C)를 나타내야 합니다."
+    "explain": "Fill a cup with 50% ice and 50% water. The thermometer should stabilize at 32°F (0°C).",
+    "explainKo": "컵에 얼음 50%와 물 50%를 채우고 온도계를 넣어 안정화. 32°F (0°C)를 나타내야 합니다."
   },
   {
-    "module": "Time & Temperature",
-    "moduleKo": "시간과 온도",
-    "q": "What is the minimum internal cooking temperature for ground beef?",
+    "module": "Time & Temperature", "moduleKo": "시간과 온도",
+    "q": "What is the minimum internal temperature for ground beef?",
     "qKo": "다진 쇠고기의 최소 내부 조리 온도는?",
-    "options": ["145°F (63°C)", "155°F (68°C)", "165°F (74°C)", "135°F (57°C)"],
+    "options": ["145°F / 63°C", "155°F / 68°C", "165°F / 74°C", "135°F / 57°C"],
     "answer": 1,
-    "explain": "Ground beef must be cooked to 155°F (68°C) for 15 seconds minimum.",
+    "explain": "Ground beef must be cooked to 155°F (68°C) for at least 15 seconds.",
     "explainKo": "다진 쇠고기는 최소 155°F (68°C)에서 15초 이상 조리해야 합니다."
   },
   {
-    "module": "Time & Temperature",
-    "moduleKo": "시간과 온도",
-    "q": "What is the first step in the 2-step cooling process?",
-    "qKo": "2단계 냉각 과정의 첫 번째 단계는?",
+    "module": "Time & Temperature", "moduleKo": "시간과 온도",
+    "q": "What is Step 1 of the 2-step cooling process?",
+    "qKo": "2단계 냉각 과정의 1단계는?",
     "options": [
-      "Cool from 70°F to 41°F within 4 hours",
-      "Cool from 135°F to 70°F within 2 hours",
-      "Cool from 165°F to 41°F within 6 hours",
-      "Cool from 135°F to 41°F within 1 hour"
+      "70°F to 41°F within 4 hours · 70°F에서 41°F로 4시간 이내",
+      "135°F to 70°F within 2 hours · 135°F에서 70°F로 2시간 이내",
+      "165°F to 41°F within 6 hours · 165°F에서 41°F로 6시간 이내",
+      "135°F to 41°F within 1 hour · 135°F에서 41°F로 1시간 이내"
     ],
     "answer": 1,
-    "explain": "Step 1: Cool food from 135°F to 70°F within 2 hours. Step 2: Cool from 70°F to 41°F within an additional 4 hours.",
+    "explain": "Step 1: Cool from 135°F to 70°F within 2 hours. Step 2: Cool from 70°F to 41°F within the next 4 hours.",
     "explainKo": "1단계: 135°F(57°C)에서 70°F(21°C)로 2시간 이내 냉각. 2단계: 70°F(21°C)에서 41°F(5°C)로 4시간 이내 냉각."
   },
   {
-    "module": "Time & Temperature",
-    "moduleKo": "시간과 온도",
+    "module": "Time & Temperature", "moduleKo": "시간과 온도",
     "q": "What is the minimum hot holding temperature for TCS foods?",
     "qKo": "TCS 식품의 최소 온장 보관 온도는?",
-    "options": ["115°F (46°C)", "125°F (52°C)", "135°F (57°C)", "145°F (63°C)"],
+    "options": ["115°F / 46°C", "125°F / 52°C", "135°F / 57°C", "145°F / 63°C"],
     "answer": 2,
     "explain": "Hot TCS foods must be held at 135°F (57°C) or above to prevent bacterial growth.",
     "explainKo": "온장 보관 TCS 식품은 세균 증식 방지를 위해 135°F (57°C) 이상을 유지해야 합니다."
   },
   {
-    "module": "Cross-Contamination",
-    "moduleKo": "교차 오염",
-    "q": "In a refrigerator, where should raw poultry be stored?",
-    "qKo": "냉장고에서 생 가금류는 어디에 보관해야 합니까?",
-    "options": [
-      "On the top shelf",
-      "Next to raw fish on the middle shelf",
-      "On the bottom shelf",
-      "In a separate refrigerator only"
-    ],
-    "answer": 2,
-    "explain": "Raw poultry requires the highest cooking temperature (165°F) and must be stored on the BOTTOM shelf to prevent drips from contaminating other foods.",
-    "explainKo": "생 가금류는 가장 높은 조리 온도(165°F)가 필요하며 다른 식품으로 흘러내리지 않도록 맨 아래 선반에 보관해야 합니다."
+    "module": "Time & Temperature", "moduleKo": "시간과 온도",
+    "q": "What temperature must food reach when reheating for hot holding?",
+    "qKo": "온장 보관을 위해 재가열 시 도달해야 하는 온도는?",
+    "options": ["135°F / 57°C", "145°F / 63°C", "155°F / 68°C", "165°F / 74°C"],
+    "answer": 3,
+    "explain": "Food must be reheated to 165°F (74°C) within 2 hours before being placed in hot holding.",
+    "explainKo": "온장 보관 전 식품은 2시간 이내에 165°F (74°C)까지 재가열해야 합니다."
   },
   {
-    "module": "Cross-Contamination",
-    "moduleKo": "교차 오염",
+    "module": "Cross-Contamination", "moduleKo": "교차 오염",
+    "q": "Where should raw poultry be stored in a refrigerator?",
+    "qKo": "냉장고에서 생 가금류는 어디에 보관해야 합니까?",
+    "options": [
+      "Top shelf · 맨 위 선반",
+      "Middle shelf next to fish · 중간 선반 생선 옆",
+      "Bottom shelf · 맨 아래 선반",
+      "Separate refrigerator only · 별도 냉장고에만"
+    ],
+    "answer": 2,
+    "explain": "Raw poultry requires the highest cooking temperature (165°F) and must be on the BOTTOM shelf to prevent drip contamination.",
+    "explainKo": "생 가금류는 가장 높은 조리 온도(165°F)가 필요하며 드립 오염 방지를 위해 맨 아래 선반에 보관해야 합니다."
+  },
+  {
+    "module": "Cross-Contamination", "moduleKo": "교차 오염",
     "q": "Which action BEST prevents cross-contamination?",
     "qKo": "교차 오염을 가장 잘 예방하는 행동은?",
     "options": [
-      "Using the same cutting board for everything if cleaned",
-      "Using separate cutting boards for raw meat and produce",
-      "Rinsing cutting boards with water between uses",
-      "Storing all food in sealed containers"
+      "Same cutting board if cleaned · 세척하면 같은 도마 사용 가능",
+      "Separate cutting boards for raw meat and produce · 생고기와 채소에 별도 도마 사용",
+      "Rinse boards with water between uses · 사용 중간에 물로 헹구기",
+      "Store all food in sealed containers · 모든 식품을 밀봉 용기에 보관"
     ],
     "answer": 1,
-    "explain": "Using separate, color-coded cutting boards for raw meat and ready-to-eat produce is a key method to prevent cross-contamination.",
-    "explainKo": "생고기와 즉식 채소용 도마를 별도로 사용하는 것이 교차 오염 예방의 핵심입니다."
+    "explain": "Using separate, color-coded cutting boards for raw meat and ready-to-eat produce is a key cross-contamination prevention method.",
+    "explainKo": "생고기와 즉식 채소용 도마를 색상 구분하여 별도로 사용하는 것이 교차 오염 예방의 핵심입니다."
   },
   {
-    "module": "Cross-Contamination",
-    "moduleKo": "교차 오염",
-    "q": "How many major food allergens are recognized by the FDA?",
+    "module": "Cross-Contamination", "moduleKo": "교차 오염",
+    "q": "How many major food allergens does the FDA recognize?",
     "qKo": "FDA가 인정하는 주요 식품 알레르겐은 몇 가지입니까?",
-    "options": ["6", "7", "8", "9"],
+    "options": ["6가지 · 6", "7가지 · 7", "8가지 · 8", "9가지 · 9"],
     "answer": 3,
-    "explain": "The FDA recognizes 9 major food allergens: Milk, Eggs, Fish, Shellfish, Tree nuts, Peanuts, Wheat, Soybeans, and Sesame (added in 2023).",
-    "explainKo": "FDA는 9가지 주요 식품 알레르겐을 인정합니다: 우유, 달걀, 생선, 갑각류, 견과류, 땅콩, 밀, 대두, 참깨 (2023년 추가)."
+    "explain": "The FDA recognizes 9 major allergens: Milk, Eggs, Fish, Shellfish, Tree nuts, Peanuts, Wheat, Soybeans, and Sesame (added 2023).",
+    "explainKo": "FDA는 9가지 주요 알레르겐을 인정합니다: 우유, 달걀, 생선, 갑각류, 견과류, 땅콩, 밀, 대두, 참깨 (2023년 추가)."
   },
   {
-    "module": "Cross-Contamination",
-    "moduleKo": "교차 오염",
-    "q": "What does RTE stand for in food safety?",
-    "qKo": "식품 안전에서 RTE의 의미는?",
-    "options": ["Ready To Eat", "Refrigerated Temperature Equipment", "Raw To Eliminate", "Rapid Thermal Effect"],
+    "module": "Cross-Contamination", "moduleKo": "교차 오염",
+    "q": "What does RTE stand for?",
+    "qKo": "RTE의 의미는?",
+    "options": [
+      "Ready To Eat · 즉식 식품",
+      "Refrigerated Temperature Equipment · 냉장 온도 장비",
+      "Raw To Eliminate · 생식품 제거",
+      "Rapid Thermal Effect · 급속 열 효과"
+    ],
     "answer": 0,
-    "explain": "RTE stands for Ready-To-Eat foods — foods that will not be cooked before consumption, such as salads, deli meats, and fresh fruits.",
-    "explainKo": "RTE는 즉식 식품(Ready-To-Eat)을 의미합니다 — 샐러드, 델리 고기, 신선 과일처럼 섭취 전에 조리하지 않는 식품."
+    "explain": "RTE = Ready-To-Eat foods — foods consumed without further cooking, such as salads, deli meats, and fresh fruits.",
+    "explainKo": "RTE = 즉식 식품(Ready-To-Eat) — 샐러드, 델리 고기, 신선 과일처럼 추가 조리 없이 섭취하는 식품."
   },
   {
-    "module": "Cross-Contamination",
-    "moduleKo": "교차 오염",
-    "q": "Which food must be stored ABOVE raw ground beef in a refrigerator?",
-    "qKo": "냉장고에서 다진 쇠고기 위에 보관해야 하는 식품은?",
-    "options": ["Raw poultry", "Raw pork", "Whole raw fish", "Raw ground pork"],
+    "module": "Cross-Contamination", "moduleKo": "교차 오염",
+    "q": "Which food is stored directly ABOVE raw ground beef in a refrigerator?",
+    "qKo": "냉장고에서 다진 쇠고기 바로 위에 보관하는 식품은?",
+    "options": [
+      "Raw poultry · 생 가금류",
+      "Raw pork · 생 돼지고기",
+      "Whole raw fish · 통 생선",
+      "RTE salads · 즉식 샐러드"
+    ],
     "answer": 2,
-    "explain": "Whole raw fish (cooked to 145°F) is stored above raw ground beef (cooked to 155°F) because it requires a lower cooking temperature.",
-    "explainKo": "통 생선(조리 온도 145°F)은 다진 쇠고기(조리 온도 155°F)보다 낮은 온도에서 조리하므로 위에 보관합니다."
+    "explain": "Whole raw fish (cook to 145°F) is stored above ground beef (155°F) because it has a lower required cooking temperature.",
+    "explainKo": "통 생선(조리 온도 145°F)은 다진 쇠고기(155°F)보다 낮은 조리 온도가 필요하므로 위에 보관합니다."
   },
   {
-    "module": "Cleaning & Sanitizing",
-    "moduleKo": "청소와 소독",
+    "module": "Cleaning & Sanitizing", "moduleKo": "청소와 소독",
     "q": "What is the correct order for manual dishwashing?",
     "qKo": "수동 식기 세척의 올바른 순서는?",
     "options": [
-      "Rinse → Wash → Sanitize → Air dry",
-      "Sanitize → Wash → Rinse → Air dry",
-      "Wash → Rinse → Sanitize → Air dry",
-      "Wash → Sanitize → Rinse → Air dry"
+      "Rinse → Wash → Sanitize → Air dry · 헹굼→세척→소독→건조",
+      "Sanitize → Wash → Rinse → Air dry · 소독→세척→헹굼→건조",
+      "Wash → Rinse → Sanitize → Air dry · 세척→헹굼→소독→건조",
+      "Wash → Sanitize → Rinse → Air dry · 세척→소독→헹굼→건조"
     ],
     "answer": 2,
-    "explain": "The correct order is: Wash with hot soapy water, Rinse with clean water, Sanitize, then Air dry — never towel dry.",
-    "explainKo": "올바른 순서: 뜨거운 비눗물로 세척 → 깨끗한 물로 헹굼 → 소독 → 자연 건조 (타월 건조 금지)."
+    "explain": "Correct order: Wash (hot soapy water) → Rinse (clean water) → Sanitize → Air dry. Never towel dry.",
+    "explainKo": "올바른 순서: 세척(뜨거운 비눗물) → 헹굼(깨끗한 물) → 소독 → 자연 건조. 타월 건조 금지."
   },
   {
-    "module": "Cleaning & Sanitizing",
-    "moduleKo": "청소와 소독",
-    "q": "What is the approved concentration range for chlorine bleach sanitizer?",
+    "module": "Cleaning & Sanitizing", "moduleKo": "청소와 소독",
+    "q": "What is the approved concentration for chlorine bleach sanitizer?",
     "qKo": "염소 소독액의 승인된 농도 범위는?",
     "options": ["10–25 ppm", "25–50 ppm", "50–100 ppm", "100–200 ppm"],
     "answer": 2,
@@ -290,43 +308,54 @@
     "explainKo": "염소 소독액은 50–100 ppm이어야 합니다. 너무 낮으면 효과 없고, 너무 높으면 화학적 위험이 됩니다."
   },
   {
-    "module": "Cleaning & Sanitizing",
-    "moduleKo": "청소와 소독",
+    "module": "Cleaning & Sanitizing", "moduleKo": "청소와 소독",
     "q": "Where must chemicals be stored relative to food?",
     "qKo": "화학물질은 식품 대비 어디에 보관해야 합니까?",
     "options": [
-      "Above food for easy access",
-      "Next to food in sealed containers",
-      "Below and away from food and food contact surfaces",
-      "In the same refrigerator, lower shelf"
+      "Above food for easy access · 접근 편의를 위해 식품 위에",
+      "Next to food in sealed containers · 밀봉 용기에 식품 옆에",
+      "Below and away from food and food contact surfaces · 식품 및 접촉 표면 아래와 분리",
+      "In the same refrigerator, lower shelf · 같은 냉장고 아래 선반"
     ],
     "answer": 2,
-    "explain": "Chemicals must ALWAYS be stored BELOW and AWAY from food and food contact surfaces to prevent chemical contamination.",
+    "explain": "Chemicals must ALWAYS be stored BELOW and AWAY from food and food contact surfaces.",
     "explainKo": "화학물질은 항상 식품 및 식품 접촉 표면의 아래와 분리된 곳에 보관해야 합니다."
   },
   {
-    "module": "Cleaning & Sanitizing",
-    "moduleKo": "청소와 소독",
+    "module": "Cleaning & Sanitizing", "moduleKo": "청소와 소독",
     "q": "What is the difference between cleaning and sanitizing?",
     "qKo": "세척과 소독의 차이는?",
     "options": [
-      "They are the same process",
-      "Cleaning kills pathogens; sanitizing removes dirt",
-      "Cleaning removes dirt and food; sanitizing reduces pathogens to safe levels",
-      "Sanitizing is only needed for raw meat surfaces"
+      "They are the same process · 같은 과정임",
+      "Cleaning kills pathogens; sanitizing removes dirt · 세척이 병원균 제거, 소독이 오물 제거",
+      "Cleaning removes dirt; sanitizing reduces pathogens to safe levels · 세척은 오물 제거, 소독은 병원균을 안전 수준으로 감소",
+      "Sanitizing is only needed for raw meat surfaces · 생고기 표면에만 소독 필요"
     ],
     "answer": 2,
-    "explain": "Cleaning removes visible dirt and food residue. Sanitizing reduces pathogens to safe levels. Both steps are required — cleaning alone is not enough.",
+    "explain": "Cleaning removes visible dirt and food residue. Sanitizing reduces pathogens to safe levels. Both steps are always required.",
     "explainKo": "세척은 눈에 보이는 오물과 식품 잔여물을 제거합니다. 소독은 병원균을 안전한 수준으로 줄입니다. 두 과정 모두 필요합니다."
   },
   {
-    "module": "Cleaning & Sanitizing",
-    "moduleKo": "청소와 소독",
-    "q": "What is the minimum distance food must be stored off the floor?",
+    "module": "Cleaning & Sanitizing", "moduleKo": "청소와 소독",
+    "q": "How far off the floor must food be stored?",
     "qKo": "식품은 바닥에서 최소 몇 인치 이상 보관해야 합니까?",
-    "options": ["2 inches (5 cm)", "4 inches (10 cm)", "6 inches (15 cm)", "12 inches (30 cm)"],
+    "options": ["2 inches / 5 cm · 2인치 / 5cm", "4 inches / 10 cm · 4인치 / 10cm", "6 inches / 15 cm · 6인치 / 15cm", "12 inches / 30 cm · 12인치 / 30cm"],
     "answer": 2,
-    "explain": "Food must be stored at least 6 inches (15 cm) off the floor to prevent contamination from pests and flooding.",
-    "explainKo": "식품은 해충 및 침수로 인한 오염 방지를 위해 바닥에서 최소 6인치(15cm) 이상 보관해야 합니다."
+    "explain": "Food must be stored at least 6 inches (15 cm) off the floor to prevent contamination from pests and moisture.",
+    "explainKo": "식품은 해충 및 습기로 인한 오염 방지를 위해 바닥에서 최소 6인치(15cm) 이상 보관해야 합니다."
+  },
+  {
+    "module": "Cleaning & Sanitizing", "moduleKo": "청소와 소독",
+    "q": "Why should equipment be air dried after sanitizing?",
+    "qKo": "소독 후 장비를 자연 건조해야 하는 이유는?",
+    "options": [
+      "It is faster · 더 빠르기 때문에",
+      "Towel drying can recontaminate surfaces · 타월 건조 시 표면이 재오염될 수 있기 때문에",
+      "Air drying removes more bacteria · 자연 건조가 세균을 더 많이 제거하기 때문에",
+      "Towels are too expensive · 타월이 너무 비싸기 때문에"
+    ],
+    "answer": 1,
+    "explain": "Towels can harbor bacteria and recontaminate sanitized surfaces. Always air dry equipment after sanitizing.",
+    "explainKo": "타월에 세균이 번식할 수 있어 소독된 표면을 재오염시킬 수 있습니다. 소독 후에는 항상 자연 건조하세요."
   }
 ]
