@@ -1961,6 +1961,14 @@ function closeCertOverlay() {
 
   // If cert was issued, show locked message on quiz result screen
   if (certIssued && !devMode) {
+    // Disable the Generate Certificate button
+    var genBtn = document.querySelector('.btn-primary[onclick*="showNameEntry"]');
+    if (genBtn) {
+      genBtn.disabled = true;
+      genBtn.style.opacity = '0.35';
+      genBtn.textContent = '✅ Certificate Issued · 인증서 발급 완료';
+      genBtn.style.cursor = 'not-allowed';
+    }
     var container = document.getElementById('quizContainer');
     if (container && !document.getElementById('certIssuedMsg')) {
       var msg = document.createElement('div');
