@@ -1508,13 +1508,16 @@ function handleHeaderTap() {
     updateQuizLock();
     if (devMode) {
       alert('🛠️ Dev Mode ON — All locks disabled\n학습 잠금 및 타이머 해제됨');
-      // Cancel any running countdown
       clearNextBtnCountdown();
       const btn = document.getElementById('nextBtn');
       if (btn) { btn.disabled = false; btn.style.opacity = '1'; btn.textContent = isLastSection() ? '✅ Done' : 'Next →'; }
+      // Refresh quiz screen to show skip button
+      if (!quizActive) renderQuizStart();
     } else {
       alert('🔒 Dev Mode OFF — Locks re-enabled\n학습 잠금 및 타이머 활성화됨');
       startNextBtnCountdown();
+      // Refresh quiz screen to hide skip button
+      if (!quizActive) renderQuizStart();
     }
   }
 }
@@ -1755,8 +1758,14 @@ function updateProgress() {
 // QUIZ
 // ══════════════════════════════════════════
 function renderQuizStart() {
+  const devBanner = devMode
+    ? `<div style="background:#2d2d2d;color:#ffd97a;border-radius:10px;padding:10px 14px;margin-bottom:12px;font-size:0.82rem;text-align:center">
+        🛠️ Dev Mode ON — <button onclick="devSkipQuiz()" style="background:#ffd97a;color:#2d2d2d;border:none;border-radius:8px;padding:5px 14px;font-weight:700;cursor:pointer;font-size:0.82rem">⚡ Skip & Auto-Pass · 바로 합격 처리</button>
+       </div>`
+    : '';
   document.getElementById('quizContainer').innerHTML = `
     <div class="quiz-result" style="margin-top:8px">
+      ${devBanner}
       <div style="font-size:3rem;margin-bottom:12px">✏️</div>
       <div style="font-family:'Bebas Neue',sans-serif;font-size:1.8rem;color:var(--green)">CERTIFICATION QUIZ</div>
       <div style="font-size:0.82rem;color:var(--gray);margin-bottom:16px">식품 취급자 인증 퀴즈</div>
@@ -1770,6 +1779,15 @@ function renderQuizStart() {
               onclick="startQuiz()">▶ Start Quiz · 퀴즈 시작</button>
     </div>
   `;
+}
+
+function devSkipQuiz() {
+  if (!devMode) return;
+  // Simulate a perfect score
+  quizShuffled = [...quizQuestions].sort(() => Math.random() - 0.5).slice(0, 15);
+  quizScore = 15;
+  quizActive = false;
+  renderResult();
 }
 
 function showAllDoneDialog() {
