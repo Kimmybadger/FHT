@@ -1178,7 +1178,7 @@
 </div>
 
 <!-- HEADER (mobile) -->
-<div class="header">
+<div class="header" id="mainHeader" onclick="handleHeaderTap()">
   <div class="header-top">
     <div class="header-icon">🍽️</div>
     <div>
@@ -1220,8 +1220,8 @@
   <div class="cert-info">
     ⏰ <strong>Certification valid 1 year</strong> from date of issue &nbsp;·&nbsp; 인증 유효 기간: <strong>1년</strong><br><br>
     <strong>How to get certified · 인증 받는 방법</strong><br>
-    📖 Study all modules → ✏️ Pass quiz (80%+) → 📋 Enter name → 📸 Screenshot → 📨 Send to us<br>
-    <span style="font-size:0.75rem">학습 → 퀴즈 합격 → 이름 입력 → 스크린샷 → 제출</span>
+    📖 Study all modules → ✏️ Pass quiz (80%+) → 📋 Enter name → 📄 Save PDF or Screenshot → 🪪 Bring to event<br>
+    <span style="font-size:0.75rem">학습 → 퀴즈 합격 → 이름 입력 → PDF 저장 또는 스크린샷 → 이벤트 시 지참</span>
   </div>
 
   <div class="section-title">📚 Course Modules · 교육 모듈</div>
@@ -1273,7 +1273,7 @@
 
   <div style="display:flex;gap:10px;margin-bottom:16px;">
     <button class="btn btn-primary" style="font-size:0.82rem;" onclick="openLesson(0)">📖 Start Learning · 학습 시작</button>
-    <button class="btn btn-secondary" style="font-size:0.82rem;" onclick="startQuiz()">✏️ Take Quiz · 퀴즈 시작</button>
+    <button class="btn btn-secondary" style="font-size:0.82rem;" id="homeQuizBtn" onclick="startQuiz()">✏️ Take Quiz · 퀴즈 시작</button>
   </div>
 
   <div class="spacer"></div>
@@ -1315,18 +1315,55 @@
     <div class="ref-section-title">🌡️ Temperature Reference · 온도 참조표</div>
     <div class="ref-card">
       <table class="temp-table">
-        <tr><th>Application</th><th>Temp (°F)</th><th>Temp (°C)</th></tr>
-        <tr><td>Cold holding (냉장 보관)</td><td class="safe">41°F or below</td><td class="safe">5°C 이하</td></tr>
-        <tr><td>Danger zone (위험 온도)</td><td class="danger">41–135°F</td><td class="danger">5–57°C</td></tr>
-        <tr><td>Hot holding (온장 보관)</td><td class="safe">135°F or above</td><td class="safe">57°C 이상</td></tr>
-        <tr><td>Poultry (가금류)</td><td class="safe">165°F</td><td class="safe">74°C</td></tr>
-        <tr><td>Ground beef (다진 쇠고기)</td><td class="safe">155°F</td><td class="safe">68°C</td></tr>
-        <tr><td>Pork, whole beef (돼지/쇠고기)</td><td class="safe">145°F</td><td class="safe">63°C</td></tr>
-        <tr><td>Fish (생선)</td><td class="safe">145°F</td><td class="safe">63°C</td></tr>
-        <tr><td>Reheating (재가열)</td><td class="safe">165°F / 15 sec</td><td class="safe">74°C</td></tr>
-        <tr><td>Cooling step 1 (냉각 1단계)</td><td>135→70°F in 2hr</td><td>57→21°C / 2시간</td></tr>
-        <tr><td>Cooling step 2 (냉각 2단계)</td><td>70→41°F in 4hr</td><td>21→5°C / 4시간</td></tr>
+        <tr><th>Application · 용도</th><th>°F</th><th>°C</th></tr>
+        <tr><td>Cold holding · 냉장 보관</td><td class="safe">41°F or below</td><td class="safe">5°C 이하</td></tr>
+        <tr><td>⚠️ Danger zone · 위험 구간</td><td class="danger">41–135°F</td><td class="danger">5–57°C</td></tr>
+        <tr><td>Hot holding · 온장 보관</td><td class="safe">135°F or above</td><td class="safe">57°C 이상</td></tr>
+        <tr><td>Poultry · 가금류</td><td class="safe">165°F / 15 sec</td><td class="safe">74°C</td></tr>
+        <tr><td>Ground beef · 다진 쇠고기</td><td class="safe">155°F / 15 sec</td><td class="safe">68°C</td></tr>
+        <tr><td>Pork, whole beef · 돼지/쇠고기</td><td class="safe">145°F / 15 sec</td><td class="safe">63°C</td></tr>
+        <tr><td>Fish · 생선</td><td class="safe">145°F / 15 sec</td><td class="safe">63°C</td></tr>
+        <tr><td>Reheating · 재가열</td><td class="safe">165°F / 15 sec</td><td class="safe">74°C</td></tr>
       </table>
+    </div>
+  </div>
+
+  <div class="ref-section">
+    <div class="ref-section-title">❄️ Cooling Requirements · 냉각 요구사항</div>
+    <div class="ref-card">
+      <table class="temp-table">
+        <tr><th>Step · 단계</th><th>Temperature · 온도</th><th>Time · 시간</th></tr>
+        <tr><td><strong>Step 1 · 1단계</strong></td><td>135°F → 70°F<br><span style="font-size:0.78rem;color:#888">57°C → 21°C</span></td><td class="safe">Within 2 hrs · 2시간 이내</td></tr>
+        <tr><td><strong>Step 2 · 2단계</strong></td><td>70°F → 41°F<br><span style="font-size:0.78rem;color:#888">21°C → 5°C</span></td><td class="safe">Within 4 hrs · 4시간 이내</td></tr>
+        <tr><td><strong>Total · 총합</strong></td><td>135°F → 41°F<br><span style="font-size:0.78rem;color:#888">57°C → 5°C</span></td><td class="danger">Max 6 hrs · 최대 6시간</td></tr>
+      </table>
+      <div style="margin-top:10px;font-size:0.82rem;color:#555">
+        <strong>Cooling Methods · 냉각 방법:</strong><br>
+        • Ice water bath · 얼음물 욕조<br>
+        • Ice paddles · 얼음 패들<br>
+        • Blast chiller · 급속 냉각기<br>
+        • Shallow pans (≤2 inch depth) · 얕은 팬 (2인치 이하)<br>
+        • Loosely covered or uncovered · 느슨하게 덮거나 덮지 않음
+      </div>
+    </div>
+  </div>
+
+  <div class="ref-section">
+    <div class="ref-section-title">🦠 FAT TOM · 세균 성장 조건</div>
+    <div class="ref-card">
+      <table class="temp-table">
+        <tr><th>Letter</th><th>Condition · 조건</th><th>Ideal for Bacteria · 세균 최적</th></tr>
+        <tr><td><strong style="color:var(--green);font-size:1.1rem">F</strong></td><td>Food · 식품</td><td>Protein &amp; carbohydrate rich · 단백질/탄수화물 풍부</td></tr>
+        <tr><td><strong style="color:var(--green);font-size:1.1rem">A</strong></td><td>Acidity · 산도</td><td>pH 4.5 – 7.5</td></tr>
+        <tr><td><strong style="color:var(--green);font-size:1.1rem">T</strong></td><td>Temperature · 온도</td><td>41°F – 135°F (5°C – 57°C)</td></tr>
+        <tr><td><strong style="color:var(--green);font-size:1.1rem">T</strong></td><td>Time · 시간</td><td>Max 4 hrs in danger zone · 위험 구간 최대 4시간</td></tr>
+        <tr><td><strong style="color:var(--green);font-size:1.1rem">O</strong></td><td>Oxygen · 산소</td><td>Most need O₂ · 대부분 산소 필요</td></tr>
+        <tr><td><strong style="color:var(--green);font-size:1.1rem">M</strong></td><td>Moisture · 수분</td><td>Water activity ≥ 0.85</td></tr>
+      </table>
+      <div style="margin-top:8px;font-size:0.82rem;color:var(--green-dark);background:#e8f5ed;padding:8px 10px;border-radius:8px">
+        ⚡ Control <strong>Temperature & Time</strong> — the two most manageable factors<br>
+        <span style="color:#555">온도와 시간을 통제하세요 — 가장 관리하기 쉬운 두 가지 요소</span>
+      </div>
     </div>
   </div>
 
@@ -1362,26 +1399,32 @@
   <div class="ref-section">
     <div class="ref-section-title">📦 Refrigerator Storage Order · 냉장 저장 순서</div>
     <div class="ref-card">
-      <p style="font-size:0.78rem;color:#666;margin-bottom:8px;">Top → Bottom (higher cook temp at bottom)</p>
+      <p style="font-size:0.78rem;color:#666;margin-bottom:8px;">Top → Bottom · 위 → 아래 (higher cook temp at bottom · 조리 온도 높을수록 아래)</p>
       <ul class="checklist">
-        <li><span class="check-icon">🔝</span><div><strong>RTE foods</strong> (ready-to-eat) / 즉식 식품 — <em>top shelf</em></div></li>
-        <li><span class="check-icon">🐟</span><div><strong>Fish</strong> · 생선 — 145°F</div></li>
-        <li><span class="check-icon">🥩</span><div><strong>Whole beef/pork</strong> · 쇠고기/돼지고기 — 145°F</div></li>
-        <li><span class="check-icon">🥩</span><div><strong>Ground beef</strong> · 다진 고기 — 155°F</div></li>
-        <li><span class="check-icon">🍗</span><div><strong>Poultry</strong> · 가금류 — 165°F — <em>bottom shelf</em></div></li>
+        <li><span class="check-icon">🔝</span><div><strong>RTE foods</strong> (ready-to-eat) / 즉식 식품 — <em>top shelf · 맨 위</em></div></li>
+        <li><span class="check-icon">🐟</span><div><strong>Fish · 생선</strong> — 145°F / 63°C</div></li>
+        <li><span class="check-icon">🥩</span><div><strong>Whole beef/pork · 쇠고기/돼지고기</strong> — 145°F / 63°C</div></li>
+        <li><span class="check-icon">🥩</span><div><strong>Ground beef · 다진 고기</strong> — 155°F / 68°C</div></li>
+        <li><span class="check-icon">🍗</span><div><strong>Poultry · 가금류</strong> — 165°F / 74°C — <em>bottom shelf · 맨 아래</em></div></li>
       </ul>
     </div>
   </div>
 
   <div class="ref-section">
-    <div class="ref-section-title">🧽 Wash-Rinse-Sanitize · 세척-헹굼-소독</div>
+    <div class="ref-section-title">🧽 Sanitizer Concentrations · 소독액 농도</div>
     <div class="ref-card">
-      <ul class="steps-list">
-        <li><div class="step-num">1</div><div><strong>Wash</strong> with hot soapy water (110°F / 43°C)<br><span style="font-size:0.78rem;color:#888">뜨거운 비눗물로 세척</span></div></li>
-        <li><div class="step-num">2</div><div><strong>Rinse</strong> with clean warm water<br><span style="font-size:0.78rem;color:#888">깨끗한 따뜻한 물로 헹굼</span></div></li>
-        <li><div class="step-num">3</div><div><strong>Sanitize</strong> — chlorine 100-200 ppm OR iodine 12.5-25 ppm<br><span style="font-size:0.78rem;color:#888">염소 소독액 100-200 ppm 또는 아이오딘 12.5-25 ppm</span></div></li>
-        <li><div class="step-num">4</div><div><strong>Air dry</strong> — never towel dry<br><span style="font-size:0.78rem;color:#888">자연 건조 — 타월 건조 금지</span></div></li>
-      </ul>
+      <table class="temp-table">
+        <tr><th>Sanitizer · 소독제</th><th>Concentration · 농도</th><th>Notes · 비고</th></tr>
+        <tr><td><strong>Chlorine · 염소</strong></td><td class="safe">100–200 ppm</td><td>Most common · 가장 일반적</td></tr>
+        <tr><td><strong>Quat Ammonium · 4급 암모늄</strong></td><td class="safe">150–200 ppm</td><td>Per label · 라벨 기준</td></tr>
+      </table>
+      <div style="margin-top:10px;font-size:0.82rem;color:#555">
+        <strong>Wash-Rinse-Sanitize · 세척-헹굼-소독 순서:</strong><br>
+        <span style="color:var(--green)">①</span> Wash (110°F / 43°C) &nbsp;→&nbsp;
+        <span style="color:var(--green)">②</span> Rinse &nbsp;→&nbsp;
+        <span style="color:var(--green)">③</span> Sanitize &nbsp;→&nbsp;
+        <span style="color:var(--green)">④</span> Air dry · 자연 건조
+      </div>
     </div>
   </div>
 
@@ -1423,6 +1466,7 @@ async function loadData() {
     renderLesson();
     renderSidebarModules();
     lessonProgress = new Array(lessons.length).fill(false);
+    updateQuizLock();
   } catch(e) {
     console.error('Failed to load data:', e);
     document.body.innerHTML = '<div style="padding:40px;text-align:center;font-family:sans-serif"><h2>⚠️ Loading Error</h2><p>Could not load course data. Please ensure lessons.json and questions.json are in the same folder as index.html.</p><p style="color:#888;font-size:0.85rem">Error: ' + e.message + '</p></div>';
@@ -1446,7 +1490,61 @@ let quizShuffled = [];
 // ══════════════════════════════════════════
 // NAVIGATION
 // ══════════════════════════════════════════
+// ══════════════════════════════════════════
+// DEV MODE & QUIZ LOCK
+// ══════════════════════════════════════════
+let devMode = false;
+let headerTapCount = 0;
+let headerTapTimer = null;
+
+function handleHeaderTap() {
+  headerTapCount++;
+  clearTimeout(headerTapTimer);
+  headerTapTimer = setTimeout(() => { headerTapCount = 0; }, 2000);
+
+  if (headerTapCount >= 5) {
+    headerTapCount = 0;
+    devMode = !devMode;
+    updateQuizLock();
+    const msg = devMode
+      ? '🛠️ Dev Mode ON\n학습 잠금 해제됨'
+      : '🔒 Dev Mode OFF\n학습 잠금 활성화됨';
+    alert(msg);
+  }
+}
+
+function isQuizUnlocked() {
+  return devMode || lessonProgress.every(Boolean);
+}
+
+function updateQuizLock() {
+  const quizTab    = document.getElementById('tab-quiz');
+  const snbQuiz    = document.getElementById('snb-quiz');
+  const unlocked   = isQuizUnlocked();
+
+  if (quizTab) {
+    quizTab.style.opacity = unlocked ? '1' : '0.4';
+    quizTab.title = unlocked ? '' : 'Complete all modules first · 모든 모듈을 먼저 완료하세요';
+  }
+  if (snbQuiz) {
+    snbQuiz.style.opacity = unlocked ? '1' : '0.4';
+  }
+
+  // Home page quiz button
+  const homeQuizBtn = document.getElementById('homeQuizBtn');
+  if (homeQuizBtn) {
+    homeQuizBtn.style.opacity   = unlocked ? '1' : '0.4';
+    homeQuizBtn.style.cursor    = unlocked ? 'pointer' : 'not-allowed';
+    homeQuizBtn.title = unlocked ? '' : 'Complete all modules first · 모든 모듈을 먼저 완료하세요';
+  }
+}
+
 function showPage(name) {
+  // Block quiz if locked
+  if (name === 'quiz' && !isQuizUnlocked()) {
+    alert('📖 Please complete all learning modules first!\n모든 학습 모듈을 먼저 완료해 주세요.\n\n(진도: ' + lessonProgress.filter(Boolean).length + '/' + lessonProgress.length + ' 완료)');
+    return;
+  }
   document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
   document.querySelectorAll('.nav-tab').forEach(t => t.classList.remove('active'));
   document.getElementById('page-' + name).classList.add('active');
@@ -1565,9 +1663,8 @@ function changeLesson(dir) {
       currentSection = 0;
       renderLesson();
     } else {
-      // all done
-      showPage('quiz');
-      startQuiz();
+      // all done — ask before going to quiz
+      showAllDoneDialog();
     }
   } else {
     if (currentLesson > 0) {
@@ -1587,6 +1684,7 @@ function updateBadges() {
     }
   });
   renderSidebarModules();
+  updateQuizLock();
 }
 
 function updateProgress() {
@@ -1628,7 +1726,36 @@ function renderQuizStart() {
   `;
 }
 
+function showAllDoneDialog() {
+  // Remove existing dialog if any
+  var old = document.getElementById('allDoneDialog');
+  if (old) old.remove();
+
+  var d = document.createElement('div');
+  d.id = 'allDoneDialog';
+  d.style.cssText = 'position:fixed;inset:0;background:rgba(0,0,0,0.7);z-index:400;display:flex;align-items:center;justify-content:center;padding:20px';
+  d.innerHTML = '<div style="background:white;border-radius:20px;padding:28px 24px;max-width:360px;width:100%;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,0.4)">'
+    + '<div style="font-size:3rem;margin-bottom:12px">🎉</div>'
+    + '<div style="font-family:Bebas Neue,sans-serif;font-size:1.6rem;color:#0f4f2e;letter-spacing:1px;margin-bottom:6px">Learning Complete!</div>'
+    + '<div style="font-size:0.95rem;color:#0f4f2e;margin-bottom:16px">학습을 모두 완료했습니다!</div>'
+    + '<div style="font-size:0.85rem;color:#666;margin-bottom:20px;line-height:1.6">'
+    + 'Ready to take the certification quiz?<br>인증 퀴즈를 시작하시겠습니까?</div>'
+    + '<div style="display:flex;gap:10px">'
+    + '<button onclick="document.getElementById(\'allDoneDialog\').remove()" '
+    + 'style="flex:1;padding:13px;border-radius:12px;border:2px solid #1a7a4a;background:white;color:#1a7a4a;font-size:0.9rem;font-weight:700;cursor:pointer">'
+    + '📖 Review · 복습하기</button>'
+    + '<button onclick="document.getElementById(\'allDoneDialog\').remove();startQuiz()" '
+    + 'style="flex:1;padding:13px;border-radius:12px;border:none;background:#1a7a4a;color:white;font-size:0.9rem;font-weight:700;cursor:pointer">'
+    + '✏️ Start Quiz · 퀴즈 시작</button>'
+    + '</div></div>';
+  document.body.appendChild(d);
+}
+
 function startQuiz() {
+  if (!isQuizUnlocked()) {
+    alert('📖 Please complete all learning modules first!\n모든 학습 모듈을 먼저 완료해 주세요.\n\n(진도: ' + lessonProgress.filter(Boolean).length + '/' + lessonProgress.length + ' 완료)');
+    return;
+  }
   quizActive = true;
   quizQuestionIndex = 0;
   quizScore = 0;
@@ -1759,7 +1886,7 @@ function showNameEntry(pct, score, total) {
     + '<p>Enter your name · 이름을 입력해 주세요</p>'
     + '<div class="field-group"><label class="field-label">Full Name · 성명 *</label>'
     + '<input class="field-input" id="inputName" type="text" placeholder="e.g. KIM YOUNG-WAN"></div>'
-    + '<div class="screenshot-tip">📸 Generate → screenshot → send via buttons below<br>인증서 생성 → 스크린샷 → 아래 버튼으로 전송</div>'
+    + '<div class="screenshot-tip">📄 Generate certificate → Save PDF or take a screenshot → Bring to event<br>인증서 생성 → PDF 저장 또는 스크린샷 → 이벤트 시 지참</div>'
     + '<div style="display:flex;gap:10px;margin-top:14px">'
     + '<button class="btn btn-secondary" onclick="closeCertOverlay()">Cancel</button>'
     + '<button class="btn btn-primary" onclick="window._pct='+pct+';window._sc='+score+';window._tot='+total+';_doCert()">Generate →</button>'
@@ -1816,10 +1943,9 @@ function showCertCard(name, pct, score, total) {
     + '<div style="text-align:right"><div class="cert-valid-label">Expires · 만료일</div><div class="cert-valid-date" style="color:#ffcc60">'+exp+'</div></div>'
     + '</div></div>'
     + '<div class="cert-actions">'
-    + '<div class="screenshot-tip" style="margin-bottom:0;border-radius:10px">📸 <strong>Take a screenshot</strong> of the card above · 위 인증서를 <strong>스크린샷</strong> 찍으세요</div>'
+    + '<div class="screenshot-tip" style="margin-bottom:0;border-radius:10px">📄 Save as PDF or take a screenshot · PDF 저장 또는 스크린샷<br><span style="font-size:0.78rem;color:#7a5800">🪪 Bring this certificate to the event · 이벤트 시 인증서를 지참하세요</span></div>'
     + '<button class="cert-action-btn" style="background:#2d2d2d;color:white" id="pdfBtn" onclick="downloadCertPDF()">📄 Save as PDF · PDF 저장</button>'
     + '<button class="cert-action-btn btn-email" onclick="sendByEmail()">✉️ Send via Email · 이메일로 보내기</button>'
-    + '<button class="cert-action-btn btn-sms" onclick="sendBySMS()">💬 Send via SMS · 문자로 보내기</button>'
     + '<button class="cert-action-btn btn-close" onclick="confirmCloseCert()">✕ Close · 닫기</button>'
     + '</div></div>';
   document.body.appendChild(overlay);
