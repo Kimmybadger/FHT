@@ -400,9 +400,9 @@
       "50–100 ppm",
       "100–200 ppm"
     ],
-    "answer": 2,
-    "explain": "Chlorine bleach sanitizer must be at 50–100 ppm. Too low = ineffective; too high = chemical hazard.",
-    "explainKo": "염소 소독액은 50–100 ppm이어야 합니다. 너무 낮으면 효과 없고, 너무 높으면 화학적 위험이 됩니다."
+    "answer": 3,
+    "explain": "Chlorine bleach sanitizer must be at 100–200 ppm per TB MED 530. Too low = ineffective; too high = chemical hazard.",
+    "explainKo": "염소 소독액은 TB MED 530 기준 100–200 ppm이어야 합니다. 너무 낮으면 효과 없고, 너무 높으면 화학적 위험이 됩니다."
   },
   {
     "module": "Cleaning & Sanitizing",
@@ -463,5 +463,155 @@
     "answer": 1,
     "explain": "Towels can harbor bacteria and recontaminate sanitized surfaces. Always air dry equipment after sanitizing.",
     "explainKo": "타월에 세균이 번식할 수 있어 소독된 표면을 재오염시킬 수 있습니다. 소독 후에는 항상 자연 건조하세요."
+  },
+  {
+    "module": "Time & Temperature",
+    "moduleKo": "시간과 온도",
+    "q": "What does the 'F' in FAT TOM stand for?",
+    "qKo": "FAT TOM에서 'F'는 무엇을 의미합니까?",
+    "options": [
+      "Fat · 지방",
+      "Food · 식품",
+      "Fungi · 곰팡이",
+      "Flow · 흐름"
+    ],
+    "answer": 1,
+    "explain": "FAT TOM stands for Food, Acidity, Temperature, Time, Oxygen, Moisture — the 6 conditions bacteria need to grow.",
+    "explainKo": "FAT TOM은 Food(식품), Acidity(산도), Temperature(온도), Time(시간), Oxygen(산소), Moisture(수분) — 세균 성장에 필요한 6가지 조건입니다."
+  },
+  {
+    "module": "Time & Temperature",
+    "moduleKo": "시간과 온도",
+    "q": "Which two FAT TOM conditions can food handlers most easily control?",
+    "qKo": "FAT TOM 조건 중 식품 취급자가 가장 쉽게 통제할 수 있는 두 가지는?",
+    "options": [
+      "Food and Moisture · 식품과 수분",
+      "Oxygen and Acidity · 산소와 산도",
+      "Temperature and Time · 온도와 시간",
+      "Acidity and Moisture · 산도와 수분"
+    ],
+    "answer": 2,
+    "explain": "Temperature and Time are the two FAT TOM conditions food handlers can most easily control — keep TCS food out of the danger zone and limit time in it.",
+    "explainKo": "온도와 시간이 식품 취급자가 가장 쉽게 통제할 수 있는 FAT TOM 조건입니다 — TCS 식품을 위험 구간 밖에 두고 체류 시간을 제한하세요."
+  },
+  {
+    "module": "Time & Temperature",
+    "moduleKo": "시간과 온도",
+    "q": "What is the optimal pH range for bacterial growth?",
+    "qKo": "세균 성장에 최적인 pH 범위는?",
+    "options": [
+      "1.0–3.0",
+      "3.0–4.5",
+      "4.5–7.5",
+      "7.5–14.0"
+    ],
+    "answer": 2,
+    "explain": "Bacteria grow best in food with a pH of 4.5–7.5 (little to no acid). Most TCS foods fall within this range.",
+    "explainKo": "세균은 pH 4.5–7.5(산도가 낮거나 없는) 식품에서 가장 잘 자랍니다. 대부분의 TCS 식품이 이 범위에 해당합니다."
+  },
+  {
+    "module": "Time & Temperature",
+    "moduleKo": "시간과 온도",
+    "q": "Which of the following is an acceptable thawing method?",
+    "qKo": "다음 중 허용된 해동 방법은?",
+    "options": [
+      "On the counter at room temperature · 실온 카운터에서",
+      "In warm standing water · 따뜻한 정지 물에서",
+      "In a refrigerator at 41°F or lower · 41°F 이하 냉장고에서",
+      "In direct sunlight · 직사광선 아래에서"
+    ],
+    "answer": 2,
+    "explain": "The 4 acceptable thawing methods are: refrigerator (41°F or lower), running potable water (70°F or lower), microwave (if cooking immediately), or as part of the cooking process.",
+    "explainKo": "4가지 허용된 해동 방법: 냉장고(41°F 이하), 흐르는 식수(70°F 이하), 전자레인지(즉시 조리 시), 조리 과정의 일부로."
+  },
+  {
+    "module": "Foodborne Illness",
+    "moduleKo": "식품 매개 질병",
+    "q": "When is a foodborne illness considered an outbreak?",
+    "qKo": "식품 매개 질병이 발병으로 간주되는 경우는?",
+    "options": [
+      "One person gets sick after eating · 한 명이 식사 후 아픈 경우",
+      "Two or more people have same symptoms after eating the same food · 같은 식품 섭취 후 2명 이상이 같은 증상",
+      "Any case reported to authorities · 당국에 보고된 모든 사례",
+      "Only when laboratory confirms a pathogen · 실험실에서 병원균 확인 시에만"
+    ],
+    "answer": 1,
+    "explain": "A foodborne illness outbreak requires: 2+ people with the same symptoms after eating the same food, investigated by regulatory authorities, and confirmed by laboratory analysis.",
+    "explainKo": "식품 매개 질병 발병: 같은 식품 섭취 후 2명 이상이 동일한 증상, 규제 당국의 조사, 실험실 분석으로 확인."
+  },
+  {
+    "module": "Foodborne Illness",
+    "moduleKo": "식품 매개 질병",
+    "q": "Which group is at HIGHEST risk for severe foodborne illness?",
+    "qKo": "심각한 식품 매개 질병에 가장 취약한 집단은?",
+    "options": [
+      "Healthy adults aged 20–40 · 건강한 20-40세 성인",
+      "Athletes and physically active people · 운동선수 및 활동적인 사람",
+      "Infants, elderly, pregnant women, and immunocompromised · 영유아, 노인, 임산부, 면역저하자",
+      "People who eat out frequently · 외식을 자주 하는 사람"
+    ],
+    "answer": 2,
+    "explain": "High-risk groups include infants, preschool-age children, pregnant women, elderly people, people on certain medications, and seriously ill individuals.",
+    "explainKo": "고위험군: 영유아, 임산부, 노인, 특정 약물 복용자, 중증 질환자(면역저하자 포함)."
+  },
+  {
+    "module": "Cleaning & Sanitizing",
+    "moduleKo": "청소와 소독",
+    "q": "Which type of food can cause metals to leach into food from certain cookware?",
+    "qKo": "어떤 종류의 식품이 특정 조리기구에서 금속을 용출시킬 수 있습니까?",
+    "options": [
+      "High-protein foods · 고단백 식품",
+      "Acidic foods · 산성 식품",
+      "High-fat foods · 고지방 식품",
+      "Frozen foods · 냉동 식품"
+    ],
+    "answer": 1,
+    "explain": "Acidic foods (tomatoes, citrus, vinegar-based dishes) can cause metals like lead, copper, and zinc to leach from certain cookware into food.",
+    "explainKo": "산성 식품(토마토, 감귤류, 식초 기반 요리)은 특정 조리기구에서 납, 구리, 아연 같은 금속을 식품으로 용출시킬 수 있습니다."
+  },
+  {
+    "module": "Cleaning & Sanitizing",
+    "moduleKo": "청소와 소독",
+    "q": "What is the approved concentration for Quat ammonium sanitizer?",
+    "qKo": "4급 암모늄(Quat) 소독액의 승인된 농도는?",
+    "options": [
+      "50–100 ppm",
+      "100–150 ppm",
+      "150–200 ppm",
+      "200–300 ppm"
+    ],
+    "answer": 2,
+    "explain": "Quaternary ammonium (Quat) sanitizer should be used at 150–200 ppm for effective sanitizing.",
+    "explainKo": "4급 암모늄(Quat) 소독액은 효과적인 소독을 위해 150–200 ppm에서 사용해야 합니다."
+  },
+  {
+    "module": "Cross-Contamination",
+    "moduleKo": "교차 오염",
+    "q": "When transporting hot food, what is the correct method?",
+    "qKo": "온장 식품 운반 시 올바른 방법은?",
+    "options": [
+      "Transport at room temperature if under 1 hour · 1시간 이내면 실온 운반 가능",
+      "Use pre-heated insulated containers and check temperatures · 사전 가열된 보온 용기 사용 및 온도 확인",
+      "Cool the food first, then transport · 먼저 냉각 후 운반",
+      "Cover with plastic wrap only · 비닐 랩으로만 덮기"
+    ],
+    "answer": 1,
+    "explain": "Hot foods must be transported in pre-heated insulated containers. Internal temperatures must be checked before and after transport to ensure food stays above 135°F.",
+    "explainKo": "온장 식품은 사전 가열된 보온 용기로 운반해야 합니다. 135°F 이상 유지를 위해 운반 전후 내부 온도를 확인해야 합니다."
+  },
+  {
+    "module": "Foodborne Illness",
+    "moduleKo": "식품 매개 질병",
+    "q": "Which food is a common source of parasites?",
+    "qKo": "기생충의 일반적인 발생원이 되는 식품은?",
+    "options": [
+      "Pasteurized dairy products · 저온 살균 유제품",
+      "Canned vegetables · 통조림 채소",
+      "Seafood and wild game · 해산물과 야생 동물",
+      "Dried grains and cereals · 건조 곡물과 시리얼"
+    ],
+    "answer": 2,
+    "explain": "Parasites are commonly found in seafood, wild game, and produce processed with contaminated water. Purchase from approved suppliers and cook to required temperatures.",
+    "explainKo": "기생충은 해산물, 야생 동물, 오염된 물로 처리된 농산물에서 흔히 발견됩니다. 승인된 공급업체에서 구매하고 요구 온도로 조리하세요."
   }
 ]
