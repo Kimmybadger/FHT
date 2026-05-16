@@ -1947,6 +1947,15 @@ const SUBMIT_EMAIL = 'your-email@korea.army.mil';
 let certIssued = false;
 
 function showNameEntry(pct, score, total) {
+  // Disable the button immediately on click
+  var genBtn = document.getElementById('genCertBtn');
+  if (genBtn) {
+    genBtn.disabled = true;
+    genBtn.style.opacity = '0.35';
+    genBtn.style.cursor = 'not-allowed';
+    genBtn.textContent = '✅ Certificate Issued · 인증서 발급 완료';
+  }
+
   var old = document.getElementById('certOverlay');
   if (old) old.parentNode.removeChild(old);
   var overlay = document.createElement('div');
