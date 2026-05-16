@@ -1506,11 +1506,51 @@ function handleHeaderTap() {
     headerTapCount = 0;
     devMode = !devMode;
     updateQuizLock();
-    const msg = devMode
-      ? '🛠️ Dev Mode ON\n학습 잠금 해제됨'
-      : '🔒 Dev Mode OFF\n학습 잠금 활성화됨';
-    alert(msg);
+    if (devMode) {
+      alert('🛠️ Dev Mode ON — All locks disabled\n학습 잠금 및 타이머 해제됨');
+      // Cancel any running countdown
+      clearNextBtnCountdown();
+      const btn = document.getElementById('nextBtn');
+      if (btn) { btn.disabled = false; btn.style.opacity = '1'; btn.textContent = isLastSection() ? '✅ Done' : 'Next →'; }
+    } else {
+      alert('🔒 Dev Mode OFF — Locks re-enabled\n학습 잠금 및 타이머 활성화됨');
+      startNextBtnCountdown();
+    }
   }
+}
+
+// ── Next button 20s countdown ─────────────
+let countdownInterval = null;
+
+function clearNextBtnCountdown() {
+  if (countdownInterval) { clearInterval(countdownInterval); countdownInterval = null; }
+}
+
+function startNextBtnCountdown() {
+  clearNextBtnCountdown();
+  if (devMode) return; // skip in dev mode
+
+  const btn = document.getElementById('nextBtn');
+  if (!btn) return;
+
+  const isDone = isLastSection();
+  let seconds = 20;
+
+  btn.disabled = true;
+  btn.style.opacity = '0.45';
+  btn.textContent = `⏳ ${seconds}s`;
+
+  countdownInterval = setInterval(function() {
+    seconds--;
+    if (seconds > 0) {
+      btn.textContent = `⏳ ${seconds}s`;
+    } else {
+      clearNextBtnCountdown();
+      btn.disabled = false;
+      btn.style.opacity = '1';
+      btn.textContent = isDone ? '✅ Done' : 'Next →';
+    }
+  }, 1000);
 }
 
 function isQuizUnlocked() {
@@ -1630,7 +1670,13 @@ function renderSection() {
 
   document.getElementById('prevBtn').style.opacity =
     currentLesson === 0 && currentSection === 0 ? '0.3' : '1';
-  document.getElementById('nextBtn').textContent = isLastSection() ? '✅ Done' : 'Next →';
+
+  // Set next button — countdown will override text
+  const nextBtn = document.getElementById('nextBtn');
+  if (nextBtn) {
+    nextBtn.textContent = isLastSection() ? '✅ Done' : 'Next →';
+  }
+  startNextBtnCountdown();
 }
 
 function goSection(i) {
@@ -1885,7 +1931,7 @@ function showNameEntry(pct, score, total) {
     + '<h3>🎉 Congratulations! · 축하합니다!</h3>'
     + '<p>Enter your name · 이름을 입력해 주세요</p>'
     + '<div class="field-group"><label class="field-label">Full Name · 성명 *</label>'
-    + '<input class="field-input" id="inputName" type="text" placeholder="e.g. KIM YOUNG-WAN"></div>'
+    + '<input class="field-input" id="inputName" type="text" placeholder="e.g. JOHN SMITH"></div>'
     + '<div class="screenshot-tip">📄 Generate certificate → Save PDF or take a screenshot → Bring to event<br>인증서 생성 → PDF 저장 또는 스크린샷 → 이벤트 시 지참</div>'
     + '<div style="display:flex;gap:10px;margin-top:14px">'
     + '<button class="btn btn-secondary" onclick="closeCertOverlay()">Cancel</button>'
