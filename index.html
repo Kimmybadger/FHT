@@ -1068,18 +1068,56 @@
   }
   /* ── PRINT / PDF ── */
   @media print {
-    @page { size: A4 landscape; margin: 15mm; }
-    * { visibility: hidden; }
-    #certCard, #certCard * { visibility: visible; }
-    #certCard::after { display: none !important; }
-    #certCard {
-      position: fixed;
-      top: 0; left: 0;
-      width: 240mm;
-      box-shadow: none !important;
+    @page {
+      size: A4 landscape;
+      margin: 0;
+    }
+    html, body {
+      width: 297mm;
+      height: 210mm;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background: #1a1f1a !important;
       -webkit-print-color-adjust: exact !important;
       print-color-adjust: exact !important;
     }
+    body > * { display: none !important; }
+    .cert-overlay {
+      display: flex !important;
+      visibility: visible !important;
+      position: fixed !important;
+      inset: 0 !important;
+      width: 297mm !important;
+      height: 210mm !important;
+      background: #1a1f1a !important;
+      align-items: center !important;
+      justify-content: center !important;
+      padding: 0 !important;
+      overflow: hidden !important;
+    }
+    .cert-wrap {
+      display: block !important;
+      visibility: visible !important;
+      width: 260mm !important;
+      padding: 0 !important;
+      margin: 0 !important;
+      animation: none !important;
+    }
+    .cert-actions,
+    .screenshot-tip { display: none !important; }
+    #certCard {
+      visibility: visible !important;
+      width: 100% !important;
+      border-radius: 14px !important;
+      box-shadow: none !important;
+      page-break-inside: avoid !important;
+      break-inside: avoid !important;
+      -webkit-print-color-adjust: exact !important;
+      print-color-adjust: exact !important;
+    }
+    #certCard * { visibility: visible !important; }
+    #certCard::after { display: none !important; }
   }
 </style>
 </head>
