@@ -1968,7 +1968,7 @@ function showNameEntry(pct, score, total) {
     + '<input class="field-input" id="inputName" type="text" placeholder="e.g. JOHN SMITH"></div>'
     + '<div class="screenshot-tip">📄 Generate certificate → Save PDF or take a screenshot → Bring to event<br>인증서 생성 → PDF 저장 또는 스크린샷 → 이벤트 시 지참</div>'
     + '<div style="display:flex;gap:10px;margin-top:14px">'
-    + '<button class="btn btn-secondary" onclick="closeCertOverlay()">Cancel</button>'
+    + '<button class="btn btn-secondary" onclick="confirmCloseCert()">Cancel</button>'
     + '<button class="btn btn-primary" onclick="window._pct='+pct+';window._sc='+score+';window._tot='+total+';_doCert()">Generate →</button>'
     + '</div></div>';
   document.body.appendChild(overlay);
