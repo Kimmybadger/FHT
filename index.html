@@ -1635,7 +1635,7 @@ function lockNextBtn() {
   if (!btn) return;
   btn.disabled = true;
   btn.style.opacity = '0.45';
-  btn.textContent = '🔊 Reading...';
+  btn.textContent = '⏳ 20s';
 }
 
 function unlockNextBtn() {
@@ -1646,14 +1646,73 @@ function unlockNextBtn() {
   btn.textContent = isLastSection() ? '✅ Done' : 'Next →';
 }
 
+// ── PC: TTS + 20s timer simultaneously ───
+let countdownInterval = null;
+let ttsFinished = false;
+let timerFinished = false;
+
+function checkBothDone() {
+  if (ttsFinished && timerFinished) unlockNextBtn();
+}
+
+function startPCMode(html) {
+  if (devMode) { unlockNextBtn(); return; }
+
+  ttsFinished = false;
+  timerFinished = false;
+
+  // 1) 20s countdown
+  if (countdownInterval) { clearInterval(countdownInterval); countdownInterval = null; }
+  const btn = document.getElementById('nextBtn');
+  if (btn) { btn.disabled = true; btn.style.opacity = '0.45'; btn.textContent = '⏳ 20s'; }
+  let seconds = 20;
+  countdownInterval = setInterval(function() {
+    seconds--;
+    if (seconds > 0) {
+      const b = document.getElementById('nextBtn');
+      if (b && b.disabled) b.textContent = '⏳ ' + seconds + 's';
+    } else {
+      clearInterval(countdownInterval);
+      countdownInterval = null;
+      timerFinished = true;
+      checkBothDone();
+    }
+  }, 1000);
+
+  // 2) TTS simultaneously
+  stopTTS();
+  if (!window.speechSynthesis) { ttsFinished = true; checkBothDone(); return; }
+  const text = extractReadableText(html);
+  if (!text) { ttsFinished = true; checkBothDone(); return; }
+  ttsUtterance = new SpeechSynthesisUtterance(text);
+  ttsUtterance.lang  = 'en-US';
+  ttsUtterance.rate  = 0.95;
+  ttsUtterance.pitch = 1.0;
+  ttsUtterance.onend  = function() { ttsFinished = true; checkBothDone(); };
+  ttsUtterance.onerror = function() { ttsFinished = true; checkBothDone(); };
+  window.speechSynthesis.speak(ttsUtterance);
+}
+
 // Keep legacy function names so Dev Mode code still works
-function clearNextBtnCountdown() { stopTTS(); }
+function clearNextBtnCountdown() {
+  stopTTS();
+  if (countdownInterval) { clearInterval(countdownInterval); countdownInterval = null; }
+  ttsFinished = true; timerFinished = true;
+}
 function startNextBtnCountdown() {
-  // Don't auto-start TTS if the audio unlock popup is still open
-  if (document.getElementById('audioUnlockOverlay')) return;
-  var lesson  = lessons[currentLesson];
-  var section = lesson && lesson.sections[currentSection];
-  if (section) startTTS(section.html);
+  if (window.innerWidth >= 900) {
+    // PC: TTS + timer
+    if (document.getElementById('audioUnlockOverlay')) return;
+    var lesson  = lessons[currentLesson];
+    var section = lesson && lesson.sections[currentSection];
+    if (section) startPCMode(section.html);
+  } else {
+    // Mobile: TTS only
+    if (document.getElementById('audioUnlockOverlay')) return;
+    var lesson  = lessons[currentLesson];
+    var section = lesson && lesson.sections[currentSection];
+    if (section) startTTS(section.html);
+  }
 }
 
 function isQuizUnlocked() {
