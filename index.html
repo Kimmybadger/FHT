@@ -175,11 +175,14 @@
       max-width: 100%;
       background: white;
       border-radius: 0;
-      border-bottom: 2px solid var(--border);
+      border-bottom: none;
       box-shadow: none;
-      padding: 14px 48px;
+      padding: 14px 48px 10px;
       margin-bottom: 0;
       flex-shrink: 0;
+      position: sticky;
+      top: 52px;
+      z-index: 90;
     }
     #page-learn .lesson-header-icon { font-size: 2rem; }
     #page-learn .lesson-title { font-size: 1.3rem; }
@@ -196,6 +199,10 @@
       gap: 0;
       flex-wrap: nowrap;
       flex-shrink: 0;
+          position: sticky;
+      top: 104px;
+      z-index: 89;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
     }
     #page-learn .lesson-nav-btn {
       border-radius: 0;
