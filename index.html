@@ -180,9 +180,6 @@
       padding: 14px 48px 10px;
       margin-bottom: 0;
       flex-shrink: 0;
-      position: sticky;
-      top: 52px;
-      z-index: 90;
     }
     #page-learn .lesson-header-icon { font-size: 2rem; }
     #page-learn .lesson-title { font-size: 1.3rem; }
@@ -199,10 +196,7 @@
       gap: 0;
       flex-wrap: nowrap;
       flex-shrink: 0;
-          position: sticky;
-      top: 104px;
-      z-index: 89;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+      overflow-x: auto;
     }
     #page-learn .lesson-nav-btn {
       border-radius: 0;
@@ -223,6 +217,8 @@
       background: transparent;
     }
     #page-learn .lesson-nav-btn.done { color: var(--amber); }
+    #page-learn .lesson-nav::-webkit-scrollbar { display: none; }
+    #page-learn .lesson-nav { -ms-overflow-style: none; scrollbar-width: none; }
 
     /* Scrollable slide content */
     #lessonContent {
