@@ -1711,8 +1711,11 @@ function updateQuizLock() {
 }
 
 function showPage(name) {
-  // Stop TTS when leaving learn page
-  if (name !== 'learn') stopTTS();
+  // Stop TTS and timer when leaving learn page
+  if (name !== 'learn') {
+    stopTTS();
+    if (countdownInterval) { clearInterval(countdownInterval); countdownInterval = null; }
+  }
   // Block quiz if locked
   if (name === 'quiz' && !isQuizUnlocked()) {
     alert('📖 Please complete all learning modules first!\n모든 학습 모듈을 먼저 완료해 주세요.\n\n(진도: ' + lessonProgress.filter(Boolean).length + '/' + lessonProgress.length + ' 완료)');
@@ -1732,6 +1735,8 @@ function showPage(name) {
   const tb = document.getElementById('pcTopbarTitle');
   if (tb) tb.textContent = titles[name] || '';
   if (name === 'quiz' && !quizActive) renderQuizStart();
+  // Restart timer/TTS when returning to learn page
+  if (name === 'learn') startNextBtnCountdown();
 }
 
 function renderSidebarModules() {
