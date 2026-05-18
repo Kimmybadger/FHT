@@ -962,17 +962,17 @@
   {
     "module": "Event Operations",
     "moduleKo": "이벤트 운영",
-    "q": "What is the minimum height food must be stored off the ground at a food event?",
-    "qKo": "식품 이벤트에서 식품을 지면에서 최소 얼마나 높이 보관해야 하는가?",
+    "q": "What must you do BEFORE setting up your tent or booth at a temporary food event?",
+    "qKo": "임시 식품 이벤트에서 텐트나 부스를 설치하기 전에 반드시 해야 하는 것은?",
     "options": [
-      "2 inches · 2인치",
-      "4 inches · 4인치",
-      "6 inches · 6인치",
-      "12 inches · 12인치"
+      "Set up equipment immediately · 바로 장비 설치",
+      "Inspect and clean the tent prior to setup · 설치 전 텐트 점검 및 청소",
+      "Wait for the health inspector to arrive · 검열관이 올 때까지 대기",
+      "Place food on the ground first · 먼저 식품을 바닥에 놓기"
     ],
-    "answer": 2,
-    "explain": "All food must be stored a minimum of 6 inches (15 cm) off the ground to prevent contamination from pests and floor debris.",
-    "explainKo": "모든 식품은 해충 및 바닥 이물질로 인한 오염 방지를 위해 지면에서 최소 6인치(15cm) 이상 높이 보관해야 합니다."
+    "answer": 1,
+    "explain": "Tents and booths must be inspected and cleaned PRIOR to setup to prevent contamination from dirt, pests, or previous use.",
+    "explainKo": "오염 방지를 위해 텐트와 부스는 설치 전 반드시 점검하고 청소해야 합니다."
   },
   {
     "module": "Event Operations",
