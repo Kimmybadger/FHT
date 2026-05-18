@@ -130,8 +130,6 @@
     ]
   },
   {
-    "module": "Event Operations",
-    "moduleKo": "이벤트 운영",
     "icon": "🎪",
     "sections": [
       {
@@ -159,6 +157,8 @@
         "labelKo": "라벨링 & 소비자 안내",
         "html": "<div class=\"bilingual\"><div class=\"en-text\">If you are <strong>packaging or selling food on-site</strong>, proper labeling is required by TB MED 530. Missing labels or incorrect allergen information can result in serious health consequences and regulatory action.</div><div class=\"ko-text\">현장에서 <strong>식품을 포장하거나 판매</strong>하는 경우, TB MED 530에 따라 적절한 라벨링이 필요합니다. 라벨 누락이나 잘못된 알레르겐 정보는 심각한 건강 문제와 규제 조치로 이어질 수 있습니다.</div></div><div class=\"event-alert\"><div class=\"event-alert-title\">🎪 Required Label Items · 라벨 필수 항목 6가지</div><div class=\"bilingual\"><div class=\"en-text\">1. <strong>Common name</strong> of the food (e.g. \"Snickerdoodle Cookies\")<br>2. <strong>List of ingredients</strong> in order of predominance<br>3. <strong>Major allergens</strong> contained in the ingredients<br>4. <strong>Name &amp; address</strong> of producer or packer<br>5. <strong>Made on / Sell by / Expiration date</strong><br>6. <strong>Quantity or weight</strong> statement<br><br>⚠️ <strong>No health claims allowed</strong> (e.g. \"Gluten Free\", \"Sugar Free\", \"Fat Free\")</div><div class=\"ko-text\">1. 식품의 <strong>일반 명칭</strong> (예: \"스니커두들 쿠키\")<br>2. 함량 순으로 <strong>재료 목록</strong><br>3. 재료에 포함된 <strong>주요 알레르겐</strong><br>4. 제조자 또는 포장자의 <strong>이름 및 주소</strong><br>5. <strong>제조일 / 판매 기한 / 유통기한</strong><br>6. <strong>수량 또는 중량</strong> 표시<br><br>⚠️ <strong>건강 관련 주장 금지</strong> (예: \"글루텐 프리\", \"무설탕\", \"무지방\")</div></div></div><div class=\"key-point\"><div class=\"key-point-title\">📋 Label Example · 라벨 예시</div><div class=\"bilingual\"><div class=\"en-text\">Snickerdoodle Cookies<br>Ingredients: Flour, Sugar, Butter, Eggs, Cream of Tartar, Baking Soda, Salt, Cinnamon<br><strong>Contains: Eggs, Milk, Wheat.</strong> Made in a home that contains Peanuts and Tree Nuts.<br>Made by: [Name], Camp Humphreys · Made on: [Date] · Size: 6 count</div><div class=\"ko-text\">스니커두들 쿠키<br>재료: 밀가루, 설탕, 버터, 달걀, 크림오브타르타, 베이킹소다, 소금, 시나몬<br><strong>함유: 달걀, 유제품, 밀.</strong> 땅콩과 견과류가 있는 가정에서 제조.<br>제조자: [이름], 험프리 기지 · 제조일: [날짜] · 수량: 6개</div></div></div>"
       }
-    ]
+    ],
+    "title": "Event Operations",
+    "titleKo": "이벤트 운영"
   }
 ]
