@@ -190,24 +190,30 @@
       width: 100%;
       background: white;
       border-bottom: 2px solid var(--border);
-      padding: 0 48px;
+      padding: 0 24px;
       margin-bottom: 0;
       display: flex;
       gap: 0;
       flex-wrap: nowrap;
       flex-shrink: 0;
       overflow-x: auto;
+      overflow-y: visible;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+      -ms-overflow-style: none;
     }
+    #page-learn .lesson-nav::-webkit-scrollbar { display: none; }
     #page-learn .lesson-nav-btn {
       border-radius: 0;
       border: none;
       border-bottom: 3px solid transparent;
       background: transparent;
       color: var(--gray);
-      padding: 13px 22px;
-      font-size: 0.95rem;
+      padding: 12px 16px;
+      font-size: 0.88rem;
       font-weight: 600;
       white-space: nowrap;
+      flex-shrink: 0;
       transition: all 0.15s;
     }
     #page-learn .lesson-nav-btn:hover { color: var(--green-dark); background: #f5faf7; }
@@ -1684,10 +1690,10 @@ function renderSection() {
   const nav = document.getElementById('lessonNav');
 
   if (isPC) {
-    // PC: clean tab strip — just section tabs
+    // PC: clean tab strip — just section tabs (label only, no Ko to save space)
     nav.innerHTML = lesson.sections.map((s, i) =>
       `<button class="lesson-nav-btn ${i === currentSection ? 'active' : ''}"
-       onclick="goSection(${i})">${s.label} · ${s.labelKo}</button>`
+       onclick="goSection(${i})" title="${s.label} · ${s.labelKo}">${s.label}</button>`
     ).join('');
   } else {
     // Mobile: module pills + section tabs
