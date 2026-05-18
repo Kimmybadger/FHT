@@ -1649,8 +1649,10 @@ function unlockNextBtn() {
 // Keep legacy function names so Dev Mode code still works
 function clearNextBtnCountdown() { stopTTS(); }
 function startNextBtnCountdown() {
-  const lesson  = lessons[currentLesson];
-  const section = lesson && lesson.sections[currentSection];
+  // Don't auto-start TTS if the audio unlock popup is still open
+  if (document.getElementById('audioUnlockOverlay')) return;
+  var lesson  = lessons[currentLesson];
+  var section = lesson && lesson.sections[currentSection];
   if (section) startTTS(section.html);
 }
 
@@ -2287,15 +2289,31 @@ function showAudioUnlockPrompt() {
 }
 
 function unlockAudioAndStart() {
-  if (window.speechSynthesis) {
-    var silent = new SpeechSynthesisUtterance(' ');
-    silent.volume = 0;
-    silent.onend = function() {};
-    silent.onerror = function() {};
-    window.speechSynthesis.speak(silent);
-  }
   var overlay = document.getElementById('audioUnlockOverlay');
   if (overlay) overlay.remove();
+
+  // Start TTS immediately inside this click handler — browser won't block it
+  if (window.speechSynthesis) {
+    var lesson  = lessons[currentLesson];
+    var section = lesson && lesson.sections[currentSection];
+    if (section) {
+      var text = extractReadableText(section.html);
+      if (text) {
+        ttsUtterance = new SpeechSynthesisUtterance(text);
+        ttsUtterance.lang  = 'en-US';
+        ttsUtterance.rate  = 0.95;
+        ttsUtterance.pitch = 1.0;
+        ttsUtterance.onend  = function() { unlockNextBtn(); };
+        ttsUtterance.onerror = function() { unlockNextBtn(); };
+        lockNextBtn();
+        window.speechSynthesis.speak(ttsUtterance);
+      } else {
+        unlockNextBtn();
+      }
+    }
+  } else {
+    unlockNextBtn();
+  }
 }
 
 loadData().then(function() {
