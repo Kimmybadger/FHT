@@ -1553,14 +1553,13 @@ function handleHeaderTap() {
     devMode = !devMode;
     updateQuizLock();
     if (devMode) {
-      alert('🛠️ Dev Mode ON — All locks disabled\n학습 잠금 및 타이머 해제됨');
-      clearNextBtnCountdown();
-      const btn = document.getElementById('nextBtn');
-      if (btn) { btn.disabled = false; btn.style.opacity = '1'; btn.textContent = isLastSection() ? '✅ Done' : 'Next →'; }
+      alert('🛠️ Dev Mode ON — All locks disabled\n학습 잠금 및 TTS 해제됨');
+      stopTTS();
+      unlockNextBtn();
       // Refresh quiz screen to show skip button
       if (!quizActive) renderQuizStart();
     } else {
-      alert('🔒 Dev Mode OFF — Locks re-enabled\n학습 잠금 및 타이머 활성화됨');
+      alert('🔒 Dev Mode OFF — Locks re-enabled\n학습 잠금 및 TTS 활성화됨');
       startNextBtnCountdown();
       // Refresh quiz screen to hide skip button
       if (!quizActive) renderQuizStart();
@@ -1568,38 +1567,91 @@ function handleHeaderTap() {
   }
 }
 
-// ── Next button 20s countdown ─────────────
-let countdownInterval = null;
+// ── TTS (Web Speech API) ─────────────────
+let ttsUtterance = null;
 
-function clearNextBtnCountdown() {
-  if (countdownInterval) { clearInterval(countdownInterval); countdownInterval = null; }
+function stopTTS() {
+  if (window.speechSynthesis) {
+    window.speechSynthesis.cancel();
+  }
+  ttsUtterance = null;
 }
 
-function startNextBtnCountdown() {
-  clearNextBtnCountdown();
-  if (devMode) return; // skip in dev mode
+function extractReadableText(html) {
+  // Parse HTML, remove tables, extract readable text only
+  const tmp = document.createElement('div');
+  tmp.innerHTML = html;
 
+  // Remove tables (too awkward to read)
+  tmp.querySelectorAll('table').forEach(el => el.remove());
+  // Remove Korean text blocks
+  tmp.querySelectorAll('.ko-text').forEach(el => el.remove());
+  // Remove small label spans etc
+  tmp.querySelectorAll('.tag-row, .module-badge').forEach(el => el.remove());
+
+  // Get plain text, clean up extra whitespace
+  let text = tmp.innerText || tmp.textContent || '';
+  text = text.replace(/\s+/g, ' ').trim();
+  return text;
+}
+
+function startTTS(html) {
+  stopTTS();
+  if (!window.speechSynthesis) {
+    // No TTS support — just unlock Next button immediately
+    unlockNextBtn();
+    return;
+  }
+  if (devMode) {
+    unlockNextBtn();
+    return;
+  }
+
+  const text = extractReadableText(html);
+  if (!text) {
+    unlockNextBtn();
+    return;
+  }
+
+  ttsUtterance = new SpeechSynthesisUtterance(text);
+  ttsUtterance.lang = 'en-US';
+  ttsUtterance.rate = 0.95;
+  ttsUtterance.pitch = 1.0;
+
+  ttsUtterance.onend = function() {
+    unlockNextBtn();
+  };
+  ttsUtterance.onerror = function() {
+    unlockNextBtn();
+  };
+
+  // Lock Next button while reading
+  lockNextBtn();
+  window.speechSynthesis.speak(ttsUtterance);
+}
+
+function lockNextBtn() {
   const btn = document.getElementById('nextBtn');
   if (!btn) return;
-
-  const isDone = isLastSection();
-  let seconds = 20;
-
   btn.disabled = true;
   btn.style.opacity = '0.45';
-  btn.textContent = `⏳ ${seconds}s`;
+  btn.textContent = '🔊 Reading...';
+}
 
-  countdownInterval = setInterval(function() {
-    seconds--;
-    if (seconds > 0) {
-      btn.textContent = `⏳ ${seconds}s`;
-    } else {
-      clearNextBtnCountdown();
-      btn.disabled = false;
-      btn.style.opacity = '1';
-      btn.textContent = isDone ? '✅ Done' : 'Next →';
-    }
-  }, 1000);
+function unlockNextBtn() {
+  const btn = document.getElementById('nextBtn');
+  if (!btn) return;
+  btn.disabled = false;
+  btn.style.opacity = '1';
+  btn.textContent = isLastSection() ? '✅ Done' : 'Next →';
+}
+
+// Keep legacy function names so Dev Mode code still works
+function clearNextBtnCountdown() { stopTTS(); }
+function startNextBtnCountdown() {
+  const lesson  = lessons[currentLesson];
+  const section = lesson && lesson.sections[currentSection];
+  if (section) startTTS(section.html);
 }
 
 function isQuizUnlocked() {
@@ -1629,6 +1681,8 @@ function updateQuizLock() {
 }
 
 function showPage(name) {
+  // Stop TTS when leaving learn page
+  if (name !== 'learn') stopTTS();
   // Block quiz if locked
   if (name === 'quiz' && !isQuizUnlocked()) {
     alert('📖 Please complete all learning modules first!\n모든 학습 모듈을 먼저 완료해 주세요.\n\n(진도: ' + lessonProgress.filter(Boolean).length + '/' + lessonProgress.length + ' 완료)');
