@@ -793,5 +793,230 @@
     "answer": 1,
     "explain": "Allergic reaction symptoms can appear within minutes to 2 hours after eating an allergen — swift action may be required.",
     "explainKo": "알레르기 반응 증상은 알레르겐 섭취 후 수 분에서 2시간 내에 나타날 수 있으며 신속한 대응이 필요할 수 있습니다."
+  },
+  {
+    "module": "Event Operations",
+    "moduleKo": "이벤트 운영",
+    "q": "Which of the following foods is classified as a PHF (Potentially Hazardous Food) at a temporary food event?",
+    "qKo": "다음 중 임시 식품 이벤트에서 PHF(잠재적 위험 식품)에 해당하는 것은?",
+    "options": [
+      "A. Plain cookies",
+      "B. Spam musubi",
+      "C. Plain muffins",
+      "D. Dry bread"
+    ],
+    "answer": 1,
+    "explain": "Spam musubi contains meat (TCS food) and must be temperature controlled. Plain baked goods without animal products are Non-PHF.",
+    "explainKo": "스팸무수비는 고기(TCS 식품)를 포함하므로 온도 관리가 필요합니다. 동물성 식품이 없는 일반 베이크 제품은 Non-PHF입니다."
+  },
+  {
+    "module": "Event Operations",
+    "moduleKo": "이벤트 운영",
+    "q": "Where must PHF (Potentially Hazardous Foods) be prepared for a temporary food event?",
+    "qKo": "임시 식품 이벤트를 위한 PHF(잠재적 위험 식품)는 어디서 조리해야 하는가?",
+    "options": [
+      "A. At home the night before",
+      "B. In any clean kitchen",
+      "C. On-site at the event",
+      "D. In a restaurant kitchen nearby"
+    ],
+    "answer": 2,
+    "explain": "PHF foods MUST be prepared on-site at the event. Preparing PHF in a home kitchen and bringing it to the event is NOT permitted.",
+    "explainKo": "PHF 식품은 반드시 이벤트 현장에서 조리해야 합니다. 가정 주방에서 조리하여 이벤트로 가져오는 것은 허용되지 않습니다."
+  },
+  {
+    "module": "Event Operations",
+    "moduleKo": "이벤트 운영",
+    "q": "What type of gloves are PROHIBITED at temporary food events?",
+    "qKo": "임시 식품 이벤트에서 사용이 금지된 장갑 종류는?",
+    "options": [
+      "A. Nitrile gloves",
+      "B. Vinyl gloves",
+      "C. Latex gloves",
+      "D. Neoprene gloves"
+    ],
+    "answer": 2,
+    "explain": "Latex gloves are PROHIBITED. Use powder-free alternatives such as nitrile, neoprene, or vinyl gloves.",
+    "explainKo": "라텍스 장갑은 금지입니다. 니트릴, 네오프렌, 비닐 등 파우더 프리 대체품을 사용하세요."
+  },
+  {
+    "module": "Event Operations",
+    "moduleKo": "이벤트 운영",
+    "q": "How do you calibrate a bimetallic stem thermometer at a food event?",
+    "qKo": "식품 이벤트에서 바이메탈 줄기 온도계를 교정하는 방법은?",
+    "options": [
+      "A. Place in boiling water — should read 212°F",
+      "B. Place in 50/50 ice water — should read 32°F",
+      "C. Hold in room air — should read 72°F",
+      "D. Place in hot food — should read 165°F"
+    ],
+    "answer": 1,
+    "explain": "To calibrate: place the thermometer in a 50/50 ice water mixture. It should stabilize at 32°F (0°C). Adjust the calibration nut if needed.",
+    "explainKo": "교정 방법: 온도계를 얼음과 물 50/50 혼합물에 넣습니다. 32°F(0°C)에서 안정되어야 합니다. 필요시 교정 너트를 조정합니다."
+  },
+  {
+    "module": "Event Operations",
+    "moduleKo": "이벤트 운영",
+    "q": "At a temporary food event, how far must your food booth be from dumpsters or recycling bins?",
+    "qKo": "임시 식품 이벤트에서 식품 부스는 쓰레기통이나 재활용 수거함으로부터 얼마나 떨어져야 하는가?",
+    "options": [
+      "A. 10 feet",
+      "B. 25 feet",
+      "C. 50 feet",
+      "D. 100 feet"
+    ],
+    "answer": 2,
+    "explain": "Food booths must be at least 50 feet away from dumpsters, recycling bins, and smoke areas to prevent contamination.",
+    "explainKo": "식품 부스는 오염 방지를 위해 쓰레기통, 재활용 수거함, 흡연 구역으로부터 최소 50피트 이상 떨어져야 합니다."
+  },
+  {
+    "module": "Event Operations",
+    "moduleKo": "이벤트 운영",
+    "q": "What chlorine concentration is required for sanitizing solution at a temporary food event?",
+    "qKo": "임시 식품 이벤트에서 소독 용액에 필요한 염소 농도는?",
+    "options": [
+      "A. 50 ppm",
+      "B. 100 ppm",
+      "C. 200 ppm",
+      "D. 500 ppm"
+    ],
+    "answer": 1,
+    "explain": "100 ppm Free Available Chlorine (FAC) is required. Mix 2 tablespoons of bleach in 4 gallons of water. Always verify with test strips.",
+    "explainKo": "유효 염소 100ppm이 필요합니다. 물 4갤런에 표백제 2큰술을 섞으세요. 항상 테스트 스트립으로 농도를 확인하세요."
+  },
+  {
+    "module": "Event Operations",
+    "moduleKo": "이벤트 운영",
+    "q": "Which of the following is NOT allowed as an ingredient at a Camp Humphreys food event?",
+    "qKo": "다음 중 험프리 기지 식품 이벤트에서 재료로 사용이 허용되지 않는 것은?",
+    "options": [
+      "A. Commercially purchased eggs",
+      "B. USDA-inspected ground beef",
+      "C. Home-grown vegetables from your garden",
+      "D. Commissary-purchased dairy"
+    ],
+    "answer": 2,
+    "explain": "Home-grown vegetables, fruits, or herbs are NOT permitted. All ingredients must come from approved, commercially inspected sources.",
+    "explainKo": "가정에서 재배한 채소, 과일, 허브는 허용되지 않습니다. 모든 재료는 승인된 상업적 검사 출처에서 구매해야 합니다."
+  },
+  {
+    "module": "Event Operations",
+    "moduleKo": "이벤트 운영",
+    "q": "What is the minimum number of containers required for on-site ware washing at a food event?",
+    "qKo": "식품 이벤트 현장에서 식기 세척을 위해 필요한 최소 용기 수는?",
+    "options": [
+      "A. 1 (wash only)",
+      "B. 2 (wash and rinse)",
+      "C. 3 (wash, rinse, sanitize)",
+      "D. 4 (wash, rinse, sanitize, dry)"
+    ],
+    "answer": 2,
+    "explain": "3 containers are required: 1st wash (soapy water), 2nd rinse (clean water), 3rd sanitize (100 ppm chlorine solution). Then air dry.",
+    "explainKo": "3개의 용기가 필요합니다: 1번 세척(비눗물), 2번 헹굼(깨끗한 물), 3번 소독(100ppm 염소 용액). 이후 공기 건조."
+  },
+  {
+    "module": "Event Operations",
+    "moduleKo": "이벤트 운영",
+    "q": "If you are selling packaged food at an event, which of the following must appear on the label?",
+    "qKo": "이벤트에서 포장 식품을 판매하는 경우, 라벨에 반드시 표시해야 하는 것은?",
+    "options": [
+      "A. Calorie count and nutrition facts",
+      "B. Major allergens and expiration date",
+      "C. Health claims like 'Gluten Free'",
+      "D. Price per unit"
+    ],
+    "answer": 1,
+    "explain": "Labels must include major allergens and made-on/sell-by/expiration date. Health claims like 'Gluten Free' are NOT permitted.",
+    "explainKo": "라벨에는 주요 알레르겐과 제조일/판매기한/유통기한이 포함되어야 합니다. '글루텐 프리' 같은 건강 주장은 허용되지 않습니다."
+  },
+  {
+    "module": "Event Operations",
+    "moduleKo": "이벤트 운영",
+    "q": "When selling Non-PHF food made in a home kitchen, what is required at the point of sale?",
+    "qKo": "가정 주방에서 만든 Non-PHF 식품을 판매할 때 판매 장소에서 무엇이 필요한가?",
+    "options": [
+      "A. Nothing — Non-PHF foods have no requirements",
+      "B. A visible Consumer Advisory placard stating the food was home-prepared",
+      "C. A permit from the health department",
+      "D. A temperature log"
+    ],
+    "answer": 1,
+    "explain": "A clearly visible Consumer Advisory placard is required, stating the food was prepared in a home kitchen not subject to regulatory inspection.",
+    "explainKo": "식품이 규제 검사 대상이 아닌 가정 주방에서 제조되었음을 명시하는 소비자 안내 표지판을 잘 보이는 곳에 게시해야 합니다."
+  },
+  {
+    "module": "Event Operations",
+    "moduleKo": "이벤트 운영",
+    "q": "When must single-use gloves be discarded during food service?",
+    "qKo": "식품 서비스 중 일회용 장갑을 언제 버려야 하는가?",
+    "options": [
+      "A. Only when visibly dirty",
+      "B. After every hour regardless",
+      "C. When damaged, soiled, or switching tasks",
+      "D. Only after handling raw meat"
+    ],
+    "answer": 2,
+    "explain": "Gloves must be discarded when damaged, soiled, or when switching between tasks (e.g., raw to RTE foods) to prevent cross-contamination.",
+    "explainKo": "장갑은 손상되거나, 오염되거나, 작업을 전환할 때(예: 생고기에서 RTE 식품으로) 교차오염 방지를 위해 버려야 합니다."
+  },
+  {
+    "module": "Event Operations",
+    "moduleKo": "이벤트 운영",
+    "q": "How far must a food booth be from port-a-lets at an outdoor event?",
+    "qKo": "야외 이벤트에서 식품 부스는 이동식 화장실로부터 얼마나 떨어져야 하는가?",
+    "options": [
+      "A. 10 yards",
+      "B. 50 yards",
+      "C. 100 yards",
+      "D. 200 yards"
+    ],
+    "answer": 2,
+    "explain": "Food booths must be 100 yards from port-a-lets at outdoor events to prevent contamination from odors and airborne pathogens.",
+    "explainKo": "식품 부스는 야외 이벤트에서 냄새 및 공기 중 병원균으로 인한 오염을 방지하기 위해 이동식 화장실로부터 100야드 이상 떨어져야 합니다."
+  },
+  {
+    "module": "Event Operations",
+    "moduleKo": "이벤트 운영",
+    "q": "What is the minimum height food must be stored off the ground at a food event?",
+    "qKo": "식품 이벤트에서 식품을 지면에서 최소 얼마나 높이 보관해야 하는가?",
+    "options": [
+      "A. 2 inches",
+      "B. 4 inches",
+      "C. 6 inches",
+      "D. 12 inches"
+    ],
+    "answer": 2,
+    "explain": "All food must be stored a minimum of 6 inches (15 cm) off the ground to prevent contamination from pests and floor debris.",
+    "explainKo": "모든 식품은 해충 및 바닥 이물질로 인한 오염 방지를 위해 지면에서 최소 6인치(15cm) 이상 높이 보관해야 합니다."
+  },
+  {
+    "module": "Event Operations",
+    "moduleKo": "이벤트 운영",
+    "q": "What must food handlers wear to prevent hair and sweat from contacting food at an event?",
+    "qKo": "이벤트에서 머리카락과 땀이 식품에 닿지 않도록 식품 취급자가 착용해야 하는 것은?",
+    "options": [
+      "A. Apron only",
+      "B. Hair restraint (hat, hair net, or beard restraint)",
+      "C. Face mask",
+      "D. Gloves cover everything required"
+    ],
+    "answer": 1,
+    "explain": "All food handlers must wear a hair restraint — hat, hair net, beard restraint, or clothing that covers body hair — to prevent contamination.",
+    "explainKo": "모든 식품 취급자는 오염 방지를 위해 모자, 헤어넷, 수염 가리개, 또는 체모를 가리는 의복 등 머리카락 억제 장치를 착용해야 합니다."
+  },
+  {
+    "module": "Event Operations",
+    "moduleKo": "이벤트 운영",
+    "q": "Which documents must be available for review during a food event inspection at Camp Humphreys?",
+    "qKo": "험프리 기지 식품 이벤트 검열 시 검토를 위해 준비해야 하는 서류는?",
+    "options": [
+      "A. Only the food handler certificate",
+      "B. Approved DD 2970 and Food Handler Certificates for all food handlers",
+      "C. Receipt of food purchases",
+      "D. Menu and pricing list"
+    ],
+    "answer": 1,
+    "explain": "Both the approved DD 2970 form and Food Handler Certificates for ALL food handlers (digital copies accepted) must be available for inspection.",
+    "explainKo": "승인된 DD 2970 양식과 모든 식품 취급자의 식품 취급자 인증서(디지털 사본 허용) 모두 검열을 위해 준비해야 합니다."
   }
 ]
