@@ -1647,6 +1647,8 @@ function unlockNextBtn() {
 }
 
 // ── PC: 20s timer only ────────────────────
+let countdownInterval = null;
+
 function startPCMode() {
   if (devMode) { unlockNextBtn(); return; }
 
