@@ -1735,8 +1735,8 @@ function showPage(name) {
   const tb = document.getElementById('pcTopbarTitle');
   if (tb) tb.textContent = titles[name] || '';
   if (name === 'quiz' && !quizActive) renderQuizStart();
-  // Restart timer/TTS when returning to learn page
-  if (name === 'learn') startNextBtnCountdown();
+  // When returning to learn page, re-render section (which calls startNextBtnCountdown internally)
+  if (name === 'learn') renderSection();
 }
 
 function renderSidebarModules() {
