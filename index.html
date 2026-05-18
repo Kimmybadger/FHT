@@ -1865,8 +1865,13 @@ function startQuiz() {
   quizQuestionIndex = 0;
   quizScore = 0;
   quizAnswered = false;
-  // Pick 15 random questions from the full bank
-  quizShuffled = [...quizQuestions].sort(() => Math.random() - 0.5).slice(0, 15);
+  // Pick 15 random questions — Fisher-Yates shuffle (no duplicates)
+  const pool = [...quizQuestions];
+  for (let i = pool.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [pool[i], pool[j]] = [pool[j], pool[i]];
+  }
+  quizShuffled = pool.slice(0, 15);
   showPage('quiz');
   renderQuestion();
 }

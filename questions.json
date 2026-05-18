@@ -647,21 +647,6 @@
   {
     "module": "Foodborne Illness",
     "moduleKo": "식품 매개 질병",
-    "q": "At a temporary food event, where should cleaning chemicals be stored relative to food?",
-    "qKo": "임시 식품 이벤트에서 세정 화학물질은 식품과 어떻게 보관해야 하는가?",
-    "options": [
-      "Above food for easy access · 접근 용이하도록 식품 위에 보관",
-      "Next to food to save space · 공간 절약을 위해 식품 옆에 보관",
-      "Below and away from food · 식품 아래 및 멀리 보관",
-      "In the same cooler as food · 식품과 같은 냉장고에 보관"
-    ],
-    "answer": 2,
-    "explain": "Chemicals must always be stored BELOW and AWAY from food to prevent contamination from spills or leaks.",
-    "explainKo": "화학물질은 누출이나 엎질러짐으로 인한 오염을 방지하기 위해 항상 식품 아래나 멀리 보관해야 합니다."
-  },
-  {
-    "module": "Foodborne Illness",
-    "moduleKo": "식품 매개 질병",
     "q": "Which of the following is a chemical hazard in food service?",
     "qKo": "다음 중 식품 서비스에서 화학적 위해요소에 해당하는 것은?",
     "options": [
