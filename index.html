@@ -1635,7 +1635,7 @@ function lockNextBtn() {
   if (!btn) return;
   btn.disabled = true;
   btn.style.opacity = '0.45';
-  btn.textContent = '⏳ 20s';
+  btn.textContent = '🔊 Reading...';
 }
 
 function unlockNextBtn() {
@@ -1646,22 +1646,10 @@ function unlockNextBtn() {
   btn.textContent = isLastSection() ? '✅ Done' : 'Next →';
 }
 
-// ── PC: TTS + 20s timer simultaneously ───
-let countdownInterval = null;
-let ttsFinished = false;
-let timerFinished = false;
-
-function checkBothDone() {
-  if (ttsFinished && timerFinished) unlockNextBtn();
-}
-
-function startPCMode(html) {
+// ── PC: 20s timer only ────────────────────
+function startPCMode() {
   if (devMode) { unlockNextBtn(); return; }
 
-  ttsFinished = false;
-  timerFinished = false;
-
-  // 1) 20s countdown
   if (countdownInterval) { clearInterval(countdownInterval); countdownInterval = null; }
   const btn = document.getElementById('nextBtn');
   if (btn) { btn.disabled = true; btn.style.opacity = '0.45'; btn.textContent = '⏳ 20s'; }
@@ -1674,41 +1662,20 @@ function startPCMode(html) {
     } else {
       clearInterval(countdownInterval);
       countdownInterval = null;
-      timerFinished = true;
-      checkBothDone();
+      unlockNextBtn();
     }
   }, 1000);
-
-  // 2) TTS simultaneously
-  stopTTS();
-  if (!window.speechSynthesis) { ttsFinished = true; checkBothDone(); return; }
-  const text = extractReadableText(html);
-  if (!text) { ttsFinished = true; checkBothDone(); return; }
-  ttsUtterance = new SpeechSynthesisUtterance(text);
-  ttsUtterance.lang  = 'en-US';
-  ttsUtterance.rate  = 0.95;
-  ttsUtterance.pitch = 1.0;
-  ttsUtterance.onend  = function() { ttsFinished = true; checkBothDone(); };
-  ttsUtterance.onerror = function() { ttsFinished = true; checkBothDone(); };
-  window.speechSynthesis.speak(ttsUtterance);
 }
 
 // Keep legacy function names so Dev Mode code still works
 function clearNextBtnCountdown() {
   stopTTS();
   if (countdownInterval) { clearInterval(countdownInterval); countdownInterval = null; }
-  ttsFinished = true; timerFinished = true;
 }
 function startNextBtnCountdown() {
   if (window.innerWidth >= 900) {
-    // PC: TTS + timer
-    if (document.getElementById('audioUnlockOverlay')) return;
-    var lesson  = lessons[currentLesson];
-    var section = lesson && lesson.sections[currentSection];
-    if (section) startPCMode(section.html);
+    startPCMode();
   } else {
-    // Mobile: TTS only
-    if (document.getElementById('audioUnlockOverlay')) return;
     var lesson  = lessons[currentLesson];
     var section = lesson && lesson.sections[currentSection];
     if (section) startTTS(section.html);
@@ -2330,54 +2297,9 @@ function sendBySMS() {
 }
 
 // ══════════════════════════════════════════
-// AUDIO UNLOCK + INIT
+// INIT
 // ══════════════════════════════════════════
-function showAudioUnlockPrompt() {
-  var overlay = document.createElement('div');
-  overlay.id = 'audioUnlockOverlay';
-  overlay.style.cssText = 'position:fixed;inset:0;background:rgba(0,0,0,0.7);z-index:9999;display:flex;align-items:center;justify-content:center;padding:20px';
-  overlay.innerHTML =
-    '<div style="background:white;border-radius:20px;padding:32px 28px;max-width:360px;width:100%;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,0.4);animation:popIn 0.35s cubic-bezier(.175,.885,.32,1.275)">'
-    + '<div style="font-size:3rem;margin-bottom:12px">🔊</div>'
-    + '<div style="font-family:Bebas Neue,sans-serif;font-size:1.6rem;color:#0f4f2e;letter-spacing:1px;margin-bottom:8px">Audio Narration</div>'
-    + '<div style="font-size:0.85rem;color:#555;margin-bottom:6px;line-height:1.6">This course will read each slide aloud.<br>The Next button unlocks when narration ends.</div>'
-    + '<div style="font-size:0.78rem;color:#888;margin-bottom:24px;line-height:1.5">이 과정은 각 슬라이드를 음성으로 읽어줍니다.<br>낭독이 끝나면 다음 버튼이 활성화됩니다.</div>'
-    + '<button onclick="unlockAudioAndStart()" style="width:100%;padding:15px;border-radius:14px;border:none;background:linear-gradient(135deg,#1a7a4a,#0f4f2e);color:white;font-size:1rem;font-weight:700;cursor:pointer;letter-spacing:0.5px">🔊 Enable Audio &amp; Start · 오디오 켜고 시작</button>'
-    + '</div>';
-  document.body.appendChild(overlay);
-}
-
-function unlockAudioAndStart() {
-  var overlay = document.getElementById('audioUnlockOverlay');
-  if (overlay) overlay.remove();
-
-  // Start TTS immediately inside this click handler — browser won't block it
-  if (window.speechSynthesis) {
-    var lesson  = lessons[currentLesson];
-    var section = lesson && lesson.sections[currentSection];
-    if (section) {
-      var text = extractReadableText(section.html);
-      if (text) {
-        ttsUtterance = new SpeechSynthesisUtterance(text);
-        ttsUtterance.lang  = 'en-US';
-        ttsUtterance.rate  = 0.95;
-        ttsUtterance.pitch = 1.0;
-        ttsUtterance.onend  = function() { unlockNextBtn(); };
-        ttsUtterance.onerror = function() { unlockNextBtn(); };
-        lockNextBtn();
-        window.speechSynthesis.speak(ttsUtterance);
-      } else {
-        unlockNextBtn();
-      }
-    }
-  } else {
-    unlockNextBtn();
-  }
-}
-
-loadData().then(function() {
-  showAudioUnlockPrompt();
-});
+loadData();
 </script>
 
 </div><!-- /mobile-wrapper -->
