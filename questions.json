@@ -200,10 +200,10 @@
     "q": "What is the Temperature Danger Zone for TCS foods?",
     "qKo": "TCS 식품의 온도 위험 구간은?",
     "options": [
-      "32°F–100°F · 0°C–38°C",
       "41°F–135°F · 5°C–57°C",
-      "45°F–165°F · 7°C–74°C",
-      "50°F–140°F · 10°C–60°C"
+      "32°F–212°F · 0°C–100°C",
+      "50°F–150°F · 10°C–66°C",
+      "0°F–100°F · -18°C–38°C"
     ],
     "answer": 1,
     "explain": "The Temperature Danger Zone is 41°F–135°F (5°C–57°C). TCS foods must not spend more than 4 total hours in this zone.",
@@ -215,10 +215,10 @@
     "q": "What minimum internal temperature must poultry reach?",
     "qKo": "가금류의 최소 내부 조리 온도는?",
     "options": [
-      "145°F / 63°C",
-      "155°F / 68°C",
-      "165°F / 74°C",
-      "135°F / 57°C"
+      "145°F (63°C)",
+      "155°F (68°C)",
+      "165°F (74°C)",
+      "175°F (79°C)"
     ],
     "answer": 2,
     "explain": "Poultry (chicken, turkey, duck) must reach a minimum internal temperature of 165°F (74°C).",
@@ -245,10 +245,10 @@
     "q": "What is the minimum internal temperature for ground beef?",
     "qKo": "다진 쇠고기의 최소 내부 조리 온도는?",
     "options": [
-      "145°F / 63°C",
-      "155°F / 68°C",
-      "165°F / 74°C",
-      "135°F / 57°C"
+      "145°F (63°C)",
+      "155°F (68°C)",
+      "165°F (74°C)",
+      "135°F (57°C)"
     ],
     "answer": 1,
     "explain": "Ground beef must be cooked to 155°F (68°C) for at least 15 seconds.",
@@ -275,10 +275,10 @@
     "q": "What is the minimum hot holding temperature for TCS foods?",
     "qKo": "TCS 식품의 최소 온장 보관 온도는?",
     "options": [
-      "115°F / 46°C",
-      "125°F / 52°C",
-      "135°F / 57°C",
-      "145°F / 63°C"
+      "115°F (46°C) 이상",
+      "125°F (52°C) 이상",
+      "135°F (57°C) 이상",
+      "145°F (63°C) 이상"
     ],
     "answer": 2,
     "explain": "Hot TCS foods must be held at 135°F (57°C) or above to prevent bacterial growth.",
@@ -290,10 +290,10 @@
     "q": "What temperature must food reach when reheating for hot holding?",
     "qKo": "온장 보관을 위해 재가열 시 도달해야 하는 온도는?",
     "options": [
-      "135°F / 57°C",
-      "145°F / 63°C",
-      "155°F / 68°C",
-      "165°F / 74°C"
+      "145°F (63°C)",
+      "155°F (68°C)",
+      "165°F (74°C)",
+      "135°F (57°C)"
     ],
     "answer": 3,
     "explain": "Food must be reheated to 165°F (74°C) within 2 hours before being placed in hot holding.",
@@ -500,10 +500,10 @@
     "q": "What is the optimal pH range for bacterial growth?",
     "qKo": "세균 성장에 최적인 pH 범위는?",
     "options": [
-      "1.0–3.0",
-      "3.0–4.5",
-      "4.5–7.5",
-      "7.5–14.0"
+      "pH 3.0–5.0",
+      "pH 4.6–7.5",
+      "pH 7.5–9.0",
+      "pH 1.0–3.0"
     ],
     "answer": 2,
     "explain": "Bacteria grow best in food with a pH of 4.5–7.5 (little to no acid). Most TCS foods fall within this range.",
@@ -620,10 +620,10 @@
     "q": "Which type of food hazard is responsible for approximately 67% of foodborne illnesses?",
     "qKo": "식중독의 약 67%를 차지하는 위해요소 유형은?",
     "options": [
-      "A. Physical",
-      "B. Chemical",
-      "C. Biological",
-      "D. Radiological"
+      "Physical · 물리적 (Physical)",
+      "Chemical · 화학적 (Chemical)",
+      "Biological · 생물학적 (Biological)",
+      "Radiological · 방사선 (Radiological)"
     ],
     "answer": 2,
     "explain": "Biological hazards (bacteria, viruses, parasites, fungi) cause approximately 67% of foodborne illnesses.",
@@ -635,10 +635,10 @@
     "q": "A metal shaving from a can opener found in food is an example of which hazard type?",
     "qKo": "캔따개에서 나온 쇠조각이 음식에서 발견되었다면 이는 어떤 유형의 위해요소인가?",
     "options": [
-      "A. Biological",
-      "B. Chemical",
-      "C. Physical",
-      "D. Thermal"
+      "Biological · 생물학적 (Biological)",
+      "Chemical · 화학적 (Chemical)",
+      "Physical · 물리적 (Physical)",
+      "Thermal · 열적 (Thermal)"
     ],
     "answer": 2,
     "explain": "Metal shavings, glass, bones, and hair are physical hazards — foreign objects that can cause injury.",
@@ -650,10 +650,10 @@
     "q": "At a temporary food event, where should cleaning chemicals be stored relative to food?",
     "qKo": "임시 식품 이벤트에서 세정 화학물질은 식품과 어떻게 보관해야 하는가?",
     "options": [
-      "A. Above food for easy access",
-      "B. Next to food to save space",
-      "C. Below and away from food",
-      "D. In the same cooler as food"
+      "Above food for easy access · 접근 용이하도록 식품 위에 보관",
+      "Next to food to save space · 공간 절약을 위해 식품 옆에 보관",
+      "Below and away from food · 식품 아래 및 멀리 보관",
+      "In the same cooler as food · 식품과 같은 냉장고에 보관"
     ],
     "answer": 2,
     "explain": "Chemicals must always be stored BELOW and AWAY from food to prevent contamination from spills or leaks.",
@@ -665,10 +665,10 @@
     "q": "Which of the following is a chemical hazard in food service?",
     "qKo": "다음 중 식품 서비스에서 화학적 위해요소에 해당하는 것은?",
     "options": [
-      "A. Salmonella bacteria",
-      "B. Pesticide residue on vegetables",
-      "C. Fish bone in soup",
-      "D. Norovirus on surfaces"
+      "Salmonella bacteria · 살모넬라 박테리아",
+      "Pesticide residue on vegetables · 채소의 농약 잔류물",
+      "Fish bone in soup · 수프 속 생선 뼈",
+      "Norovirus on surfaces · 표면의 노로바이러스"
     ],
     "answer": 1,
     "explain": "Pesticide residue is a chemical hazard. Salmonella and Norovirus are biological; fish bone is physical.",
@@ -680,10 +680,10 @@
     "q": "What are the THREE types of food hazards?",
     "qKo": "식품 위해요소의 3가지 유형은?",
     "options": [
-      "A. Bacterial, viral, parasitic",
-      "B. Physical, chemical, biological",
-      "C. Temperature, time, moisture",
-      "D. Direct, indirect, environmental"
+      "Bacterial, viral, parasitic · 세균성, 바이러스성, 기생충성",
+      "Physical, chemical, biological · 물리적, 화학적, 생물학적",
+      "Temperature, time, moisture · 온도, 시간, 수분",
+      "Direct, indirect, environmental · 직접, 간접, 환경적"
     ],
     "answer": 1,
     "explain": "The three types of food hazards are Physical, Chemical, and Biological.",
@@ -695,10 +695,10 @@
     "q": "How many major food allergens are recognized by the FDA?",
     "qKo": "FDA에서 인정하는 주요 식품 알레르겐은 몇 가지인가?",
     "options": [
-      "A. 5",
-      "B. 7",
-      "C. 9",
-      "D. 12"
+      "5 · 5가지",
+      "7 · 7가지",
+      "9 · 9가지",
+      "12 · 12가지"
     ],
     "answer": 2,
     "explain": "The FDA recognizes 9 major allergens: Peanuts, Tree Nuts, Fish, Shellfish, Milk, Eggs, Wheat, Soy, and Sesame.",
@@ -710,10 +710,10 @@
     "q": "A guest at your food event says they have a severe peanut allergy. What should you do if you are unsure whether a dish contains peanuts?",
     "qKo": "이벤트에서 손님이 땅콩 알레르기가 있다고 합니다. 해당 음식에 땅콩이 들어갔는지 확실하지 않을 때 어떻게 해야 하나?",
     "options": [
-      "A. Say it's probably fine",
-      "B. Tell the guest honestly that you're unsure",
-      "C. Remove visible peanuts and serve it",
-      "D. Cook it longer to destroy the allergen"
+      "Say it's probably fine · 괜찮을 것 같다고 말함",
+      "Tell the guest honestly that you're unsure · 불확실하다고 솔직히 알림",
+      "Remove visible peanuts and serve it · 보이는 땅콩을 제거하고 제공",
+      "Cook it longer to destroy the allergen · 더 오래 조리하여 알레르겐 제거"
     ],
     "answer": 1,
     "explain": "Never guess about allergens. Always be honest with the guest if you are unsure about ingredients — their life may depend on it.",
@@ -725,10 +725,10 @@
     "q": "Which of the following is a symptom of a SEVERE allergic reaction (anaphylaxis)?",
     "qKo": "다음 중 심각한 알레르기 반응(아나필락시스)의 증상은?",
     "options": [
-      "A. Mild itching on the arm",
-      "B. Runny nose",
-      "C. Difficulty breathing and throat swelling",
-      "D. Slight stomach discomfort"
+      "Mild itching on the arm · 팔의 가벼운 가려움",
+      "Runny nose · 콧물",
+      "Difficulty breathing and throat swelling · 호흡 곤란 및 목 부종",
+      "Slight stomach discomfort · 가벼운 복부 불편감"
     ],
     "answer": 2,
     "explain": "Anaphylaxis symptoms include difficulty breathing, throat swelling, blood pressure drop, and loss of consciousness — potentially fatal within minutes.",
@@ -740,10 +740,10 @@
     "q": "Can allergens be destroyed by sanitizers or cooking heat alone?",
     "qKo": "알레르겐은 살균제나 조리 열만으로 제거할 수 있는가?",
     "options": [
-      "A. Yes, sanitizers destroy all allergens",
-      "B. Yes, cooking at 165°F removes allergens",
-      "C. No — surfaces must be physically cleaned first",
-      "D. Yes, but only if soaked for 30 seconds"
+      "Yes, sanitizers destroy all allergens · 예, 살균제가 모든 알레르겐 제거",
+      "Yes, cooking at 165°F removes allergens · 예, 165°F 조리로 알레르겐 제거",
+      "No — surfaces must be physically cleaned first · 아니오 — 표면을 먼저 물리적으로 세척해야 함",
+      "Yes, but only if soaked for 30 seconds · 예, 30초 이상 담그면 제거됨"
     ],
     "answer": 2,
     "explain": "Allergens are NOT destroyed by sanitizers or heat. Surfaces and equipment must be physically cleaned (scrubbed) to remove allergen residue before sanitizing.",
@@ -755,10 +755,10 @@
     "q": "What is 'cross-contact' in the context of food allergens?",
     "qKo": "식품 알레르겐 맥락에서 '교차 접촉'이란 무엇인가?",
     "options": [
-      "A. Mixing raw and cooked meat",
-      "B. Transfer of an allergen from one food or surface to another",
-      "C. Using the same thermometer for different foods",
-      "D. Storing food at wrong temperature"
+      "Mixing raw and cooked meat · 생고기와 조리된 고기 혼합",
+      "Transfer of an allergen from one food or surface to another · 한 식품/표면에서 다른 곳으로 알레르겐 이동",
+      "Using the same thermometer for different foods · 다른 식품에 같은 온도계 사용",
+      "Storing food at wrong temperature · 잘못된 온도로 식품 보관"
     ],
     "answer": 1,
     "explain": "Cross-contact occurs when an allergen is transferred from one food/surface to another, even in tiny amounts — enough to trigger a reaction.",
@@ -770,10 +770,10 @@
     "q": "Which of the following is NOT one of the 9 FDA major allergens?",
     "qKo": "다음 중 FDA 9대 주요 알레르겐에 해당하지 않는 것은?",
     "options": [
-      "A. Sesame",
-      "B. Shellfish",
-      "C. Corn",
-      "D. Tree Nuts"
+      "Sesame · 참깨 (Sesame)",
+      "Shellfish · 갑각류 (Shellfish)",
+      "Corn · 옥수수 (Corn)",
+      "Tree Nuts · 견과류 (Tree Nuts)"
     ],
     "answer": 2,
     "explain": "Corn is NOT a major FDA allergen. The 9 are: Peanuts, Tree Nuts, Fish, Shellfish, Milk, Eggs, Wheat, Soy, and Sesame.",
@@ -785,10 +785,10 @@
     "q": "How soon can allergic reaction symptoms appear after eating an allergen?",
     "qKo": "알레르겐 섭취 후 알레르기 반응 증상은 얼마나 빨리 나타날 수 있는가?",
     "options": [
-      "A. Only after 24 hours",
-      "B. Within minutes to 2 hours",
-      "C. After 6–8 hours",
-      "D. Symptoms always appear immediately"
+      "Only after 24 hours · 24시간 후에만 발현",
+      "Within minutes to 2 hours · 수 분에서 2시간 내",
+      "After 6–8 hours · 6~8시간 후",
+      "Symptoms always appear immediately · 항상 즉시 나타남"
     ],
     "answer": 1,
     "explain": "Allergic reaction symptoms can appear within minutes to 2 hours after eating an allergen — swift action may be required.",
@@ -800,10 +800,10 @@
     "q": "Which of the following foods is classified as a PHF (Potentially Hazardous Food) at a temporary food event?",
     "qKo": "다음 중 임시 식품 이벤트에서 PHF(잠재적 위험 식품)에 해당하는 것은?",
     "options": [
-      "A. Plain cookies",
-      "B. Spam musubi",
-      "C. Plain muffins",
-      "D. Dry bread"
+      "Plain cookies · 일반 쿠키 (Plain cookies)",
+      "Spam musubi · 스팸무수비 (Spam musubi)",
+      "Plain muffins · 일반 머핀 (Plain muffins)",
+      "Dry bread · 건조한 빵 (Dry bread)"
     ],
     "answer": 1,
     "explain": "Spam musubi contains meat (TCS food) and must be temperature controlled. Plain baked goods without animal products are Non-PHF.",
@@ -815,10 +815,10 @@
     "q": "Where must PHF (Potentially Hazardous Foods) be prepared for a temporary food event?",
     "qKo": "임시 식품 이벤트를 위한 PHF(잠재적 위험 식품)는 어디서 조리해야 하는가?",
     "options": [
-      "A. At home the night before",
-      "B. In any clean kitchen",
-      "C. On-site at the event",
-      "D. In a restaurant kitchen nearby"
+      "At home the night before · 전날 밤 집에서",
+      "In any clean kitchen · 깨끗한 주방이면 어디서든",
+      "On-site at the event · 이벤트 현장에서",
+      "In a restaurant kitchen nearby · 근처 식당 주방에서"
     ],
     "answer": 2,
     "explain": "PHF foods MUST be prepared on-site at the event. Preparing PHF in a home kitchen and bringing it to the event is NOT permitted.",
@@ -830,10 +830,10 @@
     "q": "What type of gloves are PROHIBITED at temporary food events?",
     "qKo": "임시 식품 이벤트에서 사용이 금지된 장갑 종류는?",
     "options": [
-      "A. Nitrile gloves",
-      "B. Vinyl gloves",
-      "C. Latex gloves",
-      "D. Neoprene gloves"
+      "Nitrile gloves · 니트릴 장갑 (Nitrile)",
+      "Vinyl gloves · 비닐 장갑 (Vinyl)",
+      "Latex gloves · 라텍스 장갑 (Latex)",
+      "Neoprene gloves · 네오프렌 장갑 (Neoprene)"
     ],
     "answer": 2,
     "explain": "Latex gloves are PROHIBITED. Use powder-free alternatives such as nitrile, neoprene, or vinyl gloves.",
@@ -845,10 +845,10 @@
     "q": "How do you calibrate a bimetallic stem thermometer at a food event?",
     "qKo": "식품 이벤트에서 바이메탈 줄기 온도계를 교정하는 방법은?",
     "options": [
-      "A. Place in boiling water — should read 212°F",
-      "B. Place in 50/50 ice water — should read 32°F",
-      "C. Hold in room air — should read 72°F",
-      "D. Place in hot food — should read 165°F"
+      "Place in boiling water — should read 212°F · 끓는 물에 넣어 212°F 확인",
+      "Place in 50/50 ice water — should read 32°F · 얼음물 50/50에 넣어 32°F 확인",
+      "Hold in room air — should read 72°F · 실내 공기 중 72°F 확인",
+      "Place in hot food — should read 165°F · 뜨거운 식품에 넣어 165°F 확인"
     ],
     "answer": 1,
     "explain": "To calibrate: place the thermometer in a 50/50 ice water mixture. It should stabilize at 32°F (0°C). Adjust the calibration nut if needed.",
@@ -860,10 +860,10 @@
     "q": "At a temporary food event, how far must your food booth be from dumpsters or recycling bins?",
     "qKo": "임시 식품 이벤트에서 식품 부스는 쓰레기통이나 재활용 수거함으로부터 얼마나 떨어져야 하는가?",
     "options": [
-      "A. 10 feet",
-      "B. 25 feet",
-      "C. 50 feet",
-      "D. 100 feet"
+      "10 feet · 10피트",
+      "25 feet · 25피트",
+      "50 feet · 50피트",
+      "100 feet · 100피트"
     ],
     "answer": 2,
     "explain": "Food booths must be at least 50 feet away from dumpsters, recycling bins, and smoke areas to prevent contamination.",
@@ -875,10 +875,10 @@
     "q": "What chlorine concentration is required for sanitizing solution at a temporary food event?",
     "qKo": "임시 식품 이벤트에서 소독 용액에 필요한 염소 농도는?",
     "options": [
-      "A. 50 ppm",
-      "B. 100 ppm",
-      "C. 200 ppm",
-      "D. 500 ppm"
+      "50 ppm",
+      "100 ppm",
+      "200 ppm",
+      "500 ppm"
     ],
     "answer": 1,
     "explain": "100 ppm Free Available Chlorine (FAC) is required. Mix 2 tablespoons of bleach in 4 gallons of water. Always verify with test strips.",
@@ -890,10 +890,10 @@
     "q": "Which of the following is NOT allowed as an ingredient at a Camp Humphreys food event?",
     "qKo": "다음 중 험프리 기지 식품 이벤트에서 재료로 사용이 허용되지 않는 것은?",
     "options": [
-      "A. Commercially purchased eggs",
-      "B. USDA-inspected ground beef",
-      "C. Home-grown vegetables from your garden",
-      "D. Commissary-purchased dairy"
+      "Commercially purchased eggs · 상업적으로 구매한 달걀",
+      "USDA-inspected ground beef · USDA 검사 통과 다진 쇠고기",
+      "Home-grown vegetables from your garden · 집 정원에서 재배한 채소",
+      "Commissary-purchased dairy · 커미서리에서 구매한 유제품"
     ],
     "answer": 2,
     "explain": "Home-grown vegetables, fruits, or herbs are NOT permitted. All ingredients must come from approved, commercially inspected sources.",
@@ -905,10 +905,10 @@
     "q": "What is the minimum number of containers required for on-site ware washing at a food event?",
     "qKo": "식품 이벤트 현장에서 식기 세척을 위해 필요한 최소 용기 수는?",
     "options": [
-      "A. 1 (wash only)",
-      "B. 2 (wash and rinse)",
-      "C. 3 (wash, rinse, sanitize)",
-      "D. 4 (wash, rinse, sanitize, dry)"
+      "1 (wash only) · 1개 (세척만)",
+      "2 (wash and rinse) · 2개 (세척과 헹굼)",
+      "3 (wash, rinse, sanitize) · 3개 (세척, 헹굼, 소독)",
+      "4 (wash, rinse, sanitize, dry) · 4개 (세척, 헹굼, 소독, 건조)"
     ],
     "answer": 2,
     "explain": "3 containers are required: 1st wash (soapy water), 2nd rinse (clean water), 3rd sanitize (100 ppm chlorine solution). Then air dry.",
@@ -920,10 +920,10 @@
     "q": "If you are selling packaged food at an event, which of the following must appear on the label?",
     "qKo": "이벤트에서 포장 식품을 판매하는 경우, 라벨에 반드시 표시해야 하는 것은?",
     "options": [
-      "A. Calorie count and nutrition facts",
-      "B. Major allergens and expiration date",
-      "C. Health claims like 'Gluten Free'",
-      "D. Price per unit"
+      "Calorie count and nutrition facts · 칼로리와 영양 성분",
+      "Major allergens and expiration date · 주요 알레르겐과 유통기한",
+      "Health claims like 'Gluten Free' · '글루텐 프리' 같은 건강 주장",
+      "Price per unit · 단위당 가격"
     ],
     "answer": 1,
     "explain": "Labels must include major allergens and made-on/sell-by/expiration date. Health claims like 'Gluten Free' are NOT permitted.",
@@ -935,10 +935,10 @@
     "q": "When selling Non-PHF food made in a home kitchen, what is required at the point of sale?",
     "qKo": "가정 주방에서 만든 Non-PHF 식품을 판매할 때 판매 장소에서 무엇이 필요한가?",
     "options": [
-      "A. Nothing — Non-PHF foods have no requirements",
-      "B. A visible Consumer Advisory placard stating the food was home-prepared",
-      "C. A permit from the health department",
-      "D. A temperature log"
+      "Nothing — Non-PHF foods have no requirements · 없음 — Non-PHF는 요건 없음",
+      "A visible Consumer Advisory placard stating the food was home-prepared · 가정에서 제조되었음을 명시한 소비자 안내 표지판",
+      "A permit from the health department · 보건부 허가증",
+      "A temperature log · 온도 기록지"
     ],
     "answer": 1,
     "explain": "A clearly visible Consumer Advisory placard is required, stating the food was prepared in a home kitchen not subject to regulatory inspection.",
@@ -950,10 +950,10 @@
     "q": "When must single-use gloves be discarded during food service?",
     "qKo": "식품 서비스 중 일회용 장갑을 언제 버려야 하는가?",
     "options": [
-      "A. Only when visibly dirty",
-      "B. After every hour regardless",
-      "C. When damaged, soiled, or switching tasks",
-      "D. Only after handling raw meat"
+      "Only when visibly dirty · 눈에 띄게 더러울 때만",
+      "After every hour regardless · 매 시간 후",
+      "When damaged, soiled, or switching tasks · 손상, 오염, 또는 작업 전환 시",
+      "Only after handling raw meat · 생고기 취급 후에만"
     ],
     "answer": 2,
     "explain": "Gloves must be discarded when damaged, soiled, or when switching between tasks (e.g., raw to RTE foods) to prevent cross-contamination.",
@@ -965,10 +965,10 @@
     "q": "How far must a food booth be from port-a-lets at an outdoor event?",
     "qKo": "야외 이벤트에서 식품 부스는 이동식 화장실로부터 얼마나 떨어져야 하는가?",
     "options": [
-      "A. 10 yards",
-      "B. 50 yards",
-      "C. 100 yards",
-      "D. 200 yards"
+      "10 yards · 10야드",
+      "50 yards · 50야드",
+      "100 yards · 100야드",
+      "200 yards · 200야드"
     ],
     "answer": 2,
     "explain": "Food booths must be 100 yards from port-a-lets at outdoor events to prevent contamination from odors and airborne pathogens.",
@@ -980,10 +980,10 @@
     "q": "What is the minimum height food must be stored off the ground at a food event?",
     "qKo": "식품 이벤트에서 식품을 지면에서 최소 얼마나 높이 보관해야 하는가?",
     "options": [
-      "A. 2 inches",
-      "B. 4 inches",
-      "C. 6 inches",
-      "D. 12 inches"
+      "2 inches · 2인치 (5cm)",
+      "4 inches · 4인치 (10cm)",
+      "6 inches · 6인치 (15cm)",
+      "12 inches · 12인치 (30cm)"
     ],
     "answer": 2,
     "explain": "All food must be stored a minimum of 6 inches (15 cm) off the ground to prevent contamination from pests and floor debris.",
@@ -995,10 +995,10 @@
     "q": "What must food handlers wear to prevent hair and sweat from contacting food at an event?",
     "qKo": "이벤트에서 머리카락과 땀이 식품에 닿지 않도록 식품 취급자가 착용해야 하는 것은?",
     "options": [
-      "A. Apron only",
-      "B. Hair restraint (hat, hair net, or beard restraint)",
-      "C. Face mask",
-      "D. Gloves cover everything required"
+      "Apron only · 앞치마만",
+      "Hair restraint (hat, hair net, or beard restraint) · 헤어 억제 장치 (모자, 헤어넷, 수염 가리개)",
+      "Face mask · 마스크",
+      "Gloves cover everything required · 장갑으로 충분"
     ],
     "answer": 1,
     "explain": "All food handlers must wear a hair restraint — hat, hair net, beard restraint, or clothing that covers body hair — to prevent contamination.",
@@ -1010,10 +1010,10 @@
     "q": "Which documents must be available for review during a food event inspection at Camp Humphreys?",
     "qKo": "험프리 기지 식품 이벤트 검열 시 검토를 위해 준비해야 하는 서류는?",
     "options": [
-      "A. Only the food handler certificate",
-      "B. Approved DD 2970 and Food Handler Certificates for all food handlers",
-      "C. Receipt of food purchases",
-      "D. Menu and pricing list"
+      "Only the food handler certificate · 식품 취급자 인증서만",
+      "Approved DD 2970 and Food Handler Certificates for all food handlers · 승인된 DD 2970 및 모든 식품 취급자 인증서",
+      "Receipt of food purchases · 식재료 구매 영수증",
+      "Menu and pricing list · 메뉴 및 가격표"
     ],
     "answer": 1,
     "explain": "Both the approved DD 2970 form and Food Handler Certificates for ALL food handlers (digital copies accepted) must be available for inspection.",
