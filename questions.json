@@ -205,7 +205,7 @@
       "50°F–150°F · 10°C–66°C",
       "0°F–100°F · -18°C–38°C"
     ],
-    "answer": 1,
+    "answer": 0,
     "explain": "The Temperature Danger Zone is 41°F–135°F (5°C–57°C). TCS foods must not spend more than 4 total hours in this zone.",
     "explainKo": "온도 위험 구간은 41°F–135°F (5°C–57°C)입니다. TCS 식품은 총 4시간 이상 이 구간에 있으면 안 됩니다."
   },
@@ -295,7 +295,7 @@
       "165°F",
       "135°F"
     ],
-    "answer": 3,
+    "answer": 2,
     "explain": "Food must be reheated to 165°F (74°C) within 2 hours before being placed in hot holding.",
     "explainKo": "온장 보관 전 식품은 2시간 이내에 165°F (74°C)까지 재가열해야 합니다."
   },
