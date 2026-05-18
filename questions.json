@@ -613,5 +613,185 @@
     "answer": 2,
     "explain": "Parasites are commonly found in seafood, wild game, and produce processed with contaminated water. Purchase from approved suppliers and cook to required temperatures.",
     "explainKo": "기생충은 해산물, 야생 동물, 오염된 물로 처리된 농산물에서 흔히 발견됩니다. 승인된 공급업체에서 구매하고 요구 온도로 조리하세요."
+  },
+  {
+    "module": "Foodborne Illness",
+    "moduleKo": "식품 매개 질병",
+    "q": "Which type of food hazard is responsible for approximately 67% of foodborne illnesses?",
+    "qKo": "식중독의 약 67%를 차지하는 위해요소 유형은?",
+    "options": [
+      "A. Physical",
+      "B. Chemical",
+      "C. Biological",
+      "D. Radiological"
+    ],
+    "answer": 2,
+    "explain": "Biological hazards (bacteria, viruses, parasites, fungi) cause approximately 67% of foodborne illnesses.",
+    "explainKo": "생물학적 위해요소(세균, 바이러스, 기생충, 곰팡이)가 식중독의 약 67%를 유발합니다."
+  },
+  {
+    "module": "Foodborne Illness",
+    "moduleKo": "식품 매개 질병",
+    "q": "A metal shaving from a can opener found in food is an example of which hazard type?",
+    "qKo": "캔따개에서 나온 쇠조각이 음식에서 발견되었다면 이는 어떤 유형의 위해요소인가?",
+    "options": [
+      "A. Biological",
+      "B. Chemical",
+      "C. Physical",
+      "D. Thermal"
+    ],
+    "answer": 2,
+    "explain": "Metal shavings, glass, bones, and hair are physical hazards — foreign objects that can cause injury.",
+    "explainKo": "쇠조각, 유리, 뼈, 머리카락은 물리적 위해요소로, 부상을 유발할 수 있는 이물질입니다."
+  },
+  {
+    "module": "Foodborne Illness",
+    "moduleKo": "식품 매개 질병",
+    "q": "At a temporary food event, where should cleaning chemicals be stored relative to food?",
+    "qKo": "임시 식품 이벤트에서 세정 화학물질은 식품과 어떻게 보관해야 하는가?",
+    "options": [
+      "A. Above food for easy access",
+      "B. Next to food to save space",
+      "C. Below and away from food",
+      "D. In the same cooler as food"
+    ],
+    "answer": 2,
+    "explain": "Chemicals must always be stored BELOW and AWAY from food to prevent contamination from spills or leaks.",
+    "explainKo": "화학물질은 누출이나 엎질러짐으로 인한 오염을 방지하기 위해 항상 식품 아래나 멀리 보관해야 합니다."
+  },
+  {
+    "module": "Foodborne Illness",
+    "moduleKo": "식품 매개 질병",
+    "q": "Which of the following is a chemical hazard in food service?",
+    "qKo": "다음 중 식품 서비스에서 화학적 위해요소에 해당하는 것은?",
+    "options": [
+      "A. Salmonella bacteria",
+      "B. Pesticide residue on vegetables",
+      "C. Fish bone in soup",
+      "D. Norovirus on surfaces"
+    ],
+    "answer": 1,
+    "explain": "Pesticide residue is a chemical hazard. Salmonella and Norovirus are biological; fish bone is physical.",
+    "explainKo": "농약 잔류물은 화학적 위해요소입니다. 살모넬라·노로바이러스는 생물학적, 생선 뼈는 물리적 위해요소입니다."
+  },
+  {
+    "module": "Foodborne Illness",
+    "moduleKo": "식품 매개 질병",
+    "q": "What are the THREE types of food hazards?",
+    "qKo": "식품 위해요소의 3가지 유형은?",
+    "options": [
+      "A. Bacterial, viral, parasitic",
+      "B. Physical, chemical, biological",
+      "C. Temperature, time, moisture",
+      "D. Direct, indirect, environmental"
+    ],
+    "answer": 1,
+    "explain": "The three types of food hazards are Physical, Chemical, and Biological.",
+    "explainKo": "식품 위해요소의 3가지 유형은 물리적, 화학적, 생물학적 위해요소입니다."
+  },
+  {
+    "module": "Personal Hygiene",
+    "moduleKo": "개인 위생",
+    "q": "How many major food allergens are recognized by the FDA?",
+    "qKo": "FDA에서 인정하는 주요 식품 알레르겐은 몇 가지인가?",
+    "options": [
+      "A. 5",
+      "B. 7",
+      "C. 9",
+      "D. 12"
+    ],
+    "answer": 2,
+    "explain": "The FDA recognizes 9 major allergens: Peanuts, Tree Nuts, Fish, Shellfish, Milk, Eggs, Wheat, Soy, and Sesame.",
+    "explainKo": "FDA는 9가지 주요 알레르겐을 인정합니다: 땅콩, 견과류, 생선, 갑각류, 유제품, 달걀, 밀, 대두, 참깨."
+  },
+  {
+    "module": "Personal Hygiene",
+    "moduleKo": "개인 위생",
+    "q": "A guest at your food event says they have a severe peanut allergy. What should you do if you are unsure whether a dish contains peanuts?",
+    "qKo": "이벤트에서 손님이 땅콩 알레르기가 있다고 합니다. 해당 음식에 땅콩이 들어갔는지 확실하지 않을 때 어떻게 해야 하나?",
+    "options": [
+      "A. Say it's probably fine",
+      "B. Tell the guest honestly that you're unsure",
+      "C. Remove visible peanuts and serve it",
+      "D. Cook it longer to destroy the allergen"
+    ],
+    "answer": 1,
+    "explain": "Never guess about allergens. Always be honest with the guest if you are unsure about ingredients — their life may depend on it.",
+    "explainKo": "알레르겐에 대해 절대 추측하지 마세요. 재료가 불확실하면 항상 솔직하게 알려야 합니다 — 손님의 생명이 달려 있을 수 있습니다."
+  },
+  {
+    "module": "Personal Hygiene",
+    "moduleKo": "개인 위생",
+    "q": "Which of the following is a symptom of a SEVERE allergic reaction (anaphylaxis)?",
+    "qKo": "다음 중 심각한 알레르기 반응(아나필락시스)의 증상은?",
+    "options": [
+      "A. Mild itching on the arm",
+      "B. Runny nose",
+      "C. Difficulty breathing and throat swelling",
+      "D. Slight stomach discomfort"
+    ],
+    "answer": 2,
+    "explain": "Anaphylaxis symptoms include difficulty breathing, throat swelling, blood pressure drop, and loss of consciousness — potentially fatal within minutes.",
+    "explainKo": "아나필락시스 증상은 호흡 곤란, 목 부종, 혈압 저하, 의식 상실을 포함하며 수 분 내 사망할 수 있습니다."
+  },
+  {
+    "module": "Personal Hygiene",
+    "moduleKo": "개인 위생",
+    "q": "Can allergens be destroyed by sanitizers or cooking heat alone?",
+    "qKo": "알레르겐은 살균제나 조리 열만으로 제거할 수 있는가?",
+    "options": [
+      "A. Yes, sanitizers destroy all allergens",
+      "B. Yes, cooking at 165°F removes allergens",
+      "C. No — surfaces must be physically cleaned first",
+      "D. Yes, but only if soaked for 30 seconds"
+    ],
+    "answer": 2,
+    "explain": "Allergens are NOT destroyed by sanitizers or heat. Surfaces and equipment must be physically cleaned (scrubbed) to remove allergen residue before sanitizing.",
+    "explainKo": "알레르겐은 살균제나 열로 제거되지 않습니다. 살균 전에 반드시 표면과 장비를 물리적으로 세척해야 합니다."
+  },
+  {
+    "module": "Personal Hygiene",
+    "moduleKo": "개인 위생",
+    "q": "What is 'cross-contact' in the context of food allergens?",
+    "qKo": "식품 알레르겐 맥락에서 '교차 접촉'이란 무엇인가?",
+    "options": [
+      "A. Mixing raw and cooked meat",
+      "B. Transfer of an allergen from one food or surface to another",
+      "C. Using the same thermometer for different foods",
+      "D. Storing food at wrong temperature"
+    ],
+    "answer": 1,
+    "explain": "Cross-contact occurs when an allergen is transferred from one food/surface to another, even in tiny amounts — enough to trigger a reaction.",
+    "explainKo": "교차 접촉은 알레르겐이 한 식품이나 표면에서 다른 곳으로 이동하는 것으로, 극소량도 반응을 유발할 수 있습니다."
+  },
+  {
+    "module": "Personal Hygiene",
+    "moduleKo": "개인 위생",
+    "q": "Which of the following is NOT one of the 9 FDA major allergens?",
+    "qKo": "다음 중 FDA 9대 주요 알레르겐에 해당하지 않는 것은?",
+    "options": [
+      "A. Sesame",
+      "B. Shellfish",
+      "C. Corn",
+      "D. Tree Nuts"
+    ],
+    "answer": 2,
+    "explain": "Corn is NOT a major FDA allergen. The 9 are: Peanuts, Tree Nuts, Fish, Shellfish, Milk, Eggs, Wheat, Soy, and Sesame.",
+    "explainKo": "옥수수는 FDA 주요 알레르겐이 아닙니다. 9대 알레르겐은 땅콩, 견과류, 생선, 갑각류, 유제품, 달걀, 밀, 대두, 참깨입니다."
+  },
+  {
+    "module": "Personal Hygiene",
+    "moduleKo": "개인 위생",
+    "q": "How soon can allergic reaction symptoms appear after eating an allergen?",
+    "qKo": "알레르겐 섭취 후 알레르기 반응 증상은 얼마나 빨리 나타날 수 있는가?",
+    "options": [
+      "A. Only after 24 hours",
+      "B. Within minutes to 2 hours",
+      "C. After 6–8 hours",
+      "D. Symptoms always appear immediately"
+    ],
+    "answer": 1,
+    "explain": "Allergic reaction symptoms can appear within minutes to 2 hours after eating an allergen — swift action may be required.",
+    "explainKo": "알레르기 반응 증상은 알레르겐 섭취 후 수 분에서 2시간 내에 나타날 수 있으며 신속한 대응이 필요할 수 있습니다."
   }
 ]
