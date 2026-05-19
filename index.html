@@ -916,115 +916,91 @@
 
   /* The actual certificate card (screenshot target) */
   #certCard {
-    background: linear-gradient(160deg, #0f4f2e 0%, #1a7a4a 40%, #0f4f2e 100%);
-    border-radius: 20px;
-    padding: 28px 24px 24px;
-    color: white;
+    background: #f0f0f0;
+    border-radius: 16px;
+    padding: 20px 20px 16px;
+    color: #1a1a1a;
     position: relative;
     overflow: hidden;
     box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+    border: 6px solid #9e9e9e;
   }
   #certCard::before {
     content: '';
     position: absolute;
-    inset: 8px;
-    border: 1.5px solid rgba(255,255,255,0.2);
-    border-radius: 14px;
-    pointer-events: none;
-  }
-  #certCard::after {
-    content: '🛡️';
-    position: absolute;
-    right: 50%;
-    top: 50%;
-    transform: translate(50%, -50%);
-    font-size: 7rem;
-    opacity: 0.05;
+    inset: 5px;
+    border: 2px solid #c0c0c0;
+    border-radius: 10px;
     pointer-events: none;
   }
   .cert-top-row {
     display: flex;
     align-items: center;
-    gap: 10px;
-    margin-bottom: 18px;
+    justify-content: space-between;
+    margin-bottom: 8px;
   }
-  .cert-logo { font-size: 2rem; }
-  .cert-org-name {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 0.85rem;
-    letter-spacing: 1.5px;
-    opacity: 0.85;
-    line-height: 1.3;
+  .cert-logo-left { font-size: 3rem; line-height: 1; }
+  .cert-logo-right {
+    width: 58px; height: 58px;
+    background: #ffd700;
+    border-radius: 50%;
+    border: 2px solid #b8860b;
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    font-size: 1.4rem; line-height: 1;
   }
-  .cert-headline {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 0.72rem;
-    letter-spacing: 3px;
-    opacity: 0.7;
-    margin-bottom: 4px;
+  .cert-logo-right-text {
+    font-size: 0.32rem; font-weight: 900;
+    color: #3a2000; text-align: center;
+    text-transform: uppercase; line-height: 1.3;
+    letter-spacing: 0.3px;
   }
-  .cert-title {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 1.9rem;
-    letter-spacing: 2px;
-    line-height: 1;
-    margin-bottom: 2px;
-  }
-  .cert-title-ko {
-    font-size: 0.78rem;
-    opacity: 0.7;
-    margin-bottom: 20px;
-  }
-  .cert-divider {
-    height: 1px;
-    background: rgba(255,255,255,0.2);
-    margin: 14px 0;
-  }
-  .cert-field-label {
-    font-size: 0.62rem;
-    letter-spacing: 2px;
-    opacity: 0.6;
-    text-transform: uppercase;
-    margin-bottom: 3px;
-  }
-  .cert-field-value {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 1.5rem;
-    letter-spacing: 1px;
+  .cert-name {
+    font-family: Arial, sans-serif;
+    font-size: 1.9rem; font-weight: 900;
+    color: #1a1a1a; margin: 4px 0 6px;
     line-height: 1.1;
-    margin-bottom: 14px;
   }
-  .cert-field-value.small {
-    font-size: 1rem;
+  .cert-passed {
+    font-style: italic; font-weight: 700;
+    font-size: 0.9rem; color: #1a1a1a;
+    margin-bottom: 12px; line-height: 1.5;
   }
-  .cert-row {
-    display: flex;
-    gap: 20px;
-  }
-  .cert-row > div { flex: 1; }
-  .cert-score-badge {
-    display: inline-block;
-    background: var(--amber);
-    color: #3a2000;
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 1.1rem;
-    padding: 4px 14px;
-    border-radius: 99px;
-    letter-spacing: 1px;
-    margin-top: 4px;
-  }
-  .cert-valid-strip {
-    background: rgba(255,255,255,0.1);
+  .cert-info-box {
+    border: 1.5px solid #aaa;
     border-radius: 10px;
-    padding: 10px 14px;
-    margin-top: 14px;
+    padding: 10px 12px;
+    background: white;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    font-size: 0.75rem;
+    align-items: flex-start;
+    gap: 10px;
   }
-  .cert-valid-label { opacity: 0.6; font-size: 0.62rem; letter-spacing: 1px; text-transform: uppercase; }
-  .cert-valid-date { font-family: 'Bebas Neue', sans-serif; font-size: 1rem; letter-spacing: 1px; }
+  .cert-info-left {
+    font-size: 0.75rem; color: #1a1a1a;
+    font-weight: 500; line-height: 1.9;
+  }
+  .cert-sig-area { text-align: center; min-width: 110px; }
+  .cert-sig-line {
+    font-family: "Segoe Script", "Dancing Script", cursive;
+    font-size: 1.3rem; color: #1a1a1a;
+    border-bottom: 1px solid #555;
+    padding-bottom: 2px; margin-bottom: 3px;
+  }
+  .cert-sig-name { font-weight: 700; font-size: 0.72rem; }
+  .cert-sig-title { font-size: 0.65rem; color: #444; line-height: 1.4; }
+  .cert-disclaimer {
+    font-size: 0.55rem; color: #555;
+    margin-top: 10px; line-height: 1.5;
+  }
+  .cert-divider { display: none; }
+  .cert-valid-strip { display: none; }
+  .cert-valid-label { display: none; }
+  .cert-valid-date { display: none; }
+  .cert-field-label { display: none; }
+  .cert-field-value { display: none; }
+  .cert-row { display: none; }
+  .cert-score-badge { display: none; }
 
   /* Below the cert card */
   .cert-actions {
@@ -2081,7 +2057,7 @@ function renderResult() {
 // ══════════════════════════════════════════
 
 // ▶ Change this to your actual submission email address
-const SUBMIT_EMAIL = 'your-email@korea.army.mil';
+const SUBMIT_EMAIL = 'evan.c.schmidt.civ@health.mil';
 
 // Once cert is issued, lock the session
 let certIssued = false;
@@ -2189,21 +2165,30 @@ function showCertCard(name, pct, score, total) {
   overlay.id = 'certOverlay';
   overlay.innerHTML = '<div class="cert-wrap">'
     + '<div id="certCard">'
-    + '<div class="cert-top-row"><div class="cert-logo">⚕️</div><div><div class="cert-org-name">65th Medical Brigade<br>USAG Humphreys, Republic of Korea</div></div></div>'
-    + '<div class="cert-headline">This is to certify that</div>'
-    + '<div style="font-size:0.62rem;letter-spacing:2px;opacity:0.6;margin-bottom:6px">다음을 증명합니다</div>'
-    + '<div style="font-family:Bebas Neue,sans-serif;font-size:2rem;letter-spacing:2px;line-height:1;color:#ffe08a;margin-bottom:14px">'+name+'</div>'
-    + '<div class="cert-divider"></div>'
-    + '<div class="cert-headline">has successfully completed</div>'
-    + '<div class="cert-title">Food Handler</div>'
-    + '<div class="cert-title">Certification Course</div>'
-    + '<div class="cert-title-ko">식품 취급자 인증 교육 과정 수료</div>'
-    + '<div style="font-size:0.72rem;opacity:0.65;margin-bottom:10px">TB MED 530 / FDA Food Code · DHA Public Health</div>'
-    + '<div class="cert-divider"></div>'
-    + '<div class="cert-valid-strip">'
-    + '<div><div class="cert-valid-label">Issue Date · 발급일</div><div class="cert-valid-date">'+iss+'</div></div>'
-    + '<div style="text-align:right"><div class="cert-valid-label">Expires · 만료일</div><div class="cert-valid-date" style="color:#ffcc60">'+exp+'</div></div>'
-    + '</div></div>'
+    + '<div class="cert-top-row">'
+    + '<div class="cert-logo-left">⚕️</div>'
+    + '<div class="cert-logo-right"><span style="font-size:1.1rem">🌏</span><span class="cert-logo-right-text">Our Mission<br>Your Health</span></div>'
+    + '</div>'
+    + '<div class="cert-name">'+name+'</div>'
+    + '<div class="cert-passed">Has passed the <strong>BASIC FOOD HANDLERS</strong> on-line course (1 hour)</div>'
+    + '<div class="cert-info-box">'
+    + '<div class="cert-info-left">'
+    + 'Date Expires: <strong>'+exp+'</strong><br>'
+    + 'Dept. of PH, EH<br>'
+    + 'DHA, Bldg #6370<br>'
+    + 'DSN: 315-737-5703'
+    + '</div>'
+    + '<div class="cert-sig-area">'
+    + '<div class="cert-sig-line">Evan Schmidt</div>'
+    + '<div class="cert-sig-name">Evan Schmidt</div>'
+    + '<div class="cert-sig-title">Sanitarian, EH Program Manager</div>'
+    + '</div>'
+    + '</div>'
+    + '<div class="cert-disclaimer">'
+    + '* This certification is only valid for person(s) conducting ORGANIZATIONAL FOOD EVENTs that are open to the GENERAL PUBLIC ON THE INSTALLATION and involve the preparation or sale of food subject to Time/Temperature Control for Safety (TCS). Event participants who are involved with TCS food must gain APPROVAL from Environmental Health prior to the food event date.<br>'
+    + '* This certification DOES NOT fulfill the requirements of 4 hour initial/annual food safety training required of FOOD EMPLOYEES working in a FOOD ESTABLISHMENT.'
+    + '</div>'
+    + '</div>'
     + '<div class="cert-actions">'
     + '<div class="screenshot-tip" style="margin-bottom:0;border-radius:10px">📄 Save as PDF or take a screenshot · PDF 저장 또는 스크린샷<br><span style="font-size:0.78rem;color:#7a5800">🪪 Bring this certificate to the event · 이벤트 시 인증서를 지참하세요</span></div>'
     + '<button class="cert-action-btn" style="background:#2d2d2d;color:white" id="pdfBtn" onclick="downloadCertPDF()">📄 Save as PDF · PDF 저장</button>'
