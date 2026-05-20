@@ -1143,7 +1143,7 @@
     "module": "Foodborne Illness",
     "moduleKo": "식품 매개 질환",
     "q": "Two guests became ill after eating at a restaurant. They each ate different food items and suffered different symptoms. Would this be considered a foodborne illness outbreak?",
-    "qKo": "Two guests became ill after eating at a restaurant. They each ate different food items and suffered different symptoms. Would this be considered a foodborne illness outbreak?",
+    "qKo": "두 명의 손님이 식당에서 식사 후 아팠습니다. 각자 다른 음식을 먹고 다른 증상을 보였습니다. 이것은 식품 매개 질병 발생으로 간주될까요?",
     "options": [
       "No, because they ate different foods.",
       "No, because they ate different foods and had different symptoms.",
@@ -1158,7 +1158,7 @@
     "module": "Foodborne Illness",
     "moduleKo": "식품 매개 질환",
     "q": "Which are the greatest threat to food safety?",
-    "qKo": "Which are the greatest threat to food safety?",
+    "qKo": "식품 안전에 가장 큰 위협이 되는 것은?",
     "options": [
       "Toxins",
       "Allergens",
@@ -1173,7 +1173,7 @@
     "module": "Foodborne Illness",
     "moduleKo": "식품 매개 질환",
     "q": "How are chemicals most likely to get into food?",
-    "qKo": "How are chemicals most likely to get into food?",
+    "qKo": "화학물질이 식품에 들어가는 가장 흔한 경로는?",
     "options": [
       "When they are used incorrectly",
       "When they are stored in original containers",
@@ -1188,7 +1188,7 @@
     "module": "Foodborne Illness",
     "moduleKo": "식품 매개 질환",
     "q": "Which is a biological contaminant?",
-    "qKo": "Which is a biological contaminant?",
+    "qKo": "다음 중 생물학적 오염원은?",
     "options": [
       "Bones in a chicken filet",
       "Seafood toxin in a red snapper",
@@ -1203,7 +1203,7 @@
     "module": "Foodborne Illness",
     "moduleKo": "식품 매개 질환",
     "q": "The most common mistakes causing foodborne illness include poor personal hygiene, contaminated equipment, improper cooking/holding, and:",
-    "qKo": "The most common mistakes causing foodborne illness include poor personal hygiene, contaminated equipment, improper cooking/holding, and:",
+    "qKo": "식품 매개 질환을 일으키는 가장 흔한 실수에는 불량한 개인위생, 오염된 장비, 부적절한 조리/보관이 포함되며, 또한:",
     "options": [
       "Thawing food incorrectly.",
       "Storing food without labels.",
@@ -1218,7 +1218,7 @@
     "module": "Foodborne Illness",
     "moduleKo": "식품 매개 질환",
     "q": "Which is a common food-handling mistake that can cause foodborne illness?",
-    "qKo": "Which is a common food-handling mistake that can cause foodborne illness?",
+    "qKo": "식품 매개 질환을 유발할 수 있는 흔한 식품 취급 실수는?",
     "options": [
       "Failing to supervise food deliveries",
       "Failing to exclude food handlers who are ill",
@@ -1233,7 +1233,7 @@
     "module": "Time & Temperature",
     "moduleKo": "시간 및 온도",
     "q": "Which type of food best supports the growth of bacteria?",
-    "qKo": "Which type of food best supports the growth of bacteria?",
+    "qKo": "다음 중 세균 성장을 가장 잘 지원하는 식품 유형은?",
     "options": [
       "Fats",
       "Sugars",
@@ -1248,7 +1248,7 @@
     "module": "Time & Temperature",
     "moduleKo": "시간 및 온도",
     "q": "Is vacuum-packed food safe from bacterial growth?",
-    "qKo": "Is vacuum-packed food safe from bacterial growth?",
+    "qKo": "진공 포장 식품은 세균 성장으로부터 안전한가요?",
     "options": [
       "Yes, because the vacuum always destroys bacteria.",
       "Yes, because all bacteria need oxygen to grow.",
@@ -1263,7 +1263,7 @@
     "module": "Time & Temperature",
     "moduleKo": "시간 및 온도",
     "q": "What are the two conditions for bacterial growth that food handlers can most easily control?",
-    "qKo": "What are the two conditions for bacterial growth that food handlers can most easily control?",
+    "qKo": "식품 취급자가 가장 쉽게 통제할 수 있는 세균 성장의 두 가지 조건은?",
     "options": [
       "Oxygen and acidity",
       "Acidity and moisture",
@@ -1278,7 +1278,7 @@
     "module": "Time & Temperature",
     "moduleKo": "시간 및 온도",
     "q": "In what temperature range does bacteria grow most rapidly?",
-    "qKo": "In what temperature range does bacteria grow most rapidly?",
+    "qKo": "세균이 가장 빠르게 성장하는 온도 범위는?",
     "options": [
       "0°F to 38°F (-18°C to 3°C)",
       "41°F to 65°F (5°C to 18°C)",
@@ -1293,7 +1293,7 @@
     "module": "Time & Temperature",
     "moduleKo": "시간 및 온도",
     "q": "Which food is in the temperature danger zone?",
-    "qKo": "Which food is in the temperature danger zone?",
+    "qKo": "다음 중 위험 온도 구간에 있는 식품은?",
     "options": [
       "Meat received at 40°F (4°C)",
       "Chicken stored at 45°F (7°C)",
@@ -1308,7 +1308,7 @@
     "module": "Personal Hygiene",
     "moduleKo": "개인 위생",
     "q": "What is the most important measure for preventing Hepatitis A from causing a foodborne illness?",
-    "qKo": "What is the most important measure for preventing Hepatitis A from causing a foodborne illness?",
+    "qKo": "A형 간염으로 인한 식품 매개 질환을 예방하는 가장 중요한 조치는?",
     "options": [
       "Practicing good personal hygiene",
       "Preventing cross-contamination",
@@ -1323,7 +1323,7 @@
     "module": "Cleaning & Sanitizing",
     "moduleKo": "청결 및 위생 처리",
     "q": "How should chemicals be stored to prevent chemical contamination?",
-    "qKo": "How should chemicals be stored to prevent chemical contamination?",
+    "qKo": "화학적 오염을 방지하기 위해 화학물질을 어떻게 보관해야 하나요?",
     "options": [
       "Away from prep areas",
       "On the floor between uses",
@@ -1338,7 +1338,7 @@
     "module": "Foodborne Illness",
     "moduleKo": "식품 매개 질환",
     "q": "Which is an example of physical contamination?",
-    "qKo": "Which is an example of physical contamination?",
+    "qKo": "물리적 오염의 예시는?",
     "options": [
       "Bones in fish",
       "Sneezing on food",
@@ -1353,7 +1353,7 @@
     "module": "Foodborne Illness",
     "moduleKo": "식품 매개 질환",
     "q": "Which is a chemical contaminant?",
-    "qKo": "Which is a chemical contaminant?",
+    "qKo": "다음 중 화학적 오염원은?",
     "options": [
       "Tomato sauce in a copper pan",
       "Bones in a chicken filet",
@@ -1368,7 +1368,7 @@
     "module": "Foodborne Illness",
     "moduleKo": "식품 매개 질환",
     "q": "Wheezing and hives are symptoms of:",
-    "qKo": "Wheezing and hives are symptoms of:",
+    "qKo": "천명음(쌕쌕거림)과 두드러기는 다음의 증상입니다:",
     "options": [
       "Food allergies",
       "Norovirus",
@@ -1383,7 +1383,7 @@
     "module": "Foodborne Illness",
     "moduleKo": "식품 매개 질환",
     "q": "What can servers do to prevent guests from having an allergic reaction?",
-    "qKo": "What can servers do to prevent guests from having an allergic reaction?",
+    "qKo": "서버가 손님의 알레르기 반응을 예방하기 위해 할 수 있는 일은?",
     "options": [
       "Identify all ingredients except secret ingredients.",
       "Let guests know when you think they are reasonably safe.",
@@ -1398,7 +1398,7 @@
     "module": "Personal Hygiene",
     "moduleKo": "개인 위생",
     "q": "What is the main reason food handlers should avoid scratching their scalps?",
-    "qKo": "What is the main reason food handlers should avoid scratching their scalps?",
+    "qKo": "식품 취급자가 두피를 긁는 것을 피해야 하는 주요 이유는?",
     "options": [
       "Transferring a food allergen",
       "Spreading pathogens to the food",
@@ -1413,7 +1413,7 @@
     "module": "Personal Hygiene",
     "moduleKo": "개인 위생",
     "q": "Approximately how long should the whole handwashing process take?",
-    "qKo": "Approximately how long should the whole handwashing process take?",
+    "qKo": "전체 손 씻기 과정은 대략 얼마나 걸려야 하나요?",
     "options": [
       "5 seconds",
       "10 seconds",
@@ -1428,7 +1428,7 @@
     "module": "Personal Hygiene",
     "moduleKo": "개인 위생",
     "q": "After washing hands, a food handler applied sanitizer and immediately continued chopping vegetables. What did she do wrong?",
-    "qKo": "After washing hands, a food handler applied sanitizer and immediately continued chopping vegetables. What did she do wrong?",
+    "qKo": "손을 씻은 후, 식품 취급자가 소독제를 바르고 즉시 채소를 계속 썰었습니다. 그녀는 무엇을 잘못했나요?",
     "options": [
       "She did not let the sanitizer dry.",
       "She failed to rinse off the sanitizer.",
@@ -1443,7 +1443,7 @@
     "module": "Personal Hygiene",
     "moduleKo": "개인 위생",
     "q": "What should a food handler do when working with an infected cut on their finger?",
-    "qKo": "What should a food handler do when working with an infected cut on their finger?",
+    "qKo": "손가락에 감염된 상처가 있을 때 식품 취급자는 어떻게 해야 하나요?",
     "options": [
       "Stay away from food and prep areas.",
       "Wash hands and cover the cut with a bandage.",
@@ -1458,7 +1458,7 @@
     "module": "Personal Hygiene",
     "moduleKo": "개인 위생",
     "q": "Which food item may be handled with bare hands?",
-    "qKo": "Which food item may be handled with bare hands?",
+    "qKo": "다음 중 맨손으로 취급할 수 있는 식품은?",
     "options": [
       "Sliced cheese for sandwiches",
       "Boiled egg slices for salad",
@@ -1473,7 +1473,7 @@
     "module": "Personal Hygiene",
     "moduleKo": "개인 위생",
     "q": "Is it acceptable for a server to eat a bowl of soup in the server station?",
-    "qKo": "Is it acceptable for a server to eat a bowl of soup in the server station?",
+    "qKo": "서버가 서버 스테이션에서 수프 한 그릇을 먹는 것이 허용되나요?",
     "options": [
       "No, never when serving food.",
       "No, because they are in full view of the public.",
@@ -1488,7 +1488,7 @@
     "module": "Personal Hygiene",
     "moduleKo": "개인 위생",
     "q": "If food handlers are sick, they must:",
-    "qKo": "If food handlers are sick, they must:",
+    "qKo": "식품 취급자가 아프면 반드시 해야 할 일은:",
     "options": [
       "Stay home.",
       "Tell you about their symptoms.",
@@ -1503,7 +1503,7 @@
     "module": "Cross-Contamination",
     "moduleKo": "교차 오염",
     "q": "An operation purchased pre-cut lettuce instead of cutting it themselves. What is the benefit?",
-    "qKo": "An operation purchased pre-cut lettuce instead of cutting it themselves. What is the benefit?",
+    "qKo": "업장에서 상추를 직접 자르는 대신 미리 절단된 상추를 구입했습니다. 이점은?",
     "options": [
       "To prevent temperature abuse",
       "To prevent cross-contamination",
@@ -1518,7 +1518,7 @@
     "module": "Time & Temperature",
     "moduleKo": "시간 및 온도",
     "q": "Pathogens grow most rapidly at temperatures between:",
-    "qKo": "Pathogens grow most rapidly at temperatures between:",
+    "qKo": "병원균이 가장 빠르게 성장하는 온도 범위는:",
     "options": [
       "41°F and 45°F (5°C to 7°C)",
       "45°F and 60°F (7°C to 16°C)",
@@ -1533,7 +1533,7 @@
     "module": "Time & Temperature",
     "moduleKo": "시간 및 온도",
     "q": "Pathogens are likely to grow well in a meat stew that is:",
-    "qKo": "Pathogens are likely to grow well in a meat stew that is:",
+    "qKo": "병원균이 잘 성장할 가능성이 높은 고기 스튜의 상태는:",
     "options": [
       "Below freezing temperature.",
       "At refrigeration temperatures.",
@@ -1548,7 +1548,7 @@
     "module": "Time & Temperature",
     "moduleKo": "시간 및 온도",
     "q": "Food must be thrown out after remaining in the temperature danger zone for:",
-    "qKo": "Food must be thrown out after remaining in the temperature danger zone for:",
+    "qKo": "식품을 위험 온도 구간에 머문 후 폐기해야 하는 시간은:",
     "options": [
       "1 hour.",
       "2 hours.",
@@ -1563,7 +1563,7 @@
     "module": "Time & Temperature",
     "moduleKo": "시간 및 온도",
     "q": "When using the ice-point technique to calibrate a thermometer, to what temperature should it be adjusted?",
-    "qKo": "When using the ice-point technique to calibrate a thermometer, to what temperature should it be adjusted?",
+    "qKo": "빙점법으로 온도계를 보정할 때 어떤 온도로 조정해야 하나요?",
     "options": [
       "0°F (-18°C)",
       "32°F (0°C)",
@@ -1578,7 +1578,7 @@
     "module": "Time & Temperature",
     "moduleKo": "시간 및 온도",
     "q": "When checking the internal temperature of food, where should the thermometer be inserted?",
-    "qKo": "When checking the internal temperature of food, where should the thermometer be inserted?",
+    "qKo": "식품의 내부 온도를 확인할 때 온도계는 어디에 삽입해야 하나요?",
     "options": [
       "In the thinnest part of the food",
       "In the thickest part of the food",
@@ -1593,7 +1593,7 @@
     "module": "Cross-Contamination",
     "moduleKo": "교차 오염",
     "q": "What is the most basic way a food handler can prevent cross-contamination?",
-    "qKo": "What is the most basic way a food handler can prevent cross-contamination?",
+    "qKo": "식품 취급자가 교차 오염을 예방하는 가장 기본적인 방법은?",
     "options": [
       "Monitor and log all food deliveries.",
       "Clean and sanitize every piece of equipment at the start of each shift.",
@@ -1608,7 +1608,7 @@
     "module": "Cross-Contamination",
     "moduleKo": "교차 오염",
     "q": "What is the most important factor in choosing an approved food supplier?",
-    "qKo": "What is the most important factor in choosing an approved food supplier?",
+    "qKo": "승인된 식품 공급업체를 선택할 때 가장 중요한 요소는?",
     "options": [
       "It has a HACCP program or other food safety system.",
       "It has documented manufacturing and packing practices.",
@@ -1623,7 +1623,7 @@
     "module": "Foodborne Illness",
     "moduleKo": "식품 매개 질환",
     "q": "A chef purchases fresh fish from a local fisherman. Is this an approved supplier?",
-    "qKo": "A chef purchases fresh fish from a local fisherman. Is this an approved supplier?",
+    "qKo": "요리사가 지역 어부에게서 신선한 생선을 구입합니다. 이것은 승인된 공급업체인가요?",
     "options": [
       "Yes, if the fish is fresh caught.",
       "Yes, if the town has licensed the fisherman.",
@@ -1638,7 +1638,7 @@
     "module": "Time & Temperature",
     "moduleKo": "시간 및 온도",
     "q": "What is the meaning of large ice crystals on frozen food?",
-    "qKo": "What is the meaning of large ice crystals on frozen food?",
+    "qKo": "냉동 식품에 큰 얼음 결정이 있다는 것은 무엇을 의미하나요?",
     "options": [
       "The product has been frozen properly.",
       "The product is still reaching the correct temperature.",
@@ -1653,7 +1653,7 @@
     "module": "Cross-Contamination",
     "moduleKo": "교차 오염",
     "q": "Any item not stored in its original container must be:",
-    "qKo": "Any item not stored in its original container must be:",
+    "qKo": "원래 용기에 보관되지 않은 모든 품목은 반드시:",
     "options": [
       "Labeled.",
       "Thrown out.",
@@ -1668,7 +1668,7 @@
     "module": "Time & Temperature",
     "moduleKo": "시간 및 온도",
     "q": "At what temperature must cold TCS food be stored to keep it safe?",
-    "qKo": "At what temperature must cold TCS food be stored to keep it safe?",
+    "qKo": "차가운 TCS 식품을 안전하게 보관하려면 몇 도에서 보관해야 하나요?",
     "options": [
       "41°F (5°C) or lower",
       "45°F (7°C) or lower",
@@ -1683,7 +1683,7 @@
     "module": "Time & Temperature",
     "moduleKo": "시간 및 온도",
     "q": "Why should overloading coolers be avoided?",
-    "qKo": "Why should overloading coolers be avoided?",
+    "qKo": "냉장고 과적재를 피해야 하는 이유는?",
     "options": [
       "It reduces airflow.",
       "It lets warm air inside.",
@@ -1698,7 +1698,7 @@
     "module": "Cross-Contamination",
     "moduleKo": "교차 오염",
     "q": "What must be done with food before storing it?",
-    "qKo": "What must be done with food before storing it?",
+    "qKo": "식품을 보관하기 전에 반드시 해야 할 일은?",
     "options": [
       "It must be frozen properly.",
       "It must be wrapped or covered.",
@@ -1713,7 +1713,7 @@
     "module": "Cross-Contamination",
     "moduleKo": "교차 오염",
     "q": "Where should food that does not require refrigeration be stored?",
-    "qKo": "Where should food that does not require refrigeration be stored?",
+    "qKo": "냉장이 필요 없는 식품은 어디에 보관해야 하나요?",
     "options": [
       "In a dry location",
       "In a moist location",
@@ -1728,7 +1728,7 @@
     "module": "Cross-Contamination",
     "moduleKo": "교차 오염",
     "q": "Which is a best practice for storing flour?",
-    "qKo": "Which is a best practice for storing flour?",
+    "qKo": "밀가루 보관의 모범 사례는?",
     "options": [
       "Check packaging for pest damage before using.",
       "Store in a room with medium to high humidity.",
@@ -1743,7 +1743,7 @@
     "module": "Time & Temperature",
     "moduleKo": "시간 및 온도",
     "q": "How should pooled eggs be handled to keep them safe?",
-    "qKo": "How should pooled eggs be handled to keep them safe?",
+    "qKo": "혼합 달걀(풀드 에그)을 안전하게 취급하는 방법은?",
     "options": [
       "Cook them right after mixing them.",
       "Make additional batches in the same container.",
@@ -1758,7 +1758,7 @@
     "module": "Cleaning & Sanitizing",
     "moduleKo": "청결 및 위생 처리",
     "q": "What guidelines should be followed when handling ice to keep it safe?",
-    "qKo": "What guidelines should be followed when handling ice to keep it safe?",
+    "qKo": "얼음을 안전하게 취급하기 위해 따라야 할 지침은?",
     "options": [
       "Store ice scoops in the ice machine.",
       "Only handle ice with bare hands after handwashing.",
@@ -1773,7 +1773,7 @@
     "module": "Time & Temperature",
     "moduleKo": "시간 및 온도",
     "q": "Which method is a safe way to thaw food?",
-    "qKo": "Which method is a safe way to thaw food?",
+    "qKo": "식품을 안전하게 해동하는 방법은?",
     "options": [
       "As part of the cooking process",
       "Under running water at 125°F (52°C) or higher",
@@ -1788,7 +1788,7 @@
     "module": "Time & Temperature",
     "moduleKo": "시간 및 온도",
     "q": "A food handler leaves frozen lasagna on a prep table to thaw overnight. Why is this unsafe?",
-    "qKo": "A food handler leaves frozen lasagna on a prep table to thaw overnight. Why is this unsafe?",
+    "qKo": "식품 취급자가 냉동 라자냐를 준비대에 놓고 밤새 해동합니다. 이것이 안전하지 않은 이유는?",
     "options": [
       "Dishes thawing at room temperature need to be cut into smaller pieces first.",
       "The dish is exposed to the temperature danger zone so pathogens can grow.",
@@ -1803,7 +1803,7 @@
     "module": "Time & Temperature",
     "moduleKo": "시간 및 온도",
     "q": "What is the maximum cooling time for TCS food?",
-    "qKo": "What is the maximum cooling time for TCS food?",
+    "qKo": "TCS 식품의 최대 냉각 시간은?",
     "options": [
       "1 hour",
       "2 hours",
@@ -1818,7 +1818,7 @@
     "module": "Time & Temperature",
     "moduleKo": "시간 및 온도",
     "q": "What is the first step in cooling a large pot of hot meat sauce?",
-    "qKo": "What is the first step in cooling a large pot of hot meat sauce?",
+    "qKo": "뜨거운 고기 소스 큰 냄비를 냉각하는 첫 번째 단계는?",
     "options": [
       "Put the pot in the freezer to cool.",
       "Put the pot in the walk-in cooler to cool.",
@@ -1833,7 +1833,7 @@
     "module": "Time & Temperature",
     "moduleKo": "시간 및 온도",
     "q": "What is the correct internal temperature for food being hot-held for service?",
-    "qKo": "What is the correct internal temperature for food being hot-held for service?",
+    "qKo": "서비스를 위해 보온 중인 식품의 올바른 내부 온도는?",
     "options": [
       "70°F (21°C) or above",
       "125°F (52°C) or above",
@@ -1848,7 +1848,7 @@
     "module": "Time & Temperature",
     "moduleKo": "시간 및 온도",
     "q": "What is the maximum allowable internal temperature when cold-holding TCS food?",
-    "qKo": "What is the maximum allowable internal temperature when cold-holding TCS food?",
+    "qKo": "TCS 식품을 냉장 보관할 때 허용되는 최대 내부 온도는?",
     "options": [
       "41°F (5°C)",
       "45°F (7°C)",
@@ -1863,7 +1863,7 @@
     "module": "Time & Temperature",
     "moduleKo": "시간 및 온도",
     "q": "A power outage left hot TCS food out of temperature control for six hours. What must be done?",
-    "qKo": "A power outage left hot TCS food out of temperature control for six hours. What must be done?",
+    "qKo": "정전으로 뜨거운 TCS 식품이 6시간 동안 온도 통제 밖에 있었습니다. 어떻게 해야 하나요?",
     "options": [
       "Throw the food away.",
       "Cool the food to 41°F (5°C) or lower.",
@@ -1878,7 +1878,7 @@
     "module": "Time & Temperature",
     "moduleKo": "시간 및 온도",
     "q": "Why is it hazardous to reheat food with hot-holding equipment?",
-    "qKo": "Why is it hazardous to reheat food with hot-holding equipment?",
+    "qKo": "보온 장비로 식품을 재가열하는 것이 위험한 이유는?",
     "options": [
       "The equipment can scorch the food.",
       "The risk of cross-contact is significantly increased.",
@@ -1893,7 +1893,7 @@
     "module": "Time & Temperature",
     "moduleKo": "시간 및 온도",
     "q": "A food handler held chicken salad in a cold well for seven hours at 54°F (12°C). What must they do?",
-    "qKo": "A food handler held chicken salad in a cold well for seven hours at 54°F (12°C). What must they do?",
+    "qKo": "식품 취급자가 닭고기 샐러드를 냉장 보관기에서 7시간 동안 54°F(12°C)로 보관했습니다. 어떻게 해야 하나요?",
     "options": [
       "Sell the remaining chicken salad immediately.",
       "Sell the remaining chicken salad within 2 hours.",
@@ -1908,7 +1908,7 @@
     "module": "Personal Hygiene",
     "moduleKo": "개인 위생",
     "q": "Which is a safe practice when serving ready-to-eat food?",
-    "qKo": "Which is a safe practice when serving ready-to-eat food?",
+    "qKo": "즉석 취식 식품 서빙 시 안전한 관행은?",
     "options": [
       "Scooping ice with a sanitized glass.",
       "Plating hamburgers with bare hands.",
@@ -1923,7 +1923,7 @@
     "module": "Personal Hygiene",
     "moduleKo": "개인 위생",
     "q": "Which item may be re-served to another customer?",
-    "qKo": "Which item may be re-served to another customer?",
+    "qKo": "다른 고객에게 재제공할 수 있는 품목은?",
     "options": [
       "A partially used cup of salsa",
       "Unopened condiment packets",
@@ -1938,7 +1938,7 @@
     "module": "Time & Temperature",
     "moduleKo": "시간 및 온도",
     "q": "What type of containers should be used to transport food offsite?",
-    "qKo": "What type of containers should be used to transport food offsite?",
+    "qKo": "외부 장소로 식품을 운반할 때 사용해야 하는 용기 유형은?",
     "options": [
       "Insulated",
       "Disposable",
@@ -1953,7 +1953,7 @@
     "module": "Cleaning & Sanitizing",
     "moduleKo": "청결 및 위생 처리",
     "q": "What is the definition of sanitizing?",
-    "qKo": "What is the definition of sanitizing?",
+    "qKo": "소독(sanitizing)의 정의는?",
     "options": [
       "Washing a surface to a clean level",
       "Using a cloth on a surface until it is clean",
@@ -1968,7 +1968,7 @@
     "module": "Cleaning & Sanitizing",
     "moduleKo": "청결 및 위생 처리",
     "q": "The three most common types of chemical sanitizers are chlorine, iodine, and:",
-    "qKo": "The three most common types of chemical sanitizers are chlorine, iodine, and:",
+    "qKo": "가장 일반적인 세 가지 화학 소독제는 염소, 요오드, 그리고:",
     "options": [
       "Quats",
       "Disinfectant",
@@ -1983,7 +1983,7 @@
     "module": "Cleaning & Sanitizing",
     "moduleKo": "청결 및 위생 처리",
     "q": "What can reduce the effectiveness of a chemical sanitizer?",
-    "qKo": "What can reduce the effectiveness of a chemical sanitizer?",
+    "qKo": "화학 소독제의 효과를 감소시킬 수 있는 것은?",
     "options": [
       "Leftover detergent",
       "Air temperature",
@@ -1998,7 +1998,7 @@
     "module": "Cleaning & Sanitizing",
     "moduleKo": "청결 및 위생 처리",
     "q": "Which surfaces must be both cleaned and sanitized?",
-    "qKo": "Which surfaces must be both cleaned and sanitized?",
+    "qKo": "세척과 소독을 모두 해야 하는 표면은?",
     "options": [
       "Walls",
       "Cutting boards",
@@ -2013,7 +2013,7 @@
     "module": "Cleaning & Sanitizing",
     "moduleKo": "청결 및 위생 처리",
     "q": "When should a food-contact surface be cleaned and sanitized?",
-    "qKo": "When should a food-contact surface be cleaned and sanitized?",
+    "qKo": "식품 접촉 표면은 언제 세척 및 소독해야 하나요?",
     "options": [
       "Every 6 hours",
       "Before working with a different type of food",
@@ -2028,7 +2028,7 @@
     "module": "Cleaning & Sanitizing",
     "moduleKo": "청결 및 위생 처리",
     "q": "What is the minimum distance that clean utensils and equipment must be stored from the floor?",
-    "qKo": "What is the minimum distance that clean utensils and equipment must be stored from the floor?",
+    "qKo": "청결한 기구와 장비를 바닥에서 최소 얼마나 떨어진 곳에 보관해야 하나요?",
     "options": [
       "1 inch (3 cm)",
       "2 inches (5 cm)",
@@ -2043,7 +2043,7 @@
     "module": "Cleaning & Sanitizing",
     "moduleKo": "청결 및 위생 처리",
     "q": "When must chemical sanitizers be available?",
-    "qKo": "When must chemical sanitizers be available?",
+    "qKo": "화학 소독제는 언제 사용 가능해야 하나요?",
     "options": [
       "When the operation is open to the public",
       "During all hours of operation",
@@ -2058,7 +2058,7 @@
     "module": "Personal Hygiene",
     "moduleKo": "개인 위생",
     "q": "The only authorized jewelry during foodservice operations is:",
-    "qKo": "The only authorized jewelry during foodservice operations is:",
+    "qKo": "식품 서비스 작업 중 허용되는 유일한 장신구는:",
     "options": [
       "Watches, rings, bracelets, and necklaces.",
       "Plain wedding bands.",
@@ -2073,7 +2073,7 @@
     "module": "Foodborne Illness",
     "moduleKo": "식품 매개 질환",
     "q": "In a foodservice operation, the greatest risk to food is/are the:",
-    "qKo": "In a foodservice operation, the greatest risk to food is/are the:",
+    "qKo": "식품 서비스 업장에서 식품에 가장 큰 위험이 되는 것은:",
     "options": [
       "Facility",
       "Equipment",
@@ -2088,7 +2088,7 @@
     "module": "Personal Hygiene",
     "moduleKo": "개인 위생",
     "q": "Smoking by food handlers is prohibited in food prep areas primarily because smoking can contaminate food by:",
-    "qKo": "Smoking by food handlers is prohibited in food prep areas primarily because smoking can contaminate food by:",
+    "qKo": "식품 취급자의 흡연이 식품 준비 구역에서 금지되는 주요 이유는 흡연이 다음을 통해 식품을 오염시킬 수 있기 때문입니다:",
     "options": [
       "Smoke and pollutants dispersed in the air",
       "Ashes and cigarette butts ending up in food",
@@ -2103,7 +2103,7 @@
     "module": "Time & Temperature",
     "moduleKo": "시간 및 온도",
     "q": "Cold foods and hot foods should be held at what internal temperatures?",
-    "qKo": "Cold foods and hot foods should be held at what internal temperatures?",
+    "qKo": "차가운 식품과 뜨거운 식품은 각각 어떤 내부 온도로 보관해야 하나요?",
     "options": [
       "38°F and above / 100°F and above",
       "41°F and below / 135°F and above",
@@ -2118,7 +2118,7 @@
     "module": "Cleaning & Sanitizing",
     "moduleKo": "청결 및 위생 처리",
     "q": "The concentration of bleach sanitizing solution used on counters should be:",
-    "qKo": "The concentration of bleach sanitizing solution used on counters should be:",
+    "qKo": "조리대에 사용하는 표백제 소독액의 농도는:",
     "options": [
       "100 ppm",
       "1000 ppm",
@@ -2133,7 +2133,7 @@
     "module": "Cross-Contamination",
     "moduleKo": "교차 오염",
     "q": "Cross-contamination occurs when:",
-    "qKo": "Cross-contamination occurs when:",
+    "qKo": "교차 오염은 다음의 경우에 발생합니다:",
     "options": [
       "Two types of chemicals contaminate food",
       "Raw food contaminates cooked food",
@@ -2148,7 +2148,7 @@
     "module": "Time & Temperature",
     "moduleKo": "시간 및 온도",
     "q": "Correct thawing methods for foods include:",
-    "qKo": "Correct thawing methods for foods include:",
+    "qKo": "올바른 식품 해동 방법에 포함되는 것은:",
     "options": [
       "Cut the food item into small pieces",
       "Setting the item on the counter 5 hours before cooking",
@@ -2163,7 +2163,7 @@
     "module": "Cleaning & Sanitizing",
     "moduleKo": "청결 및 위생 처리",
     "q": "It is important to keep trash cans covered during food events to prevent attraction of flies and insects. True or False?",
-    "qKo": "It is important to keep trash cans covered during food events to prevent attraction of flies and insects. True or False?",
+    "qKo": "식품 행사 중 파리와 곤충을 유인하지 않도록 쓰레기통을 덮어두는 것이 중요합니다. 참 또는 거짓?",
     "options": [
       "True",
       "False"
@@ -2176,7 +2176,7 @@
     "module": "Time & Temperature",
     "moduleKo": "시간 및 온도",
     "q": "For multiplication and growth, all bacteria require:",
-    "qKo": "For multiplication and growth, all bacteria require:",
+    "qKo": "세균의 증식과 성장을 위해 모든 세균에 필요한 것은:",
     "options": [
       "The absence of oxygen and light combined with high temperatures",
       "A host, or another female or male bacteria",
@@ -2191,7 +2191,7 @@
     "module": "Foodborne Illness",
     "moduleKo": "식품 매개 질환",
     "q": "Which are the primary references for the Food Handler Certification Course?",
-    "qKo": "Which are the primary references for the Food Handler Certification Course?",
+    "qKo": "식품 취급자 인증 과정의 주요 참고 자료는?",
     "options": [
       "TB MED 612, FDA",
       "TB MED 530, Tri-Service Food Code 2019",
@@ -2206,7 +2206,7 @@
     "module": "Personal Hygiene",
     "moduleKo": "개인 위생",
     "q": "T/F: Single-use gloves are an appropriate substitute for handwashing.",
-    "qKo": "T/F: Single-use gloves are an appropriate substitute for handwashing.",
+    "qKo": "참/거짓: 일회용 장갑은 손 씻기의 적절한 대체품이다.",
     "options": [
       "True",
       "False"
@@ -2219,7 +2219,7 @@
     "module": "Time & Temperature",
     "moduleKo": "시간 및 온도",
     "q": "Which of the following are the correct thawing methods?",
-    "qKo": "Which of the following are the correct thawing methods?",
+    "qKo": "다음 중 올바른 해동 방법은?",
     "options": [
       "In the refrigerator at 41°F or less",
       "As part of the cooking process",
