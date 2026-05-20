@@ -2256,7 +2256,28 @@ function downloadCertPDF() {
     var name = (window._certData && window._certData.name) ? window._certData.name.replace(/\s+/g, '_') : 'FoodHandler';
     pdf.save('FoodHandler_Cert_' + name + '.pdf');
 
-    if (btn) btn.innerHTML = origText;
+    // Mark PDF saved and highlight email button
+    if (btn) {
+      btn.innerHTML = '✅ PDF Saved!';
+      btn.style.background = '#1a7a4a';
+      btn.style.color = 'white';
+      btn.disabled = true;
+      btn.style.opacity = '0.7';
+    }
+    var emailBtn = document.querySelector('.btn-email');
+    if (emailBtn) {
+      emailBtn.innerHTML = '✉️ Now Send Email to EH · 지금 이메일 보내기';
+      emailBtn.style.background = '#c8860b';
+      emailBtn.style.color = 'white';
+      emailBtn.style.fontWeight = '700';
+      emailBtn.style.boxShadow = '0 0 0 3px rgba(200,134,11,0.4)';
+    }
+    var tip = document.querySelector('.screenshot-tip');
+    if (tip) {
+      tip.innerHTML = '✅ PDF saved! Tap <strong>Send Email</strong> to submit to Environmental Health.<br><span style="font-size:0.78rem;color:#0f4f2e">PDF 저장 완료! 이메일 전송 버튼을 눌러 EH에 제출하세요.</span>';
+      tip.style.background = '#e8f5e9';
+      tip.style.color = '#0f4f2e';
+    }
   }).catch(function(err) {
     console.error(err);
     if (btn) btn.innerHTML = origText;
