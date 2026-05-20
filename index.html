@@ -2254,7 +2254,9 @@ function downloadCertPDF() {
 
     // Get name for filename
     var name = (window._certData && window._certData.name) ? window._certData.name.replace(/\s+/g, '_') : 'FoodHandler';
-    pdf.save('FoodHandler_Cert_' + name + '.pdf');
+    // Open in new tab instead of downloading — keeps cert overlay open
+    var pdfUrl = pdf.output('bloburl');
+    window.open(pdfUrl, '_blank');
 
     // Mark PDF saved and highlight email button
     if (btn) {
