@@ -1932,10 +1932,7 @@ function showAllDoneDialog() {
 }
 
 function startQuiz() {
-  if (certIssued && !devMode) {
-    alert('✅ Certificate already issued for this session.\n인증서가 이미 발급되었습니다.\n\nTo start over, please refresh the page.\n처음부터 시작하려면 페이지를 새로고침하세요.');
-    return;
-  }
+  // certIssued only locks the name, not quiz retries
   if (!isQuizUnlocked()) {
     alert('📖 Please complete all learning modules first!\n모든 학습 모듈을 먼저 완료해 주세요.\n\n(진도: ' + lessonProgress.filter(Boolean).length + '/' + lessonProgress.length + ' 완료)');
     return;
@@ -2316,14 +2313,6 @@ function sendBySMS() {
 `[Food Handler Cert] ${name} | Issued: ${issueDate} | Expires: ${expireDate} | TB MED 530 ✅`
   );
   window.location.href = `sms:?body=${msg}`;
-}
-
-// ── Re-open cert with locked name ────────
-function reOpenCert() {
-  if (!window._certIssuedName || !window._certData) return;
-  var old = document.getElementById('certOverlay');
-  if (old) old.parentNode.removeChild(old);
-  showCertCard(window._certIssuedName, window._certData.pct, window._certData.score, window._certData.total);
 }
 
 // ── Re-open cert with locked name ────────
