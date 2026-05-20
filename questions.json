@@ -1138,5 +1138,1096 @@
     "answer": 0,
     "explain": "The most important goal of a foodservice sanitation program is to protect soldiers and customers from foodborne illness.",
     "explainKo": "식품 서비스 위생 프로그램의 가장 중요한 목표는 군인과 고객을 식중독으로부터 보호하는 것입니다."
+  },
+  {
+    "module": "Foodborne Illness",
+    "moduleKo": "식품 매개 질환",
+    "q": "Two guests became ill after eating at a restaurant. They each ate different food items and suffered different symptoms. Would this be considered a foodborne illness outbreak?",
+    "qKo": "Two guests became ill after eating at a restaurant. They each ate different food items and suffered different symptoms. Would this be considered a foodborne illness outbreak?",
+    "options": [
+      "No, because they ate different foods.",
+      "No, because they ate different foods and had different symptoms.",
+      "Yes, because they ate different foods.",
+      "Yes, because two or more people became ill from separate foods/symptoms."
+    ],
+    "answer": 3,
+    "explain": "An outbreak is 2+ people getting sick from the same exposure, even with different foods or symptoms.",
+    "explainKo": "식품 매개 질환 발병은 동일한 노출로 2명 이상이 아프면 해당되며, 다른 음식이나 증상이 있어도 성립합니다."
+  },
+  {
+    "module": "Foodborne Illness",
+    "moduleKo": "식품 매개 질환",
+    "q": "Which are the greatest threat to food safety?",
+    "qKo": "Which are the greatest threat to food safety?",
+    "options": [
+      "Toxins",
+      "Allergens",
+      "Pathogens",
+      "Chemicals"
+    ],
+    "answer": 2,
+    "explain": "Pathogens (bacteria, viruses, parasites) are the greatest biological threat to food safety.",
+    "explainKo": "병원균(세균, 바이러스, 기생충)이 식품 안전에 가장 큰 위협입니다."
+  },
+  {
+    "module": "Foodborne Illness",
+    "moduleKo": "식품 매개 질환",
+    "q": "How are chemicals most likely to get into food?",
+    "qKo": "How are chemicals most likely to get into food?",
+    "options": [
+      "When they are used incorrectly",
+      "When they are stored in original containers",
+      "When they are purchased from unsafe sources",
+      "When they are kept past their expiration date"
+    ],
+    "answer": 0,
+    "explain": "Chemicals most often contaminate food when used incorrectly, such as being sprayed near food.",
+    "explainKo": "화학물질은 잘못 사용될 때(예: 식품 근처 분무) 오염을 가장 많이 일으킵니다."
+  },
+  {
+    "module": "Foodborne Illness",
+    "moduleKo": "식품 매개 질환",
+    "q": "Which is a biological contaminant?",
+    "qKo": "Which is a biological contaminant?",
+    "options": [
+      "Bones in a chicken filet",
+      "Seafood toxin in a red snapper",
+      "Metal shavings in a can of peaches",
+      "Tomato juice served in a pewter pitcher"
+    ],
+    "answer": 1,
+    "explain": "Seafood toxins (like ciguatoxin) are biological contaminants produced by living organisms.",
+    "explainKo": "해산물 독소(시구아톡신 등)는 살아있는 유기체가 생산하는 생물학적 오염원입니다."
+  },
+  {
+    "module": "Foodborne Illness",
+    "moduleKo": "식품 매개 질환",
+    "q": "The most common mistakes causing foodborne illness include poor personal hygiene, contaminated equipment, improper cooking/holding, and:",
+    "qKo": "The most common mistakes causing foodborne illness include poor personal hygiene, contaminated equipment, improper cooking/holding, and:",
+    "options": [
+      "Thawing food incorrectly.",
+      "Storing food without labels.",
+      "Receiving food in dented cans.",
+      "Purchasing food from unsafe sources."
+    ],
+    "answer": 3,
+    "explain": "The 4th most common mistake is purchasing food from unsafe/unapproved sources.",
+    "explainKo": "네 번째 주요 실수는 승인되지 않은 안전하지 않은 곳에서 식품을 구매하는 것입니다."
+  },
+  {
+    "module": "Foodborne Illness",
+    "moduleKo": "식품 매개 질환",
+    "q": "Which is a common food-handling mistake that can cause foodborne illness?",
+    "qKo": "Which is a common food-handling mistake that can cause foodborne illness?",
+    "options": [
+      "Failing to supervise food deliveries",
+      "Failing to exclude food handlers who are ill",
+      "Failing to calibrate thermometers regularly",
+      "Failing to prevent cross-contact from allergens"
+    ],
+    "answer": 1,
+    "explain": "Allowing sick food handlers to work is one of the most common causes of foodborne illness outbreaks.",
+    "explainKo": "아픈 식품 취급자가 계속 일하도록 허용하는 것은 식중독 발생의 가장 흔한 원인입니다."
+  },
+  {
+    "module": "Time & Temperature",
+    "moduleKo": "시간 및 온도",
+    "q": "Which type of food best supports the growth of bacteria?",
+    "qKo": "Which type of food best supports the growth of bacteria?",
+    "options": [
+      "Fats",
+      "Sugars",
+      "Starches",
+      "Proteins"
+    ],
+    "answer": 3,
+    "explain": "Proteins (meat, poultry, dairy, eggs) are TCS foods that best support bacterial growth.",
+    "explainKo": "단백질 식품(육류, 가금류, 유제품, 달걀)은 세균 성장을 가장 잘 지원하는 TCS 식품입니다."
+  },
+  {
+    "module": "Time & Temperature",
+    "moduleKo": "시간 및 온도",
+    "q": "Is vacuum-packed food safe from bacterial growth?",
+    "qKo": "Is vacuum-packed food safe from bacterial growth?",
+    "options": [
+      "Yes, because the vacuum always destroys bacteria.",
+      "Yes, because all bacteria need oxygen to grow.",
+      "No, because bacteria can grow without oxygen.",
+      "No, because the vacuum increases the food's water activity."
+    ],
+    "answer": 2,
+    "explain": "Anaerobic bacteria like Clostridium botulinum can grow without oxygen — vacuum-packed food is still at risk.",
+    "explainKo": "혐기성 세균(클로스트리디움 보툴리눔 등)은 산소 없이 성장할 수 있어 진공 포장 식품도 위험합니다."
+  },
+  {
+    "module": "Time & Temperature",
+    "moduleKo": "시간 및 온도",
+    "q": "What are the two conditions for bacterial growth that food handlers can most easily control?",
+    "qKo": "What are the two conditions for bacterial growth that food handlers can most easily control?",
+    "options": [
+      "Oxygen and acidity",
+      "Acidity and moisture",
+      "Temperature and moisture",
+      "Time and temperature"
+    ],
+    "answer": 3,
+    "explain": "Time and temperature are the two conditions food handlers can most easily control.",
+    "explainKo": "식품 취급자가 가장 쉽게 통제할 수 있는 두 조건은 시간과 온도입니다."
+  },
+  {
+    "module": "Time & Temperature",
+    "moduleKo": "시간 및 온도",
+    "q": "In what temperature range does bacteria grow most rapidly?",
+    "qKo": "In what temperature range does bacteria grow most rapidly?",
+    "options": [
+      "0°F to 38°F (-18°C to 3°C)",
+      "41°F to 65°F (5°C to 18°C)",
+      "70°F to 125°F (21°C to 52°C)",
+      "126°F to 165°F (54°C to 74°C)"
+    ],
+    "answer": 2,
+    "explain": "Bacteria grow most rapidly between 70°F-125°F (21°C-52°C), within the temperature danger zone.",
+    "explainKo": "세균은 위험 온도 구간 내 70°F~125°F(21°C~52°C)에서 가장 빠르게 증식합니다."
+  },
+  {
+    "module": "Time & Temperature",
+    "moduleKo": "시간 및 온도",
+    "q": "Which food is in the temperature danger zone?",
+    "qKo": "Which food is in the temperature danger zone?",
+    "options": [
+      "Meat received at 40°F (4°C)",
+      "Chicken stored at 45°F (7°C)",
+      "Soup held at 140°F (60°C)",
+      "Chili cooked to 165°F (74°C)"
+    ],
+    "answer": 1,
+    "explain": "Chicken stored at 45°F is above the safe cold holding temperature of 41°F — it is in the danger zone.",
+    "explainKo": "45°F에 보관된 닭고기는 안전한 냉장 온도인 41°F를 초과하여 위험 온도 구간에 있습니다."
+  },
+  {
+    "module": "Personal Hygiene",
+    "moduleKo": "개인 위생",
+    "q": "What is the most important measure for preventing Hepatitis A from causing a foodborne illness?",
+    "qKo": "What is the most important measure for preventing Hepatitis A from causing a foodborne illness?",
+    "options": [
+      "Practicing good personal hygiene",
+      "Preventing cross-contamination",
+      "Preventing time-temperature abuse",
+      "Purchasing from approved, reputable suppliers"
+    ],
+    "answer": 0,
+    "explain": "Hepatitis A spreads via the fecal-oral route; good personal hygiene (especially handwashing) is the primary prevention.",
+    "explainKo": "A형 간염은 분변-구강 경로로 전파되므로 올바른 개인위생(특히 손 씻기)이 가장 중요한 예방책입니다."
+  },
+  {
+    "module": "Cleaning & Sanitizing",
+    "moduleKo": "청결 및 위생 처리",
+    "q": "How should chemicals be stored to prevent chemical contamination?",
+    "qKo": "How should chemicals be stored to prevent chemical contamination?",
+    "options": [
+      "Away from prep areas",
+      "On the floor between uses",
+      "On the work surface of prep tables",
+      "With food supplies below prep tables"
+    ],
+    "answer": 0,
+    "explain": "Chemicals must be stored away from food prep areas to prevent accidental contamination.",
+    "explainKo": "화학물질은 우발적 오염을 방지하기 위해 식품 준비 구역에서 멀리 보관해야 합니다."
+  },
+  {
+    "module": "Foodborne Illness",
+    "moduleKo": "식품 매개 질환",
+    "q": "Which is an example of physical contamination?",
+    "qKo": "Which is an example of physical contamination?",
+    "options": [
+      "Bones in fish",
+      "Sneezing on food",
+      "Touching dirty food-contact surfaces",
+      "Mixing vinegar and salt"
+    ],
+    "answer": 0,
+    "explain": "Bones in fish are a physical contaminant — a foreign object not normally found in the food.",
+    "explainKo": "생선 뼈는 식품에서 정상적으로 발견되지 않는 이물질인 물리적 오염원입니다."
+  },
+  {
+    "module": "Foodborne Illness",
+    "moduleKo": "식품 매개 질환",
+    "q": "Which is a chemical contaminant?",
+    "qKo": "Which is a chemical contaminant?",
+    "options": [
+      "Tomato sauce in a copper pan",
+      "Bones in a chicken filet",
+      "Ciguatera toxin in a red snapper",
+      "Metal shavings in a can of peaches"
+    ],
+    "answer": 0,
+    "explain": "Acidic tomato sauce in a copper pan causes copper to leach into food — a chemical contamination hazard.",
+    "explainKo": "구리 냄비의 산성 토마토 소스는 구리를 식품으로 용출시키는 화학적 오염 위험입니다."
+  },
+  {
+    "module": "Foodborne Illness",
+    "moduleKo": "식품 매개 질환",
+    "q": "Wheezing and hives are symptoms of:",
+    "qKo": "Wheezing and hives are symptoms of:",
+    "options": [
+      "Food allergies",
+      "Norovirus",
+      "Botulism",
+      "Hepatitis A"
+    ],
+    "answer": 0,
+    "explain": "Wheezing and hives are classic symptoms of an allergic reaction to food allergens.",
+    "explainKo": "천명음과 두드러기는 식품 알레르겐에 대한 알레르기 반응의 전형적인 증상입니다."
+  },
+  {
+    "module": "Foodborne Illness",
+    "moduleKo": "식품 매개 질환",
+    "q": "What can servers do to prevent guests from having an allergic reaction?",
+    "qKo": "What can servers do to prevent guests from having an allergic reaction?",
+    "options": [
+      "Identify all ingredients except secret ingredients.",
+      "Let guests know when you think they are reasonably safe.",
+      "Deliver all food to a table at the same time.",
+      "Clearly mark the order for a guest with an allergy."
+    ],
+    "answer": 3,
+    "explain": "Clearly marking allergy orders ensures kitchen staff and servers take special precautions.",
+    "explainKo": "알레르기 주문을 명확히 표시하면 주방 직원과 서버가 특별 주의를 기울입니다."
+  },
+  {
+    "module": "Personal Hygiene",
+    "moduleKo": "개인 위생",
+    "q": "What is the main reason food handlers should avoid scratching their scalps?",
+    "qKo": "What is the main reason food handlers should avoid scratching their scalps?",
+    "options": [
+      "Transferring a food allergen",
+      "Spreading pathogens to the food",
+      "Getting food in their hair",
+      "Causing toxic-metal poisoning"
+    ],
+    "answer": 1,
+    "explain": "Scratching the scalp can transfer pathogens from skin/hair to hands and then to food.",
+    "explainKo": "두피를 긁으면 피부/머리카락의 병원균이 손으로 옮겨져 식품을 오염시킬 수 있습니다."
+  },
+  {
+    "module": "Personal Hygiene",
+    "moduleKo": "개인 위생",
+    "q": "Approximately how long should the whole handwashing process take?",
+    "qKo": "Approximately how long should the whole handwashing process take?",
+    "options": [
+      "5 seconds",
+      "10 seconds",
+      "15 seconds",
+      "20 seconds"
+    ],
+    "answer": 3,
+    "explain": "The entire handwashing process should take at least 20 seconds.",
+    "explainKo": "전체 손 씻기 과정은 최소 20초가 소요되어야 합니다."
+  },
+  {
+    "module": "Personal Hygiene",
+    "moduleKo": "개인 위생",
+    "q": "After washing hands, a food handler applied sanitizer and immediately continued chopping vegetables. What did she do wrong?",
+    "qKo": "After washing hands, a food handler applied sanitizer and immediately continued chopping vegetables. What did she do wrong?",
+    "options": [
+      "She did not let the sanitizer dry.",
+      "She failed to rinse off the sanitizer.",
+      "She should not have washed her hands first.",
+      "She should not have rubbed the sanitizer into her hands."
+    ],
+    "answer": 0,
+    "explain": "Hand sanitizer must air-dry completely before handling food to be effective.",
+    "explainKo": "손 소독제는 효과를 발휘하려면 식품을 다루기 전에 완전히 건조되어야 합니다."
+  },
+  {
+    "module": "Personal Hygiene",
+    "moduleKo": "개인 위생",
+    "q": "What should a food handler do when working with an infected cut on their finger?",
+    "qKo": "What should a food handler do when working with an infected cut on their finger?",
+    "options": [
+      "Stay away from food and prep areas.",
+      "Wash hands and cover the cut with a bandage.",
+      "Apply ointment and bandage the cut with an impermeable cover.",
+      "Cover the cut with an impermeable cover and wear a single-use glove."
+    ],
+    "answer": 3,
+    "explain": "An infected cut must be covered with an impermeable (waterproof) cover AND a single-use glove.",
+    "explainKo": "감염된 상처는 방수 커버와 일회용 장갑으로 보호해야 합니다."
+  },
+  {
+    "module": "Personal Hygiene",
+    "moduleKo": "개인 위생",
+    "q": "Which food item may be handled with bare hands?",
+    "qKo": "Which food item may be handled with bare hands?",
+    "options": [
+      "Sliced cheese for sandwiches",
+      "Boiled egg slices for salad",
+      "Chopped carrots for stew",
+      "Parsley for garnish"
+    ],
+    "answer": 2,
+    "explain": "Chopped carrots for stew will be fully cooked, so bare-hand contact is acceptable before cooking.",
+    "explainKo": "스튜용 당근은 완전히 조리되므로 조리 전 맨손 접촉이 허용됩니다."
+  },
+  {
+    "module": "Personal Hygiene",
+    "moduleKo": "개인 위생",
+    "q": "Is it acceptable for a server to eat a bowl of soup in the server station?",
+    "qKo": "Is it acceptable for a server to eat a bowl of soup in the server station?",
+    "options": [
+      "No, never when serving food.",
+      "No, because they are in full view of the public.",
+      "Yes, if they will not contaminate food.",
+      "Yes, if they will not contaminate equipment."
+    ],
+    "answer": 2,
+    "explain": "Eating is acceptable in designated areas as long as food and equipment are not contaminated.",
+    "explainKo": "식품과 장비를 오염시키지 않는 한 지정 구역에서의 취식은 허용됩니다."
+  },
+  {
+    "module": "Personal Hygiene",
+    "moduleKo": "개인 위생",
+    "q": "If food handlers are sick, they must:",
+    "qKo": "If food handlers are sick, they must:",
+    "options": [
+      "Stay home.",
+      "Tell you about their symptoms.",
+      "Call the health department.",
+      "Only work for short periods of time."
+    ],
+    "answer": 1,
+    "explain": "Food handlers must report illness symptoms to their manager so the manager can decide about exclusion.",
+    "explainKo": "식품 취급자는 관리자가 업무 배제 여부를 결정할 수 있도록 증상을 반드시 보고해야 합니다."
+  },
+  {
+    "module": "Cross-Contamination",
+    "moduleKo": "교차 오염",
+    "q": "An operation purchased pre-cut lettuce instead of cutting it themselves. What is the benefit?",
+    "qKo": "An operation purchased pre-cut lettuce instead of cutting it themselves. What is the benefit?",
+    "options": [
+      "To prevent temperature abuse",
+      "To prevent cross-contamination",
+      "To reduce the cost of a salad",
+      "To reduce focus on proper personal hygiene"
+    ],
+    "answer": 1,
+    "explain": "Pre-cut lettuce eliminates a cross-contamination risk by removing a prep step.",
+    "explainKo": "미리 절단된 상추는 준비 단계를 제거하여 교차 오염 위험을 없앱니다."
+  },
+  {
+    "module": "Time & Temperature",
+    "moduleKo": "시간 및 온도",
+    "q": "Pathogens grow most rapidly at temperatures between:",
+    "qKo": "Pathogens grow most rapidly at temperatures between:",
+    "options": [
+      "41°F and 45°F (5°C to 7°C)",
+      "45°F and 60°F (7°C to 16°C)",
+      "70°F and 125°F (21°C to 52°C)",
+      "120°F and 135°F (49°C to 57°C)"
+    ],
+    "answer": 2,
+    "explain": "Pathogens grow most rapidly between 70°F-125°F (21°C-52°C), the middle of the temperature danger zone.",
+    "explainKo": "병원균은 위험 온도 구간의 중간인 70°F~125°F(21°C~52°C)에서 가장 빠르게 성장합니다."
+  },
+  {
+    "module": "Time & Temperature",
+    "moduleKo": "시간 및 온도",
+    "q": "Pathogens are likely to grow well in a meat stew that is:",
+    "qKo": "Pathogens are likely to grow well in a meat stew that is:",
+    "options": [
+      "Below freezing temperature.",
+      "At refrigeration temperatures.",
+      "Between 41°F and 135°F (5°C and 57°C).",
+      "Cooked to the correct internal temperature."
+    ],
+    "answer": 2,
+    "explain": "The temperature danger zone (41°F-135°F / 5°C-57°C) is where pathogens thrive.",
+    "explainKo": "41°F~135°F(5°C~57°C)의 위험 온도 구간은 병원균이 번성하는 환경입니다."
+  },
+  {
+    "module": "Time & Temperature",
+    "moduleKo": "시간 및 온도",
+    "q": "Food must be thrown out after remaining in the temperature danger zone for:",
+    "qKo": "Food must be thrown out after remaining in the temperature danger zone for:",
+    "options": [
+      "1 hour.",
+      "2 hours.",
+      "3 hours.",
+      "4 hours."
+    ],
+    "answer": 3,
+    "explain": "TCS food must be discarded after a cumulative 4 hours in the temperature danger zone.",
+    "explainKo": "TCS 식품은 위험 온도 구간에 누적 4시간 이상 머문 후에는 폐기해야 합니다."
+  },
+  {
+    "module": "Time & Temperature",
+    "moduleKo": "시간 및 온도",
+    "q": "When using the ice-point technique to calibrate a thermometer, to what temperature should it be adjusted?",
+    "qKo": "When using the ice-point technique to calibrate a thermometer, to what temperature should it be adjusted?",
+    "options": [
+      "0°F (-18°C)",
+      "32°F (0°C)",
+      "41°F (5°C)",
+      "212°F (100°C)"
+    ],
+    "answer": 1,
+    "explain": "The ice-point calibration method uses an ice-water slurry at 32°F (0°C).",
+    "explainKo": "빙점 보정법은 32°F(0°C)의 얼음물 혼합물을 사용합니다."
+  },
+  {
+    "module": "Time & Temperature",
+    "moduleKo": "시간 및 온도",
+    "q": "When checking the internal temperature of food, where should the thermometer be inserted?",
+    "qKo": "When checking the internal temperature of food, where should the thermometer be inserted?",
+    "options": [
+      "In the thinnest part of the food",
+      "In the thickest part of the food",
+      "On the bottom of the food",
+      "On the top of the food"
+    ],
+    "answer": 1,
+    "explain": "Insert the thermometer into the thickest part where it takes longest to reach safe temperature.",
+    "explainKo": "온도계는 안전 온도에 도달하는 데 가장 오래 걸리는 두꺼운 부분에 삽입해야 합니다."
+  },
+  {
+    "module": "Cross-Contamination",
+    "moduleKo": "교차 오염",
+    "q": "What is the most basic way a food handler can prevent cross-contamination?",
+    "qKo": "What is the most basic way a food handler can prevent cross-contamination?",
+    "options": [
+      "Monitor and log all food deliveries.",
+      "Clean and sanitize every piece of equipment at the start of each shift.",
+      "Keep raw and ready-to-eat food away from each other.",
+      "Designate separate prep tables for specific types of food."
+    ],
+    "answer": 2,
+    "explain": "The most basic cross-contamination prevention is keeping raw and ready-to-eat foods separated.",
+    "explainKo": "교차 오염 방지의 가장 기본적인 방법은 날 식품과 즉석 취식 식품을 항상 분리하는 것입니다."
+  },
+  {
+    "module": "Cross-Contamination",
+    "moduleKo": "교차 오염",
+    "q": "What is the most important factor in choosing an approved food supplier?",
+    "qKo": "What is the most important factor in choosing an approved food supplier?",
+    "options": [
+      "It has a HACCP program or other food safety system.",
+      "It has documented manufacturing and packing practices.",
+      "It has a warehouse close to the operation.",
+      "It has been inspected and complies with local, state, and federal laws."
+    ],
+    "answer": 3,
+    "explain": "An approved supplier must be inspected and comply with all applicable food safety laws.",
+    "explainKo": "승인된 공급업체는 검사를 받고 모든 식품 안전 법규를 준수해야 합니다."
+  },
+  {
+    "module": "Foodborne Illness",
+    "moduleKo": "식품 매개 질환",
+    "q": "A chef purchases fresh fish from a local fisherman. Is this an approved supplier?",
+    "qKo": "A chef purchases fresh fish from a local fisherman. Is this an approved supplier?",
+    "options": [
+      "Yes, if the fish is fresh caught.",
+      "Yes, if the town has licensed the fisherman.",
+      "No, not if the fisherman is local.",
+      "No, the fisherman is not inspected."
+    ],
+    "answer": 3,
+    "explain": "Only inspected, government-approved suppliers are considered safe sources.",
+    "explainKo": "검사를 받은 정부 승인 공급업체만 안전한 출처로 간주됩니다."
+  },
+  {
+    "module": "Time & Temperature",
+    "moduleKo": "시간 및 온도",
+    "q": "What is the meaning of large ice crystals on frozen food?",
+    "qKo": "What is the meaning of large ice crystals on frozen food?",
+    "options": [
+      "The product has been frozen properly.",
+      "The product is still reaching the correct temperature.",
+      "The product has thawed and been refrozen.",
+      "The product should be cooked rapidly after thawing."
+    ],
+    "answer": 2,
+    "explain": "Large ice crystals indicate the product thawed and was refrozen — a sign of temperature abuse.",
+    "explainKo": "큰 얼음 결정은 제품이 해동되었다가 재냉동된 것을 나타냅니다 — 온도 남용의 신호입니다."
+  },
+  {
+    "module": "Cross-Contamination",
+    "moduleKo": "교차 오염",
+    "q": "Any item not stored in its original container must be:",
+    "qKo": "Any item not stored in its original container must be:",
+    "options": [
+      "Labeled.",
+      "Thrown out.",
+      "Used immediately.",
+      "Served as quickly as possible."
+    ],
+    "answer": 0,
+    "explain": "All food removed from its original container must be labeled with the food name and use-by date.",
+    "explainKo": "원래 용기에서 꺼낸 모든 식품에는 식품명과 사용 기한을 라벨링해야 합니다."
+  },
+  {
+    "module": "Time & Temperature",
+    "moduleKo": "시간 및 온도",
+    "q": "At what temperature must cold TCS food be stored to keep it safe?",
+    "qKo": "At what temperature must cold TCS food be stored to keep it safe?",
+    "options": [
+      "41°F (5°C) or lower",
+      "45°F (7°C) or lower",
+      "50°F (10°C) or lower",
+      "65°F (18°C) or lower"
+    ],
+    "answer": 0,
+    "explain": "Cold TCS foods must be held at 41°F (5°C) or lower to prevent bacterial growth.",
+    "explainKo": "차가운 TCS 식품은 세균 증식을 방지하기 위해 41°F(5°C) 이하로 보관해야 합니다."
+  },
+  {
+    "module": "Time & Temperature",
+    "moduleKo": "시간 및 온도",
+    "q": "Why should overloading coolers be avoided?",
+    "qKo": "Why should overloading coolers be avoided?",
+    "options": [
+      "It reduces airflow.",
+      "It lets warm air inside.",
+      "It may lead to freezing the food.",
+      "It can lead to moisture build-up."
+    ],
+    "answer": 0,
+    "explain": "Overloading reduces airflow, which prevents proper cooling and can lead to danger zone conditions.",
+    "explainKo": "과적재는 공기 순환을 줄여 적절한 냉각을 방해하고 위험 온도 구간 상황을 초래할 수 있습니다."
+  },
+  {
+    "module": "Cross-Contamination",
+    "moduleKo": "교차 오염",
+    "q": "What must be done with food before storing it?",
+    "qKo": "What must be done with food before storing it?",
+    "options": [
+      "It must be frozen properly.",
+      "It must be wrapped or covered.",
+      "It must be marked with a storage date.",
+      "It must be placed in containers that allow airflow."
+    ],
+    "answer": 1,
+    "explain": "Food must be wrapped or covered before storage to protect it from contamination.",
+    "explainKo": "식품은 오염으로부터 보호하기 위해 보관 전에 포장하거나 덮어야 합니다."
+  },
+  {
+    "module": "Cross-Contamination",
+    "moduleKo": "교차 오염",
+    "q": "Where should food that does not require refrigeration be stored?",
+    "qKo": "Where should food that does not require refrigeration be stored?",
+    "options": [
+      "In a dry location",
+      "In a moist location",
+      "In a high humidity location",
+      "In a high temperature location"
+    ],
+    "answer": 0,
+    "explain": "Non-refrigerated dry goods must be stored in a dry location to prevent spoilage and pest attraction.",
+    "explainKo": "냉장이 필요 없는 건조 식품은 부패와 해충을 방지하기 위해 건조한 장소에 보관해야 합니다."
+  },
+  {
+    "module": "Cross-Contamination",
+    "moduleKo": "교차 오염",
+    "q": "Which is a best practice for storing flour?",
+    "qKo": "Which is a best practice for storing flour?",
+    "options": [
+      "Check packaging for pest damage before using.",
+      "Store in a room with medium to high humidity.",
+      "Repackage in breathable containers before storing.",
+      "Conduct daily temperature checks."
+    ],
+    "answer": 0,
+    "explain": "Before using flour, always check the packaging for signs of pest damage or infestation.",
+    "explainKo": "밀가루를 사용하기 전에 포장에 해충 피해 흔적이 있는지 항상 확인하세요."
+  },
+  {
+    "module": "Time & Temperature",
+    "moduleKo": "시간 및 온도",
+    "q": "How should pooled eggs be handled to keep them safe?",
+    "qKo": "How should pooled eggs be handled to keep them safe?",
+    "options": [
+      "Cook them right after mixing them.",
+      "Make additional batches in the same container.",
+      "Store them at an air temperature of 45°F (7°C) or lower.",
+      "Leave them at room temperature for 4 hours or less."
+    ],
+    "answer": 0,
+    "explain": "Pooled eggs should be cooked immediately after mixing to prevent bacterial growth.",
+    "explainKo": "혼합 달걀은 세균 증식을 방지하기 위해 혼합 직후 바로 조리해야 합니다."
+  },
+  {
+    "module": "Cleaning & Sanitizing",
+    "moduleKo": "청결 및 위생 처리",
+    "q": "What guidelines should be followed when handling ice to keep it safe?",
+    "qKo": "What guidelines should be followed when handling ice to keep it safe?",
+    "options": [
+      "Store ice scoops in the ice machine.",
+      "Only handle ice with bare hands after handwashing.",
+      "Use a glass to scoop ice.",
+      "Never use ice as an ingredient if it was used to cool food."
+    ],
+    "answer": 3,
+    "explain": "Ice used to cool food may be contaminated and must never be re-used as an ingredient.",
+    "explainKo": "식품을 냉각하는 데 사용한 얼음은 오염될 수 있으므로 식재료로 재사용해서는 안 됩니다."
+  },
+  {
+    "module": "Time & Temperature",
+    "moduleKo": "시간 및 온도",
+    "q": "Which method is a safe way to thaw food?",
+    "qKo": "Which method is a safe way to thaw food?",
+    "options": [
+      "As part of the cooking process",
+      "Under running water at 125°F (52°C) or higher",
+      "Submerged in standing water at 70°F (21°C)",
+      "On the counter at room temperature"
+    ],
+    "answer": 0,
+    "explain": "Thawing as part of the cooking process is safe. Other approved methods: refrigerator, microwave, cold running water.",
+    "explainKo": "조리 과정의 일부로 해동하는 것은 안전합니다. 기타 승인된 방법: 냉장고, 전자레인지, 차가운 흐르는 물."
+  },
+  {
+    "module": "Time & Temperature",
+    "moduleKo": "시간 및 온도",
+    "q": "A food handler leaves frozen lasagna on a prep table to thaw overnight. Why is this unsafe?",
+    "qKo": "A food handler leaves frozen lasagna on a prep table to thaw overnight. Why is this unsafe?",
+    "options": [
+      "Dishes thawing at room temperature need to be cut into smaller pieces first.",
+      "The dish is exposed to the temperature danger zone so pathogens can grow.",
+      "The dish's temperature will decrease too rapidly.",
+      "Most foods need at least 18 hours to thaw at room temperature."
+    ],
+    "answer": 1,
+    "explain": "Thawing at room temperature exposes food to the temperature danger zone, allowing rapid pathogen growth.",
+    "explainKo": "실온 해동은 식품을 위험 온도 구간에 노출시켜 병원균이 빠르게 증식할 수 있게 합니다."
+  },
+  {
+    "module": "Time & Temperature",
+    "moduleKo": "시간 및 온도",
+    "q": "What is the maximum cooling time for TCS food?",
+    "qKo": "What is the maximum cooling time for TCS food?",
+    "options": [
+      "1 hour",
+      "2 hours",
+      "4 hours",
+      "6 hours"
+    ],
+    "answer": 3,
+    "explain": "TCS food must be cooled from 135 to 41°F within 6 hours total (first 2 hrs: 135-70°F, next 4 hrs: 70-41°F).",
+    "explainKo": "TCS 식품은 총 6시간 내에 135°F에서 41°F로 냉각해야 합니다."
+  },
+  {
+    "module": "Time & Temperature",
+    "moduleKo": "시간 및 온도",
+    "q": "What is the first step in cooling a large pot of hot meat sauce?",
+    "qKo": "What is the first step in cooling a large pot of hot meat sauce?",
+    "options": [
+      "Put the pot in the freezer to cool.",
+      "Put the pot in the walk-in cooler to cool.",
+      "Put the pot into a sink full of ice water.",
+      "Pour the meat sauce into several smaller containers."
+    ],
+    "answer": 3,
+    "explain": "The first step in rapid cooling is dividing large quantities into smaller shallow containers to increase surface area.",
+    "explainKo": "빠른 냉각의 첫 번째 단계는 표면적을 늘리기 위해 큰 양을 작은 얕은 용기로 나누는 것입니다."
+  },
+  {
+    "module": "Time & Temperature",
+    "moduleKo": "시간 및 온도",
+    "q": "What is the correct internal temperature for food being hot-held for service?",
+    "qKo": "What is the correct internal temperature for food being hot-held for service?",
+    "options": [
+      "70°F (21°C) or above",
+      "125°F (52°C) or above",
+      "135°F (57°C) or above",
+      "155°F (68°C) or above"
+    ],
+    "answer": 2,
+    "explain": "Hot TCS food must be held at 135°F (57°C) or higher during service.",
+    "explainKo": "뜨거운 TCS 식품은 서비스 중 135°F(57°C) 이상으로 유지해야 합니다."
+  },
+  {
+    "module": "Time & Temperature",
+    "moduleKo": "시간 및 온도",
+    "q": "What is the maximum allowable internal temperature when cold-holding TCS food?",
+    "qKo": "What is the maximum allowable internal temperature when cold-holding TCS food?",
+    "options": [
+      "41°F (5°C)",
+      "45°F (7°C)",
+      "51°F (10°C)",
+      "55°F (13°C)"
+    ],
+    "answer": 0,
+    "explain": "Cold TCS food must be held at 41°F (5°C) or lower to remain safe.",
+    "explainKo": "차가운 TCS 식품은 안전하게 유지하려면 41°F(5°C) 이하로 보관해야 합니다."
+  },
+  {
+    "module": "Time & Temperature",
+    "moduleKo": "시간 및 온도",
+    "q": "A power outage left hot TCS food out of temperature control for six hours. What must be done?",
+    "qKo": "A power outage left hot TCS food out of temperature control for six hours. What must be done?",
+    "options": [
+      "Throw the food away.",
+      "Cool the food to 41°F (5°C) or lower.",
+      "Serve the food immediately.",
+      "Cook the food to 165°F (74°C)."
+    ],
+    "answer": 0,
+    "explain": "TCS food in the temperature danger zone for 4+ cumulative hours must be discarded.",
+    "explainKo": "위험 온도 구간에 누적 4시간 이상 있었던 TCS 식품은 폐기해야 합니다."
+  },
+  {
+    "module": "Time & Temperature",
+    "moduleKo": "시간 및 온도",
+    "q": "Why is it hazardous to reheat food with hot-holding equipment?",
+    "qKo": "Why is it hazardous to reheat food with hot-holding equipment?",
+    "options": [
+      "The equipment can scorch the food.",
+      "The risk of cross-contact is significantly increased.",
+      "Cross-contamination becomes a greater risk later in the cooking process.",
+      "Most equipment does not pass food through the temperature danger zone quickly enough."
+    ],
+    "answer": 3,
+    "explain": "Hot-holding equipment is designed to maintain temperature, not raise it quickly through the danger zone.",
+    "explainKo": "보온 장비는 온도를 유지하도록 설계되어 있으며, 위험 구간을 빠르게 통과시키는 용도가 아닙니다."
+  },
+  {
+    "module": "Time & Temperature",
+    "moduleKo": "시간 및 온도",
+    "q": "A food handler held chicken salad in a cold well for seven hours at 54°F (12°C). What must they do?",
+    "qKo": "A food handler held chicken salad in a cold well for seven hours at 54°F (12°C). What must they do?",
+    "options": [
+      "Sell the remaining chicken salad immediately.",
+      "Sell the remaining chicken salad within 2 hours.",
+      "Cool the chicken salad to 41°F (5°C).",
+      "Discard the chicken salad."
+    ],
+    "answer": 3,
+    "explain": "Chicken salad at 54°F for 7 hours has exceeded both safe temperature and time limits — must be discarded.",
+    "explainKo": "54°F에서 7시간 보관된 닭고기 샐러드는 안전 온도와 시간 한계를 모두 초과했으므로 폐기해야 합니다."
+  },
+  {
+    "module": "Personal Hygiene",
+    "moduleKo": "개인 위생",
+    "q": "Which is a safe practice when serving ready-to-eat food?",
+    "qKo": "Which is a safe practice when serving ready-to-eat food?",
+    "options": [
+      "Scooping ice with a sanitized glass.",
+      "Plating hamburgers with bare hands.",
+      "Using deli sheets to handle donuts.",
+      "Serving rolls and fried chicken with the same pair of tongs."
+    ],
+    "answer": 2,
+    "explain": "Using deli sheets (wax paper) to handle donuts prevents bare-hand contact with ready-to-eat food.",
+    "explainKo": "델리 시트(왁스 페이퍼)를 사용하면 즉석 취식 식품과 맨손 접촉을 방지할 수 있습니다."
+  },
+  {
+    "module": "Personal Hygiene",
+    "moduleKo": "개인 위생",
+    "q": "Which item may be re-served to another customer?",
+    "qKo": "Which item may be re-served to another customer?",
+    "options": [
+      "A partially used cup of salsa",
+      "Unopened condiment packets",
+      "Uneaten bread from a breadbasket",
+      "An uneaten pickle used as a plate garnish"
+    ],
+    "answer": 1,
+    "explain": "Only unopened, packaged condiments that have not been touched can be safely re-served.",
+    "explainKo": "미개봉 포장 조미료만 안전하게 다른 고객에게 재제공할 수 있습니다."
+  },
+  {
+    "module": "Time & Temperature",
+    "moduleKo": "시간 및 온도",
+    "q": "What type of containers should be used to transport food offsite?",
+    "qKo": "What type of containers should be used to transport food offsite?",
+    "options": [
+      "Insulated",
+      "Disposable",
+      "Reusable",
+      "Biodegradable"
+    ],
+    "answer": 0,
+    "explain": "Insulated containers maintain safe temperatures during transport, keeping food out of the danger zone.",
+    "explainKo": "단열 용기는 운반 중 안전 온도를 유지하여 식품을 위험 온도 구간에서 벗어나게 합니다."
+  },
+  {
+    "module": "Cleaning & Sanitizing",
+    "moduleKo": "청결 및 위생 처리",
+    "q": "What is the definition of sanitizing?",
+    "qKo": "What is the definition of sanitizing?",
+    "options": [
+      "Washing a surface to a clean level",
+      "Using a cloth on a surface until it is clean",
+      "Lowering the amount of dirt on a surface to safe levels",
+      "Reducing the pathogens on a surface to safe levels"
+    ],
+    "answer": 3,
+    "explain": "Sanitizing reduces pathogen numbers to safe levels; cleaning removes dirt.",
+    "explainKo": "소독은 병원균 수를 안전한 수준으로 줄입니다. 세척은 오물을 제거합니다."
+  },
+  {
+    "module": "Cleaning & Sanitizing",
+    "moduleKo": "청결 및 위생 처리",
+    "q": "The three most common types of chemical sanitizers are chlorine, iodine, and:",
+    "qKo": "The three most common types of chemical sanitizers are chlorine, iodine, and:",
+    "options": [
+      "Quats",
+      "Disinfectant",
+      "Alcohol",
+      "Steam"
+    ],
+    "answer": 0,
+    "explain": "The three most common chemical sanitizers are chlorine (bleach), iodine, and quaternary ammonium (quats).",
+    "explainKo": "가장 일반적인 세 가지 화학 소독제는 염소(표백제), 요오드, 4급 암모늄(쿼트)입니다."
+  },
+  {
+    "module": "Cleaning & Sanitizing",
+    "moduleKo": "청결 및 위생 처리",
+    "q": "What can reduce the effectiveness of a chemical sanitizer?",
+    "qKo": "What can reduce the effectiveness of a chemical sanitizer?",
+    "options": [
+      "Leftover detergent",
+      "Air temperature",
+      "Density of equipment",
+      "The water's oxygen level"
+    ],
+    "answer": 0,
+    "explain": "Leftover detergent residue can neutralize sanitizers, reducing their effectiveness.",
+    "explainKo": "남아있는 세제 잔여물은 소독제를 중화시켜 효과를 감소시킬 수 있습니다."
+  },
+  {
+    "module": "Cleaning & Sanitizing",
+    "moduleKo": "청결 및 위생 처리",
+    "q": "Which surfaces must be both cleaned and sanitized?",
+    "qKo": "Which surfaces must be both cleaned and sanitized?",
+    "options": [
+      "Walls",
+      "Cutting boards",
+      "Storage shelves",
+      "Garbage containers"
+    ],
+    "answer": 1,
+    "explain": "Food-contact surfaces like cutting boards must be both cleaned and sanitized.",
+    "explainKo": "도마와 같은 식품 접촉 표면은 세척과 소독을 모두 해야 합니다."
+  },
+  {
+    "module": "Cleaning & Sanitizing",
+    "moduleKo": "청결 및 위생 처리",
+    "q": "When should a food-contact surface be cleaned and sanitized?",
+    "qKo": "When should a food-contact surface be cleaned and sanitized?",
+    "options": [
+      "Every 6 hours",
+      "Before working with a different type of food",
+      "After the food handler changes gloves",
+      "At the end of the food handler's shift"
+    ],
+    "answer": 1,
+    "explain": "Food-contact surfaces must be cleaned and sanitized every 4 hours and before switching food types.",
+    "explainKo": "식품 접촉 표면은 4시간마다, 그리고 다른 종류의 식품으로 전환하기 전에 세척 및 소독해야 합니다."
+  },
+  {
+    "module": "Cleaning & Sanitizing",
+    "moduleKo": "청결 및 위생 처리",
+    "q": "What is the minimum distance that clean utensils and equipment must be stored from the floor?",
+    "qKo": "What is the minimum distance that clean utensils and equipment must be stored from the floor?",
+    "options": [
+      "1 inch (3 cm)",
+      "2 inches (5 cm)",
+      "4 inches (10 cm)",
+      "6 inches (15 cm)"
+    ],
+    "answer": 3,
+    "explain": "Clean utensils and equipment must be stored at least 6 inches (15 cm) off the floor to prevent contamination.",
+    "explainKo": "청결한 기구와 장비는 오염 방지를 위해 바닥에서 최소 6인치(15cm) 이상 떨어진 곳에 보관해야 합니다."
+  },
+  {
+    "module": "Cleaning & Sanitizing",
+    "moduleKo": "청결 및 위생 처리",
+    "q": "When must chemical sanitizers be available?",
+    "qKo": "When must chemical sanitizers be available?",
+    "options": [
+      "When the operation is open to the public",
+      "During all hours of operation",
+      "At the beginning of each shift",
+      "Before a shift ends"
+    ],
+    "answer": 1,
+    "explain": "Chemical sanitizers must be available at all times during operation.",
+    "explainKo": "화학 소독제는 영업 중 항상 사용 가능해야 합니다."
+  },
+  {
+    "module": "Personal Hygiene",
+    "moduleKo": "개인 위생",
+    "q": "The only authorized jewelry during foodservice operations is:",
+    "qKo": "The only authorized jewelry during foodservice operations is:",
+    "options": [
+      "Watches, rings, bracelets, and necklaces.",
+      "Plain wedding bands.",
+      "Watches, plain wedding bands, and engagement rings.",
+      "Rings with grooves, engagement rings, earrings, watches, and bracelets."
+    ],
+    "answer": 1,
+    "explain": "Only plain wedding bands (smooth, no stones or grooves) are permitted during food service operations.",
+    "explainKo": "식품 서비스 작업 중에는 민무늬 결혼반지(돌이나 홈이 없는 매끈한 밴드)만 허용됩니다."
+  },
+  {
+    "module": "Foodborne Illness",
+    "moduleKo": "식품 매개 질환",
+    "q": "In a foodservice operation, the greatest risk to food is/are the:",
+    "qKo": "In a foodservice operation, the greatest risk to food is/are the:",
+    "options": [
+      "Facility",
+      "Equipment",
+      "People/food handlers",
+      "Food itself"
+    ],
+    "answer": 2,
+    "explain": "Food handlers are the greatest risk because they can introduce pathogens through improper hygiene.",
+    "explainKo": "식품 취급자는 부적절한 위생으로 병원균을 유입할 수 있어 가장 큰 위험입니다."
+  },
+  {
+    "module": "Personal Hygiene",
+    "moduleKo": "개인 위생",
+    "q": "Smoking by food handlers is prohibited in food prep areas primarily because smoking can contaminate food by:",
+    "qKo": "Smoking by food handlers is prohibited in food prep areas primarily because smoking can contaminate food by:",
+    "options": [
+      "Smoke and pollutants dispersed in the air",
+      "Ashes and cigarette butts ending up in food",
+      "Raising the temperature in a room",
+      "Saliva being carried from mouth to hands"
+    ],
+    "answer": 3,
+    "explain": "Smoking causes hand-to-mouth contact, transferring saliva and pathogens from mouth to hands to food.",
+    "explainKo": "흡연은 구강-손 접촉을 유발하여 침과 병원균이 입에서 손으로, 다시 식품으로 옮겨집니다."
+  },
+  {
+    "module": "Time & Temperature",
+    "moduleKo": "시간 및 온도",
+    "q": "Cold foods and hot foods should be held at what internal temperatures?",
+    "qKo": "Cold foods and hot foods should be held at what internal temperatures?",
+    "options": [
+      "38°F and above / 100°F and above",
+      "41°F and below / 135°F and above",
+      "45°F and above / 140°F and below",
+      "45°F and below / 120°F and below"
+    ],
+    "answer": 1,
+    "explain": "Cold TCS food: 41°F or below. Hot TCS food: 135°F or above — per FDA Food Code standards.",
+    "explainKo": "차가운 TCS 식품: 41°F 이하. 뜨거운 TCS 식품: 135°F 이상 — FDA 식품 코드 기준."
+  },
+  {
+    "module": "Cleaning & Sanitizing",
+    "moduleKo": "청결 및 위생 처리",
+    "q": "The concentration of bleach sanitizing solution used on counters should be:",
+    "qKo": "The concentration of bleach sanitizing solution used on counters should be:",
+    "options": [
+      "100 ppm",
+      "1000 ppm",
+      "300 ppm",
+      "500 ppm"
+    ],
+    "answer": 0,
+    "explain": "The approved chlorine bleach sanitizer concentration for food-contact surfaces is 100-200 ppm (TB MED 530).",
+    "explainKo": "식품 접촉 표면에 승인된 염소 소독제 농도는 100~200ppm입니다(TB MED 530)."
+  },
+  {
+    "module": "Cross-Contamination",
+    "moduleKo": "교차 오염",
+    "q": "Cross-contamination occurs when:",
+    "qKo": "Cross-contamination occurs when:",
+    "options": [
+      "Two types of chemicals contaminate food",
+      "Raw food contaminates cooked food",
+      "Raw foods are not cooked to proper temperatures",
+      "All of the above"
+    ],
+    "answer": 1,
+    "explain": "Cross-contamination specifically refers to raw food (or its juices) contaminating cooked or ready-to-eat food.",
+    "explainKo": "교차 오염은 날 식품(또는 그 즙)이 조리된 식품이나 즉석 취식 식품을 오염시키는 것입니다."
+  },
+  {
+    "module": "Time & Temperature",
+    "moduleKo": "시간 및 온도",
+    "q": "Correct thawing methods for foods include:",
+    "qKo": "Correct thawing methods for foods include:",
+    "options": [
+      "Cut the food item into small pieces",
+      "Setting the item on the counter 5 hours before cooking",
+      "Soaking in a bucket of water for 10 hours",
+      "Refrigeration, as part of cooking, microwave, and under running water"
+    ],
+    "answer": 3,
+    "explain": "The 4 approved thawing methods: refrigerator, cooking process, microwave (cook immediately), cold running water.",
+    "explainKo": "4가지 승인된 해동 방법: 냉장고, 조리 과정, 전자레인지(즉시 조리), 차가운 흐르는 물."
+  },
+  {
+    "module": "Cleaning & Sanitizing",
+    "moduleKo": "청결 및 위생 처리",
+    "q": "It is important to keep trash cans covered during food events to prevent attraction of flies and insects. True or False?",
+    "qKo": "It is important to keep trash cans covered during food events to prevent attraction of flies and insects. True or False?",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": 0,
+    "explain": "Covered trash cans prevent flies and pests from being attracted to the food service area, reducing contamination.",
+    "explainKo": "덮인 쓰레기통은 파리와 해충이 유인되는 것을 방지하여 오염 위험을 줄입니다."
+  },
+  {
+    "module": "Time & Temperature",
+    "moduleKo": "시간 및 온도",
+    "q": "For multiplication and growth, all bacteria require:",
+    "qKo": "For multiplication and growth, all bacteria require:",
+    "options": [
+      "The absence of oxygen and light combined with high temperatures",
+      "A host, or another female or male bacteria",
+      "Food, time, temperature, and moisture",
+      "Low pH, low temperatures, and high water activity"
+    ],
+    "answer": 2,
+    "explain": "Bacteria need Food, Acidity, Temperature, Time, Oxygen, and Moisture (FAT TOM) to grow.",
+    "explainKo": "세균은 성장을 위해 식품, 산도, 온도, 시간, 산소, 수분(FAT TOM)이 필요합니다."
+  },
+  {
+    "module": "Foodborne Illness",
+    "moduleKo": "식품 매개 질환",
+    "q": "Which are the primary references for the Food Handler Certification Course?",
+    "qKo": "Which are the primary references for the Food Handler Certification Course?",
+    "options": [
+      "TB MED 612, FDA",
+      "TB MED 530, Tri-Service Food Code 2019",
+      "TB MED 350, Tri-Service Prevention Code",
+      "Both A and B"
+    ],
+    "answer": 1,
+    "explain": "The primary references are TB MED 530 and the Tri-Service Food Code 2019.",
+    "explainKo": "주요 참고 자료는 TB MED 530과 Tri-Service Food Code 2019입니다."
+  },
+  {
+    "module": "Personal Hygiene",
+    "moduleKo": "개인 위생",
+    "q": "T/F: Single-use gloves are an appropriate substitute for handwashing.",
+    "qKo": "T/F: Single-use gloves are an appropriate substitute for handwashing.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": 1,
+    "explain": "False. Gloves are NOT a substitute for handwashing. Hands must be washed before putting on gloves.",
+    "explainKo": "거짓. 장갑은 손 씻기의 대체품이 아닙니다. 장갑 착용 전에 반드시 손을 씻어야 합니다."
+  },
+  {
+    "module": "Time & Temperature",
+    "moduleKo": "시간 및 온도",
+    "q": "Which of the following are the correct thawing methods?",
+    "qKo": "Which of the following are the correct thawing methods?",
+    "options": [
+      "In the refrigerator at 41°F or less",
+      "As part of the cooking process",
+      "At room temperature on the counter",
+      "Refrigerator (41°F or less) and as part of the cooking process only"
+    ],
+    "answer": 3,
+    "explain": "Approved thawing methods: refrigerator (41°F or less), cooking process, microwave, under cold running water. Room temp is NOT safe.",
+    "explainKo": "승인된 해동 방법: 냉장고(41°F 이하), 조리 과정, 전자레인지, 차가운 흐르는 물. 실온은 안전하지 않습니다."
   }
 ]
