@@ -1651,6 +1651,11 @@ function clearNextBtnCountdown() {
   if (countdownInterval) { clearInterval(countdownInterval); countdownInterval = null; }
 }
 function startNextBtnCountdown() {
+  // If already completed this module — review mode, no lock
+  if (lessonProgress[currentLesson]) {
+    unlockNextBtn();
+    return;
+  }
   if (window.innerWidth >= 900) {
     startPCMode();
   } else {
