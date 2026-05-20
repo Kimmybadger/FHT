@@ -1881,10 +1881,10 @@ function renderQuizStart() {
       <div style="font-family:'Bebas Neue',sans-serif;font-size:1.8rem;color:var(--green)">CERTIFICATION QUIZ</div>
       <div style="font-size:0.82rem;color:var(--gray);margin-bottom:16px">식품 취급자 인증 퀴즈</div>
       <div class="result-msg">
-        📋 <strong>15 questions (random) · 15문항 (랜덤)</strong><br>
-        ✅ Passing score: <strong>80%</strong> (12/15 correct)<br>
-        합격 점수: 80% (15문항 중 12개 정답)<br><br>
-        Covers all 5 modules · 5개 모듈 전체 포함
+        📋 <strong>25 questions (random) · 25문항 (랜덤)</strong><br>
+        ✅ Passing score: <strong>80%</strong> (20/25 correct)<br>
+        합격 점수: 80% (25문항 중 20개 정답)<br><br>
+        Covers all 6 modules · 6개 모듈 전체 포함
       </div>
       <button class="btn btn-primary" style="max-width:280px;margin:0 auto;display:block"
               onclick="startQuiz()">▶ Start Quiz · 퀴즈 시작</button>
@@ -1895,8 +1895,8 @@ function renderQuizStart() {
 function devSkipQuiz() {
   if (!devMode) return;
   // Simulate a perfect score
-  quizShuffled = [...quizQuestions].sort(() => Math.random() - 0.5).slice(0, 15);
-  quizScore = 15;
+  quizShuffled = [...quizQuestions].sort(() => Math.random() - 0.5).slice(0, 25);
+  quizScore = 25;
   quizActive = false;
   renderResult();
 }
@@ -1945,7 +1945,7 @@ function startQuiz() {
     const j = Math.floor(Math.random() * (i + 1));
     [pool[i], pool[j]] = [pool[j], pool[i]];
   }
-  quizShuffled = pool.slice(0, 15);
+  quizShuffled = pool.slice(0, 25);
   showPage('quiz');
   renderQuestion();
 }

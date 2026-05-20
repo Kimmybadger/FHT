@@ -1003,5 +1003,140 @@
     "answer": 1,
     "explain": "Both the approved DD 2970 form and Food Handler Certificates for ALL food handlers (digital copies accepted) must be available for inspection.",
     "explainKo": "승인된 DD 2970 양식과 모든 식품 취급자의 식품 취급자 인증서(디지털 사본 허용) 모두 검열을 위해 준비해야 합니다."
+  },
+  {
+    "module": "Foodborne Illness",
+    "moduleKo": "식중독",
+    "q": "Which is a basic characteristic of a virus?",
+    "qKo": "바이러스의 기본 특성은 무엇입니까?",
+    "options": [
+      "A. Is destroyed by freezing · 냉동으로 파괴된다",
+      "B. Grows in food · 식품에서 증식한다",
+      "C. Requires a living host to grow · 증식하려면 살아있는 숙주가 필요하다",
+      "D. Originates in cattle · 소에서 유래한다"
+    ],
+    "answer": 2,
+    "explain": "Viruses cannot grow in food — they require a living host to multiply. They are not destroyed by freezing.",
+    "explainKo": "바이러스는 식품에서 증식하지 않으며 살아있는 숙주가 필요합니다. 냉동으로 파괴되지 않습니다."
+  },
+  {
+    "module": "Personal Hygiene",
+    "moduleKo": "개인 위생",
+    "q": "An effective hair restraint for use in a food service facility is:",
+    "qKo": "식품 서비스 시설에서 효과적인 머리카락 관리 방법은?",
+    "options": [
+      "A. Having short hair · 짧은 머리",
+      "B. Using a rubber band for your ponytail · 고무줄로 묶기",
+      "C. A hat, a hair net or a combination of both · 모자, 헤어넷 또는 둘의 조합",
+      "D. Hairspray · 헤어스프레이"
+    ],
+    "answer": 2,
+    "explain": "An effective hair restraint must be a hat, hair net, or a combination of both. Short hair, rubber bands, and hairspray are not acceptable.",
+    "explainKo": "모자, 헤어넷 또는 두 가지 조합만 유효한 머리카락 관리 방법입니다."
+  },
+  {
+    "module": "Personal Hygiene",
+    "moduleKo": "개인 위생",
+    "q": "Is it acceptable for a cook to drink coffee from a mug while preparing food?",
+    "qKo": "조리 중 머그컵으로 커피를 마시는 것은 허용됩니까?",
+    "options": [
+      "A. Yes, if they are not touching food with bare hands · 맨손으로 음식을 만지지 않으면 허용",
+      "B. Yes, if the coffee cup is placed where it will not spill · 엎지르지 않을 곳에 두면 허용",
+      "C. No, because the coffee cup is an uncovered container · 아니오, 머그컵은 뚜껑 없는 용기이므로 불가",
+      "D. No, because there is always a chance the coffee will spill · 아니오, 커피가 엎질러질 수 있으므로 불가"
+    ],
+    "answer": 2,
+    "explain": "A coffee mug is an uncovered container and is not permitted while preparing food due to contamination risk.",
+    "explainKo": "머그컵은 뚜껑 없는 용기이므로 조리 중 음료를 마시는 것은 오염 위험으로 금지됩니다."
+  },
+  {
+    "module": "Time & Temperature",
+    "moduleKo": "시간 & 온도",
+    "q": "Which thermocouple probe should be used to check the temperature of a pork roast?",
+    "qKo": "돼지고기 로스트의 온도를 측정할 때 사용해야 하는 탐침은?",
+    "options": [
+      "A. Air · 공기 탐침",
+      "B. Surface · 표면 탐침",
+      "C. Immersion · 침지 탐침",
+      "D. Penetration · 관통 탐침"
+    ],
+    "answer": 3,
+    "explain": "The penetration probe is inserted into the thickest part of solid foods like roasts to get an accurate internal temperature.",
+    "explainKo": "관통 탐침(Penetration probe)은 로스트 같은 고형 식품의 가장 두꺼운 부분에 삽입하여 내부 온도를 측정합니다."
+  },
+  {
+    "module": "Cross-Contamination",
+    "moduleKo": "교차오염",
+    "q": "What must be done after completing each prep task to reduce the risk of cross-contamination?",
+    "qKo": "교차오염 위험을 줄이기 위해 각 조리 작업 후 무엇을 해야 합니까?",
+    "options": [
+      "A. Food must be put away as quickly as possible · 음식을 최대한 빨리 치운다",
+      "B. Aprons must be replaced with clean ones · 앞치마를 새것으로 교체한다",
+      "C. Surfaces must be cleaned and sanitized · 표면을 세척하고 소독한다",
+      "D. Food temperatures must be checked with a clean thermometer · 깨끗한 온도계로 식품 온도를 확인한다"
+    ],
+    "answer": 2,
+    "explain": "After each prep task, surfaces must be cleaned and sanitized to prevent cross-contamination between tasks.",
+    "explainKo": "각 조리 작업 후 교차오염 방지를 위해 표면을 세척하고 소독해야 합니다."
+  },
+  {
+    "module": "Cross-Contamination",
+    "moduleKo": "교차오염",
+    "q": "A can has a deep dent, but no product is leaking from it. What should be done with the can?",
+    "qKo": "캔에 깊은 찌그러짐이 있지만 내용물이 새지 않습니다. 어떻게 해야 합니까?",
+    "options": [
+      "A. It can be accepted · 수령 가능하다",
+      "B. It should be rejected · 거부해야 한다",
+      "C. It should be recalled · 리콜해야 한다",
+      "D. It should be used immediately · 즉시 사용해야 한다"
+    ],
+    "answer": 1,
+    "explain": "A deeply dented can must be rejected — even without leaking, deep dents can compromise the seam and allow bacterial contamination.",
+    "explainKo": "깊은 찌그러짐이 있는 캔은 새지 않더라도 솔기가 손상되어 세균 오염 가능성이 있으므로 거부해야 합니다."
+  },
+  {
+    "module": "Cross-Contamination",
+    "moduleKo": "교차오염",
+    "q": "The two biggest hazards when prepping food are cross-contamination and",
+    "qKo": "음식 준비 시 가장 큰 두 가지 위험 요소는 교차오염과 무엇입니까?",
+    "options": [
+      "A. Cross-contact · 교차 접촉",
+      "B. Chemical intoxication · 화학물질 중독",
+      "C. Physical contamination · 물리적 오염",
+      "D. Time-temperature abuse · 시간-온도 남용"
+    ],
+    "answer": 3,
+    "explain": "The two biggest hazards when prepping food are cross-contamination and time-temperature abuse.",
+    "explainKo": "음식 준비 시 가장 큰 두 가지 위험 요소는 교차오염과 시간-온도 남용입니다."
+  },
+  {
+    "module": "Cleaning & Sanitizing",
+    "moduleKo": "청소 & 소독",
+    "q": "How should glassware be stored after it has been cleaned and sanitized?",
+    "qKo": "유리잔은 세척 및 소독 후 어떻게 보관해야 합니까?",
+    "options": [
+      "A. Right side up · 바로 세워서",
+      "B. Upside down · 뒤집어서",
+      "C. Stacked but upside down · 쌓아서 뒤집어서",
+      "D. Unstacked but right side up · 쌓지 않고 바로 세워서"
+    ],
+    "answer": 1,
+    "explain": "Glassware should be stored upside down to prevent contamination of the inside surface before use.",
+    "explainKo": "유리잔은 사용 전 내부 오염을 방지하기 위해 뒤집어서 보관해야 합니다."
+  },
+  {
+    "module": "Cleaning & Sanitizing",
+    "moduleKo": "청소 & 소독",
+    "q": "The most important goal of a foodservice sanitation program is to:",
+    "qKo": "식품 서비스 위생 프로그램의 가장 중요한 목표는?",
+    "options": [
+      "A. Protect soldiers/customers from foodborne illness · 군인/고객을 식중독으로부터 보호한다",
+      "B. Prevent financial losses · 재정적 손실을 방지한다",
+      "C. Maintain a clean appearance · 청결한 외관을 유지한다",
+      "D. Comply with local laws · 지역 법률을 준수한다"
+    ],
+    "answer": 0,
+    "explain": "The most important goal of a foodservice sanitation program is to protect soldiers and customers from foodborne illness.",
+    "explainKo": "식품 서비스 위생 프로그램의 가장 중요한 목표는 군인과 고객을 식중독으로부터 보호하는 것입니다."
   }
 ]
