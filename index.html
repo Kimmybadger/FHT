@@ -2122,10 +2122,9 @@ function closeCertOverlay() {
       var msg = document.createElement('div');
       msg.id = 'certIssuedMsg';
       msg.style.cssText = 'background:#e8f5ed;border:2px solid #1a7a4a;border-radius:12px;padding:14px 16px;margin-top:12px;text-align:center;font-size:0.85rem;color:#0f4f2e;line-height:1.6';
-      msg.innerHTML = '✅ <strong>Certificate issued · 인증서 발급 완료</strong><br>'
-        + 'To issue another certificate, please refresh the page.<br>'
-        + '<span style="color:#555">다른 인증서를 발급하려면 페이지를 새로고침하세요.</span><br><br>'
-        + '<button onclick="location.reload()" style="margin-top:6px;padding:10px 20px;border-radius:10px;border:none;background:#1a7a4a;color:white;font-weight:700;cursor:pointer;font-size:0.85rem">🔄 Refresh · 새로고침</button>';
+      msg.innerHTML = '✅ <strong>Certificate issued for: ' + (window._certIssuedName||'') + '</strong><br>'
+        + '<span style="color:#555;font-size:0.8rem">Name is locked. You may re-open the certificate anytime.<br>이름이 고정됩니다. 인증서는 언제든 다시 열 수 있습니다.</span><br><br>'
+        + '<button onclick="reOpenCert()" style="margin-top:6px;padding:10px 20px;border-radius:10px;border:none;background:#1a7a4a;color:white;font-weight:700;cursor:pointer;font-size:0.85rem">📄 Re-open Certificate · 인증서 다시 열기</button>';
       container.appendChild(msg);
     }
   }
@@ -2147,8 +2146,11 @@ function confirmCloseCert() {
 }
 
 function showCertCard(name, pct, score, total) {
-  // Mark cert as issued — no more quiz retries this session
+  // Mark cert as issued — save name for re-issue
   certIssued = true;
+  window._certIssuedName = name;
+  window._certData = Object.assign(window._certData||{}, {pct:pct, score:score, total:total});
+  window._certData = Object.assign(window._certData||{}, {pct:pct, score:score, total:total});
 
   // Update result screen to remove retry button
   var retryBtn = document.querySelector('.quiz-result .btn-secondary');
@@ -2314,6 +2316,22 @@ function sendBySMS() {
 `[Food Handler Cert] ${name} | Issued: ${issueDate} | Expires: ${expireDate} | TB MED 530 ✅`
   );
   window.location.href = `sms:?body=${msg}`;
+}
+
+// ── Re-open cert with locked name ────────
+function reOpenCert() {
+  if (!window._certIssuedName || !window._certData) return;
+  var old = document.getElementById('certOverlay');
+  if (old) old.parentNode.removeChild(old);
+  showCertCard(window._certIssuedName, window._certData.pct, window._certData.score, window._certData.total);
+}
+
+// ── Re-open cert with locked name ────────
+function reOpenCert() {
+  if (!window._certIssuedName || !window._certData) return;
+  var old = document.getElementById('certOverlay');
+  if (old) old.parentNode.removeChild(old);
+  showCertCard(window._certIssuedName, window._certData.pct, window._certData.score, window._certData.total);
 }
 
 // ══════════════════════════════════════════
