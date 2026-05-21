@@ -2328,6 +2328,7 @@ function downloadCertPDF() {
   html2canvas(card, {
     scale: 3,
     useCORS: true,
+    allowTaint: true,
     backgroundColor: null,
     logging: false,
     onclone: function(doc) {
@@ -2335,6 +2336,15 @@ function downloadCertPDF() {
       if (el) {
         el.style.borderRadius = '0';
         el.style.boxShadow = 'none';
+        el.style.fontFamily = 'Arial, Helvetica, sans-serif';
+        el.style.letterSpacing = 'normal';
+        el.style.wordSpacing = 'normal';
+        var all = el.querySelectorAll('*');
+        for (var i = 0; i < all.length; i++) {
+          all[i].style.fontFamily = 'Arial, Helvetica, sans-serif';
+          all[i].style.letterSpacing = 'normal';
+          all[i].style.wordSpacing = 'normal';
+        }
       }
     }
   }).then(function(canvas) {
