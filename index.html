@@ -2336,6 +2336,16 @@ function downloadCertPDF() {
       if (el) {
         el.style.borderRadius = '0';
         el.style.boxShadow = 'none';
+        // Force Arial on ALL elements inside certCard to prevent font rendering issues in PDF viewer
+        var allEls = el.querySelectorAll('*');
+        for (var i = 0; i < allEls.length; i++) {
+          allEls[i].style.fontFamily = 'Arial, Helvetica, sans-serif';
+          allEls[i].style.letterSpacing = 'normal';
+          allEls[i].style.wordSpacing = 'normal';
+        }
+        el.style.fontFamily = 'Arial, Helvetica, sans-serif';
+        el.style.letterSpacing = 'normal';
+        el.style.wordSpacing = 'normal';
       }
     }
   }).then(function(canvas) {
