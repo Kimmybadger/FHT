@@ -2359,14 +2359,29 @@ function downloadCertPDF() {
     backgroundColor: null,
     logging: false,
     onclone: function(doc) {
-      // Remove Google Fonts link — this is the root cause of font spacing issues in PDF viewer
+      // Remove Google Fonts link — prevents fresh font load
       var links = doc.querySelectorAll('link[href*="fonts.googleapis"], link[href*="fonts.gstatic"]');
       links.forEach(function(l) { l.parentNode.removeChild(l); });
-      // Force Arial on every element in certCard
+
+      // Override DM Sans & Bebas Neue with Arial via @font-face
+      // This overrides any cached version of the font
+      var style = doc.createElement('style');
+      style.textContent = [
+        '@font-face { font-family: "DM Sans"; src: local("Arial"); }',
+        '@font-face { font-family: "Bebas Neue"; src: local("Arial"); }',
+        '#certCard, #certCard * {',
+        '  font-family: Arial, Helvetica, sans-serif !important;',
+        '  letter-spacing: normal !important;',
+        '  word-spacing: normal !important;',
+        '}'
+      ].join('\n');
+      doc.head.appendChild(style);
+
+      // Also set inline styles on certCard
       var el = doc.getElementById('certCard');
       if (el) {
         el.style.borderRadius = '0';
-        el.style.boxShadow = '0';
+        el.style.boxShadow = 'none';
         var all = el.querySelectorAll('*');
         for (var i = 0; i < all.length; i++) {
           all[i].style.fontFamily = 'Arial, Helvetica, sans-serif';
