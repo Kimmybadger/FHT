@@ -2229,5 +2229,140 @@
     "answer": 3,
     "explain": "Approved thawing methods: refrigerator (41°F or less), cooking process, microwave, under cold running water. Room temp is NOT safe.",
     "explainKo": "승인된 해동 방법: 냉장고(41°F 이하), 조리 과정, 전자레인지, 차가운 흐르는 물. 실온은 안전하지 않습니다."
+  },
+  {
+    "module": "Event Operations",
+    "moduleKo": "이벤트 운영",
+    "q": "Which of the following statements about electric roasters and slow cookers at temporary food events is TRUE?",
+    "qKo": "임시 식품 이벤트에서 전기 로스터와 슬로우쿠커에 관한 올바른 설명은?",
+    "options": [
+      "They can be used to cook raw TCS food as long as the internal temperature is checked",
+      "They are approved for cooking and holding TCS food at outdoor events",
+      "They are approved for hot holding only — food must be fully cooked before being placed in them",
+      "They maintain an even cooking temperature and are ideal for large quantities of food"
+    ],
+    "answer": 2,
+    "explain": "Electric roasters and slow cookers are hot holding equipment only. Raw TCS food must be fully cooked to the required internal temperature before being placed in these units. Using them to cook food from raw at events exposes food to the danger zone for extended periods.",
+    "explainKo": "전기 로스터와 슬로우쿠커는 보온 전용 장비입니다. 날 TCS 식품은 이 장비에 넣기 전에 필요한 내부 온도까지 완전히 조리되어야 합니다. 날 음식을 이벤트에서 이 장비로 조리하면 위험 온도 구간에 장시간 노출됩니다."
+  },
+  {
+    "module": "Event Operations",
+    "moduleKo": "이벤트 운영",
+    "q": "Why is it unsafe to cook raw meat in an electric roaster at an outdoor food event?",
+    "qKo": "야외 식품 이벤트에서 전기 로스터로 날 고기를 조리하는 것이 왜 위험한가요?",
+    "options": [
+      "The roaster uses too much electricity and may cause a power outage",
+      "The food heats up too slowly, keeping it in the temperature danger zone for too long",
+      "The roaster lid traps moisture and changes the flavor of the food",
+      "Outdoor events require all food to be cooked in commercial kitchens only"
+    ],
+    "answer": 1,
+    "explain": "Electric roasters heat food slowly and unevenly. This means raw food can spend hours in the temperature danger zone (41°F–135°F) before reaching a safe internal cooking temperature, allowing rapid bacterial growth.",
+    "explainKo": "전기 로스터는 음식을 천천히 불균일하게 가열합니다. 이 때문에 날 음식이 안전한 내부 조리 온도에 도달하기 전까지 수 시간 동안 위험 온도 구간(41°F~135°F)에 머물러 세균이 빠르게 증식할 수 있습니다."
+  },
+  {
+    "module": "Event Operations",
+    "moduleKo": "이벤트 운영",
+    "q": "Before placing fully cooked food into a hot holding unit at a food event, what must you verify?",
+    "qKo": "식품 이벤트에서 완전히 조리된 음식을 핫홀딩 장비에 넣기 전에 무엇을 확인해야 하나요?",
+    "options": [
+      "The food has been stored in the original packaging",
+      "The food has reached the required internal cooking temperature before being placed in the unit",
+      "The hot holding unit has been sanitized with chlorine solution",
+      "The food has cooled to room temperature first"
+    ],
+    "answer": 1,
+    "explain": "Food must be fully cooked to its required internal temperature before being transferred to a hot holding unit. The holding unit is for maintaining temperature (135°F+), not for cooking.",
+    "explainKo": "음식은 핫홀딩 장비로 옮기기 전에 필요한 내부 조리 온도까지 완전히 조리되어야 합니다. 보온 장비는 온도 유지(135°F 이상)를 위한 것이지 조리 도구가 아닙니다."
+  },
+  {
+    "module": "Event Operations",
+    "moduleKo": "이벤트 운영",
+    "q": "What is the minimum safe hot holding temperature that must be maintained in a chafing dish during a food event?",
+    "qKo": "식품 이벤트 중 채핑 디쉬에서 유지해야 하는 최소 안전 온장 보관 온도는?",
+    "options": [
+      "120°F (49°C)",
+      "125°F (52°C)",
+      "130°F (54°C)",
+      "135°F (57°C)"
+    ],
+    "answer": 3,
+    "explain": "Hot TCS food must be maintained at 135°F (57°C) or above at all times during service. If the temperature drops below this, the food must be reheated to 165°F or discarded.",
+    "explainKo": "뜨거운 TCS 식품은 서비스 중 항상 135°F(57°C) 이상으로 유지해야 합니다. 이 온도 미만으로 떨어지면 165°F로 재가열하거나 폐기해야 합니다."
+  },
+  {
+    "module": "Event Operations",
+    "moduleKo": "이벤트 운영",
+    "q": "At an 8-hour outdoor food event on a windy, cold day, what should you do to ensure the chafing dish maintains the correct temperature?",
+    "qKo": "바람이 많고 추운 날 8시간 야외 식품 이벤트에서 채핑 디쉬가 적정 온도를 유지하도록 하려면?",
+    "options": [
+      "Use fewer fuel cans to conserve resources and reduce fire risk",
+      "Use more fuel cans or replace them more frequently to compensate for heat loss",
+      "Add ice to the water pan to balance the temperature",
+      "Cover the food with plastic wrap instead of the chafing dish lid"
+    ],
+    "answer": 1,
+    "explain": "Wind and cold weather significantly reduce chafing dish efficiency. Using more fuel cans or replacing them more frequently compensates for the heat lost to the environment and helps maintain food at 135°F or above.",
+    "explainKo": "바람과 추운 날씨는 채핑 디쉬 효율을 크게 낮춥니다. 연료캔을 더 사용하거나 더 자주 교체하면 환경으로 잃는 열을 보완하여 음식을 135°F 이상으로 유지할 수 있습니다."
+  },
+  {
+    "module": "Event Operations",
+    "moduleKo": "이벤트 운영",
+    "q": "When setting up a chafing dish before a food event, what is the correct first step?",
+    "qKo": "식품 이벤트 전 채핑 디쉬를 설치할 때 올바른 첫 번째 단계는?",
+    "options": [
+      "Place the food directly in the pan and light the fuel",
+      "Fill the water pan with hot water, light the fuel, and pre-heat for 15–20 minutes before adding food",
+      "Add the food first, then pour cold water around it to prevent burning",
+      "Light the fuel and add food immediately to save time"
+    ],
+    "answer": 1,
+    "explain": "The water pan should be filled with hot water before lighting the fuel. The unit should then pre-heat for 15–20 minutes before food is placed in it, ensuring the food immediately enters a safe hot holding environment.",
+    "explainKo": "연료를 점화하기 전에 물 팬에 뜨거운 물을 채워야 합니다. 그런 다음 음식을 올리기 전에 15~20분간 예열하여 음식이 즉시 안전한 온장 보관 환경에 들어가도록 해야 합니다."
+  },
+  {
+    "module": "Event Operations",
+    "moduleKo": "이벤트 운영",
+    "q": "During a food event, you check the temperature of food in a chafing dish and find it is 128°F (53°C). What should you do?",
+    "qKo": "이벤트 중 채핑 디쉬 음식 온도를 확인하니 128°F(53°C)입니다. 어떻게 해야 하나요?",
+    "options": [
+      "Continue serving — 128°F is close enough to 135°F",
+      "Add more fuel and wait 10 minutes, then serve",
+      "Stop serving immediately and reheat the food to 165°F or discard it",
+      "Move the chafing dish to a warmer location and continue serving"
+    ],
+    "answer": 2,
+    "explain": "Food below 135°F must not be served. It must be reheated to 165°F (74°C) immediately to destroy any bacteria that may have grown, or discarded. Never serve food that has dropped below the safe hot holding temperature.",
+    "explainKo": "135°F 미만의 음식은 서빙해서는 안 됩니다. 증식했을 수 있는 세균을 제거하기 위해 즉시 165°F(74°C)로 재가열하거나 폐기해야 합니다. 안전 온도 이하로 떨어진 음식은 절대 서빙하지 마세요."
+  },
+  {
+    "module": "Event Operations",
+    "moduleKo": "이벤트 운영",
+    "q": "How often should you check the temperature of food in a chafing dish during a food event?",
+    "qKo": "이벤트 중 채핑 디쉬의 음식 온도는 얼마나 자주 확인해야 하나요?",
+    "options": [
+      "Only at the beginning and end of the event",
+      "Once every hour",
+      "At least every 2 hours",
+      "Only when fuel is replaced"
+    ],
+    "answer": 2,
+    "explain": "TCS food in hot holding must be temperature-checked at least every 2 hours to ensure it stays at or above 135°F. Waiting until fuel replacement or end of event can allow dangerous temperature drops to go undetected.",
+    "explainKo": "온장 보관 중인 TCS 식품은 135°F 이상을 유지하는지 확인하기 위해 최소 2시간마다 온도를 점검해야 합니다. 연료 교체 시나 이벤트 종료 때까지 기다리면 위험한 온도 저하를 놓칠 수 있습니다."
+  },
+  {
+    "module": "Event Operations",
+    "moduleKo": "이벤트 운영",
+    "q": "Why is it important to keep the lid on a chafing dish when not actively serving food?",
+    "qKo": "서빙하지 않을 때 채핑 디쉬 뚜껑을 닫아두는 것이 중요한 이유는?",
+    "options": [
+      "To prevent contamination from pests and retain heat",
+      "To allow the food to continue cooking inside",
+      "To reduce the amount of fuel needed",
+      "To prevent the water pan from evaporating too quickly"
+    ],
+    "answer": 0,
+    "explain": "Keeping the lid on when not serving helps retain heat (maintaining 135°F+) and protects food from airborne contamination, pests, and environmental exposure at outdoor events.",
+    "explainKo": "서빙하지 않을 때 뚜껑을 닫으면 열을 유지(135°F 이상)하고 야외 이벤트에서 공중 오염, 해충, 환경 노출로부터 음식을 보호합니다."
   }
 ]
