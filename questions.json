@@ -2236,14 +2236,14 @@
     "q": "Which of the following statements about electric roasters and slow cookers at temporary food events is TRUE?",
     "qKo": "임시 식품 이벤트에서 전기 로스터와 슬로우쿠커에 관한 올바른 설명은?",
     "options": [
-      "They can be used to cook raw TCS food as long as the internal temperature is checked",
-      "They are approved for cooking and holding TCS food at outdoor events",
-      "They are approved for hot holding only — food must be fully cooked before being placed in them",
-      "They maintain an even cooking temperature and are ideal for large quantities of food"
+      "They can be used to cook any raw TCS food as long as you check the temperature",
+      "They are the best equipment for cooking large quantities of food at outdoor events",
+      "They are unsafe for cooking raw TCS food because they heat too slowly and unevenly — use for hot holding only",
+      "They are fully approved for both cooking and holding at temporary food events"
     ],
     "answer": 2,
-    "explain": "Electric roasters and slow cookers are hot holding equipment only. Raw TCS food must be fully cooked to the required internal temperature before being placed in these units. Using them to cook food from raw at events exposes food to the danger zone for extended periods.",
-    "explainKo": "전기 로스터와 슬로우쿠커는 보온 전용 장비입니다. 날 TCS 식품은 이 장비에 넣기 전에 필요한 내부 온도까지 완전히 조리되어야 합니다. 날 음식을 이벤트에서 이 장비로 조리하면 위험 온도 구간에 장시간 노출됩니다."
+    "explain": "TCS food must be cooked on-site at temporary events, but not all equipment is suitable. Electric roasters and slow cookers heat food slowly and unevenly, keeping raw food in the danger zone (41°F–135°F) for too long. Use a grill or burner for cooking, then transfer to a holding unit.",
+    "explainKo": "TCS 식품은 임시 이벤트에서 현장 조리해야 하지만, 모든 장비가 적합한 것은 아닙니다. 전기 로스터와 슬로우쿠커는 음식을 천천히 불균일하게 가열하여 날 음식을 위험 온도 구간(41°F~135°F)에 오래 노출시킵니다. 그릴이나 버너로 조리 후 보온 장비로 옮기세요."
   },
   {
     "module": "Event Operations",
@@ -2272,8 +2272,8 @@
       "The food has cooled to room temperature first"
     ],
     "answer": 1,
-    "explain": "Food must be fully cooked to its required internal temperature before being transferred to a hot holding unit. The holding unit is for maintaining temperature (135°F+), not for cooking.",
-    "explainKo": "음식은 핫홀딩 장비로 옮기기 전에 필요한 내부 조리 온도까지 완전히 조리되어야 합니다. 보온 장비는 온도 유지(135°F 이상)를 위한 것이지 조리 도구가 아닙니다."
+    "explain": "TCS food must be cooked on-site to its required internal temperature before being transferred to a hot holding unit. Always verify the internal temp before placing food into holding equipment.",
+    "explainKo": "TCS 식품은 현장에서 필요한 내부 조리 온도까지 완전히 조리된 후 핫홀딩 장비로 이전해야 합니다. 장비에 넣기 전에 항상 내부 온도를 확인하세요."
   },
   {
     "module": "Event Operations",
