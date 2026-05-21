@@ -2353,33 +2353,54 @@ function downloadCertPDF() {
   var origText = btn ? btn.innerHTML : '';
   if (btn) btn.innerHTML = '⏳ Generating... · 생성 중...';
 
-  // Temporarily hide shield watermark for clean capture
-  var shield = card.querySelector('*');
+  // ── FONT FIX: Clone certCard into a hidden iframe with NO external fonts ──
+  // This prevents DM Sans (Google Fonts) from bleeding into the PDF capture
+  var iframe = document.createElement('iframe');
+  iframe.style.cssText = 'position:fixed;top:-9999px;left:-9999px;width:900px;height:600px;border:0;visibility:hidden;';
+  document.body.appendChild(iframe);
 
-  html2canvas(card, {
+  var iDoc = iframe.contentDocument || iframe.contentWindow.document;
+  // Write a clean HTML with only Arial - NO Google Fonts link
+  iDoc.open();
+  iDoc.write('<!DOCTYPE html><html><head><meta charset="UTF-8"><style>' +
+    '* { box-sizing: border-box; margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif !important; letter-spacing: normal !important; word-spacing: normal !important; }' +
+    'body { background: transparent; padding: 20px; }' +
+    '</style></head><body></body></html>');
+  iDoc.close();
+
+  // Deep-clone the certCard into the iframe
+  var clone = card.cloneNode(true);
+  // Remove border-radius and shadow for clean PDF
+  clone.style.borderRadius = '0';
+  clone.style.boxShadow = 'none';
+  // Force Arial on every element in the clone
+  var cloneEls = clone.querySelectorAll('*');
+  for (var ci = 0; ci < cloneEls.length; ci++) {
+    cloneEls[ci].style.fontFamily = 'Arial, Helvetica, sans-serif';
+    cloneEls[ci].style.letterSpacing = 'normal';
+    cloneEls[ci].style.wordSpacing = 'normal';
+  }
+  clone.style.fontFamily = 'Arial, Helvetica, sans-serif';
+  iDoc.body.appendChild(clone);
+
+  // Small delay to let iframe render
+  setTimeout(function() {
+    html2canvas(clone, {
     scale: 3,
     useCORS: true,
     allowTaint: true,
     backgroundColor: null,
     logging: false,
     onclone: function(doc) {
-      var el = doc.getElementById('certCard');
+      var el = doc.getElementById('certCard') || doc.body.firstElementChild;
       if (el) {
         el.style.borderRadius = '0';
         el.style.boxShadow = 'none';
-        // Force Arial on ALL elements inside certCard to prevent font rendering issues in PDF viewer
-        var allEls = el.querySelectorAll('*');
-        for (var i = 0; i < allEls.length; i++) {
-          allEls[i].style.fontFamily = 'Arial, Helvetica, sans-serif';
-          allEls[i].style.letterSpacing = 'normal';
-          allEls[i].style.wordSpacing = 'normal';
-        }
-        el.style.fontFamily = 'Arial, Helvetica, sans-serif';
-        el.style.letterSpacing = 'normal';
-        el.style.wordSpacing = 'normal';
       }
     }
   }).then(function(canvas) {
+    // Clean up iframe
+    if (iframe && iframe.parentNode) iframe.parentNode.removeChild(iframe);
     var imgData = canvas.toDataURL('image/png');
     var pdf = new window.jspdf.jsPDF({
       orientation: 'landscape',
@@ -2430,10 +2451,12 @@ function downloadCertPDF() {
       tip.style.color = '#0f4f2e';
     }
   }).catch(function(err) {
+    if (iframe && iframe.parentNode) iframe.parentNode.removeChild(iframe);
     console.error(err);
     if (btn) btn.innerHTML = origText;
     alert('PDF generation failed. Please take a screenshot instead.\nPDF 생성 실패. 스크린샷을 사용해 주세요.');
   });
+  }, 300); // end setTimeout - wait for iframe to render
 }
 
 function sendByEmail() {
