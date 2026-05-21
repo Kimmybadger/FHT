@@ -768,6 +768,12 @@
     text-align: left;
     line-height: 1.4;
   }
+  .quiz-option-ko {
+    display: block;
+    font-size: 0.75rem;
+    color: #888;
+    margin-top: 2px;
+  }
   .quiz-option:active { transform: scale(0.98); }
   .quiz-option.selected { border-color: var(--blue); background: #e8f4fd; }
   .quiz-option.correct { border-color: var(--green); background: #e8f5ed; color: var(--green-dark); font-weight: 600; }
@@ -2103,9 +2109,11 @@ function renderQuestion() {
       <div class="quiz-question">${q.q}</div>
       <div class="quiz-question-ko">${q.qKo}</div>
       <div class="quiz-options" id="quizOptions">
-        ${q.options.map((opt, i) =>
-          `<button class="quiz-option" id="opt-${i}" onclick="selectAnswer(${i})">${String.fromCharCode(65+i)}. ${opt}</button>`
-        ).join('')}
+        ${q.options.map((opt, i) => {
+          const koOpt = q.optionsKo && q.optionsKo[i] ? q.optionsKo[i] : '';
+          const koHtml = (koOpt && koOpt !== opt) ? `<span class="quiz-option-ko">${koOpt}</span>` : '';
+          return `<button class="quiz-option" id="opt-${i}" onclick="selectAnswer(${i})">${String.fromCharCode(65+i)}. ${opt}${koHtml}</button>`;
+        }).join('')}
       </div>
       <div class="quiz-feedback" id="quizFeedback"></div>
       <div id="quizNextBtn" style="display:none;margin-top:14px">

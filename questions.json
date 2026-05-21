@@ -12,7 +12,13 @@
     ],
     "answer": 2,
     "explain": "The Iceberg Theory: visible symptoms represent only 10% of the problem. 90% goes unseen and unreported.",
-    "explainKo": "빙산 이론: 눈에 보이는 증상은 문제의 10%에 불과하며, 90%는 감지되지 않고 보고되지 않습니다."
+    "explainKo": "빙산 이론: 눈에 보이는 증상은 문제의 10%에 불과하며, 90%는 감지되지 않고 보고되지 않습니다.",
+    "optionsKo": [
+      "10%",
+      "50%",
+      "90%",
+      "75%"
+    ]
   },
   {
     "module": "Foodborne Illness",
@@ -27,7 +33,13 @@
     ],
     "answer": 2,
     "explain": "Listeria is not in the Big 6. The Big 6: Norovirus, Salmonella typhi, E. coli (EHEC), Shigella, Hepatitis A, Nontyphoidal Salmonella.",
-    "explainKo": "리스테리아는 Big 6에 포함되지 않습니다. Big 6: 노로바이러스, 살모넬라 타이피, 대장균(EHEC), 시겔라, A형 간염, 비장티푸스성 살모넬라."
+    "explainKo": "리스테리아는 Big 6에 포함되지 않습니다. Big 6: 노로바이러스, 살모넬라 타이피, 대장균(EHEC), 시겔라, A형 간염, 비장티푸스성 살모넬라.",
+    "optionsKo": [
+      "Norovirus · 노로바이러스",
+      "Hepatitis A · A형 간염",
+      "Listeria monocytogenes · 리스테리아",
+      "Shigella spp. · 시겔라"
+    ]
   },
   {
     "module": "Foodborne Illness",
@@ -42,7 +54,13 @@
     ],
     "answer": 1,
     "explain": "Biological hazards (bacteria, viruses, parasites) account for approximately 2/3 of all foodborne illness outbreaks.",
-    "explainKo": "생물학적 위해요소(세균, 바이러스, 기생충)가 전체 식품 매개 질병 발병의 약 2/3를 차지합니다."
+    "explainKo": "생물학적 위해요소(세균, 바이러스, 기생충)가 전체 식품 매개 질병 발병의 약 2/3를 차지합니다.",
+    "optionsKo": [
+      "1/3 · 3분의 1",
+      "2/3 · 3분의 2",
+      "1/2 · 2분의 1",
+      "3/4 · 4분의 3"
+    ]
   },
   {
     "module": "Foodborne Illness",
@@ -57,7 +75,13 @@
     ],
     "answer": 2,
     "explain": "Salmonella typhi causes typhoid fever and is one of the Big 6 pathogens requiring employee exclusion from work.",
-    "explainKo": "살모넬라 타이피는 장티푸스를 유발하며 업무 배제가 필요한 Big 6 병원균 중 하나입니다."
+    "explainKo": "살모넬라 타이피는 장티푸스를 유발하며 업무 배제가 필요한 Big 6 병원균 중 하나입니다.",
+    "optionsKo": [
+      "Norovirus · 노로바이러스",
+      "E. coli EHEC · 대장균 EHEC",
+      "Salmonella typhi · 살모넬라 타이피",
+      "Shigella · 시겔라"
+    ]
   },
   {
     "module": "Foodborne Illness",
@@ -72,7 +96,13 @@
     ],
     "answer": 1,
     "explain": "The 3 types: Biological (bacteria, viruses), Chemical (cleaners, pesticides), and Physical (glass, metal, bones).",
-    "explainKo": "3가지 위해요소: 생물학적(세균, 바이러스), 화학적(세정제, 농약), 물리적(유리, 금속, 뼈)."
+    "explainKo": "3가지 위해요소: 생물학적(세균, 바이러스), 화학적(세정제, 농약), 물리적(유리, 금속, 뼈).",
+    "optionsKo": [
+      "Physical, Chemical, Thermal · 물리적, 화학적, 열적",
+      "Biological, Chemical, Physical · 생물학적, 화학적, 물리적",
+      "Microbial, Allergenic, Toxic · 미생물, 알레르겐, 독성",
+      "Viral, Bacterial, Fungal · 바이러스, 세균, 곰팡이"
+    ]
   },
   {
     "module": "Foodborne Illness",
@@ -87,7 +117,13 @@
     ],
     "answer": 2,
     "explain": "Hepatitis A causes jaundice (yellowing of skin and eyes) and is one of the Big 6 pathogens.",
-    "explainKo": "A형 간염은 황달(피부와 눈의 황변)을 유발하며 Big 6 병원균 중 하나입니다."
+    "explainKo": "A형 간염은 황달(피부와 눈의 황변)을 유발하며 Big 6 병원균 중 하나입니다.",
+    "optionsKo": [
+      "Norovirus · 노로바이러스",
+      "Shigella · 시겔라",
+      "Hepatitis A · A형 간염",
+      "E. coli · 대장균"
+    ]
   },
   {
     "module": "Foodborne Illness",
@@ -102,7 +138,13 @@
     ],
     "answer": 1,
     "explain": "In the Temperature Danger Zone (41–135°F), bacteria can double every 20 minutes under ideal conditions.",
-    "explainKo": "온도 위험 구간(41–135°F)에서 세균은 이상적인 조건 하에 20분마다 2배로 증식할 수 있습니다."
+    "explainKo": "온도 위험 구간(41–135°F)에서 세균은 이상적인 조건 하에 20분마다 2배로 증식할 수 있습니다.",
+    "optionsKo": [
+      "Every 5 minutes · 5분마다",
+      "Every 20 minutes · 20분마다",
+      "Every 1 hour · 1시간마다",
+      "Every 4 hours · 4시간마다"
+    ]
   },
   {
     "module": "Personal Hygiene",
@@ -117,7 +159,13 @@
     ],
     "answer": 2,
     "explain": "Scrub all surfaces for a minimum of 20 seconds — fingers, thumbs, between fingers, and backs of hands.",
-    "explainKo": "손의 모든 부위(손가락, 엄지, 손가락 사이, 손등)를 최소 20초 이상 문질러야 합니다."
+    "explainKo": "손의 모든 부위(손가락, 엄지, 손가락 사이, 손등)를 최소 20초 이상 문질러야 합니다.",
+    "optionsKo": [
+      "5 seconds · 5초",
+      "10 seconds · 10초",
+      "20 seconds · 20초",
+      "60 seconds · 60초"
+    ]
   },
   {
     "module": "Personal Hygiene",
@@ -132,7 +180,13 @@
     ],
     "answer": 1,
     "explain": "Gloves do NOT replace handwashing. Always wash your hands before putting gloves on and whenever you change to a new pair.",
-    "explainKo": "장갑은 손 씻기를 대체하지 않습니다. 장갑 착용 전과 새 장갑 교체 시 항상 손을 씻어야 합니다."
+    "explainKo": "장갑은 손 씻기를 대체하지 않습니다. 장갑 착용 전과 새 장갑 교체 시 항상 손을 씻어야 합니다.",
+    "optionsKo": [
+      "Gloves replace handwashing · 장갑이 손 씻기를 대체함",
+      "Wash hands before putting gloves on · 장갑 착용 전 손을 씻어야 함",
+      "Change gloves every 4 hours only · 4시간마다만 교체",
+      "Latex gloves required for all prep · 모든 조리에 라텍스 장갑 필수"
+    ]
   },
   {
     "module": "Personal Hygiene",
@@ -147,7 +201,13 @@
     ],
     "answer": 2,
     "explain": "Diarrhea is a Big 6 symptom. The employee must be EXCLUDED from work until cleared by a medical professional.",
-    "explainKo": "설사는 Big 6 증상입니다. 의료 전문가의 허가가 있을 때까지 완전 배제되어야 합니다."
+    "explainKo": "설사는 Big 6 증상입니다. 의료 전문가의 허가가 있을 때까지 완전 배제되어야 합니다.",
+    "optionsKo": [
+      "Work with gloves · 장갑 착용 후 근무",
+      "Restrict to non-food areas · 식품 외 구역으로 제한",
+      "Exclude from work entirely · 업무에서 완전 배제",
+      "Take medicine and continue · 약 복용 후 계속 근무"
+    ]
   },
   {
     "module": "Personal Hygiene",
@@ -162,7 +222,13 @@
     ],
     "answer": 2,
     "explain": "Hands must be washed before handling food, after using the restroom, after touching raw meat, after coughing/sneezing, after handling garbage, and after eating/drinking.",
-    "explainKo": "식품 취급 전, 화장실 후, 생고기 취급 후, 기침/재채기 후, 쓰레기 처리 후, 식사/음료 후 손을 씻어야 합니다."
+    "explainKo": "식품 취급 전, 화장실 후, 생고기 취급 후, 기침/재채기 후, 쓰레기 처리 후, 식사/음료 후 손을 씻어야 합니다.",
+    "optionsKo": [
+      "Only before starting work · 출근 시에만",
+      "After restroom only · 화장실 후에만",
+      "Before food handling, after restroom, after raw meat, after coughing · 식품 취급 전, 화장실 후, 생고기 후, 기침 후",
+      "Once every hour · 1시간마다"
+    ]
   },
   {
     "module": "Personal Hygiene",
@@ -177,7 +243,13 @@
     ],
     "answer": 2,
     "explain": "Hair must always be restrained with a cap or hairnet during food preparation to prevent contamination.",
-    "explainKo": "식품 조리 중 모자나 머리망으로 머리를 반드시 묶어야 오염을 방지할 수 있습니다."
+    "explainKo": "식품 조리 중 모자나 머리망으로 머리를 반드시 묶어야 오염을 방지할 수 있습니다.",
+    "optionsKo": [
+      "Jewelry allowed if clean · 깨끗하면 장신구 착용 가능",
+      "Hair restraint not needed indoors · 실내에서는 머리 묶기 불필요",
+      "Hair must be restrained with cap or net · 모자나 머리망으로 머리를 묶어야 함",
+      "Uniform clean once per week · 일주일에 한 번 청결 유지"
+    ]
   },
   {
     "module": "Personal Hygiene",
@@ -192,7 +264,13 @@
     ],
     "answer": 2,
     "explain": "The final step is to use a single-use paper towel to turn off the faucet, preventing recontamination of clean hands.",
-    "explainKo": "마지막 단계는 일회용 종이 타월로 수도꼭지를 잠가 깨끗한 손의 재오염을 방지하는 것입니다."
+    "explainKo": "마지막 단계는 일회용 종이 타월로 수도꼭지를 잠가 깨끗한 손의 재오염을 방지하는 것입니다.",
+    "optionsKo": [
+      "Rinse with cold water · 찬물로 헹구기",
+      "Dry with shared towel · 공용 타월로 건조",
+      "Use paper towel to turn off faucet · 종이 타월로 수도꼭지 잠금",
+      "Apply hand sanitizer · 손 소독제 사용"
+    ]
   },
   {
     "module": "Time & Temperature",
@@ -207,7 +285,13 @@
     ],
     "answer": 0,
     "explain": "The Temperature Danger Zone is 41°F–135°F (5°C–57°C). TCS foods must not spend more than 4 total hours in this zone.",
-    "explainKo": "온도 위험 구간은 41°F–135°F (5°C–57°C)입니다. TCS 식품은 총 4시간 이상 이 구간에 있으면 안 됩니다."
+    "explainKo": "온도 위험 구간은 41°F–135°F (5°C–57°C)입니다. TCS 식품은 총 4시간 이상 이 구간에 있으면 안 됩니다.",
+    "optionsKo": [
+      "41°F~135°F · 5°C~57°C",
+      "32°F~212°F · 0°C~100°C",
+      "50°F~150°F · 10°C~66°C",
+      "0°F~100°F · -18°C~38°C"
+    ]
   },
   {
     "module": "Time & Temperature",
@@ -222,7 +306,13 @@
     ],
     "answer": 2,
     "explain": "Poultry (chicken, turkey, duck) must reach a minimum internal temperature of 165°F (74°C).",
-    "explainKo": "가금류(닭, 칠면조, 오리)는 최소 165°F (74°C)의 내부 온도에 도달해야 합니다."
+    "explainKo": "가금류(닭, 칠면조, 오리)는 최소 165°F (74°C)의 내부 온도에 도달해야 합니다.",
+    "optionsKo": [
+      "145°F",
+      "155°F",
+      "165°F",
+      "175°F"
+    ]
   },
   {
     "module": "Time & Temperature",
@@ -237,7 +327,13 @@
     ],
     "answer": 1,
     "explain": "Fill a cup with 50% ice and 50% water. The thermometer should stabilize at 32°F (0°C).",
-    "explainKo": "컵에 얼음 50%와 물 50%를 채우고 온도계를 넣어 안정화. 32°F (0°C)를 나타내야 합니다."
+    "explainKo": "컵에 얼음 50%와 물 50%를 채우고 온도계를 넣어 안정화. 32°F (0°C)를 나타내야 합니다.",
+    "optionsKo": [
+      "Boiling water → 100°C · 끓는 물 → 100°C",
+      "50/50 ice water → 32°F (0°C) · 얼음물 50:50 → 32°F",
+      "Warm water → 98.6°F · 따뜻한 물 → 98.6°F",
+      "Refrigerator → 41°F · 냉장고 → 41°F"
+    ]
   },
   {
     "module": "Time & Temperature",
@@ -252,7 +348,13 @@
     ],
     "answer": 1,
     "explain": "Ground beef must be cooked to 155°F (68°C) for at least 15 seconds.",
-    "explainKo": "다진 쇠고기는 최소 155°F (68°C)에서 15초 이상 조리해야 합니다."
+    "explainKo": "다진 쇠고기는 최소 155°F (68°C)에서 15초 이상 조리해야 합니다.",
+    "optionsKo": [
+      "145°F",
+      "155°F",
+      "165°F",
+      "135°F"
+    ]
   },
   {
     "module": "Time & Temperature",
@@ -267,7 +369,13 @@
     ],
     "answer": 1,
     "explain": "Step 1: Cool from 135°F to 70°F within 2 hours. Step 2: Cool from 70°F to 41°F within the next 4 hours.",
-    "explainKo": "1단계: 135°F(57°C)에서 70°F(21°C)로 2시간 이내 냉각. 2단계: 70°F(21°C)에서 41°F(5°C)로 4시간 이내 냉각."
+    "explainKo": "1단계: 135°F(57°C)에서 70°F(21°C)로 2시간 이내 냉각. 2단계: 70°F(21°C)에서 41°F(5°C)로 4시간 이내 냉각.",
+    "optionsKo": [
+      "70°F to 41°F within 4 hours · 70°F에서 41°F로 4시간 이내",
+      "135°F to 70°F within 2 hours · 135°F에서 70°F로 2시간 이내",
+      "165°F to 41°F within 6 hours · 165°F에서 41°F로 6시간 이내",
+      "135°F to 41°F within 1 hour · 135°F에서 41°F로 1시간 이내"
+    ]
   },
   {
     "module": "Time & Temperature",
@@ -282,7 +390,13 @@
     ],
     "answer": 2,
     "explain": "Hot TCS foods must be held at 135°F (57°C) or above to prevent bacterial growth.",
-    "explainKo": "온장 보관 TCS 식품은 세균 증식 방지를 위해 135°F (57°C) 이상을 유지해야 합니다."
+    "explainKo": "온장 보관 TCS 식품은 세균 증식 방지를 위해 135°F (57°C) 이상을 유지해야 합니다.",
+    "optionsKo": [
+      "115°F (46°C) 이상",
+      "125°F (52°C) 이상",
+      "135°F (57°C) 이상",
+      "145°F (63°C) 이상"
+    ]
   },
   {
     "module": "Time & Temperature",
@@ -297,7 +411,13 @@
     ],
     "answer": 2,
     "explain": "Food must be reheated to 165°F (74°C) within 2 hours before being placed in hot holding.",
-    "explainKo": "온장 보관 전 식품은 2시간 이내에 165°F (74°C)까지 재가열해야 합니다."
+    "explainKo": "온장 보관 전 식품은 2시간 이내에 165°F (74°C)까지 재가열해야 합니다.",
+    "optionsKo": [
+      "145°F",
+      "155°F",
+      "165°F",
+      "135°F"
+    ]
   },
   {
     "module": "Cross-Contamination",
@@ -312,7 +432,13 @@
     ],
     "answer": 2,
     "explain": "Raw poultry requires the highest cooking temperature (165°F) and must be on the BOTTOM shelf to prevent drip contamination.",
-    "explainKo": "생 가금류는 가장 높은 조리 온도(165°F)가 필요하며 드립 오염 방지를 위해 맨 아래 선반에 보관해야 합니다."
+    "explainKo": "생 가금류는 가장 높은 조리 온도(165°F)가 필요하며 드립 오염 방지를 위해 맨 아래 선반에 보관해야 합니다.",
+    "optionsKo": [
+      "Top shelf · 맨 위 선반",
+      "Middle shelf next to fish · 중간 선반 생선 옆",
+      "Bottom shelf · 맨 아래 선반",
+      "Separate refrigerator only · 별도 냉장고에만"
+    ]
   },
   {
     "module": "Cross-Contamination",
@@ -327,7 +453,13 @@
     ],
     "answer": 1,
     "explain": "Using separate, color-coded cutting boards for raw meat and ready-to-eat produce is a key cross-contamination prevention method.",
-    "explainKo": "생고기와 즉식 채소용 도마를 색상 구분하여 별도로 사용하는 것이 교차 오염 예방의 핵심입니다."
+    "explainKo": "생고기와 즉식 채소용 도마를 색상 구분하여 별도로 사용하는 것이 교차 오염 예방의 핵심입니다.",
+    "optionsKo": [
+      "Same cutting board if cleaned · 세척하면 같은 도마 사용 가능",
+      "Separate cutting boards for raw meat and produce · 생고기와 채소에 별도 도마 사용",
+      "Rinse boards with water between uses · 사용 중간에 물로 헹구기",
+      "Store all food in sealed containers · 모든 식품을 밀봉 용기에 보관"
+    ]
   },
   {
     "module": "Cross-Contamination",
@@ -342,7 +474,13 @@
     ],
     "answer": 3,
     "explain": "The FDA recognizes 9 major allergens: Milk, Eggs, Fish, Shellfish, Tree nuts, Peanuts, Wheat, Soybeans, and Sesame (added 2023).",
-    "explainKo": "FDA는 9가지 주요 알레르겐을 인정합니다: 우유, 달걀, 생선, 갑각류, 견과류, 땅콩, 밀, 대두, 참깨 (2023년 추가)."
+    "explainKo": "FDA는 9가지 주요 알레르겐을 인정합니다: 우유, 달걀, 생선, 갑각류, 견과류, 땅콩, 밀, 대두, 참깨 (2023년 추가).",
+    "optionsKo": [
+      "6가지",
+      "7가지",
+      "8가지",
+      "9가지"
+    ]
   },
   {
     "module": "Cross-Contamination",
@@ -357,7 +495,13 @@
     ],
     "answer": 0,
     "explain": "RTE = Ready-To-Eat foods — foods consumed without further cooking, such as salads, deli meats, and fresh fruits.",
-    "explainKo": "RTE = 즉식 식품(Ready-To-Eat) — 샐러드, 델리 고기, 신선 과일처럼 추가 조리 없이 섭취하는 식품."
+    "explainKo": "RTE = 즉식 식품(Ready-To-Eat) — 샐러드, 델리 고기, 신선 과일처럼 추가 조리 없이 섭취하는 식품.",
+    "optionsKo": [
+      "Ready To Eat · 즉식 식품",
+      "Refrigerated Temperature Equipment · 냉장 온도 장비",
+      "Raw To Eliminate · 생식품 제거",
+      "Rapid Thermal Effect · 급속 열 효과"
+    ]
   },
   {
     "module": "Cross-Contamination",
@@ -372,7 +516,13 @@
     ],
     "answer": 3,
     "explain": "Raw poultry requires the highest minimum internal temperature of 165°F (74°C) — higher than ground beef (155°F), whole beef/fish (145°F).",
-    "explainKo": "생 가금류는 165°F(74°C)로 가장 높은 최소 내부 조리 온도가 필요합니다 — 다진 쇠고기(155°F), 통 쇠고기/생선(145°F)보다 높습니다."
+    "explainKo": "생 가금류는 165°F(74°C)로 가장 높은 최소 내부 조리 온도가 필요합니다 — 다진 쇠고기(155°F), 통 쇠고기/생선(145°F)보다 높습니다.",
+    "optionsKo": [
+      "Whole beef steak · 통 쇠고기 스테이크",
+      "Whole raw fish · 통 생선",
+      "Ground beef · 다진 쇠고기",
+      "Raw poultry · 생 가금류"
+    ]
   },
   {
     "module": "Cleaning & Sanitizing",
@@ -387,7 +537,13 @@
     ],
     "answer": 2,
     "explain": "Correct order: Wash (hot soapy water) → Rinse (clean water) → Sanitize → Air dry. Never towel dry.",
-    "explainKo": "올바른 순서: 세척(뜨거운 비눗물) → 헹굼(깨끗한 물) → 소독 → 자연 건조. 타월 건조 금지."
+    "explainKo": "올바른 순서: 세척(뜨거운 비눗물) → 헹굼(깨끗한 물) → 소독 → 자연 건조. 타월 건조 금지.",
+    "optionsKo": [
+      "Rinse → Wash → Sanitize → Air dry · 헹굼→세척→소독→건조",
+      "Sanitize → Wash → Rinse → Air dry · 소독→세척→헹굼→건조",
+      "Wash → Rinse → Sanitize → Air dry · 세척→헹굼→소독→건조",
+      "Wash → Sanitize → Rinse → Air dry · 세척→소독→헹굼→건조"
+    ]
   },
   {
     "module": "Cleaning & Sanitizing",
@@ -402,7 +558,13 @@
     ],
     "answer": 3,
     "explain": "Chlorine bleach sanitizer must be at 100–200 ppm per TB MED 530. Too low = ineffective; too high = chemical hazard.",
-    "explainKo": "염소 소독액은 TB MED 530 기준 100–200 ppm이어야 합니다. 너무 낮으면 효과 없고, 너무 높으면 화학적 위험이 됩니다."
+    "explainKo": "염소 소독액은 TB MED 530 기준 100–200 ppm이어야 합니다. 너무 낮으면 효과 없고, 너무 높으면 화학적 위험이 됩니다.",
+    "optionsKo": [
+      "10~25 ppm",
+      "25~50 ppm",
+      "50~100 ppm",
+      "100~200 ppm"
+    ]
   },
   {
     "module": "Cleaning & Sanitizing",
@@ -417,7 +579,13 @@
     ],
     "answer": 2,
     "explain": "Chemicals must ALWAYS be stored BELOW and AWAY from food and food contact surfaces.",
-    "explainKo": "화학물질은 항상 식품 및 식품 접촉 표면의 아래와 분리된 곳에 보관해야 합니다."
+    "explainKo": "화학물질은 항상 식품 및 식품 접촉 표면의 아래와 분리된 곳에 보관해야 합니다.",
+    "optionsKo": [
+      "Above food for easy access · 식품 위",
+      "Next to food in sealed containers · 밀봉 용기에 식품 옆",
+      "Below and away from food and food-contact surfaces · 식품 및 식품 접촉 표면과 분리하여 아래 보관",
+      "In the same refrigerator, lower shelf · 같은 냉장고 아래 선반"
+    ]
   },
   {
     "module": "Cleaning & Sanitizing",
@@ -432,7 +600,13 @@
     ],
     "answer": 2,
     "explain": "Cleaning removes visible dirt and food residue. Sanitizing reduces pathogens to safe levels. Both steps are always required.",
-    "explainKo": "세척은 눈에 보이는 오물과 식품 잔여물을 제거합니다. 소독은 병원균을 안전한 수준으로 줄입니다. 두 과정 모두 필요합니다."
+    "explainKo": "세척은 눈에 보이는 오물과 식품 잔여물을 제거합니다. 소독은 병원균을 안전한 수준으로 줄입니다. 두 과정 모두 필요합니다.",
+    "optionsKo": [
+      "They are the same process · 같은 과정임",
+      "Cleaning kills pathogens; sanitizing removes dirt · 세척이 병원균 제거, 소독이 오물 제거",
+      "Cleaning removes dirt; sanitizing reduces pathogens to safe levels · 세척은 오물 제거, 소독은 병원균을 안전 수준으로 감소",
+      "Sanitizing is only needed for raw meat surfaces · 생고기 표면에만 소독 필요"
+    ]
   },
   {
     "module": "Cleaning & Sanitizing",
@@ -447,7 +621,13 @@
     ],
     "answer": 2,
     "explain": "Food must be stored at least 6 inches (15 cm) off the floor to prevent contamination from pests and moisture.",
-    "explainKo": "식품은 해충 및 습기로 인한 오염 방지를 위해 바닥에서 최소 6인치(15cm) 이상 보관해야 합니다."
+    "explainKo": "식품은 해충 및 습기로 인한 오염 방지를 위해 바닥에서 최소 6인치(15cm) 이상 보관해야 합니다.",
+    "optionsKo": [
+      "2 inches / 5 cm · 2인치 / 5cm",
+      "4 inches / 10 cm · 4인치 / 10cm",
+      "6 inches / 15 cm · 6인치 / 15cm",
+      "12 inches / 30 cm · 12인치 / 30cm"
+    ]
   },
   {
     "module": "Cleaning & Sanitizing",
@@ -462,7 +642,13 @@
     ],
     "answer": 1,
     "explain": "Towels can harbor bacteria and recontaminate sanitized surfaces. Always air dry equipment after sanitizing.",
-    "explainKo": "타월에 세균이 번식할 수 있어 소독된 표면을 재오염시킬 수 있습니다. 소독 후에는 항상 자연 건조하세요."
+    "explainKo": "타월에 세균이 번식할 수 있어 소독된 표면을 재오염시킬 수 있습니다. 소독 후에는 항상 자연 건조하세요.",
+    "optionsKo": [
+      "It is faster · 더 빠르기 때문에",
+      "Towel drying can recontaminate surfaces · 타월 건조 시 표면이 재오염될 수 있기 때문에",
+      "Air drying removes more bacteria · 자연 건조가 세균을 더 많이 제거하기 때문에",
+      "Towels are too expensive · 타월이 너무 비싸기 때문에"
+    ]
   },
   {
     "module": "Time & Temperature",
@@ -477,7 +663,13 @@
     ],
     "answer": 1,
     "explain": "FAT TOM stands for Food, Acidity, Temperature, Time, Oxygen, Moisture — the 6 conditions bacteria need to grow.",
-    "explainKo": "FAT TOM은 Food(식품), Acidity(산도), Temperature(온도), Time(시간), Oxygen(산소), Moisture(수분) — 세균 성장에 필요한 6가지 조건입니다."
+    "explainKo": "FAT TOM은 Food(식품), Acidity(산도), Temperature(온도), Time(시간), Oxygen(산소), Moisture(수분) — 세균 성장에 필요한 6가지 조건입니다.",
+    "optionsKo": [
+      "Fat · 지방",
+      "Food · 식품",
+      "Fungi · 곰팡이",
+      "Flow · 흐름"
+    ]
   },
   {
     "module": "Time & Temperature",
@@ -492,7 +684,13 @@
     ],
     "answer": 2,
     "explain": "Temperature and Time are the two FAT TOM conditions food handlers can most easily control — keep TCS food out of the danger zone and limit time in it.",
-    "explainKo": "온도와 시간이 식품 취급자가 가장 쉽게 통제할 수 있는 FAT TOM 조건입니다 — TCS 식품을 위험 구간 밖에 두고 체류 시간을 제한하세요."
+    "explainKo": "온도와 시간이 식품 취급자가 가장 쉽게 통제할 수 있는 FAT TOM 조건입니다 — TCS 식품을 위험 구간 밖에 두고 체류 시간을 제한하세요.",
+    "optionsKo": [
+      "Food and Moisture · 식품과 수분",
+      "Oxygen and Acidity · 산소와 산도",
+      "Temperature and Time · 온도와 시간",
+      "Acidity and Moisture · 산도와 수분"
+    ]
   },
   {
     "module": "Time & Temperature",
@@ -507,7 +705,13 @@
     ],
     "answer": 1,
     "explain": "Bacteria grow best in food with a pH of 4.5–7.5 (little to no acid). Most TCS foods fall within this range.",
-    "explainKo": "세균은 pH 4.5–7.5(산도가 낮거나 없는) 식품에서 가장 잘 자랍니다. 대부분의 TCS 식품이 이 범위에 해당합니다."
+    "explainKo": "세균은 pH 4.5–7.5(산도가 낮거나 없는) 식품에서 가장 잘 자랍니다. 대부분의 TCS 식품이 이 범위에 해당합니다.",
+    "optionsKo": [
+      "pH 3.0~5.0",
+      "pH 4.6~7.5",
+      "pH 7.5~9.0",
+      "pH 1.0~3.0"
+    ]
   },
   {
     "module": "Time & Temperature",
@@ -522,7 +726,13 @@
     ],
     "answer": 2,
     "explain": "The 4 acceptable thawing methods are: refrigerator (41°F or lower), running potable water (70°F or lower), microwave (if cooking immediately), or as part of the cooking process.",
-    "explainKo": "4가지 허용된 해동 방법: 냉장고(41°F 이하), 흐르는 식수(70°F 이하), 전자레인지(즉시 조리 시), 조리 과정의 일부로."
+    "explainKo": "4가지 허용된 해동 방법: 냉장고(41°F 이하), 흐르는 식수(70°F 이하), 전자레인지(즉시 조리 시), 조리 과정의 일부로.",
+    "optionsKo": [
+      "On the counter at room temperature · 실온 카운터에서",
+      "In warm standing water · 따뜻한 정지 물에서",
+      "In a refrigerator at 41°F or lower · 41°F 이하 냉장고에서",
+      "In direct sunlight · 직사광선 아래에서"
+    ]
   },
   {
     "module": "Foodborne Illness",
@@ -537,7 +747,13 @@
     ],
     "answer": 1,
     "explain": "A foodborne illness outbreak requires: 2+ people with the same symptoms after eating the same food, investigated by regulatory authorities, and confirmed by laboratory analysis.",
-    "explainKo": "식품 매개 질병 발병: 같은 식품 섭취 후 2명 이상이 동일한 증상, 규제 당국의 조사, 실험실 분석으로 확인."
+    "explainKo": "식품 매개 질병 발병: 같은 식품 섭취 후 2명 이상이 동일한 증상, 규제 당국의 조사, 실험실 분석으로 확인.",
+    "optionsKo": [
+      "One person gets sick after eating · 한 명이 식사 후 아픈 경우",
+      "Two or more people have same symptoms after eating the same food · 같은 식품 섭취 후 2명 이상이 같은 증상",
+      "Any case reported to authorities · 당국에 보고된 모든 사례",
+      "Only when laboratory confirms a pathogen · 실험실에서 병원균 확인 시에만"
+    ]
   },
   {
     "module": "Foodborne Illness",
@@ -552,7 +768,13 @@
     ],
     "answer": 2,
     "explain": "High-risk groups include infants, preschool-age children, pregnant women, elderly people, people on certain medications, and seriously ill individuals.",
-    "explainKo": "고위험군: 영유아, 임산부, 노인, 특정 약물 복용자, 중증 질환자(면역저하자 포함)."
+    "explainKo": "고위험군: 영유아, 임산부, 노인, 특정 약물 복용자, 중증 질환자(면역저하자 포함).",
+    "optionsKo": [
+      "Healthy adults aged 20–40 · 건강한 20-40세 성인",
+      "Athletes and physically active people · 운동선수 및 활동적인 사람",
+      "Infants, elderly, pregnant women, and immunocompromised · 영유아, 노인, 임산부, 면역저하자",
+      "People who eat out frequently · 외식을 자주 하는 사람"
+    ]
   },
   {
     "module": "Cleaning & Sanitizing",
@@ -567,7 +789,13 @@
     ],
     "answer": 1,
     "explain": "Acidic foods (tomatoes, citrus, vinegar-based dishes) can cause metals like lead, copper, and zinc to leach from certain cookware into food.",
-    "explainKo": "산성 식품(토마토, 감귤류, 식초 기반 요리)은 특정 조리기구에서 납, 구리, 아연 같은 금속을 식품으로 용출시킬 수 있습니다."
+    "explainKo": "산성 식품(토마토, 감귤류, 식초 기반 요리)은 특정 조리기구에서 납, 구리, 아연 같은 금속을 식품으로 용출시킬 수 있습니다.",
+    "optionsKo": [
+      "High-protein foods · 고단백 식품",
+      "Acidic foods · 산성 식품",
+      "High-fat foods · 고지방 식품",
+      "Frozen foods · 냉동 식품"
+    ]
   },
   {
     "module": "Cleaning & Sanitizing",
@@ -582,7 +810,13 @@
     ],
     "answer": 2,
     "explain": "Quaternary ammonium (Quat) sanitizer should be used at 150–200 ppm for effective sanitizing.",
-    "explainKo": "4급 암모늄(Quat) 소독액은 효과적인 소독을 위해 150–200 ppm에서 사용해야 합니다."
+    "explainKo": "4급 암모늄(Quat) 소독액은 효과적인 소독을 위해 150–200 ppm에서 사용해야 합니다.",
+    "optionsKo": [
+      "50~100 ppm",
+      "100~150 ppm",
+      "150~200 ppm",
+      "200~300 ppm"
+    ]
   },
   {
     "module": "Cross-Contamination",
@@ -597,7 +831,13 @@
     ],
     "answer": 1,
     "explain": "Hot foods must be transported in pre-heated insulated containers. Internal temperatures must be checked before and after transport to ensure food stays above 135°F.",
-    "explainKo": "온장 식품은 사전 가열된 보온 용기로 운반해야 합니다. 135°F 이상 유지를 위해 운반 전후 내부 온도를 확인해야 합니다."
+    "explainKo": "온장 식품은 사전 가열된 보온 용기로 운반해야 합니다. 135°F 이상 유지를 위해 운반 전후 내부 온도를 확인해야 합니다.",
+    "optionsKo": [
+      "Transport at room temperature if under 1 hour · 1시간 이내면 실온 운반 가능",
+      "Use pre-heated insulated containers and check temperatures · 사전 가열된 보온 용기 사용 및 온도 확인",
+      "Cool the food first, then transport · 먼저 냉각 후 운반",
+      "Cover with plastic wrap only · 비닐 랩으로만 덮기"
+    ]
   },
   {
     "module": "Foodborne Illness",
@@ -612,7 +852,13 @@
     ],
     "answer": 2,
     "explain": "Parasites are commonly found in seafood, wild game, and produce processed with contaminated water. Purchase from approved suppliers and cook to required temperatures.",
-    "explainKo": "기생충은 해산물, 야생 동물, 오염된 물로 처리된 농산물에서 흔히 발견됩니다. 승인된 공급업체에서 구매하고 요구 온도로 조리하세요."
+    "explainKo": "기생충은 해산물, 야생 동물, 오염된 물로 처리된 농산물에서 흔히 발견됩니다. 승인된 공급업체에서 구매하고 요구 온도로 조리하세요.",
+    "optionsKo": [
+      "Pasteurized dairy products · 저온 살균 유제품",
+      "Canned vegetables · 통조림 채소",
+      "Seafood and wild game · 해산물과 야생 동물",
+      "Dried grains and cereals · 건조 곡물과 시리얼"
+    ]
   },
   {
     "module": "Foodborne Illness",
@@ -627,7 +873,13 @@
     ],
     "answer": 2,
     "explain": "Biological hazards (bacteria, viruses, parasites, fungi) cause approximately 67% of foodborne illnesses.",
-    "explainKo": "생물학적 위해요소(세균, 바이러스, 기생충, 곰팡이)가 식중독의 약 67%를 유발합니다."
+    "explainKo": "생물학적 위해요소(세균, 바이러스, 기생충, 곰팡이)가 식중독의 약 67%를 유발합니다.",
+    "optionsKo": [
+      "Physical · 물리적",
+      "Chemical · 화학적",
+      "Biological · 생물학적",
+      "Radiological · 방사선"
+    ]
   },
   {
     "module": "Foodborne Illness",
@@ -642,7 +894,13 @@
     ],
     "answer": 2,
     "explain": "Metal shavings, glass, bones, and hair are physical hazards — foreign objects that can cause injury.",
-    "explainKo": "쇠조각, 유리, 뼈, 머리카락은 물리적 위해요소로, 부상을 유발할 수 있는 이물질입니다."
+    "explainKo": "쇠조각, 유리, 뼈, 머리카락은 물리적 위해요소로, 부상을 유발할 수 있는 이물질입니다.",
+    "optionsKo": [
+      "Biological · 생물학적",
+      "Chemical · 화학적",
+      "Physical · 물리적",
+      "Thermal · 열적"
+    ]
   },
   {
     "module": "Foodborne Illness",
@@ -657,7 +915,13 @@
     ],
     "answer": 1,
     "explain": "Pesticide residue is a chemical hazard. Salmonella and Norovirus are biological; fish bone is physical.",
-    "explainKo": "농약 잔류물은 화학적 위해요소입니다. 살모넬라·노로바이러스는 생물학적, 생선 뼈는 물리적 위해요소입니다."
+    "explainKo": "농약 잔류물은 화학적 위해요소입니다. 살모넬라·노로바이러스는 생물학적, 생선 뼈는 물리적 위해요소입니다.",
+    "optionsKo": [
+      "Salmonella bacteria · 살모넬라 박테리아",
+      "Pesticide residue on vegetables · 채소의 농약 잔류물",
+      "Fish bone in soup · 수프 속 생선 뼈",
+      "Norovirus on surfaces · 표면의 노로바이러스"
+    ]
   },
   {
     "module": "Foodborne Illness",
@@ -672,7 +936,13 @@
     ],
     "answer": 1,
     "explain": "The three types of food hazards are Physical, Chemical, and Biological.",
-    "explainKo": "식품 위해요소의 3가지 유형은 물리적, 화학적, 생물학적 위해요소입니다."
+    "explainKo": "식품 위해요소의 3가지 유형은 물리적, 화학적, 생물학적 위해요소입니다.",
+    "optionsKo": [
+      "Bacterial, viral, parasitic · 세균성, 바이러스성, 기생충성",
+      "Physical, chemical, biological · 물리적, 화학적, 생물학적",
+      "Temperature, time, moisture · 온도, 시간, 수분",
+      "Direct, indirect, environmental · 직접, 간접, 환경적"
+    ]
   },
   {
     "module": "Personal Hygiene",
@@ -687,7 +957,13 @@
     ],
     "answer": 2,
     "explain": "The FDA recognizes 9 major allergens: Peanuts, Tree Nuts, Fish, Shellfish, Milk, Eggs, Wheat, Soy, and Sesame.",
-    "explainKo": "FDA는 9가지 주요 알레르겐을 인정합니다: 땅콩, 견과류, 생선, 갑각류, 유제품, 달걀, 밀, 대두, 참깨."
+    "explainKo": "FDA는 9가지 주요 알레르겐을 인정합니다: 땅콩, 견과류, 생선, 갑각류, 유제품, 달걀, 밀, 대두, 참깨.",
+    "optionsKo": [
+      "5 · 5가지",
+      "7 · 7가지",
+      "9 · 9가지",
+      "12 · 12가지"
+    ]
   },
   {
     "module": "Personal Hygiene",
@@ -702,7 +978,13 @@
     ],
     "answer": 1,
     "explain": "Never guess about allergens. Always be honest with the guest if you are unsure about ingredients — their life may depend on it.",
-    "explainKo": "알레르겐에 대해 절대 추측하지 마세요. 재료가 불확실하면 항상 솔직하게 알려야 합니다 — 손님의 생명이 달려 있을 수 있습니다."
+    "explainKo": "알레르겐에 대해 절대 추측하지 마세요. 재료가 불확실하면 항상 솔직하게 알려야 합니다 — 손님의 생명이 달려 있을 수 있습니다.",
+    "optionsKo": [
+      "Say it's probably fine · 괜찮을 것 같다고 말함",
+      "Tell the guest honestly that you're unsure · 불확실하다고 솔직히 알림",
+      "Remove visible peanuts and serve it · 보이는 땅콩을 제거하고 제공",
+      "Cook it longer to destroy the allergen · 더 오래 조리하여 알레르겐 제거"
+    ]
   },
   {
     "module": "Personal Hygiene",
@@ -717,7 +999,13 @@
     ],
     "answer": 2,
     "explain": "Anaphylaxis symptoms include difficulty breathing, throat swelling, blood pressure drop, and loss of consciousness — potentially fatal within minutes.",
-    "explainKo": "아나필락시스 증상은 호흡 곤란, 목 부종, 혈압 저하, 의식 상실을 포함하며 수 분 내 사망할 수 있습니다."
+    "explainKo": "아나필락시스 증상은 호흡 곤란, 목 부종, 혈압 저하, 의식 상실을 포함하며 수 분 내 사망할 수 있습니다.",
+    "optionsKo": [
+      "Mild itching on the arm · 팔의 가벼운 가려움",
+      "Runny nose · 콧물",
+      "Difficulty breathing and throat swelling · 호흡 곤란 및 목 부종",
+      "Slight stomach discomfort · 가벼운 복부 불편감"
+    ]
   },
   {
     "module": "Personal Hygiene",
@@ -732,7 +1020,13 @@
     ],
     "answer": 2,
     "explain": "Allergens are NOT destroyed by sanitizers or heat. Surfaces and equipment must be physically cleaned (scrubbed) to remove allergen residue before sanitizing.",
-    "explainKo": "알레르겐은 살균제나 열로 제거되지 않습니다. 살균 전에 반드시 표면과 장비를 물리적으로 세척해야 합니다."
+    "explainKo": "알레르겐은 살균제나 열로 제거되지 않습니다. 살균 전에 반드시 표면과 장비를 물리적으로 세척해야 합니다.",
+    "optionsKo": [
+      "Yes, sanitizers destroy all allergens · 예, 살균제가 모든 알레르겐 제거",
+      "Yes, cooking at 165°F removes allergens · 예, 165°F 조리로 알레르겐 제거",
+      "No — surfaces must be physically cleaned first · 아니오 — 표면을 먼저 물리적으로 세척해야 함",
+      "Yes, but only if soaked for 30 seconds · 예, 30초 이상 담그면 제거됨"
+    ]
   },
   {
     "module": "Personal Hygiene",
@@ -747,7 +1041,13 @@
     ],
     "answer": 1,
     "explain": "Cross-contact occurs when an allergen is transferred from one food/surface to another, even in tiny amounts — enough to trigger a reaction.",
-    "explainKo": "교차 접촉은 알레르겐이 한 식품이나 표면에서 다른 곳으로 이동하는 것으로, 극소량도 반응을 유발할 수 있습니다."
+    "explainKo": "교차 접촉은 알레르겐이 한 식품이나 표면에서 다른 곳으로 이동하는 것으로, 극소량도 반응을 유발할 수 있습니다.",
+    "optionsKo": [
+      "Mixing raw and cooked meat · 생고기와 조리된 고기 혼합",
+      "Transfer of an allergen from one food or surface to another · 한 식품/표면에서 다른 곳으로 알레르겐 이동",
+      "Using the same thermometer for different foods · 다른 식품에 같은 온도계 사용",
+      "Storing food at wrong temperature · 잘못된 온도로 식품 보관"
+    ]
   },
   {
     "module": "Personal Hygiene",
@@ -762,7 +1062,13 @@
     ],
     "answer": 2,
     "explain": "Corn is NOT a major FDA allergen. The 9 are: Peanuts, Tree Nuts, Fish, Shellfish, Milk, Eggs, Wheat, Soy, and Sesame.",
-    "explainKo": "옥수수는 FDA 주요 알레르겐이 아닙니다. 9대 알레르겐은 땅콩, 견과류, 생선, 갑각류, 유제품, 달걀, 밀, 대두, 참깨입니다."
+    "explainKo": "옥수수는 FDA 주요 알레르겐이 아닙니다. 9대 알레르겐은 땅콩, 견과류, 생선, 갑각류, 유제품, 달걀, 밀, 대두, 참깨입니다.",
+    "optionsKo": [
+      "Sesame · 참깨",
+      "Shellfish · 갑각류",
+      "Corn · 옥수수",
+      "Tree Nuts · 견과류"
+    ]
   },
   {
     "module": "Personal Hygiene",
@@ -777,7 +1083,13 @@
     ],
     "answer": 1,
     "explain": "Allergic reaction symptoms can appear within minutes to 2 hours after eating an allergen — swift action may be required.",
-    "explainKo": "알레르기 반응 증상은 알레르겐 섭취 후 수 분에서 2시간 내에 나타날 수 있으며 신속한 대응이 필요할 수 있습니다."
+    "explainKo": "알레르기 반응 증상은 알레르겐 섭취 후 수 분에서 2시간 내에 나타날 수 있으며 신속한 대응이 필요할 수 있습니다.",
+    "optionsKo": [
+      "Only after 24 hours · 24시간 후에만 발현",
+      "Within minutes to 2 hours · 수 분에서 2시간 내",
+      "After 6–8 hours · 6~8시간 후",
+      "Symptoms always appear immediately · 항상 즉시 나타남"
+    ]
   },
   {
     "module": "Event Operations",
@@ -792,7 +1104,13 @@
     ],
     "answer": 1,
     "explain": "Spam musubi contains meat (TCS food) and must be temperature controlled. Plain baked goods without animal products are Non-PHF.",
-    "explainKo": "스팸무수비는 고기(TCS 식품)를 포함하므로 온도 관리가 필요합니다. 동물성 식품이 없는 일반 베이크 제품은 Non-PHF입니다."
+    "explainKo": "스팸무수비는 고기(TCS 식품)를 포함하므로 온도 관리가 필요합니다. 동물성 식품이 없는 일반 베이크 제품은 Non-PHF입니다.",
+    "optionsKo": [
+      "Plain cookies · 일반 쿠키",
+      "Spam musubi · 스팸무수비",
+      "Plain muffins · 일반 머핀",
+      "Dry bread · 건조한 빵"
+    ]
   },
   {
     "module": "Event Operations",
@@ -807,7 +1125,13 @@
     ],
     "answer": 2,
     "explain": "PHF foods MUST be prepared on-site at the event. Preparing PHF in a home kitchen and bringing it to the event is NOT permitted.",
-    "explainKo": "PHF 식품은 반드시 이벤트 현장에서 조리해야 합니다. 가정 주방에서 조리하여 이벤트로 가져오는 것은 허용되지 않습니다."
+    "explainKo": "PHF 식품은 반드시 이벤트 현장에서 조리해야 합니다. 가정 주방에서 조리하여 이벤트로 가져오는 것은 허용되지 않습니다.",
+    "optionsKo": [
+      "At home the night before · 전날 밤 집에서",
+      "In any clean kitchen · 깨끗한 주방이면 어디서든",
+      "On-site at the event · 이벤트 현장에서",
+      "In a restaurant kitchen nearby · 근처 식당 주방에서"
+    ]
   },
   {
     "module": "Event Operations",
@@ -822,7 +1146,13 @@
     ],
     "answer": 2,
     "explain": "Latex gloves are PROHIBITED. Use powder-free alternatives such as nitrile, neoprene, or vinyl gloves.",
-    "explainKo": "라텍스 장갑은 금지입니다. 니트릴, 네오프렌, 비닐 등 파우더 프리 대체품을 사용하세요."
+    "explainKo": "라텍스 장갑은 금지입니다. 니트릴, 네오프렌, 비닐 등 파우더 프리 대체품을 사용하세요.",
+    "optionsKo": [
+      "Nitrile gloves · 니트릴 장갑",
+      "Vinyl gloves · 비닐 장갑",
+      "Latex gloves · 라텍스 장갑",
+      "Neoprene gloves · 네오프렌 장갑"
+    ]
   },
   {
     "module": "Event Operations",
@@ -837,7 +1167,13 @@
     ],
     "answer": 1,
     "explain": "To calibrate: place the thermometer in a 50/50 ice water mixture. It should stabilize at 32°F (0°C). Adjust the calibration nut if needed.",
-    "explainKo": "교정 방법: 온도계를 얼음과 물 50/50 혼합물에 넣습니다. 32°F(0°C)에서 안정되어야 합니다. 필요시 교정 너트를 조정합니다."
+    "explainKo": "교정 방법: 온도계를 얼음과 물 50/50 혼합물에 넣습니다. 32°F(0°C)에서 안정되어야 합니다. 필요시 교정 너트를 조정합니다.",
+    "optionsKo": [
+      "Place in boiling water — should read 212°F · 끓는 물에 넣어 212°F 확인",
+      "Place in 50/50 ice water — should read 32°F · 얼음물 50/50에 넣어 32°F 확인",
+      "Hold in room air — should read 72°F · 실내 공기 중 72°F 확인",
+      "Place in hot food — should read 165°F · 뜨거운 식품에 넣어 165°F 확인"
+    ]
   },
   {
     "module": "Event Operations",
@@ -852,7 +1188,13 @@
     ],
     "answer": 2,
     "explain": "Food booths must be at least 50 feet away from dumpsters, recycling bins, and smoke areas to prevent contamination.",
-    "explainKo": "식품 부스는 오염 방지를 위해 쓰레기통, 재활용 수거함, 흡연 구역으로부터 최소 50피트 이상 떨어져야 합니다."
+    "explainKo": "식품 부스는 오염 방지를 위해 쓰레기통, 재활용 수거함, 흡연 구역으로부터 최소 50피트 이상 떨어져야 합니다.",
+    "optionsKo": [
+      "10 feet · 10피트",
+      "25 feet · 25피트",
+      "50 feet · 50피트",
+      "100 feet · 100피트"
+    ]
   },
   {
     "module": "Event Operations",
@@ -867,7 +1209,13 @@
     ],
     "answer": 2,
     "explain": "Home-grown vegetables, fruits, or herbs are NOT permitted. All ingredients must come from approved, commercially inspected sources.",
-    "explainKo": "가정에서 재배한 채소, 과일, 허브는 허용되지 않습니다. 모든 재료는 승인된 상업적 검사 출처에서 구매해야 합니다."
+    "explainKo": "가정에서 재배한 채소, 과일, 허브는 허용되지 않습니다. 모든 재료는 승인된 상업적 검사 출처에서 구매해야 합니다.",
+    "optionsKo": [
+      "Commercially purchased eggs · 상업적으로 구매한 달걀",
+      "USDA-inspected ground beef · USDA 검사 통과 다진 쇠고기",
+      "Home-grown vegetables from your garden · 집 정원에서 재배한 채소",
+      "Commissary-purchased dairy · 커미서리에서 구매한 유제품"
+    ]
   },
   {
     "module": "Event Operations",
@@ -882,7 +1230,13 @@
     ],
     "answer": 2,
     "explain": "3 containers are required: 1st wash (soapy water), 2nd rinse (clean water), 3rd sanitize (100 ppm chlorine solution). Then air dry.",
-    "explainKo": "3개의 용기가 필요합니다: 1번 세척(비눗물), 2번 헹굼(깨끗한 물), 3번 소독(100ppm 염소 용액). 이후 공기 건조."
+    "explainKo": "3개의 용기가 필요합니다: 1번 세척(비눗물), 2번 헹굼(깨끗한 물), 3번 소독(100ppm 염소 용액). 이후 공기 건조.",
+    "optionsKo": [
+      "1 (wash only) · 1개",
+      "2 (wash and rinse) · 2개",
+      "3 (wash, rinse, sanitize) · 3개",
+      "4 (wash, rinse, sanitize, dry) · 4개"
+    ]
   },
   {
     "module": "Event Operations",
@@ -897,7 +1251,13 @@
     ],
     "answer": 1,
     "explain": "Labels must include major allergens and made-on/sell-by/expiration date. Health claims like 'Gluten Free' are NOT permitted.",
-    "explainKo": "라벨에는 주요 알레르겐과 제조일/판매기한/유통기한이 포함되어야 합니다. '글루텐 프리' 같은 건강 주장은 허용되지 않습니다."
+    "explainKo": "라벨에는 주요 알레르겐과 제조일/판매기한/유통기한이 포함되어야 합니다. '글루텐 프리' 같은 건강 주장은 허용되지 않습니다.",
+    "optionsKo": [
+      "Calorie count and nutrition facts · 칼로리와 영양 성분",
+      "Major allergens and expiration date · 주요 알레르겐과 유통기한",
+      "Health claims like 'Gluten Free' · '글루텐 프리' 같은 건강 주장",
+      "Price per unit · 단위당 가격"
+    ]
   },
   {
     "module": "Event Operations",
@@ -912,7 +1272,13 @@
     ],
     "answer": 1,
     "explain": "A clearly visible Consumer Advisory placard is required, stating the food was prepared in a home kitchen not subject to regulatory inspection.",
-    "explainKo": "식품이 규제 검사 대상이 아닌 가정 주방에서 제조되었음을 명시하는 소비자 안내 표지판을 잘 보이는 곳에 게시해야 합니다."
+    "explainKo": "식품이 규제 검사 대상이 아닌 가정 주방에서 제조되었음을 명시하는 소비자 안내 표지판을 잘 보이는 곳에 게시해야 합니다.",
+    "optionsKo": [
+      "Nothing — Non-PHF foods have no requirements · 없음 — Non-PHF는 요건 없음",
+      "A visible Consumer Advisory placard stating the food was home-prepared · 가정에서 제조되었음을 명시한 소비자 안내 표지판",
+      "A permit from the health department · 보건부 허가증",
+      "A temperature log · 온도 기록지"
+    ]
   },
   {
     "module": "Event Operations",
@@ -927,7 +1293,13 @@
     ],
     "answer": 2,
     "explain": "Gloves must be discarded when damaged, soiled, or when switching between tasks (e.g., raw to RTE foods) to prevent cross-contamination.",
-    "explainKo": "장갑은 손상되거나, 오염되거나, 작업을 전환할 때(예: 생고기에서 RTE 식품으로) 교차오염 방지를 위해 버려야 합니다."
+    "explainKo": "장갑은 손상되거나, 오염되거나, 작업을 전환할 때(예: 생고기에서 RTE 식품으로) 교차오염 방지를 위해 버려야 합니다.",
+    "optionsKo": [
+      "Only when visibly dirty · 눈에 띄게 더러울 때만",
+      "After every hour regardless · 매 시간 후",
+      "When damaged, soiled, or switching tasks · 손상, 오염, 또는 작업 전환 시",
+      "Only after handling raw meat · 생고기 취급 후에만"
+    ]
   },
   {
     "module": "Event Operations",
@@ -942,7 +1314,13 @@
     ],
     "answer": 2,
     "explain": "Food booths must be 100 yards from port-a-lets at outdoor events to prevent contamination from odors and airborne pathogens.",
-    "explainKo": "식품 부스는 야외 이벤트에서 냄새 및 공기 중 병원균으로 인한 오염을 방지하기 위해 이동식 화장실로부터 100야드 이상 떨어져야 합니다."
+    "explainKo": "식품 부스는 야외 이벤트에서 냄새 및 공기 중 병원균으로 인한 오염을 방지하기 위해 이동식 화장실로부터 100야드 이상 떨어져야 합니다.",
+    "optionsKo": [
+      "10 yards · 10야드",
+      "50 yards · 50야드",
+      "100 yards · 100야드",
+      "200 yards · 200야드"
+    ]
   },
   {
     "module": "Event Operations",
@@ -957,7 +1335,13 @@
     ],
     "answer": 1,
     "explain": "Tents and booths must be inspected and cleaned PRIOR to setup to prevent contamination from dirt, pests, or previous use.",
-    "explainKo": "오염 방지를 위해 텐트와 부스는 설치 전 반드시 점검하고 청소해야 합니다."
+    "explainKo": "오염 방지를 위해 텐트와 부스는 설치 전 반드시 점검하고 청소해야 합니다.",
+    "optionsKo": [
+      "Set up equipment immediately · 바로 장비 설치",
+      "Inspect and clean the tent prior to setup · 설치 전 텐트 점검 및 청소",
+      "Wait for the health inspector to arrive · 검열관이 올 때까지 대기",
+      "Place food on the ground first · 먼저 식품을 바닥에 놓기"
+    ]
   },
   {
     "module": "Event Operations",
@@ -972,7 +1356,13 @@
     ],
     "answer": 1,
     "explain": "All food handlers must wear a hair restraint — hat, hair net, beard restraint, or clothing that covers body hair — to prevent contamination.",
-    "explainKo": "모든 식품 취급자는 오염 방지를 위해 모자, 헤어넷, 수염 가리개, 또는 체모를 가리는 의복 등 머리카락 억제 장치를 착용해야 합니다."
+    "explainKo": "모든 식품 취급자는 오염 방지를 위해 모자, 헤어넷, 수염 가리개, 또는 체모를 가리는 의복 등 머리카락 억제 장치를 착용해야 합니다.",
+    "optionsKo": [
+      "Apron only · 앞치마만",
+      "Hair restraint (hat, hair net, or beard restraint) · 헤어 억제 장치",
+      "Face mask · 마스크",
+      "Gloves cover everything required · 장갑으로 충분"
+    ]
   },
   {
     "module": "Event Operations",
@@ -987,7 +1377,13 @@
     ],
     "answer": 1,
     "explain": "Both the approved DD 2970 form and Food Handler Certificates for ALL food handlers (digital copies accepted) must be available for inspection.",
-    "explainKo": "승인된 DD 2970 양식과 모든 식품 취급자의 식품 취급자 인증서(디지털 사본 허용) 모두 검열을 위해 준비해야 합니다."
+    "explainKo": "승인된 DD 2970 양식과 모든 식품 취급자의 식품 취급자 인증서(디지털 사본 허용) 모두 검열을 위해 준비해야 합니다.",
+    "optionsKo": [
+      "Only the food handler certificate · 식품 취급자 인증서만",
+      "Approved DD 2970 and Food Handler Certificates for all food handlers · 승인된 DD 2970 및 모든 식품 취급자 인증서",
+      "Receipt of food purchases · 식재료 구매 영수증",
+      "Menu and pricing list · 메뉴 및 가격표"
+    ]
   },
   {
     "module": "Foodborne Illness",
@@ -1002,7 +1398,13 @@
     ],
     "answer": 2,
     "explain": "Viruses cannot grow in food — they require a living host to multiply. They are not destroyed by freezing.",
-    "explainKo": "바이러스는 식품에서 증식하지 않으며 살아있는 숙주가 필요합니다. 냉동으로 파괴되지 않습니다."
+    "explainKo": "바이러스는 식품에서 증식하지 않으며 살아있는 숙주가 필요합니다. 냉동으로 파괴되지 않습니다.",
+    "optionsKo": [
+      "Is destroyed by freezing · 냉동으로 파괴된다",
+      "Grows in food · 식품에서 증식한다",
+      "Requires a living host to grow · 증식하려면 살아있는 숙주가 필요하다",
+      "Originates in cattle · 소에서 유래한다"
+    ]
   },
   {
     "module": "Personal Hygiene",
@@ -1017,7 +1419,13 @@
     ],
     "answer": 2,
     "explain": "An effective hair restraint must be a hat, hair net, or a combination of both. Short hair, rubber bands, and hairspray are not acceptable.",
-    "explainKo": "모자, 헤어넷 또는 두 가지 조합만 유효한 머리카락 관리 방법입니다."
+    "explainKo": "모자, 헤어넷 또는 두 가지 조합만 유효한 머리카락 관리 방법입니다.",
+    "optionsKo": [
+      "Having short hair · 짧은 머리",
+      "Using a rubber band for your ponytail · 고무줄로 묶기",
+      "A hat, a hair net or a combination of both · 모자, 헤어넷 또는 둘의 조합",
+      "Hairspray · 헤어스프레이"
+    ]
   },
   {
     "module": "Personal Hygiene",
@@ -1032,7 +1440,13 @@
     ],
     "answer": 2,
     "explain": "A coffee mug is an uncovered container and is not permitted while preparing food due to contamination risk.",
-    "explainKo": "머그컵은 뚜껑 없는 용기이므로 조리 중 음료를 마시는 것은 오염 위험으로 금지됩니다."
+    "explainKo": "머그컵은 뚜껑 없는 용기이므로 조리 중 음료를 마시는 것은 오염 위험으로 금지됩니다.",
+    "optionsKo": [
+      "Yes, if they are not touching food with bare hands · 맨손으로 음식을 만지지 않으면 허용",
+      "Yes, if the coffee cup is placed where it will not spill · 엎지르지 않을 곳에 두면 허용",
+      "No, because the coffee cup is an uncovered container · 아니오, 머그컵은 뚜껑 없는 용기이므로 불가",
+      "No, because there is always a chance the coffee will spill · 아니오, 커피가 엎질러질 수 있으므로 불가"
+    ]
   },
   {
     "module": "Time & Temperature",
@@ -1047,7 +1461,13 @@
     ],
     "answer": 3,
     "explain": "The penetration probe is inserted into the thickest part of solid foods like roasts to get an accurate internal temperature.",
-    "explainKo": "관통 탐침(Penetration probe)은 로스트 같은 고형 식품의 가장 두꺼운 부분에 삽입하여 내부 온도를 측정합니다."
+    "explainKo": "관통 탐침(Penetration probe)은 로스트 같은 고형 식품의 가장 두꺼운 부분에 삽입하여 내부 온도를 측정합니다.",
+    "optionsKo": [
+      "Air · 공기 탐침",
+      "Surface · 표면 탐침",
+      "Immersion · 침지 탐침",
+      "Penetration · 관통 탐침"
+    ]
   },
   {
     "module": "Cross-Contamination",
@@ -1062,7 +1482,13 @@
     ],
     "answer": 2,
     "explain": "After each prep task, surfaces must be cleaned and sanitized to prevent cross-contamination between tasks.",
-    "explainKo": "각 조리 작업 후 교차오염 방지를 위해 표면을 세척하고 소독해야 합니다."
+    "explainKo": "각 조리 작업 후 교차오염 방지를 위해 표면을 세척하고 소독해야 합니다.",
+    "optionsKo": [
+      "Food must be put away as quickly as possible · 음식을 최대한 빨리 치운다",
+      "Aprons must be replaced with clean ones · 앞치마를 새것으로 교체한다",
+      "Surfaces must be cleaned and sanitized · 표면을 세척하고 소독한다",
+      "Food temperatures must be checked with a clean thermometer · 깨끗한 온도계로 식품 온도를 확인한다"
+    ]
   },
   {
     "module": "Cross-Contamination",
@@ -1077,7 +1503,13 @@
     ],
     "answer": 1,
     "explain": "A deeply dented can must be rejected — even without leaking, deep dents can compromise the seam and allow bacterial contamination.",
-    "explainKo": "깊은 찌그러짐이 있는 캔은 새지 않더라도 솔기가 손상되어 세균 오염 가능성이 있으므로 거부해야 합니다."
+    "explainKo": "깊은 찌그러짐이 있는 캔은 새지 않더라도 솔기가 손상되어 세균 오염 가능성이 있으므로 거부해야 합니다.",
+    "optionsKo": [
+      "It can be accepted · 수령 가능하다",
+      "It should be rejected · 거부해야 한다",
+      "It should be recalled · 리콜해야 한다",
+      "It should be used immediately · 즉시 사용해야 한다"
+    ]
   },
   {
     "module": "Cross-Contamination",
@@ -1092,7 +1524,13 @@
     ],
     "answer": 3,
     "explain": "The two biggest hazards when prepping food are cross-contamination and time-temperature abuse.",
-    "explainKo": "음식 준비 시 가장 큰 두 가지 위험 요소는 교차오염과 시간-온도 남용입니다."
+    "explainKo": "음식 준비 시 가장 큰 두 가지 위험 요소는 교차오염과 시간-온도 남용입니다.",
+    "optionsKo": [
+      "Cross-contact · 교차 접촉",
+      "Chemical intoxication · 화학물질 중독",
+      "Physical contamination · 물리적 오염",
+      "Time-temperature abuse · 시간-온도 남용"
+    ]
   },
   {
     "module": "Cleaning & Sanitizing",
@@ -1107,7 +1545,13 @@
     ],
     "answer": 1,
     "explain": "Glassware should be stored upside down to prevent contamination of the inside surface before use.",
-    "explainKo": "유리잔은 사용 전 내부 오염을 방지하기 위해 뒤집어서 보관해야 합니다."
+    "explainKo": "유리잔은 사용 전 내부 오염을 방지하기 위해 뒤집어서 보관해야 합니다.",
+    "optionsKo": [
+      "Right side up · 바로 세워서",
+      "Upside down · 뒤집어서",
+      "Stacked but upside down · 쌓아서 뒤집어서",
+      "Unstacked but right side up · 쌓지 않고 바로 세워서"
+    ]
   },
   {
     "module": "Cleaning & Sanitizing",
@@ -1122,7 +1566,13 @@
     ],
     "answer": 0,
     "explain": "The most important goal of a foodservice sanitation program is to protect soldiers and customers from foodborne illness.",
-    "explainKo": "식품 서비스 위생 프로그램의 가장 중요한 목표는 군인과 고객을 식중독으로부터 보호하는 것입니다."
+    "explainKo": "식품 서비스 위생 프로그램의 가장 중요한 목표는 군인과 고객을 식중독으로부터 보호하는 것입니다.",
+    "optionsKo": [
+      "Protect soldiers/customers from foodborne illness · 군인/고객을 식중독으로부터 보호한다",
+      "Prevent financial losses · 재정적 손실을 방지한다",
+      "Maintain a clean appearance · 청결한 외관을 유지한다",
+      "Comply with local laws · 지역 법률을 준수한다"
+    ]
   },
   {
     "module": "Foodborne Illness",
@@ -1137,7 +1587,13 @@
     ],
     "answer": 3,
     "explain": "An outbreak is 2+ people getting sick from the same exposure, even with different foods or symptoms.",
-    "explainKo": "식품 매개 질환 발병은 동일한 노출로 2명 이상이 아프면 해당되며, 다른 음식이나 증상이 있어도 성립합니다."
+    "explainKo": "식품 매개 질환 발병은 동일한 노출로 2명 이상이 아프면 해당되며, 다른 음식이나 증상이 있어도 성립합니다.",
+    "optionsKo": [
+      "아니요, 서로 다른 음식을 먹었기 때문입니다.",
+      "아니요, 서로 다른 음식을 먹고 다른 증상이 나타났기 때문입니다.",
+      "예, 서로 다른 음식을 먹었기 때문입니다.",
+      "예, 두 명 이상이 서로 다른 음식/증상으로 인해 아팠기 때문입니다."
+    ]
   },
   {
     "module": "Foodborne Illness",
@@ -1152,7 +1608,13 @@
     ],
     "answer": 2,
     "explain": "Pathogens (bacteria, viruses, parasites) are the greatest biological threat to food safety.",
-    "explainKo": "병원균(세균, 바이러스, 기생충)이 식품 안전에 가장 큰 위협입니다."
+    "explainKo": "병원균(세균, 바이러스, 기생충)이 식품 안전에 가장 큰 위협입니다.",
+    "optionsKo": [
+      "독소",
+      "알레르겐",
+      "병원균",
+      "화학물질"
+    ]
   },
   {
     "module": "Foodborne Illness",
@@ -1167,7 +1629,13 @@
     ],
     "answer": 0,
     "explain": "Chemicals most often contaminate food when used incorrectly, such as being sprayed near food.",
-    "explainKo": "화학물질은 잘못 사용될 때(예: 식품 근처 분무) 오염을 가장 많이 일으킵니다."
+    "explainKo": "화학물질은 잘못 사용될 때(예: 식품 근처 분무) 오염을 가장 많이 일으킵니다.",
+    "optionsKo": [
+      "잘못 사용할 때",
+      "원래 용기에 보관할 때",
+      "안전하지 않은 출처에서 구매할 때",
+      "유통기한이 지났을 때"
+    ]
   },
   {
     "module": "Foodborne Illness",
@@ -1182,7 +1650,13 @@
     ],
     "answer": 1,
     "explain": "Seafood toxins (like ciguatoxin) are biological contaminants produced by living organisms.",
-    "explainKo": "해산물 독소(시구아톡신 등)는 살아있는 유기체가 생산하는 생물학적 오염원입니다."
+    "explainKo": "해산물 독소(시구아톡신 등)는 살아있는 유기체가 생산하는 생물학적 오염원입니다.",
+    "optionsKo": [
+      "닭 필레의 뼈",
+      "적돔의 해산물 독소",
+      "복숭아 통조림의 금속 파편",
+      "백랍 주전자에 담긴 토마토 주스"
+    ]
   },
   {
     "module": "Foodborne Illness",
@@ -1197,7 +1671,13 @@
     ],
     "answer": 3,
     "explain": "The 4th most common mistake is purchasing food from unsafe/unapproved sources.",
-    "explainKo": "네 번째 주요 실수는 승인되지 않은 안전하지 않은 곳에서 식품을 구매하는 것입니다."
+    "explainKo": "네 번째 주요 실수는 승인되지 않은 안전하지 않은 곳에서 식품을 구매하는 것입니다.",
+    "optionsKo": [
+      "식품을 잘못된 방법으로 해동",
+      "라벨 없이 식품 보관",
+      "찌그러진 통조림으로 식품 수령",
+      "안전하지 않은 출처에서 식품 구매"
+    ]
   },
   {
     "module": "Foodborne Illness",
@@ -1212,7 +1692,13 @@
     ],
     "answer": 1,
     "explain": "Allowing sick food handlers to work is one of the most common causes of foodborne illness outbreaks.",
-    "explainKo": "아픈 식품 취급자가 계속 일하도록 허용하는 것은 식중독 발생의 가장 흔한 원인입니다."
+    "explainKo": "아픈 식품 취급자가 계속 일하도록 허용하는 것은 식중독 발생의 가장 흔한 원인입니다.",
+    "optionsKo": [
+      "식품 배달을 감독하지 않음",
+      "아픈 식품 취급자를 배제하지 않음",
+      "온도계를 정기적으로 교정하지 않음",
+      "알레르겐 교차 접촉을 방지하지 않음"
+    ]
   },
   {
     "module": "Time & Temperature",
@@ -1227,7 +1713,13 @@
     ],
     "answer": 3,
     "explain": "Proteins (meat, poultry, dairy, eggs) are TCS foods that best support bacterial growth.",
-    "explainKo": "단백질 식품(육류, 가금류, 유제품, 달걀)은 세균 성장을 가장 잘 지원하는 TCS 식품입니다."
+    "explainKo": "단백질 식품(육류, 가금류, 유제품, 달걀)은 세균 성장을 가장 잘 지원하는 TCS 식품입니다.",
+    "optionsKo": [
+      "지방",
+      "당류",
+      "전분",
+      "단백질"
+    ]
   },
   {
     "module": "Time & Temperature",
@@ -1242,7 +1734,13 @@
     ],
     "answer": 2,
     "explain": "Anaerobic bacteria like Clostridium botulinum can grow without oxygen — vacuum-packed food is still at risk.",
-    "explainKo": "혐기성 세균(클로스트리디움 보툴리눔 등)은 산소 없이 성장할 수 있어 진공 포장 식품도 위험합니다."
+    "explainKo": "혐기성 세균(클로스트리디움 보툴리눔 등)은 산소 없이 성장할 수 있어 진공 포장 식품도 위험합니다.",
+    "optionsKo": [
+      "예, 진공은 항상 세균을 파괴하기 때문입니다.",
+      "예, 모든 세균은 성장하는 데 산소가 필요하기 때문입니다.",
+      "아니요, 세균은 산소 없이도 성장할 수 있기 때문입니다.",
+      "아니요, 진공이 식품의 수분 활성도를 높이기 때문입니다."
+    ]
   },
   {
     "module": "Time & Temperature",
@@ -1257,7 +1755,13 @@
     ],
     "answer": 3,
     "explain": "Time and temperature are the two conditions food handlers can most easily control.",
-    "explainKo": "식품 취급자가 가장 쉽게 통제할 수 있는 두 조건은 시간과 온도입니다."
+    "explainKo": "식품 취급자가 가장 쉽게 통제할 수 있는 두 조건은 시간과 온도입니다.",
+    "optionsKo": [
+      "산소와 산도",
+      "산도와 수분",
+      "온도와 수분",
+      "시간과 온도"
+    ]
   },
   {
     "module": "Time & Temperature",
@@ -1272,7 +1776,13 @@
     ],
     "answer": 2,
     "explain": "Bacteria grow most rapidly between 70°F-125°F (21°C-52°C), within the temperature danger zone.",
-    "explainKo": "세균은 위험 온도 구간 내 70°F~125°F(21°C~52°C)에서 가장 빠르게 증식합니다."
+    "explainKo": "세균은 위험 온도 구간 내 70°F~125°F(21°C~52°C)에서 가장 빠르게 증식합니다.",
+    "optionsKo": [
+      "0°F ~ 38°F (-18°C ~ 3°C)",
+      "41°F ~ 65°F (5°C ~ 18°C)",
+      "70°F ~ 125°F (21°C ~ 52°C)",
+      "126°F ~ 165°F (54°C ~ 74°C)"
+    ]
   },
   {
     "module": "Time & Temperature",
@@ -1287,7 +1797,13 @@
     ],
     "answer": 1,
     "explain": "Chicken stored at 45°F is above the safe cold holding temperature of 41°F — it is in the danger zone.",
-    "explainKo": "45°F에 보관된 닭고기는 안전한 냉장 온도인 41°F를 초과하여 위험 온도 구간에 있습니다."
+    "explainKo": "45°F에 보관된 닭고기는 안전한 냉장 온도인 41°F를 초과하여 위험 온도 구간에 있습니다.",
+    "optionsKo": [
+      "40°F (4°C)에서 수령된 육류",
+      "45°F (7°C)에 보관된 닭고기",
+      "140°F (60°C)에 보관된 수프",
+      "165°F (74°C)로 조리된 칠리"
+    ]
   },
   {
     "module": "Personal Hygiene",
@@ -1302,7 +1818,13 @@
     ],
     "answer": 0,
     "explain": "Hepatitis A spreads via the fecal-oral route; good personal hygiene (especially handwashing) is the primary prevention.",
-    "explainKo": "A형 간염은 분변-구강 경로로 전파되므로 올바른 개인위생(특히 손 씻기)이 가장 중요한 예방책입니다."
+    "explainKo": "A형 간염은 분변-구강 경로로 전파되므로 올바른 개인위생(특히 손 씻기)이 가장 중요한 예방책입니다.",
+    "optionsKo": [
+      "올바른 개인위생 실천",
+      "교차 오염 방지",
+      "시간-온도 남용 방지",
+      "승인된 신뢰할 수 있는 공급업체로부터 구매"
+    ]
   },
   {
     "module": "Cleaning & Sanitizing",
@@ -1317,7 +1839,13 @@
     ],
     "answer": 0,
     "explain": "Chemicals must be stored away from food prep areas to prevent accidental contamination.",
-    "explainKo": "화학물질은 우발적 오염을 방지하기 위해 식품 준비 구역에서 멀리 보관해야 합니다."
+    "explainKo": "화학물질은 우발적 오염을 방지하기 위해 식품 준비 구역에서 멀리 보관해야 합니다.",
+    "optionsKo": [
+      "준비 구역에서 멀리 떨어진 곳에",
+      "사용 사이에 바닥에",
+      "준비 테이블 작업 표면에",
+      "준비 테이블 아래에 식품과 함께"
+    ]
   },
   {
     "module": "Foodborne Illness",
@@ -1332,7 +1860,13 @@
     ],
     "answer": 0,
     "explain": "Bones in fish are a physical contaminant — a foreign object not normally found in the food.",
-    "explainKo": "생선 뼈는 식품에서 정상적으로 발견되지 않는 이물질인 물리적 오염원입니다."
+    "explainKo": "생선 뼈는 식품에서 정상적으로 발견되지 않는 이물질인 물리적 오염원입니다.",
+    "optionsKo": [
+      "생선 뼈",
+      "음식에 재채기",
+      "오염된 식품 접촉 표면 만지기",
+      "식초와 소금을 혼합하기"
+    ]
   },
   {
     "module": "Foodborne Illness",
@@ -1347,7 +1881,13 @@
     ],
     "answer": 0,
     "explain": "Acidic tomato sauce in a copper pan causes copper to leach into food — a chemical contamination hazard.",
-    "explainKo": "구리 냄비의 산성 토마토 소스는 구리를 식품으로 용출시키는 화학적 오염 위험입니다."
+    "explainKo": "구리 냄비의 산성 토마토 소스는 구리를 식품으로 용출시키는 화학적 오염 위험입니다.",
+    "optionsKo": [
+      "구리 팬의 토마토 소스",
+      "닭 필레의 뼈",
+      "적돔에서 나온 시가테라 독소",
+      "복숭아 통조림의 금속 파편"
+    ]
   },
   {
     "module": "Foodborne Illness",
@@ -1362,7 +1902,13 @@
     ],
     "answer": 0,
     "explain": "Wheezing and hives are classic symptoms of an allergic reaction to food allergens.",
-    "explainKo": "천명음과 두드러기는 식품 알레르겐에 대한 알레르기 반응의 전형적인 증상입니다."
+    "explainKo": "천명음과 두드러기는 식품 알레르겐에 대한 알레르기 반응의 전형적인 증상입니다.",
+    "optionsKo": [
+      "식품 알레르기",
+      "노로바이러스",
+      "보툴리즘",
+      "A형 간염"
+    ]
   },
   {
     "module": "Foodborne Illness",
@@ -1377,7 +1923,13 @@
     ],
     "answer": 3,
     "explain": "Clearly marking allergy orders ensures kitchen staff and servers take special precautions.",
-    "explainKo": "알레르기 주문을 명확히 표시하면 주방 직원과 서버가 특별 주의를 기울입니다."
+    "explainKo": "알레르기 주문을 명확히 표시하면 주방 직원과 서버가 특별 주의를 기울입니다.",
+    "optionsKo": [
+      "비밀 재료를 제외한 모든 재료를 알려주세요.",
+      "합리적으로 안전하다고 생각될 때 손님에게 알리세요.",
+      "모든 음식을 동시에 테이블에 제공하세요.",
+      "알레르기 손님의 주문을 명확히 표시하세요."
+    ]
   },
   {
     "module": "Personal Hygiene",
@@ -1392,7 +1944,13 @@
     ],
     "answer": 1,
     "explain": "Scratching the scalp can transfer pathogens from skin/hair to hands and then to food.",
-    "explainKo": "두피를 긁으면 피부/머리카락의 병원균이 손으로 옮겨져 식품을 오염시킬 수 있습니다."
+    "explainKo": "두피를 긁으면 피부/머리카락의 병원균이 손으로 옮겨져 식품을 오염시킬 수 있습니다.",
+    "optionsKo": [
+      "식품 알레르겐 전달",
+      "병원균을 음식에 퍼뜨리기",
+      "음식이 머리카락에 묻는 것",
+      "독성 금속 중독 유발"
+    ]
   },
   {
     "module": "Personal Hygiene",
@@ -1407,7 +1965,13 @@
     ],
     "answer": 3,
     "explain": "The entire handwashing process should take at least 20 seconds.",
-    "explainKo": "전체 손 씻기 과정은 최소 20초가 소요되어야 합니다."
+    "explainKo": "전체 손 씻기 과정은 최소 20초가 소요되어야 합니다.",
+    "optionsKo": [
+      "5초",
+      "10초",
+      "15초",
+      "20초"
+    ]
   },
   {
     "module": "Personal Hygiene",
@@ -1422,7 +1986,13 @@
     ],
     "answer": 0,
     "explain": "Hand sanitizer must air-dry completely before handling food to be effective.",
-    "explainKo": "손 소독제는 효과를 발휘하려면 식품을 다루기 전에 완전히 건조되어야 합니다."
+    "explainKo": "손 소독제는 효과를 발휘하려면 식품을 다루기 전에 완전히 건조되어야 합니다.",
+    "optionsKo": [
+      "소독제가 마르도록 두지 않았습니다.",
+      "소독제를 헹구지 않았습니다.",
+      "먼저 손을 씻지 말았어야 합니다.",
+      "소독제를 손에 문질러서는 안 됩니다."
+    ]
   },
   {
     "module": "Personal Hygiene",
@@ -1437,7 +2007,13 @@
     ],
     "answer": 3,
     "explain": "An infected cut must be covered with an impermeable (waterproof) cover AND a single-use glove.",
-    "explainKo": "감염된 상처는 방수 커버와 일회용 장갑으로 보호해야 합니다."
+    "explainKo": "감염된 상처는 방수 커버와 일회용 장갑으로 보호해야 합니다.",
+    "optionsKo": [
+      "음식 및 준비 구역에서 멀리 있으세요.",
+      "손을 씻고 상처를 밴드로 덮으세요.",
+      "연고를 바르고 방수 커버로 상처를 붕대로 감으세요.",
+      "방수 커버로 상처를 덮고 일회용 장갑을 착용하세요."
+    ]
   },
   {
     "module": "Personal Hygiene",
@@ -1452,7 +2028,13 @@
     ],
     "answer": 2,
     "explain": "Chopped carrots for stew will be fully cooked, so bare-hand contact is acceptable before cooking.",
-    "explainKo": "스튜용 당근은 완전히 조리되므로 조리 전 맨손 접촉이 허용됩니다."
+    "explainKo": "스튜용 당근은 완전히 조리되므로 조리 전 맨손 접촉이 허용됩니다.",
+    "optionsKo": [
+      "샌드위치용 슬라이스 치즈",
+      "샐러드용 삶은 달걀 슬라이스",
+      "스튜용 다진 당근",
+      "가니쉬용 파슬리"
+    ]
   },
   {
     "module": "Personal Hygiene",
@@ -1467,7 +2049,13 @@
     ],
     "answer": 2,
     "explain": "Eating is acceptable in designated areas as long as food and equipment are not contaminated.",
-    "explainKo": "식품과 장비를 오염시키지 않는 한 지정 구역에서의 취식은 허용됩니다."
+    "explainKo": "식품과 장비를 오염시키지 않는 한 지정 구역에서의 취식은 허용됩니다.",
+    "optionsKo": [
+      "아니요, 음식을 제공할 때는 절대 안 됩니다.",
+      "아니요, 일반인이 완전히 볼 수 있기 때문입니다.",
+      "예, 음식을 오염시키지 않는다면요.",
+      "예, 장비를 오염시키지 않는다면요."
+    ]
   },
   {
     "module": "Personal Hygiene",
@@ -1482,7 +2070,13 @@
     ],
     "answer": 1,
     "explain": "Food handlers must report illness symptoms to their manager so the manager can decide about exclusion.",
-    "explainKo": "식품 취급자는 관리자가 업무 배제 여부를 결정할 수 있도록 증상을 반드시 보고해야 합니다."
+    "explainKo": "식품 취급자는 관리자가 업무 배제 여부를 결정할 수 있도록 증상을 반드시 보고해야 합니다.",
+    "optionsKo": [
+      "집에 있으세요.",
+      "증상에 대해 알려주세요.",
+      "보건부에 연락하세요.",
+      "짧은 시간만 일하세요."
+    ]
   },
   {
     "module": "Cross-Contamination",
@@ -1497,7 +2091,13 @@
     ],
     "answer": 1,
     "explain": "Pre-cut lettuce eliminates a cross-contamination risk by removing a prep step.",
-    "explainKo": "미리 절단된 상추는 준비 단계를 제거하여 교차 오염 위험을 없앱니다."
+    "explainKo": "미리 절단된 상추는 준비 단계를 제거하여 교차 오염 위험을 없앱니다.",
+    "optionsKo": [
+      "온도 남용을 방지하기 위해",
+      "교차 오염을 방지하기 위해",
+      "샐러드 비용을 줄이기 위해",
+      "올바른 개인위생에 대한 집중도를 낮추기 위해"
+    ]
   },
   {
     "module": "Time & Temperature",
@@ -1512,7 +2112,13 @@
     ],
     "answer": 2,
     "explain": "Pathogens grow most rapidly between 70°F-125°F (21°C-52°C), the middle of the temperature danger zone.",
-    "explainKo": "병원균은 위험 온도 구간의 중간인 70°F~125°F(21°C~52°C)에서 가장 빠르게 성장합니다."
+    "explainKo": "병원균은 위험 온도 구간의 중간인 70°F~125°F(21°C~52°C)에서 가장 빠르게 성장합니다.",
+    "optionsKo": [
+      "41°F ~ 45°F (5°C ~ 7°C)",
+      "45°F ~ 60°F (7°C ~ 16°C)",
+      "70°F ~ 125°F (21°C ~ 52°C)",
+      "120°F ~ 135°F (49°C ~ 57°C)"
+    ]
   },
   {
     "module": "Time & Temperature",
@@ -1527,7 +2133,13 @@
     ],
     "answer": 2,
     "explain": "The temperature danger zone (41°F-135°F / 5°C-57°C) is where pathogens thrive.",
-    "explainKo": "41°F~135°F(5°C~57°C)의 위험 온도 구간은 병원균이 번성하는 환경입니다."
+    "explainKo": "41°F~135°F(5°C~57°C)의 위험 온도 구간은 병원균이 번성하는 환경입니다.",
+    "optionsKo": [
+      "빙점 이하 온도에서",
+      "냉장 온도에서",
+      "41°F ~ 135°F (5°C ~ 57°C) 사이",
+      "올바른 내부 온도로 조리됨"
+    ]
   },
   {
     "module": "Time & Temperature",
@@ -1542,7 +2154,13 @@
     ],
     "answer": 3,
     "explain": "TCS food must be discarded after a cumulative 4 hours in the temperature danger zone.",
-    "explainKo": "TCS 식품은 위험 온도 구간에 누적 4시간 이상 머문 후에는 폐기해야 합니다."
+    "explainKo": "TCS 식품은 위험 온도 구간에 누적 4시간 이상 머문 후에는 폐기해야 합니다.",
+    "optionsKo": [
+      "1시간",
+      "2시간",
+      "3시간",
+      "4시간"
+    ]
   },
   {
     "module": "Time & Temperature",
@@ -1557,7 +2175,13 @@
     ],
     "answer": 1,
     "explain": "The ice-point calibration method uses an ice-water slurry at 32°F (0°C).",
-    "explainKo": "빙점 보정법은 32°F(0°C)의 얼음물 혼합물을 사용합니다."
+    "explainKo": "빙점 보정법은 32°F(0°C)의 얼음물 혼합물을 사용합니다.",
+    "optionsKo": [
+      "0°F (-18°C)",
+      "32°F (0°C)",
+      "41°F (5°C)",
+      "212°F (100°C)"
+    ]
   },
   {
     "module": "Time & Temperature",
@@ -1572,7 +2196,13 @@
     ],
     "answer": 1,
     "explain": "Insert the thermometer into the thickest part where it takes longest to reach safe temperature.",
-    "explainKo": "온도계는 안전 온도에 도달하는 데 가장 오래 걸리는 두꺼운 부분에 삽입해야 합니다."
+    "explainKo": "온도계는 안전 온도에 도달하는 데 가장 오래 걸리는 두꺼운 부분에 삽입해야 합니다.",
+    "optionsKo": [
+      "식품의 가장 얇은 부분에",
+      "식품의 가장 두꺼운 부분에",
+      "식품의 아래쪽",
+      "식품의 위쪽"
+    ]
   },
   {
     "module": "Cross-Contamination",
@@ -1587,7 +2217,13 @@
     ],
     "answer": 2,
     "explain": "The most basic cross-contamination prevention is keeping raw and ready-to-eat foods separated.",
-    "explainKo": "교차 오염 방지의 가장 기본적인 방법은 날 식품과 즉석 취식 식품을 항상 분리하는 것입니다."
+    "explainKo": "교차 오염 방지의 가장 기본적인 방법은 날 식품과 즉석 취식 식품을 항상 분리하는 것입니다.",
+    "optionsKo": [
+      "모든 식품 배달을 모니터링하고 기록하세요.",
+      "각 교대 시작 시 모든 장비를 세척·소독하세요.",
+      "날 음식과 즉식 식품을 서로 분리 보관하세요.",
+      "특정 식품 종류별로 별도의 준비 테이블을 지정하세요."
+    ]
   },
   {
     "module": "Cross-Contamination",
@@ -1602,7 +2238,13 @@
     ],
     "answer": 3,
     "explain": "An approved supplier must be inspected and comply with all applicable food safety laws.",
-    "explainKo": "승인된 공급업체는 검사를 받고 모든 식품 안전 법규를 준수해야 합니다."
+    "explainKo": "승인된 공급업체는 검사를 받고 모든 식품 안전 법규를 준수해야 합니다.",
+    "optionsKo": [
+      "HACCP 프로그램 또는 기타 식품 안전 시스템을 갖추고 있다.",
+      "제조 및 포장 관행이 문서화되어 있다.",
+      "운영 시설 근처에 창고가 있다.",
+      "검사를 받았으며 지방, 주, 연방법을 준수한다."
+    ]
   },
   {
     "module": "Foodborne Illness",
@@ -1617,7 +2259,13 @@
     ],
     "answer": 3,
     "explain": "Only inspected, government-approved suppliers are considered safe sources.",
-    "explainKo": "검사를 받은 정부 승인 공급업체만 안전한 출처로 간주됩니다."
+    "explainKo": "검사를 받은 정부 승인 공급업체만 안전한 출처로 간주됩니다.",
+    "optionsKo": [
+      "예, 생선이 갓 잡은 것이라면요.",
+      "예, 지자체가 어부에게 면허를 부여했다면요.",
+      "아니요, 어부가 현지인이라면 해당되지 않습니다.",
+      "아니요, 어부는 검사를 받지 않습니다."
+    ]
   },
   {
     "module": "Time & Temperature",
@@ -1632,7 +2280,13 @@
     ],
     "answer": 2,
     "explain": "Large ice crystals indicate the product thawed and was refrozen — a sign of temperature abuse.",
-    "explainKo": "큰 얼음 결정은 제품이 해동되었다가 재냉동된 것을 나타냅니다 — 온도 남용의 신호입니다."
+    "explainKo": "큰 얼음 결정은 제품이 해동되었다가 재냉동된 것을 나타냅니다 — 온도 남용의 신호입니다.",
+    "optionsKo": [
+      "제품이 올바르게 냉동되었습니다.",
+      "제품이 아직 올바른 온도에 도달하는 중입니다.",
+      "제품이 해동되었다가 재냉동되었습니다.",
+      "제품은 해동 후 신속하게 조리해야 합니다."
+    ]
   },
   {
     "module": "Cross-Contamination",
@@ -1647,7 +2301,13 @@
     ],
     "answer": 0,
     "explain": "All food removed from its original container must be labeled with the food name and use-by date.",
-    "explainKo": "원래 용기에서 꺼낸 모든 식품에는 식품명과 사용 기한을 라벨링해야 합니다."
+    "explainKo": "원래 용기에서 꺼낸 모든 식품에는 식품명과 사용 기한을 라벨링해야 합니다.",
+    "optionsKo": [
+      "라벨을 붙인다.",
+      "폐기한다.",
+      "즉시 사용한다.",
+      "가능한 한 빨리 제공한다."
+    ]
   },
   {
     "module": "Time & Temperature",
@@ -1662,7 +2322,13 @@
     ],
     "answer": 0,
     "explain": "Cold TCS foods must be held at 41°F (5°C) or lower to prevent bacterial growth.",
-    "explainKo": "차가운 TCS 식품은 세균 증식을 방지하기 위해 41°F(5°C) 이하로 보관해야 합니다."
+    "explainKo": "차가운 TCS 식품은 세균 증식을 방지하기 위해 41°F(5°C) 이하로 보관해야 합니다.",
+    "optionsKo": [
+      "41°F (5°C) 이하",
+      "45°F (7°C) 이하",
+      "50°F (10°C) 이하",
+      "65°F (18°C) 이하"
+    ]
   },
   {
     "module": "Time & Temperature",
@@ -1677,7 +2343,13 @@
     ],
     "answer": 0,
     "explain": "Overloading reduces airflow, which prevents proper cooling and can lead to danger zone conditions.",
-    "explainKo": "과적재는 공기 순환을 줄여 적절한 냉각을 방해하고 위험 온도 구간 상황을 초래할 수 있습니다."
+    "explainKo": "과적재는 공기 순환을 줄여 적절한 냉각을 방해하고 위험 온도 구간 상황을 초래할 수 있습니다.",
+    "optionsKo": [
+      "공기 흐름을 줄입니다.",
+      "따뜻한 공기가 안으로 들어옵니다.",
+      "음식이 얼 수 있습니다.",
+      "수분이 축적될 수 있습니다."
+    ]
   },
   {
     "module": "Cross-Contamination",
@@ -1692,7 +2364,13 @@
     ],
     "answer": 1,
     "explain": "Food must be wrapped or covered before storage to protect it from contamination.",
-    "explainKo": "식품은 오염으로부터 보호하기 위해 보관 전에 포장하거나 덮어야 합니다."
+    "explainKo": "식품은 오염으로부터 보호하기 위해 보관 전에 포장하거나 덮어야 합니다.",
+    "optionsKo": [
+      "적절하게 냉동되어야 한다.",
+      "포장하거나 덮어야 한다.",
+      "보관 날짜를 표시해야 한다.",
+      "공기 흐름이 가능한 용기에 담아야 한다."
+    ]
   },
   {
     "module": "Cross-Contamination",
@@ -1707,7 +2385,13 @@
     ],
     "answer": 0,
     "explain": "Non-refrigerated dry goods must be stored in a dry location to prevent spoilage and pest attraction.",
-    "explainKo": "냉장이 필요 없는 건조 식품은 부패와 해충을 방지하기 위해 건조한 장소에 보관해야 합니다."
+    "explainKo": "냉장이 필요 없는 건조 식품은 부패와 해충을 방지하기 위해 건조한 장소에 보관해야 합니다.",
+    "optionsKo": [
+      "건조한 장소에",
+      "습한 장소에",
+      "고습도 장소에",
+      "고온 장소에"
+    ]
   },
   {
     "module": "Cross-Contamination",
@@ -1722,7 +2406,13 @@
     ],
     "answer": 0,
     "explain": "Before using flour, always check the packaging for signs of pest damage or infestation.",
-    "explainKo": "밀가루를 사용하기 전에 포장에 해충 피해 흔적이 있는지 항상 확인하세요."
+    "explainKo": "밀가루를 사용하기 전에 포장에 해충 피해 흔적이 있는지 항상 확인하세요.",
+    "optionsKo": [
+      "사용 전 포장에 해충 손상이 있는지 확인하세요.",
+      "중간~높은 습도의 공간에 보관하세요.",
+      "보관 전 통기성 용기에 재포장하세요.",
+      "매일 온도 점검을 실시하세요."
+    ]
   },
   {
     "module": "Time & Temperature",
@@ -1737,7 +2427,13 @@
     ],
     "answer": 0,
     "explain": "Pooled eggs should be cooked immediately after mixing to prevent bacterial growth.",
-    "explainKo": "혼합 달걀은 세균 증식을 방지하기 위해 혼합 직후 바로 조리해야 합니다."
+    "explainKo": "혼합 달걀은 세균 증식을 방지하기 위해 혼합 직후 바로 조리해야 합니다.",
+    "optionsKo": [
+      "혼합 직후 바로 조리하세요.",
+      "같은 용기에 추가 배치를 만드세요.",
+      "45°F (7°C) 이하의 기온에 보관하세요.",
+      "4시간 이하로 실온에 두세요."
+    ]
   },
   {
     "module": "Cleaning & Sanitizing",
@@ -1752,7 +2448,13 @@
     ],
     "answer": 3,
     "explain": "Ice used to cool food may be contaminated and must never be re-used as an ingredient.",
-    "explainKo": "식품을 냉각하는 데 사용한 얼음은 오염될 수 있으므로 식재료로 재사용해서는 안 됩니다."
+    "explainKo": "식품을 냉각하는 데 사용한 얼음은 오염될 수 있으므로 식재료로 재사용해서는 안 됩니다.",
+    "optionsKo": [
+      "얼음 스쿱은 제빙기 안에 보관하세요.",
+      "손 씻은 후에만 맨손으로 얼음을 만지세요.",
+      "유리잔으로 얼음을 퍼내기",
+      "식품 냉각에 사용한 얼음은 식재료로 절대 사용하지 마세요."
+    ]
   },
   {
     "module": "Time & Temperature",
@@ -1767,7 +2469,13 @@
     ],
     "answer": 0,
     "explain": "Thawing as part of the cooking process is safe. Other approved methods: refrigerator, microwave, cold running water.",
-    "explainKo": "조리 과정의 일부로 해동하는 것은 안전합니다. 기타 승인된 방법: 냉장고, 전자레인지, 차가운 흐르는 물."
+    "explainKo": "조리 과정의 일부로 해동하는 것은 안전합니다. 기타 승인된 방법: 냉장고, 전자레인지, 차가운 흐르는 물.",
+    "optionsKo": [
+      "조리 과정의 일부로",
+      "125°F (52°C) 이상의 흐르는 물 아래",
+      "70°F (21°C)의 고인 물에 잠기기",
+      "카운터 실온에서"
+    ]
   },
   {
     "module": "Time & Temperature",
@@ -1782,7 +2490,13 @@
     ],
     "answer": 1,
     "explain": "Thawing at room temperature exposes food to the temperature danger zone, allowing rapid pathogen growth.",
-    "explainKo": "실온 해동은 식품을 위험 온도 구간에 노출시켜 병원균이 빠르게 증식할 수 있게 합니다."
+    "explainKo": "실온 해동은 식품을 위험 온도 구간에 노출시켜 병원균이 빠르게 증식할 수 있게 합니다.",
+    "optionsKo": [
+      "실온에서 해동되는 음식은 먼저 작은 조각으로 잘라야 합니다.",
+      "요리가 위험 온도 구간에 노출되어 병원균이 성장할 수 있습니다.",
+      "요리의 온도가 너무 빠르게 낮아집니다.",
+      "대부분의 식품은 실온에서 해동하는 데 최소 18시간이 필요합니다."
+    ]
   },
   {
     "module": "Time & Temperature",
@@ -1797,7 +2511,13 @@
     ],
     "answer": 3,
     "explain": "TCS food must be cooled from 135 to 41°F within 6 hours total (first 2 hrs: 135-70°F, next 4 hrs: 70-41°F).",
-    "explainKo": "TCS 식품은 총 6시간 내에 135°F에서 41°F로 냉각해야 합니다."
+    "explainKo": "TCS 식품은 총 6시간 내에 135°F에서 41°F로 냉각해야 합니다.",
+    "optionsKo": [
+      "1시간",
+      "2시간",
+      "4시간",
+      "6시간"
+    ]
   },
   {
     "module": "Time & Temperature",
@@ -1812,7 +2532,13 @@
     ],
     "answer": 3,
     "explain": "The first step in rapid cooling is dividing large quantities into smaller shallow containers to increase surface area.",
-    "explainKo": "빠른 냉각의 첫 번째 단계는 표면적을 늘리기 위해 큰 양을 작은 얕은 용기로 나누는 것입니다."
+    "explainKo": "빠른 냉각의 첫 번째 단계는 표면적을 늘리기 위해 큰 양을 작은 얕은 용기로 나누는 것입니다.",
+    "optionsKo": [
+      "냄비를 냉동고에 넣어 식히세요.",
+      "냄비를 워크인 냉장고에 넣어 식히세요.",
+      "냄비를 얼음물이 가득 찬 싱크대에 담그세요.",
+      "고기 소스를 여러 개의 작은 용기에 나눠 담으세요."
+    ]
   },
   {
     "module": "Time & Temperature",
@@ -1827,7 +2553,13 @@
     ],
     "answer": 2,
     "explain": "Hot TCS food must be held at 135°F (57°C) or higher during service.",
-    "explainKo": "뜨거운 TCS 식품은 서비스 중 135°F(57°C) 이상으로 유지해야 합니다."
+    "explainKo": "뜨거운 TCS 식품은 서비스 중 135°F(57°C) 이상으로 유지해야 합니다.",
+    "optionsKo": [
+      "70°F (21°C) 이상",
+      "125°F (52°C) 이상",
+      "135°F (57°C) 이상",
+      "155°F (68°C) 이상"
+    ]
   },
   {
     "module": "Time & Temperature",
@@ -1842,7 +2574,13 @@
     ],
     "answer": 0,
     "explain": "Cold TCS food must be held at 41°F (5°C) or lower to remain safe.",
-    "explainKo": "차가운 TCS 식품은 안전하게 유지하려면 41°F(5°C) 이하로 보관해야 합니다."
+    "explainKo": "차가운 TCS 식품은 안전하게 유지하려면 41°F(5°C) 이하로 보관해야 합니다.",
+    "optionsKo": [
+      "41°F (5°C)",
+      "45°F (7°C)",
+      "51°F (10°C)",
+      "55°F (13°C)"
+    ]
   },
   {
     "module": "Time & Temperature",
@@ -1857,7 +2595,13 @@
     ],
     "answer": 0,
     "explain": "TCS food in the temperature danger zone for 4+ cumulative hours must be discarded.",
-    "explainKo": "위험 온도 구간에 누적 4시간 이상 있었던 TCS 식품은 폐기해야 합니다."
+    "explainKo": "위험 온도 구간에 누적 4시간 이상 있었던 TCS 식품은 폐기해야 합니다.",
+    "optionsKo": [
+      "음식을 버리세요.",
+      "음식을 41°F (5°C) 이하로 냉각하세요.",
+      "음식을 즉시 제공하세요.",
+      "음식을 165°F (74°C)로 조리하세요."
+    ]
   },
   {
     "module": "Time & Temperature",
@@ -1872,7 +2616,13 @@
     ],
     "answer": 3,
     "explain": "Hot-holding equipment is designed to maintain temperature, not raise it quickly through the danger zone.",
-    "explainKo": "보온 장비는 온도를 유지하도록 설계되어 있으며, 위험 구간을 빠르게 통과시키는 용도가 아닙니다."
+    "explainKo": "보온 장비는 온도를 유지하도록 설계되어 있으며, 위험 구간을 빠르게 통과시키는 용도가 아닙니다.",
+    "optionsKo": [
+      "장비가 음식을 태울 수 있습니다.",
+      "교차 접촉 위험이 크게 증가합니다.",
+      "교차 오염은 조리 과정 후반부에 더 큰 위험이 됩니다.",
+      "대부분의 장비는 음식을 위험 온도 구간에서 충분히 빠르게 통과시키지 못합니다."
+    ]
   },
   {
     "module": "Time & Temperature",
@@ -1887,7 +2637,13 @@
     ],
     "answer": 3,
     "explain": "Chicken salad at 54°F for 7 hours has exceeded both safe temperature and time limits — must be discarded.",
-    "explainKo": "54°F에서 7시간 보관된 닭고기 샐러드는 안전 온도와 시간 한계를 모두 초과했으므로 폐기해야 합니다."
+    "explainKo": "54°F에서 7시간 보관된 닭고기 샐러드는 안전 온도와 시간 한계를 모두 초과했으므로 폐기해야 합니다.",
+    "optionsKo": [
+      "남은 치킨 샐러드를 즉시 판매하세요.",
+      "남은 치킨 샐러드를 2시간 내에 판매하세요.",
+      "치킨 샐러드를 41°F (5°C)로 냉각하세요.",
+      "치킨 샐러드를 폐기하세요."
+    ]
   },
   {
     "module": "Personal Hygiene",
@@ -1902,7 +2658,13 @@
     ],
     "answer": 2,
     "explain": "Using deli sheets (wax paper) to handle donuts prevents bare-hand contact with ready-to-eat food.",
-    "explainKo": "델리 시트(왁스 페이퍼)를 사용하면 즉석 취식 식품과 맨손 접촉을 방지할 수 있습니다."
+    "explainKo": "델리 시트(왁스 페이퍼)를 사용하면 즉석 취식 식품과 맨손 접촉을 방지할 수 있습니다.",
+    "optionsKo": [
+      "소독된 유리잔으로 얼음 퍼내기",
+      "맨손으로 햄버거를 접시에 담기",
+      "델리 시트를 사용하여 도넛 취급하기",
+      "같은 집게로 롤과 프라이드치킨 제공하기"
+    ]
   },
   {
     "module": "Personal Hygiene",
@@ -1917,7 +2679,13 @@
     ],
     "answer": 1,
     "explain": "Only unopened, packaged condiments that have not been touched can be safely re-served.",
-    "explainKo": "미개봉 포장 조미료만 안전하게 다른 고객에게 재제공할 수 있습니다."
+    "explainKo": "미개봉 포장 조미료만 안전하게 다른 고객에게 재제공할 수 있습니다.",
+    "optionsKo": [
+      "부분적으로 사용된 살사 컵",
+      "개봉하지 않은 조미료 패킷",
+      "빵 바구니에서 먹지 않은 빵",
+      "접시 가니쉬로 사용된 먹지 않은 피클"
+    ]
   },
   {
     "module": "Time & Temperature",
@@ -1932,7 +2700,13 @@
     ],
     "answer": 0,
     "explain": "Insulated containers maintain safe temperatures during transport, keeping food out of the danger zone.",
-    "explainKo": "단열 용기는 운반 중 안전 온도를 유지하여 식품을 위험 온도 구간에서 벗어나게 합니다."
+    "explainKo": "단열 용기는 운반 중 안전 온도를 유지하여 식품을 위험 온도 구간에서 벗어나게 합니다.",
+    "optionsKo": [
+      "단열",
+      "일회용",
+      "재사용 가능",
+      "생분해성"
+    ]
   },
   {
     "module": "Cleaning & Sanitizing",
@@ -1947,7 +2721,13 @@
     ],
     "answer": 3,
     "explain": "Sanitizing reduces pathogen numbers to safe levels; cleaning removes dirt.",
-    "explainKo": "소독은 병원균 수를 안전한 수준으로 줄입니다. 세척은 오물을 제거합니다."
+    "explainKo": "소독은 병원균 수를 안전한 수준으로 줄입니다. 세척은 오물을 제거합니다.",
+    "optionsKo": [
+      "표면을 깨끗한 수준으로 세척하기",
+      "표면이 깨끗해질 때까지 천으로 닦기",
+      "표면의 오염 물질을 안전한 수준으로 낮추기",
+      "표면의 병원균을 안전한 수준으로 줄이기"
+    ]
   },
   {
     "module": "Cleaning & Sanitizing",
@@ -1962,7 +2742,13 @@
     ],
     "answer": 0,
     "explain": "The three most common chemical sanitizers are chlorine (bleach), iodine, and quaternary ammonium (quats).",
-    "explainKo": "가장 일반적인 세 가지 화학 소독제는 염소(표백제), 요오드, 4급 암모늄(쿼트)입니다."
+    "explainKo": "가장 일반적인 세 가지 화학 소독제는 염소(표백제), 요오드, 4급 암모늄(쿼트)입니다.",
+    "optionsKo": [
+      "4급 암모늄 (Quat)",
+      "소독제",
+      "알코올",
+      "스팀"
+    ]
   },
   {
     "module": "Cleaning & Sanitizing",
@@ -1977,7 +2763,13 @@
     ],
     "answer": 0,
     "explain": "Leftover detergent residue can neutralize sanitizers, reducing their effectiveness.",
-    "explainKo": "남아있는 세제 잔여물은 소독제를 중화시켜 효과를 감소시킬 수 있습니다."
+    "explainKo": "남아있는 세제 잔여물은 소독제를 중화시켜 효과를 감소시킬 수 있습니다.",
+    "optionsKo": [
+      "잔류 세제",
+      "기온",
+      "장비 밀도",
+      "물의 산소 농도"
+    ]
   },
   {
     "module": "Cleaning & Sanitizing",
@@ -1992,7 +2784,13 @@
     ],
     "answer": 1,
     "explain": "Food-contact surfaces like cutting boards must be both cleaned and sanitized.",
-    "explainKo": "도마와 같은 식품 접촉 표면은 세척과 소독을 모두 해야 합니다."
+    "explainKo": "도마와 같은 식품 접촉 표면은 세척과 소독을 모두 해야 합니다.",
+    "optionsKo": [
+      "벽",
+      "도마",
+      "저장 선반",
+      "쓰레기통"
+    ]
   },
   {
     "module": "Cleaning & Sanitizing",
@@ -2007,7 +2805,13 @@
     ],
     "answer": 1,
     "explain": "Food-contact surfaces must be cleaned and sanitized every 4 hours and before switching food types.",
-    "explainKo": "식품 접촉 표면은 4시간마다, 그리고 다른 종류의 식품으로 전환하기 전에 세척 및 소독해야 합니다."
+    "explainKo": "식품 접촉 표면은 4시간마다, 그리고 다른 종류의 식품으로 전환하기 전에 세척 및 소독해야 합니다.",
+    "optionsKo": [
+      "6시간마다",
+      "다른 종류의 음식을 다루기 전",
+      "식품 취급자가 장갑을 교체한 후",
+      "식품 취급자의 교대 종료 시"
+    ]
   },
   {
     "module": "Cleaning & Sanitizing",
@@ -2022,7 +2826,13 @@
     ],
     "answer": 3,
     "explain": "Clean utensils and equipment must be stored at least 6 inches (15 cm) off the floor to prevent contamination.",
-    "explainKo": "청결한 기구와 장비는 오염 방지를 위해 바닥에서 최소 6인치(15cm) 이상 떨어진 곳에 보관해야 합니다."
+    "explainKo": "청결한 기구와 장비는 오염 방지를 위해 바닥에서 최소 6인치(15cm) 이상 떨어진 곳에 보관해야 합니다.",
+    "optionsKo": [
+      "1인치 (3cm)",
+      "2인치 (5cm)",
+      "4인치 (10cm)",
+      "6인치 (15cm)"
+    ]
   },
   {
     "module": "Cleaning & Sanitizing",
@@ -2037,7 +2847,13 @@
     ],
     "answer": 1,
     "explain": "Chemical sanitizers must be available at all times during operation.",
-    "explainKo": "화학 소독제는 영업 중 항상 사용 가능해야 합니다."
+    "explainKo": "화학 소독제는 영업 중 항상 사용 가능해야 합니다.",
+    "optionsKo": [
+      "영업장이 일반에 공개되어 있을 때",
+      "운영 시간 내내",
+      "각 교대 시작 시",
+      "교대가 끝나기 전"
+    ]
   },
   {
     "module": "Personal Hygiene",
@@ -2052,7 +2868,13 @@
     ],
     "answer": 1,
     "explain": "Only plain wedding bands (smooth, no stones or grooves) are permitted during food service operations.",
-    "explainKo": "식품 서비스 작업 중에는 민무늬 결혼반지(돌이나 홈이 없는 매끈한 밴드)만 허용됩니다."
+    "explainKo": "식품 서비스 작업 중에는 민무늬 결혼반지(돌이나 홈이 없는 매끈한 밴드)만 허용됩니다.",
+    "optionsKo": [
+      "시계, 반지, 팔찌, 목걸이",
+      "장식 없는 결혼반지",
+      "시계, 장식 없는 결혼반지, 약혼반지",
+      "홈이 있는 반지, 약혼반지, 귀걸이, 시계, 팔찌"
+    ]
   },
   {
     "module": "Foodborne Illness",
@@ -2067,7 +2889,13 @@
     ],
     "answer": 2,
     "explain": "Food handlers are the greatest risk because they can introduce pathogens through improper hygiene.",
-    "explainKo": "식품 취급자는 부적절한 위생으로 병원균을 유입할 수 있어 가장 큰 위험입니다."
+    "explainKo": "식품 취급자는 부적절한 위생으로 병원균을 유입할 수 있어 가장 큰 위험입니다.",
+    "optionsKo": [
+      "시설",
+      "장비",
+      "사람/식품 취급자",
+      "식품 자체"
+    ]
   },
   {
     "module": "Personal Hygiene",
@@ -2082,7 +2910,13 @@
     ],
     "answer": 3,
     "explain": "Smoking causes hand-to-mouth contact, transferring saliva and pathogens from mouth to hands to food.",
-    "explainKo": "흡연은 구강-손 접촉을 유발하여 침과 병원균이 입에서 손으로, 다시 식품으로 옮겨집니다."
+    "explainKo": "흡연은 구강-손 접촉을 유발하여 침과 병원균이 입에서 손으로, 다시 식품으로 옮겨집니다.",
+    "optionsKo": [
+      "공기 중에 퍼진 연기와 오염물질",
+      "재와 담배꽁초가 음식에 들어가는 것",
+      "실내 온도를 높이는 것",
+      "침이 입에서 손으로 전달되는 것"
+    ]
   },
   {
     "module": "Time & Temperature",
@@ -2097,7 +2931,13 @@
     ],
     "answer": 1,
     "explain": "Cold TCS food: 41°F or below. Hot TCS food: 135°F or above — per FDA Food Code standards.",
-    "explainKo": "차가운 TCS 식품: 41°F 이하. 뜨거운 TCS 식품: 135°F 이상 — FDA 식품 코드 기준."
+    "explainKo": "차가운 TCS 식품: 41°F 이하. 뜨거운 TCS 식품: 135°F 이상 — FDA 식품 코드 기준.",
+    "optionsKo": [
+      "38°F 이상 / 100°F 이상",
+      "41°F 이하 / 135°F 이상",
+      "45°F 이상 / 140°F 이하",
+      "45°F 이하 / 120°F 이하"
+    ]
   },
   {
     "module": "Cleaning & Sanitizing",
@@ -2112,7 +2952,13 @@
     ],
     "answer": 0,
     "explain": "The approved chlorine bleach sanitizer concentration for food-contact surfaces is 100-200 ppm (TB MED 530).",
-    "explainKo": "식품 접촉 표면에 승인된 염소 소독제 농도는 100~200ppm입니다(TB MED 530)."
+    "explainKo": "식품 접촉 표면에 승인된 염소 소독제 농도는 100~200ppm입니다(TB MED 530).",
+    "optionsKo": [
+      "100 ppm",
+      "1000 ppm",
+      "300 ppm",
+      "500 ppm"
+    ]
   },
   {
     "module": "Cross-Contamination",
@@ -2127,7 +2973,13 @@
     ],
     "answer": 1,
     "explain": "Cross-contamination specifically refers to raw food (or its juices) contaminating cooked or ready-to-eat food.",
-    "explainKo": "교차 오염은 날 식품(또는 그 즙)이 조리된 식품이나 즉석 취식 식품을 오염시키는 것입니다."
+    "explainKo": "교차 오염은 날 식품(또는 그 즙)이 조리된 식품이나 즉석 취식 식품을 오염시키는 것입니다.",
+    "optionsKo": [
+      "두 가지 종류의 화학물질이 식품을 오염시킴",
+      "날 음식이 조리된 음식을 오염시킴",
+      "날 음식이 적절한 온도로 조리되지 않음",
+      "위의 모두"
+    ]
   },
   {
     "module": "Time & Temperature",
@@ -2142,7 +2994,13 @@
     ],
     "answer": 3,
     "explain": "The 4 approved thawing methods: refrigerator, cooking process, microwave (cook immediately), cold running water.",
-    "explainKo": "4가지 승인된 해동 방법: 냉장고, 조리 과정, 전자레인지(즉시 조리), 차가운 흐르는 물."
+    "explainKo": "4가지 승인된 해동 방법: 냉장고, 조리 과정, 전자레인지(즉시 조리), 차가운 흐르는 물.",
+    "optionsKo": [
+      "식품을 작은 조각으로 자르기",
+      "조리 5시간 전에 카운터에 올려두기",
+      "물 양동이에 10시간 담그기",
+      "냉장, 조리 과정 중, 전자레인지, 흐르는 물 아래"
+    ]
   },
   {
     "module": "Cleaning & Sanitizing",
@@ -2155,7 +3013,11 @@
     ],
     "answer": 0,
     "explain": "Covered trash cans prevent flies and pests from being attracted to the food service area, reducing contamination.",
-    "explainKo": "덮인 쓰레기통은 파리와 해충이 유인되는 것을 방지하여 오염 위험을 줄입니다."
+    "explainKo": "덮인 쓰레기통은 파리와 해충이 유인되는 것을 방지하여 오염 위험을 줄입니다.",
+    "optionsKo": [
+      "참",
+      "거짓"
+    ]
   },
   {
     "module": "Time & Temperature",
@@ -2170,7 +3032,13 @@
     ],
     "answer": 2,
     "explain": "Bacteria need Food, Acidity, Temperature, Time, Oxygen, and Moisture (FAT TOM) to grow.",
-    "explainKo": "세균은 성장을 위해 식품, 산도, 온도, 시간, 산소, 수분(FAT TOM)이 필요합니다."
+    "explainKo": "세균은 성장을 위해 식품, 산도, 온도, 시간, 산소, 수분(FAT TOM)이 필요합니다.",
+    "optionsKo": [
+      "산소와 빛의 부재에 고온이 결합된 상태",
+      "숙주, 또는 다른 암수 세균",
+      "식품, 시간, 온도, 수분",
+      "낮은 pH, 낮은 온도, 높은 수분 활성도"
+    ]
   },
   {
     "module": "Foodborne Illness",
@@ -2185,7 +3053,13 @@
     ],
     "answer": 1,
     "explain": "The primary references are TB MED 530 and the Tri-Service Food Code 2019.",
-    "explainKo": "주요 참고 자료는 TB MED 530과 Tri-Service Food Code 2019입니다."
+    "explainKo": "주요 참고 자료는 TB MED 530과 Tri-Service Food Code 2019입니다.",
+    "optionsKo": [
+      "TB MED 612, FDA",
+      "TB MED 530, 삼군 식품 코드 2019",
+      "TB MED 350, 삼군 예방 코드",
+      "A와 B 모두"
+    ]
   },
   {
     "module": "Personal Hygiene",
@@ -2198,7 +3072,11 @@
     ],
     "answer": 1,
     "explain": "False. Gloves are NOT a substitute for handwashing. Hands must be washed before putting on gloves.",
-    "explainKo": "거짓. 장갑은 손 씻기의 대체품이 아닙니다. 장갑 착용 전에 반드시 손을 씻어야 합니다."
+    "explainKo": "거짓. 장갑은 손 씻기의 대체품이 아닙니다. 장갑 착용 전에 반드시 손을 씻어야 합니다.",
+    "optionsKo": [
+      "참",
+      "거짓"
+    ]
   },
   {
     "module": "Time & Temperature",
@@ -2213,7 +3091,13 @@
     ],
     "answer": 3,
     "explain": "Approved thawing methods: refrigerator (41°F or less), cooking process, microwave, under cold running water. Room temp is NOT safe.",
-    "explainKo": "승인된 해동 방법: 냉장고(41°F 이하), 조리 과정, 전자레인지, 차가운 흐르는 물. 실온은 안전하지 않습니다."
+    "explainKo": "승인된 해동 방법: 냉장고(41°F 이하), 조리 과정, 전자레인지, 차가운 흐르는 물. 실온은 안전하지 않습니다.",
+    "optionsKo": [
+      "41°F 이하의 냉장고에서",
+      "조리 과정의 일부로",
+      "카운터 실온에서",
+      "냉장고 (41°F 이하) 및 조리 과정의 일부로만"
+    ]
   },
   {
     "module": "Event Operations",
@@ -2228,7 +3112,13 @@
     ],
     "answer": 2,
     "explain": "TCS food must be cooked on-site at temporary events, but not all equipment is suitable. Electric roasters and slow cookers heat food slowly and unevenly, keeping raw food in the danger zone (41°F–135°F) for too long. Use a grill or burner for cooking, then transfer to a holding unit.",
-    "explainKo": "TCS 식품은 임시 이벤트에서 현장 조리해야 하지만, 모든 장비가 적합한 것은 아닙니다. 전기 로스터와 슬로우쿠커는 음식을 천천히 불균일하게 가열하여 날 음식을 위험 온도 구간(41°F~135°F)에 오래 노출시킵니다. 그릴이나 버너로 조리 후 보온 장비로 옮기세요."
+    "explainKo": "TCS 식품은 임시 이벤트에서 현장 조리해야 하지만, 모든 장비가 적합한 것은 아닙니다. 전기 로스터와 슬로우쿠커는 음식을 천천히 불균일하게 가열하여 날 음식을 위험 온도 구간(41°F~135°F)에 오래 노출시킵니다. 그릴이나 버너로 조리 후 보온 장비로 옮기세요.",
+    "optionsKo": [
+      "온도를 확인하는 한 모든 날 TCS 식품을 조리할 수 있음",
+      "야외 행사에서 대량 조리에 가장 좋은 장비임",
+      "날 TCS 식품 조리에 부적합 (가열이 너무 느리고 불균일) — 온장 보관 전용으로만 사용",
+      "임시 식품 행사에서 조리 및 보온 모두 완전히 승인됨"
+    ]
   },
   {
     "module": "Event Operations",
@@ -2243,7 +3133,13 @@
     ],
     "answer": 1,
     "explain": "Electric roasters heat food slowly and unevenly. This means raw food can spend hours in the temperature danger zone (41°F–135°F) before reaching a safe internal cooking temperature, allowing rapid bacterial growth.",
-    "explainKo": "전기 로스터는 음식을 천천히 불균일하게 가열합니다. 이 때문에 날 음식이 안전한 내부 조리 온도에 도달하기 전까지 수 시간 동안 위험 온도 구간(41°F~135°F)에 머물러 세균이 빠르게 증식할 수 있습니다."
+    "explainKo": "전기 로스터는 음식을 천천히 불균일하게 가열합니다. 이 때문에 날 음식이 안전한 내부 조리 온도에 도달하기 전까지 수 시간 동안 위험 온도 구간(41°F~135°F)에 머물러 세균이 빠르게 증식할 수 있습니다.",
+    "optionsKo": [
+      "로스터가 전력을 너무 많이 사용하여 정전을 유발할 수 있음",
+      "음식이 너무 느리게 가열되어 위험 온도 구간에 너무 오래 머뭄",
+      "로스터 뚜껑이 수분을 가두어 음식 맛을 변화시킴",
+      "야외 행사는 모든 음식을 상업용 주방에서만 조리해야 함"
+    ]
   },
   {
     "module": "Event Operations",
@@ -2258,7 +3154,13 @@
     ],
     "answer": 1,
     "explain": "TCS food must be cooked on-site to its required internal temperature before being transferred to a hot holding unit. Always verify the internal temp before placing food into holding equipment.",
-    "explainKo": "TCS 식품은 현장에서 필요한 내부 조리 온도까지 완전히 조리된 후 핫홀딩 장비로 이전해야 합니다. 장비에 넣기 전에 항상 내부 온도를 확인하세요."
+    "explainKo": "TCS 식품은 현장에서 필요한 내부 조리 온도까지 완전히 조리된 후 핫홀딩 장비로 이전해야 합니다. 장비에 넣기 전에 항상 내부 온도를 확인하세요.",
+    "optionsKo": [
+      "음식이 원래 포장 상태로 보관되어 있음",
+      "음식이 유닛에 넣기 전 필요한 내부 조리 온도에 도달함",
+      "온장 유닛이 염소 용액으로 소독됨",
+      "음식이 먼저 실온으로 냉각됨"
+    ]
   },
   {
     "module": "Event Operations",
@@ -2273,7 +3175,13 @@
     ],
     "answer": 3,
     "explain": "Hot TCS food must be maintained at 135°F (57°C) or above at all times during service. If the temperature drops below this, the food must be reheated to 165°F or discarded.",
-    "explainKo": "뜨거운 TCS 식품은 서비스 중 항상 135°F(57°C) 이상으로 유지해야 합니다. 이 온도 미만으로 떨어지면 165°F로 재가열하거나 폐기해야 합니다."
+    "explainKo": "뜨거운 TCS 식품은 서비스 중 항상 135°F(57°C) 이상으로 유지해야 합니다. 이 온도 미만으로 떨어지면 165°F로 재가열하거나 폐기해야 합니다.",
+    "optionsKo": [
+      "120°F (49°C)",
+      "125°F (52°C)",
+      "130°F (54°C)",
+      "135°F (57°C)"
+    ]
   },
   {
     "module": "Event Operations",
@@ -2288,7 +3196,13 @@
     ],
     "answer": 1,
     "explain": "Wind and cold weather significantly reduce chafing dish efficiency. Using more fuel cans or replacing them more frequently compensates for the heat lost to the environment and helps maintain food at 135°F or above.",
-    "explainKo": "바람과 추운 날씨는 채핑 디쉬 효율을 크게 낮춥니다. 연료캔을 더 사용하거나 더 자주 교체하면 환경으로 잃는 열을 보완하여 음식을 135°F 이상으로 유지할 수 있습니다."
+    "explainKo": "바람과 추운 날씨는 채핑 디쉬 효율을 크게 낮춥니다. 연료캔을 더 사용하거나 더 자주 교체하면 환경으로 잃는 열을 보완하여 음식을 135°F 이상으로 유지할 수 있습니다.",
+    "optionsKo": [
+      "자원 절약과 화재 위험 감소를 위해 연료캔을 적게 사용",
+      "열 손실 보완을 위해 연료캔을 더 많이 사용하거나 더 자주 교체",
+      "온도를 맞추기 위해 물통에 얼음 추가",
+      "채핑 디쉬 뚜껑 대신 랩으로 음식을 덮기"
+    ]
   },
   {
     "module": "Event Operations",
@@ -2303,7 +3217,13 @@
     ],
     "answer": 1,
     "explain": "The water pan should be filled with hot water before lighting the fuel. The unit should then pre-heat for 15–20 minutes before food is placed in it, ensuring the food immediately enters a safe hot holding environment.",
-    "explainKo": "연료를 점화하기 전에 물 팬에 뜨거운 물을 채워야 합니다. 그런 다음 음식을 올리기 전에 15~20분간 예열하여 음식이 즉시 안전한 온장 보관 환경에 들어가도록 해야 합니다."
+    "explainKo": "연료를 점화하기 전에 물 팬에 뜨거운 물을 채워야 합니다. 그런 다음 음식을 올리기 전에 15~20분간 예열하여 음식이 즉시 안전한 온장 보관 환경에 들어가도록 해야 합니다.",
+    "optionsKo": [
+      "팬에 음식을 바로 넣고 연료에 불을 붙이기",
+      "물통에 뜨거운 물을 채우고 연료에 불을 붙인 후 음식 넣기 전 15~20분 예열",
+      "음식을 먼저 넣은 후 주위에 냉수를 부어 타는 것을 방지",
+      "시간 절약을 위해 연료에 불을 붙이고 즉시 음식 추가"
+    ]
   },
   {
     "module": "Event Operations",
@@ -2318,7 +3238,13 @@
     ],
     "answer": 2,
     "explain": "Food below 135°F must not be served. It must be reheated to 165°F (74°C) immediately to destroy any bacteria that may have grown, or discarded. Never serve food that has dropped below the safe hot holding temperature.",
-    "explainKo": "135°F 미만의 음식은 서빙해서는 안 됩니다. 증식했을 수 있는 세균을 제거하기 위해 즉시 165°F(74°C)로 재가열하거나 폐기해야 합니다. 안전 온도 이하로 떨어진 음식은 절대 서빙하지 마세요."
+    "explainKo": "135°F 미만의 음식은 서빙해서는 안 됩니다. 증식했을 수 있는 세균을 제거하기 위해 즉시 165°F(74°C)로 재가열하거나 폐기해야 합니다. 안전 온도 이하로 떨어진 음식은 절대 서빙하지 마세요.",
+    "optionsKo": [
+      "계속 제공 — 128°F는 135°F에 충분히 가깝다",
+      "연료를 더 추가하고 10분 대기 후 제공",
+      "즉시 제공 중단 후 165°F로 재가열하거나 폐기",
+      "채핑 디쉬를 더 따뜻한 위치로 옮기고 계속 제공"
+    ]
   },
   {
     "module": "Event Operations",
@@ -2333,7 +3259,13 @@
     ],
     "answer": 2,
     "explain": "TCS food in hot holding must be temperature-checked at least every 2 hours to ensure it stays at or above 135°F. Waiting until fuel replacement or end of event can allow dangerous temperature drops to go undetected.",
-    "explainKo": "온장 보관 중인 TCS 식품은 135°F 이상을 유지하는지 확인하기 위해 최소 2시간마다 온도를 점검해야 합니다. 연료 교체 시나 이벤트 종료 때까지 기다리면 위험한 온도 저하를 놓칠 수 있습니다."
+    "explainKo": "온장 보관 중인 TCS 식품은 135°F 이상을 유지하는지 확인하기 위해 최소 2시간마다 온도를 점검해야 합니다. 연료 교체 시나 이벤트 종료 때까지 기다리면 위험한 온도 저하를 놓칠 수 있습니다.",
+    "optionsKo": [
+      "행사 시작과 끝에만",
+      "1시간에 한 번",
+      "최소 2시간마다",
+      "연료 교체 시에만"
+    ]
   },
   {
     "module": "Event Operations",
@@ -2348,6 +3280,12 @@
     ],
     "answer": 0,
     "explain": "Keeping the lid on when not serving helps retain heat (maintaining 135°F+) and protects food from airborne contamination, pests, and environmental exposure at outdoor events.",
-    "explainKo": "서빙하지 않을 때 뚜껑을 닫으면 열을 유지(135°F 이상)하고 야외 이벤트에서 공중 오염, 해충, 환경 노출로부터 음식을 보호합니다."
+    "explainKo": "서빙하지 않을 때 뚜껑을 닫으면 열을 유지(135°F 이상)하고 야외 이벤트에서 공중 오염, 해충, 환경 노출로부터 음식을 보호합니다.",
+    "optionsKo": [
+      "해충 오염을 방지하고 열을 보존하기 위해",
+      "음식이 내부에서 계속 조리되도록 하기 위해",
+      "필요한 연료량을 줄이기 위해",
+      "물통이 너무 빨리 증발하는 것을 방지하기 위해"
+    ]
   }
 ]
