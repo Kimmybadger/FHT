@@ -55,7 +55,7 @@ Certificate is valid for **1 year** from date of issue.
 - **TTS narration** — Web Speech API reads English content aloud; Next button unlocks after narration
 - **Quiz** — Fisher-Yates shuffle, 25 random questions, instant feedback with explanations
 - **Certificate** — matches physical DHA/65th Med Bde certificate; PDF download via html2canvas + jsPDF
-- **Engineer mode** — tap the header 5 times to unlock all locks (for testing)
+- **Engineer mode** — unlock all locks (for testing)
 
 -----
 
