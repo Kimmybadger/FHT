@@ -1655,10 +1655,16 @@ function handleHeaderTap() {
 let ttsUtterance = null;
 
 function stopTTS() {
+  // utterance 먼저 null 처리 — cancel() 시 onend/onerror 발동 방지
+  const u = ttsUtterance;
+  ttsUtterance = null;
+  if (u) {
+    u.onend = null;
+    u.onerror = null;
+  }
   if (window.speechSynthesis) {
     window.speechSynthesis.cancel();
   }
-  ttsUtterance = null;
 }
 
 function extractReadableText(html) {
@@ -1697,15 +1703,24 @@ function startTTS(html) {
     return;
   }
 
+  // 현재 섹션/모듈 캡처 — TTS 완료 시 섹션이 바뀌지 않았는지 확인
+  const capturedLesson = currentLesson;
+  const capturedSection = currentSection;
+
   ttsUtterance = new SpeechSynthesisUtterance(text);
   ttsUtterance.lang = 'en-US';
   ttsUtterance.rate = 0.95;
   ttsUtterance.pitch = 1.0;
 
   ttsUtterance.onend = function() {
+    if (ttsUtterance === null) return; // stopTTS로 취소된 경우 무시
+    if (currentLesson !== capturedLesson || currentSection !== capturedSection) return; // 섹션 바뀐 경우 무시
     unlockNextBtn();
   };
-  ttsUtterance.onerror = function() {
+  ttsUtterance.onerror = function(e) {
+    if (ttsUtterance === null) return; // stopTTS로 취소된 경우 무시
+    if (currentLesson !== capturedLesson || currentSection !== capturedSection) return;
+    if (e.error === 'interrupted' || e.error === 'canceled') return; // 탭 이동으로 인한 중단 무시
     unlockNextBtn();
   };
 
@@ -1732,6 +1747,8 @@ function unlockNextBtn() {
   if (visitedSections[currentLesson]) {
     visitedSections[currentLesson][currentSection] = true;
   }
+  // 탭 미방문 표시 업데이트
+  renderNavTabs();
 }
 
 // ── PC: 20s timer only ────────────────────
@@ -1875,22 +1892,20 @@ function renderLesson() {
   renderSection();
 }
 
-function renderSection() {
+
+function renderNavTabs() {
   const lesson = lessons[currentLesson];
-  const section = lesson.sections[currentSection];
+  const nav = document.getElementById('lessonNav');
+  if (!nav || !lesson) return;
   const isPC = window.innerWidth >= 900;
 
-  const nav = document.getElementById('lessonNav');
-
   if (isPC) {
-    // PC: clean tab strip — just section tabs (label only, no Ko to save space)
     nav.innerHTML = lesson.sections.map((s, i) => {
       const visited = lessonProgress[currentLesson] || (visitedSections[currentLesson] && visitedSections[currentLesson][i]);
       return `<button class="lesson-nav-btn ${i === currentSection ? 'active' : ''} ${visited ? '' : 'unvisited'}"
        onclick="goSection(${i})" title="${s.label} · ${s.labelKo}">${s.label}${visited ? '' : ' ●'}</button>`;
     }).join('');
   } else {
-    // Mobile: module pills + section tabs
     const sectionTabs = lesson.sections.map((s, i) => {
       const visited = lessonProgress[currentLesson] || (visitedSections[currentLesson] && visitedSections[currentLesson][i]);
       return `<button class="lesson-nav-btn ${i === currentSection ? 'active' : ''} ${visited ? '' : 'unvisited'}"
@@ -1908,6 +1923,14 @@ function renderSection() {
       </div>
     `;
   }
+}
+
+function renderSection() {
+  const lesson = lessons[currentLesson];
+  const section = lesson.sections[currentSection];
+  const isPC = window.innerWidth >= 900;
+
+  renderNavTabs();
 
   document.getElementById('lessonContent').innerHTML =
     `<div class="content-card">${section.html}</div>`;
