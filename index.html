@@ -5,7 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 <title>Food Handler Certification | 식품 취급자 교육</title>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js">  window.addEventListener('resize', fixNavTabsTop);
+</script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 <style>
   :root {
@@ -293,6 +294,13 @@
     .quiz-question { font-size: 1.15rem; line-height: 1.6; }
     .quiz-question-ko { font-size: 0.95rem; }
     .quiz-option { font-size: 1rem; padding: 14px 18px; }
+  .quiz-option-ko {
+    display: block;
+    font-size: 0.78em;
+    color: #666;
+    margin-top: 2px;
+    font-style: italic;
+  }
     .quiz-feedback { font-size: 0.95rem; }
     .result-score { font-size: 3.5rem; }
     .result-msg { font-size: 0.95rem; }
@@ -1582,6 +1590,7 @@ async function loadData() {
     quizQuestions = await qRes.json();
     renderLesson();
     renderSidebarModules();
+    fixNavTabsTop();
     lessonProgress = new Array(lessons.length).fill(false);
     updateQuizLock();
   } catch(e) {
@@ -1786,7 +1795,16 @@ function updateQuizLock() {
   }
 }
 
-function showPage(name) {
+
+  function fixNavTabsTop() {
+    const header = document.querySelector('.app-header');
+    const navTabs = document.querySelector('.nav-tabs');
+    if (header && navTabs) {
+      navTabs.style.top = header.offsetHeight + 'px';
+    }
+  }
+
+  function showPage(name) {
   // Stop TTS and timer when leaving learn page
   if (name !== 'learn') {
     stopTTS();
@@ -2066,7 +2084,7 @@ function renderQuestion() {
       <div class="quiz-question-ko">${q.qKo}</div>
       <div class="quiz-options" id="quizOptions">
         ${q.options.map((opt, i) =>
-          `<button class="quiz-option" id="opt-${i}" onclick="selectAnswer(${i})">${String.fromCharCode(65+i)}. ${opt}</button>`
+          `<button class="quiz-option" id="opt-${i}" onclick="selectAnswer(${i})">${String.fromCharCode(65+i)}. ${opt}${q.optionsKo && q.optionsKo[i] && q.optionsKo[i] !== opt ? '<span class="quiz-option-ko">' + q.optionsKo[i] + '</span>' : ''}</button>`
         ).join('')}
       </div>
       <div class="quiz-feedback" id="quizFeedback"></div>
