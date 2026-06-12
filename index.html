@@ -224,6 +224,8 @@
       background: transparent;
     }
     #page-learn .lesson-nav-btn.done { color: var(--amber); }
+    .lesson-nav-btn.unvisited { color: #aaa; }
+    .lesson-nav-btn.unvisited .● { color: #e07b00; font-size: 0.5em; vertical-align: middle; }
     #page-learn .lesson-nav::-webkit-scrollbar { display: none; }
     #page-learn .lesson-nav { -ms-overflow-style: none; scrollbar-width: none; }
 
@@ -1592,6 +1594,7 @@ async function loadData() {
     renderSidebarModules();
     fixNavTabsTop();
     lessonProgress = new Array(lessons.length).fill(false);
+    visitedSections = lessons.map(l => new Array(l.sections.length).fill(false));
     updateQuizLock();
   } catch(e) {
     console.error('Failed to load data:', e);
@@ -1620,6 +1623,7 @@ let quizShuffled = [];
 // DEV MODE & QUIZ LOCK
 // ══════════════════════════════════════════
 let devMode = false;
+let visitedSections = []; // 방안 B: 모듈별 섹션 방문 추적 [[bool,...],...]
 let headerTapCount = 0;
 let headerTapTimer = null;
 
@@ -1755,10 +1759,19 @@ function clearNextBtnCountdown() {
   if (countdownInterval) { clearInterval(countdownInterval); countdownInterval = null; }
 }
 function startNextBtnCountdown() {
-  // If already completed this module — review mode, no lock
+  // 이미 완료된 모듈 — 리뷰 모드, 잠금 없음
   if (lessonProgress[currentLesson]) {
     unlockNextBtn();
     return;
+  }
+  // 이미 방문한 섹션 — 다시 볼 때는 타이머 없이 즉시 unlock
+  if (visitedSections[currentLesson] && visitedSections[currentLesson][currentSection]) {
+    unlockNextBtn();
+    return;
+  }
+  // 첫 방문 — 방문 기록 남기기
+  if (visitedSections[currentLesson]) {
+    visitedSections[currentLesson][currentSection] = true;
   }
   if (window.innerWidth >= 900) {
     startPCMode();
@@ -1852,6 +1865,10 @@ function openLesson(idx) {
   showPage('learn');
   renderLesson();
   renderSidebarModules();
+  // 첫 섹션은 자동 방문 처리 (어차피 보이므로)
+  if (visitedSections[idx]) {
+    visitedSections[idx][0] = true;
+  }
 }
 
 // ══════════════════════════════════════════
@@ -1874,16 +1891,18 @@ function renderSection() {
 
   if (isPC) {
     // PC: clean tab strip — just section tabs (label only, no Ko to save space)
-    nav.innerHTML = lesson.sections.map((s, i) =>
-      `<button class="lesson-nav-btn ${i === currentSection ? 'active' : ''}"
-       onclick="goSection(${i})" title="${s.label} · ${s.labelKo}">${s.label}</button>`
-    ).join('');
+    nav.innerHTML = lesson.sections.map((s, i) => {
+      const visited = lessonProgress[currentLesson] || (visitedSections[currentLesson] && visitedSections[currentLesson][i]);
+      return `<button class="lesson-nav-btn ${i === currentSection ? 'active' : ''} ${visited ? '' : 'unvisited'}"
+       onclick="goSection(${i})" title="${s.label} · ${s.labelKo}">${s.label}${visited ? '' : ' ●'}</button>`;
+    }).join('');
   } else {
     // Mobile: module pills + section tabs
-    const sectionTabs = lesson.sections.map((s, i) =>
-      `<button class="lesson-nav-btn ${i === currentSection ? 'active' : ''}"
-       onclick="goSection(${i})">${s.label}</button>`
-    ).join('');
+    const sectionTabs = lesson.sections.map((s, i) => {
+      const visited = lessonProgress[currentLesson] || (visitedSections[currentLesson] && visitedSections[currentLesson][i]);
+      return `<button class="lesson-nav-btn ${i === currentSection ? 'active' : ''} ${visited ? '' : 'unvisited'}"
+       onclick="goSection(${i})">${s.label}${visited ? '' : ' ●'}</button>`;
+    }).join('');
     nav.innerHTML = `
       <div style="width:100%;display:flex;gap:6px;flex-wrap:wrap;">
         ${lessons.map((l, i) =>
@@ -1897,6 +1916,10 @@ function renderSection() {
     `;
   }
 
+  // 현재 섹션 방문 기록 (탭 클릭이 아닌 Next/Prev로 이동한 경우도 포함)
+  if (visitedSections[currentLesson]) {
+    visitedSections[currentLesson][currentSection] = true;
+  }
   document.getElementById('lessonContent').innerHTML =
     `<div class="content-card">${section.html}</div>`;
 
@@ -1913,6 +1936,10 @@ function renderSection() {
 
 function goSection(i) {
   currentSection = i;
+  // 방문 기록
+  if (visitedSections[currentLesson]) {
+    visitedSections[currentLesson][i] = true;
+  }
   renderSection();
 }
 
@@ -1932,6 +1959,21 @@ function changeLesson(dir) {
   }
 
   if (dir > 0) {
+    // 방안 B: 모든 섹션 방문 확인
+    const allVisited = visitedSections[currentLesson] &&
+      visitedSections[currentLesson].every(Boolean);
+    if (!allVisited && !devMode) {
+      const total = lessons[currentLesson].sections.length;
+      const visited = visitedSections[currentLesson] ? visitedSections[currentLesson].filter(Boolean).length : 0;
+      alert('⚠️ Please visit all sections before finishing this module!\n모든 섹션을 확인한 후 완료할 수 있습니다.\n\n(' + visited + '/' + total + ' 섹션 완료)');
+      // 미방문 섹션 중 첫 번째로 이동
+      const firstUnvisited = visitedSections[currentLesson].findIndex(v => !v);
+      if (firstUnvisited >= 0) {
+        currentSection = firstUnvisited;
+        renderSection();
+      }
+      return;
+    }
     lessonProgress[currentLesson] = true;
     updateBadges();
     updateProgress();
