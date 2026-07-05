@@ -2417,8 +2417,9 @@ function downloadCertPDF() {
 
     // Get name for filename
     var name = (window._certData && window._certData.name) ? window._certData.name.replace(/\s+/g, '_') : 'FoodHandler';
-    // Open in new tab instead of downloading — keeps cert overlay open
+    // Open in new tab + save URL for email guidance
     var pdfUrl = pdf.output('bloburl');
+    window._certPdfUrl = pdfUrl;
     window.open(pdfUrl, '_blank');
 
     // Mark PDF saved and highlight email button
@@ -2437,7 +2438,7 @@ function downloadCertPDF() {
     }
     var tip = document.querySelector('.screenshot-tip');
     if (tip) {
-      tip.innerHTML = '✅ PDF saved! Tap <strong>Send Email</strong> to submit to Environmental Health.<br><span style="font-size:0.78rem;color:#0f4f2e">PDF 저장 완료! 이메일 전송 버튼을 눌러 EH에 제출하세요.</span>';
+      tip.innerHTML = '✅ PDF saved! Tap <strong>Send Email</strong> — the PDF will re-open so you can attach it.<br><span style="font-size:0.78rem;color:#0f4f2e">PDF 저장 완료! 이메일 버튼을 누르면 PDF가 다시 열립니다 — 이메일에 첨부해서 전송하세요.</span>';
       tip.style.background = '#e8f5e9';
       tip.style.color = '#0f4f2e';
     }
@@ -2450,7 +2451,21 @@ function downloadCertPDF() {
 
 function sendByEmail() {
   const { name, issueDate, expireDate } = window._certData;
+  const pdfSaved = !!window._certPdfUrl;
+
+  // If PDF not yet saved, prompt user to save first
+  if (!pdfSaved) {
+    alert('⚠️ Please save your PDF first before sending the email.\nPDF를 먼저 저장한 후 이메일을 보내주세요.');
+    return;
+  }
+
   const subject = encodeURIComponent(`Food Handler Certification - ${name}`);
+  const attachNote = pdfSaved
+    ? `IMPORTANT: Please attach the PDF that just opened in your browser before sending this email.
+중요: 브라우저에서 열린 PDF 파일을 이메일에 첨부한 후 전송해 주세요.`
+    : `[Please attach your screenshot of the certification card]
+[인증서 스크린샷을 첨부해 주세요]`;
+
   const body = encodeURIComponent(
 `Food Handler Certification Submission
 식품 취급자 인증 제출
@@ -2463,9 +2478,14 @@ Course: Food Operation Safety Course
 Reference: TB MED 530 / FDA Food Code
 Organization: DHA Public Health, USAG Humphreys
 
-[Please attach your screenshot of the certification card]
-[인증서 스크린샷을 첨부해 주세요]`
+${attachNote}`
   );
+
+  // Re-open PDF tab so user can easily save & attach
+  if (window._certPdfUrl) {
+    window.open(window._certPdfUrl, '_blank');
+  }
+
   window.location.href = `mailto:${SUBMIT_EMAIL}?subject=${subject}&body=${body}`;
 }
 
