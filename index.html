@@ -1340,7 +1340,7 @@
     ⏰ <strong>Certification valid 1 year</strong> from date of issue &nbsp;·&nbsp; 인증 유효 기간: <strong>1년</strong><br><br>
     <strong>How to get certified · 인증 받는 방법</strong><br>
     📖 Study all modules → ✏️ Pass quiz (80%+) → 📋 Enter name → 📄 Save PDF or Screenshot → 🪪 Bring to event<br>
-    <span style="font-size:0.75rem">학습 → 퀴즈 합격 → 이름 입력 → PDF 저장 또는 스크린샷 → 이벤트 시 지참</span>
+    <span style="font-size:0.75rem">학습 → 퀴즈 합격 → 이름 입력 → PDF 저장 → 이메일로 EH 제출 → 이벤트 시 지참</span>
   </div>
 
   <div class="section-title">📚 Course Modules · 교육 모듈</div>
@@ -2248,7 +2248,7 @@ function showNameEntry(pct, score, total) {
     + '<p>Enter your name · 이름을 입력해 주세요</p>'
     + '<div class="field-group"><label class="field-label">Full Name · 성명 *</label>'
     + '<input class="field-input" id="inputName" type="text" placeholder="e.g. JOHN SMITH"></div>'
-    + '<div class="screenshot-tip">📄 Generate certificate → Save PDF or take a screenshot → Bring to event<br>인증서 생성 → PDF 저장 또는 스크린샷 → 이벤트 시 지참</div>'
+    + '<div class="screenshot-tip">📄 Generate certificate → Save PDF → Email to EH → Bring to event<br>인증서 생성 → PDF 저장 → EH에 이메일 전송 → 이벤트 시 지참</div>'
     + '<div style="display:flex;gap:10px;margin-top:14px">'
     + '<button class="btn btn-secondary" onclick="confirmCloseCert()">Cancel</button>'
     + '<button class="btn btn-primary" onclick="window._pct='+pct+';window._sc='+score+';window._tot='+total+';_doCert()">Generate →</button>'
@@ -2328,6 +2328,7 @@ function showCertCard(name, pct, score, total) {
   var iss = today.toLocaleDateString('en-US', opt);
   var exp = expire.toLocaleDateString('en-US', opt);
   window._certData = {name:name, issueDate:iss, expireDate:exp};
+  window._certPdfUrl = null; // 새 인증서 생성 시 초기화
   var overlay = document.createElement('div');
   overlay.className = 'cert-overlay';
   overlay.id = 'certOverlay';
@@ -2357,7 +2358,7 @@ function showCertCard(name, pct, score, total) {
     + '</div>'
     + '</div>'
     + '<div class="cert-actions">'
-    + '<div class="screenshot-tip" style="margin-bottom:0;border-radius:10px">📄 Save as PDF or take a screenshot · PDF 저장 또는 스크린샷<br><span style="font-size:0.78rem;color:#7a5800">🪪 Bring this certificate to the event · 이벤트 시 인증서를 지참하세요</span></div>'
+    + '<div class="screenshot-tip" style="margin-bottom:0;border-radius:10px">📄 Save PDF → Email to EH → Bring to event · PDF 저장 → EH에 이메일 전송 → 이벤트 시 지참<br><span style="font-size:0.78rem;color:#7a5800">⚠️ Save PDF first, then tap Send Email to attach and submit · PDF 먼저 저장 후 이메일 버튼을 눌러 첨부 전송</span></div>'
     + '<button class="cert-action-btn" style="background:#2d2d2d;color:white" id="pdfBtn" onclick="downloadCertPDF()">📄 Save as PDF · PDF 저장</button>'
     + '<button class="cert-action-btn btn-email" onclick="sendByEmail()">✉️ Send via Email · 이메일로 보내기</button>'
     + '<button class="cert-action-btn btn-close" onclick="confirmCloseCert()">✕ Close · 닫기</button>'
@@ -2417,10 +2418,17 @@ function downloadCertPDF() {
 
     // Get name for filename
     var name = (window._certData && window._certData.name) ? window._certData.name.replace(/\s+/g, '_') : 'FoodHandler';
-    // Open in new tab + save URL for email guidance
-    var pdfUrl = pdf.output('bloburl');
+    // Save PDF — use blob + anchor click (works on mobile & PC)
+    var pdfBlob = pdf.output('blob');
+    var pdfUrl = URL.createObjectURL(pdfBlob);
     window._certPdfUrl = pdfUrl;
-    window.open(pdfUrl, '_blank');
+    var a = document.createElement('a');
+    a.href = pdfUrl;
+    var safeName = (window._certData && window._certData.name) ? window._certData.name.replace(/\s+/g, '_') : 'FoodHandler';
+    a.download = 'FoodHandler_Cert_' + safeName + '.pdf';
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
 
     // Mark PDF saved and highlight email button
     if (btn) {
@@ -2481,9 +2489,15 @@ Organization: DHA Public Health, USAG Humphreys
 ${attachNote}`
   );
 
-  // Re-open PDF tab so user can easily save & attach
+  // Re-download PDF so user can attach it
   if (window._certPdfUrl) {
-    window.open(window._certPdfUrl, '_blank');
+    var a = document.createElement('a');
+    a.href = window._certPdfUrl;
+    var safeName = (window._certData && window._certData.name) ? window._certData.name.replace(/\s+/g, '_') : 'FoodHandler';
+    a.download = 'FoodHandler_Cert_' + safeName + '.pdf';
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
   }
 
   window.location.href = `mailto:${SUBMIT_EMAIL}?subject=${subject}&body=${body}`;
@@ -2539,7 +2553,7 @@ loadData();
         <li>Your <strong>first and last name</strong> are required to print your certification card.</li>
         <li>Score <strong>80% or higher</strong> on the quiz (20 out of 25 questions).</li>
         <li>After passing, generate your certificate and <strong>save as PDF</strong> immediately.</li>
-        <li>Your certificate will be emailed to EH — bring it to food handler events.</li>
+        <li>Save your certificate as PDF, then tap <strong>Send Email</strong> to submit it to EH. Bring it to food handler events.</li>
       </ol>
       <div class="intro-privacy">
         <strong>Privacy Advisory</strong>
